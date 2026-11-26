@@ -1,0 +1,483 @@
+{
+ "name": "Sample: dividend growth",
+ "adopted": "2026-01-01",
+ "source": {
+  "title": "Sample dividend growth policy (fictional)",
+  "fileId": null
+ },
+ "origin": "sample",
+ "summary": "Own companies that raise their dividend every year and let the income compound. Judge the portfolio by what it pays and how fast that grows, not by its price; keep every position modest and a little cash on hand.",
+ "figures": [
+  {
+   "id": "dividend-income-ttm",
+   "label": "Dividend income, last twelve months",
+   "about": "Dividends received in the last twelve months.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "ttm"
+     }
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "dividend-growth",
+   "label": "Dividend growth",
+   "about": "Dividends in the last twelve months against the twelve before.",
+   "unit": "pct",
+   "expr": {
+    "op": "growth",
+    "now": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "ttm"
+     }
+    },
+    "before": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "prior_ttm"
+     }
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "yield-on-cost",
+   "label": "Yield on cost",
+   "about": "Dividends in the last twelve months over what the shares and funds cost.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "ttm"
+     }
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "cost",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "equity",
+        "etf"
+       ]
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "net-worth",
+   "label": "Net worth",
+   "about": "Everything at the owner's share, real estate net of its mortgage.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "dividends-by-month",
+   "label": "Dividend income by month",
+   "about": "Dividends received, by month, over the last two years.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "last_months",
+      "months": 24
+     }
+    }
+   },
+   "by": "month",
+   "view": "bars"
+  },
+  {
+   "id": "income-by-holding",
+   "label": "Income by holding",
+   "about": "Dividends in the last twelve months, by holding.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "dividend"
+      }
+     ],
+     "window": {
+      "kind": "ttm"
+     }
+    }
+   },
+   "by": "symbol",
+   "view": "donut"
+  },
+  {
+   "id": "payout-ratio",
+   "label": "Payout ratio",
+   "about": "Dividends over earnings, averaged across holdings.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "payout_ratio_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "equity"
+       ]
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "dividend-yield",
+   "label": "Dividend yield",
+   "about": "Indicated yield, averaged across holdings.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "dividend_yield_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "equity"
+       ]
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "years-raised",
+   "label": "Fewest years of raises",
+   "about": "The holding with the shortest run of dividend raises.",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "min",
+     "over": "holdings",
+     "field": "dividend_years_raised",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "equity"
+       ]
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "weight-by-symbol",
+   "label": "Weight by holding",
+   "about": "Each holding's share of net worth, shares and funds only.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "not_in",
+       "value": [
+        "cash",
+        "deposit",
+        "option"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "cash-share",
+   "label": "Cash and deposits",
+   "about": "Share of net worth in cash and bank deposits.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "cash",
+        "deposit"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  }
+ ],
+ "classes": [
+  {
+   "id": "payer",
+   "label": "Dividend payer",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "in",
+     "value": [
+      "equity",
+      "etf"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cash",
+   "label": "Cash",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "in",
+     "value": [
+      "cash",
+      "deposit"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "other",
+   "label": "Other",
+   "about": "Options and anything that pays no dividend.",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "not_in",
+     "value": [
+      "equity",
+      "etf",
+      "cash",
+      "deposit"
+     ]
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "growth",
+   "section": "1.1",
+   "text": "Dividend income grows at least 5% a year.",
+   "severity": "guideline",
+   "test": {
+    "figure": "dividend-growth",
+    "is": "gte",
+    "limit": 5
+   }
+  },
+  {
+   "id": "position-cap",
+   "section": "1.2",
+   "text": "No holding above 20% of the portfolio.",
+   "severity": "breach",
+   "test": {
+    "figure": "weight-by-symbol",
+    "is": "lte",
+    "limit": 20
+   }
+  },
+  {
+   "id": "payout",
+   "section": "2.1",
+   "text": "Every holding's payout ratio stays under 60%.",
+   "severity": "guideline",
+   "test": {
+    "figure": "payout-ratio",
+    "is": "lte",
+    "limit": 60
+   }
+  },
+  {
+   "id": "raises",
+   "section": "2.2",
+   "text": "Only companies with ten or more years of consecutive raises.",
+   "severity": "guideline",
+   "test": {
+    "figure": "years-raised",
+    "is": "gte",
+    "limit": 10
+   }
+  },
+  {
+   "id": "cash-floor",
+   "section": "3.1",
+   "text": "Keep 5% in cash for the next purchase.",
+   "severity": "guideline",
+   "test": {
+    "figure": "cash-share",
+    "is": "gte",
+    "limit": 5
+   }
+  },
+  {
+   "id": "reinvest",
+   "section": "3.2",
+   "text": "Reinvest dividends within the month they arrive.",
+   "severity": "guideline",
+   "test": null
+  }
+ ],
+ "dashboard": {
+  "headline": [
+   "dividend-income-ttm",
+   "dividend-growth",
+   "yield-on-cost",
+   "net-worth"
+  ],
+  "sections": [
+   {
+    "kind": "figures",
+    "label": "Income",
+    "figures": [
+     "dividends-by-month",
+     "income-by-holding"
+    ],
+    "from": "1"
+   },
+   {
+    "kind": "figures",
+    "label": "Quality",
+    "figures": [
+     "payout-ratio",
+     "dividend-yield",
+     "years-raised"
+    ],
+    "from": "2"
+   },
+   {
+    "kind": "figures",
+    "label": "Concentration",
+    "figures": [
+     "weight-by-symbol",
+     "cash-share"
+    ],
+    "from": "3"
+   },
+   {
+    "kind": "panel",
+    "id": "allocation",
+    "view": "chart"
+   },
+   {
+    "kind": "panel",
+    "id": "freshness",
+    "view": "table"
+   }
+  ],
+  "themes": []
+ }
+}

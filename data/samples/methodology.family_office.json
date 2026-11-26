@@ -1,0 +1,484 @@
+{
+ "name": "Sample: family office investment policy",
+ "adopted": "2026-06-30",
+ "source": {
+  "title": "Sample family investment policy (fictional)",
+  "fileId": null
+ },
+ "origin": "sample",
+ "summary": "Preserve the family's capital across generations: keep enough liquid to meet every capital call, spread fixed income across issuers, borrow modestly against property, and watch how much rides on any one theme once the funds are looked through.",
+ "figures": [
+  {
+   "id": "net-worth",
+   "label": "Net worth",
+   "about": "Everything at the owner's share, real estate net of its mortgage.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "liquid-share",
+   "label": "Liquid",
+   "about": "Share of net worth outside private funds and real estate.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "liquid",
+       "is": "eq",
+       "value": true
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "call-cover",
+   "label": "Calls covered by cash",
+   "about": "Cash and deposits against capital the funds can still call.",
+   "unit": "ratio",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "cash",
+        "deposit"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "fund_unfunded",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "usd-share",
+   "label": "In US dollars",
+   "about": "Holdings in USD as a share of net worth.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "currency",
+       "is": "eq",
+       "value": "USD"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "ai-through-funds",
+   "label": "AI inside the funds",
+   "about": "Companies tagged AI inside private funds, at the family's share, against net worth.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "lookthrough",
+     "field": "lt_value",
+     "where": [
+      {
+       "field": "lt_themes",
+       "is": "contains",
+       "value": "AI"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "issuer-share",
+   "label": "Share of fixed income",
+   "about": "Each bond or deposit as a share of all fixed income.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "bond",
+        "deposit"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "bond",
+        "deposit"
+       ]
+      }
+     ],
+     "whole": true
+    }
+   },
+   "by": "holding",
+   "view": "table"
+  },
+  {
+   "id": "ltv-by-property",
+   "label": "Loan to value",
+   "about": "Mortgage over value, per property.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "holdings",
+     "field": "property_ltv_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "real_estate"
+      }
+     ]
+    }
+   },
+   "by": "holding",
+   "view": "table"
+  },
+  {
+   "id": "oldest-valuation",
+   "label": "Oldest valuation",
+   "about": "Days since the stalest figure behind net worth was set.",
+   "unit": "days",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "holdings",
+     "field": "age_days",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "unfunded",
+   "label": "Unfunded commitments",
+   "about": "Capital the private funds can still call.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "fund_unfunded",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "distributions-ttm",
+   "label": "Distributions, last twelve months",
+   "about": "Paid back by the funds in the last twelve months.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "distribution"
+      }
+     ],
+     "window": {
+      "kind": "ttm"
+     }
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "value-by-class",
+   "label": "Value by class",
+   "about": "Net worth split by the methodology's classes.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "by": "class",
+   "view": "donut"
+  }
+ ],
+ "classes": [
+  {
+   "id": "liquid",
+   "label": "Liquid",
+   "about": "Cash, deposits, bonds and listed shares.",
+   "criteria": [
+    {
+     "field": "liquid",
+     "is": "eq",
+     "value": true
+    }
+   ]
+  },
+  {
+   "id": "private",
+   "label": "Private funds",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "eq",
+     "value": "private_fund"
+    }
+   ]
+  },
+  {
+   "id": "property",
+   "label": "Property",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "eq",
+     "value": "real_estate"
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "liquidity",
+   "section": "2.1",
+   "text": "At least 25% of family wealth stays liquid.",
+   "severity": "breach",
+   "test": {
+    "figure": "liquid-share",
+    "is": "gte",
+    "limit": 25
+   }
+  },
+  {
+   "id": "usd-share",
+   "section": "2.3",
+   "text": "No more than half the family's wealth in US dollars.",
+   "severity": "guideline",
+   "test": {
+    "figure": "usd-share",
+    "is": "lte",
+    "limit": 50
+   }
+  },
+  {
+   "id": "ai-theme",
+   "section": "3.2",
+   "text": "AI exposure, counting what the funds own, stays below 15%.",
+   "severity": "guideline",
+   "test": {
+    "figure": "ai-through-funds",
+    "is": "lte",
+    "limit": 15
+   }
+  },
+  {
+   "id": "call-cover",
+   "section": "4.1",
+   "text": "Cash and deposits must cover every capital call still to come.",
+   "severity": "breach",
+   "test": {
+    "figure": "call-cover",
+    "is": "gte",
+    "limit": 1
+   }
+  },
+  {
+   "id": "family-vote",
+   "section": "4.3",
+   "text": "Every new private fund commitment needs a family vote.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "issuer-spread",
+   "section": "5.2",
+   "text": "No single bank or issuer above 40% of fixed income.",
+   "severity": "guideline",
+   "test": {
+    "figure": "issuer-share",
+    "is": "lte",
+    "limit": 40
+   }
+  },
+  {
+   "id": "ltv",
+   "section": "6.1",
+   "text": "No property mortgaged above 60% of its value.",
+   "severity": "breach",
+   "test": {
+    "figure": "ltv-by-property",
+    "is": "lte",
+    "limit": 60
+   }
+  },
+  {
+   "id": "stale",
+   "section": "7.1",
+   "text": "Every valuation is refreshed at least every 120 days.",
+   "severity": "guideline",
+   "test": {
+    "figure": "oldest-valuation",
+    "is": "lte",
+    "limit": 120
+   }
+  }
+ ],
+ "dashboard": {
+  "headline": [
+   "net-worth",
+   "liquid-share",
+   "call-cover",
+   "usd-share"
+  ],
+  "sections": [
+   {
+    "kind": "panel",
+    "id": "funds",
+    "view": "chart",
+    "from": "4"
+   },
+   {
+    "kind": "figures",
+    "label": "Exposure",
+    "figures": [
+     "ai-through-funds",
+     "value-by-class"
+    ],
+    "from": "3"
+   },
+   {
+    "kind": "panel",
+    "id": "themes",
+    "view": "chart",
+    "from": "3"
+   },
+   {
+    "kind": "panel",
+    "id": "overlap",
+    "view": "table"
+   },
+   {
+    "kind": "figures",
+    "label": "Fixed income",
+    "figures": [
+     "issuer-share"
+    ],
+    "from": "5"
+   },
+   {
+    "kind": "panel",
+    "id": "income",
+    "view": "table",
+    "from": "5"
+   },
+   {
+    "kind": "figures",
+    "label": "Property",
+    "figures": [
+     "ltv-by-property"
+    ],
+    "from": "6"
+   },
+   {
+    "kind": "panel",
+    "id": "properties",
+    "view": "table",
+    "from": "6"
+   },
+   {
+    "kind": "panel",
+    "id": "allocation",
+    "view": "chart"
+   },
+   {
+    "kind": "panel",
+    "id": "freshness",
+    "view": "table",
+    "from": "7"
+   }
+  ],
+  "themes": [
+   "AI",
+   "Real estate"
+  ]
+ }
+}

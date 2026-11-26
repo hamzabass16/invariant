@@ -1,0 +1,61 @@
+{
+  "id": "family_office",
+  "name": "Single family office",
+  "about": "A family's wealth across two banks, two private funds, two properties and one brokerage account, run against a written investment policy with allocation bands. Allocation shaped on the published family office averages (about 38% public equities, 31% private, 15% fixed income; Modus, J.P. Morgan and Goldman Sachs reports, 2025). Every name and figure is fictional.",
+  "setup": { "ownerName": "Rami", "profile": "family_office", "baseCurrency": "EUR", "inputs": ["bank_statements", "fund_reports", "property", "other_broker"], "tradesOptions": false },
+  "seed": 77,
+  "asOf": "2026-10-09",
+  "book": {
+    "accounts": [
+      { "name": "Bank A", "source": "statements", "cash": 420000, "cashCurrency": "EUR" },
+      { "name": "Bank B", "source": "statements", "cash": 180000, "cashCurrency": "USD" },
+      { "name": "Fund A", "source": "statements" },
+      { "name": "Fund B", "source": "statements" },
+      { "name": "Properties", "source": "manual" },
+      { "name": "Brokerage", "source": "snaptrade", "cash": 95000, "cashCurrency": "USD" }
+    ],
+    "equities": [
+      { "symbol": "VWCE", "name": "All-World equity ETF (fictional)", "account": "Brokerage", "assetClass": "etf", "quantity": 14500, "price": 128.4, "costPerUnit": 98, "dayChangePerUnit": -0.9, "currency": "EUR", "country": null, "themes": ["Index"] },
+      { "symbol": "QQQ", "name": "Nasdaq 100 ETF (fictional)", "account": "Brokerage", "assetClass": "etf", "quantity": 1800, "price": 485, "costPerUnit": 390, "dayChangePerUnit": 2.2, "currency": "USD", "themes": ["Index", "AI and semiconductors"] },
+      { "symbol": "NVDA", "name": "Nvidia (fictional)", "account": "Brokerage", "quantity": 3200, "price": 140, "costPerUnit": 61, "dayChangePerUnit": 2.1, "currency": "USD", "sector": "Technology", "themes": ["AI and semiconductors"] },
+      { "symbol": "ASML", "name": "ASML (fictional)", "account": "Brokerage", "quantity": 420, "price": 690, "costPerUnit": 612, "dayChangePerUnit": -4.1, "currency": "EUR", "country": "NL", "sector": "Technology", "themes": ["AI and semiconductors"] },
+      { "symbol": "NESN", "name": "Nestle (fictional)", "account": "Brokerage", "quantity": 2600, "price": 84, "costPerUnit": 90, "dayChangePerUnit": 0.3, "currency": "EUR", "country": "CH", "sector": "Consumer staples", "themes": ["Defensive"], "dividendPerShare": 3.05, "dividendGrowthPct": 2 }
+    ],
+    "others": [
+      { "id": "a:dep12", "symbol": "DEP-12M", "name": "12-month term deposit", "account": "Bank A", "source": "statements", "assetClass": "deposit", "value": 500000, "currency": "EUR", "valuation": "bank_statement", "agedDays": 9, "country": "GR", "themes": ["Cash"], "deposit": { "ratePct": 2.6, "start": "2026-02-01", "maturity": "2027-02-01" } },
+      { "id": "a:bund", "symbol": "DE0001102580", "name": "Bund 2.5% 2035", "account": "Bank A", "source": "statements", "assetClass": "bond", "quantity": 600000, "price": 98.2, "value": 589200, "costBasis": 594000, "currency": "EUR", "valuation": "bank_statement", "agedDays": 9, "country": "DE", "themes": ["Fixed income"], "bond": { "issuer": "Federal Republic of Germany", "isin": "DE0001102580", "coupon": 2.5, "maturity": "2035-02-15", "yieldPct": 2.7, "rating": "AAA" } },
+      { "id": "b:ust", "symbol": "US91282CJL69", "name": "US Treasury 4.5% 2033", "account": "Bank B", "source": "statements", "assetClass": "bond", "quantity": 500000, "price": 101.1, "value": 505500, "costBasis": 498000, "currency": "USD", "valuation": "bank_statement", "agedDays": 38, "country": "US", "themes": ["Fixed income"], "bond": { "issuer": "United States Treasury", "isin": "US91282CJL69", "coupon": 4.5, "maturity": "2033-11-15", "yieldPct": 4.3, "rating": "AA+" } },
+      { "id": "b:corp", "symbol": "XS2434891219", "name": "Prosus 2.0% 2032", "account": "Bank B", "source": "statements", "assetClass": "bond", "quantity": 300000, "price": 88.4, "value": 265200, "costBasis": 291000, "currency": "EUR", "valuation": "bank_statement", "agedDays": 38, "country": "NL", "themes": ["Fixed income"], "bond": { "issuer": "Prosus", "isin": "XS2434891219", "coupon": 2.0, "maturity": "2032-01-19", "yieldPct": 4.4, "rating": "BBB" } },
+      { "id": "f:a", "symbol": "FUND-A", "name": "Aegean Growth Fund III", "account": "Fund A", "source": "statements", "assetClass": "private_fund", "value": 1150000, "costBasis": 900000, "currency": "USD", "valuation": "fund_report", "agedDays": 101, "country": null, "themes": ["Venture"],
+        "fund": { "manager": "Aegean Partners", "vintage": 2022, "commitment": 1500000, "called": 900000, "distributions": 120000, "reported": { "dpi": 0.13, "tvpi": 1.41, "irrPct": 18.2 } },
+        "lookThrough": [
+          { "name": "Delta Robotics", "ticker": null, "sector": "Industrials", "country": "DE", "stage": "Series B", "themes": ["AI and semiconductors", "Robotics"], "fairValue": 310000 },
+          { "name": "Kyma Health", "ticker": null, "sector": "Health care", "country": "GR", "stage": "Series A", "themes": ["Health"], "fairValue": 240000 },
+          { "name": "Nvidia", "ticker": "NVDA", "sector": "Technology", "country": "US", "stage": "Public", "themes": ["AI and semiconductors"], "fairValue": 150000 },
+          { "name": "Ferrylink", "ticker": null, "sector": "Transport", "country": "GR", "stage": "Growth", "themes": ["Logistics"], "fairValue": 450000 }
+        ] },
+      { "id": "f:b", "symbol": "FUND-B", "name": "Northlane Buyout II", "account": "Fund B", "source": "statements", "assetClass": "private_fund", "value": 2100000, "costBasis": 1800000, "currency": "EUR", "valuation": "fund_report", "agedDays": 101, "country": null, "themes": ["Buyout"],
+        "fund": { "manager": "Northlane Capital", "vintage": 2020, "commitment": 2500000, "called": 2200000, "distributions": 650000, "reported": { "dpi": 0.3, "tvpi": 1.25, "irrPct": 9.8 } },
+        "lookThrough": [
+          { "name": "Baltic Dental Group", "ticker": null, "sector": "Health care", "country": "LT", "stage": "Buyout", "themes": ["Health"], "fairValue": 900000 },
+          { "name": "Rhine Packaging", "ticker": null, "sector": "Industrials", "country": "DE", "stage": "Buyout", "themes": [], "fairValue": 700000 },
+          { "name": "ASML", "ticker": "ASML", "sector": "Technology", "country": "NL", "stage": "Public", "themes": ["AI and semiconductors"], "fairValue": 500000 }
+        ] },
+      { "id": "p:1", "symbol": "PROP-1", "name": "Apartment block, Kolonaki", "account": "Properties", "source": "manual", "assetClass": "real_estate", "value": 2400000, "costBasis": 1700000, "currency": "EUR", "valuation": "estimate", "agedDays": 200, "country": "GR", "themes": ["Real estate"],
+        "property": { "address": "Fictional street 1, Athens", "country": "GR", "ownershipPct": 100, "purchasePrice": 1700000, "purchaseDate": "2016-05-10", "mortgage": 600000, "monthlyRent": 11500, "rental": "long_term", "valuationSource": "Agent estimate", "valuationDate": "2026-03-23" } },
+      { "id": "p:2", "symbol": "PROP-2", "name": "Villa, Paros", "account": "Properties", "source": "manual", "assetClass": "real_estate", "value": 1800000, "costBasis": 1200000, "currency": "EUR", "valuation": "estimate", "agedDays": 420, "country": "GR", "themes": ["Real estate"],
+        "property": { "address": "Fictional road 2, Paros", "country": "GR", "ownershipPct": 50, "purchasePrice": 1200000, "purchaseDate": "2019-07-01", "mortgage": 0, "monthlyRent": null, "rental": "own_use", "valuationSource": "Owner's estimate", "valuationDate": "2025-08-15" } }
+    ],
+    "fx": { "USD": 0.86, "CHF": 1.07 },
+    "rate": 0.025,
+    "series": { "weeks": 156, "nav": { "start": 11800000, "driftPct": 7, "volPct": 7 }, "benchmarks": {} },
+    "transactions": [
+      { "daysAgo": 80, "account": "Fund A", "kind": "capital_call", "symbol": "FUND-A", "amount": -150000 },
+      { "daysAgo": 240, "account": "Fund A", "kind": "capital_call", "symbol": "FUND-A", "amount": -200000 },
+      { "daysAgo": 60, "account": "Fund B", "kind": "distribution", "symbol": "FUND-B", "amount": 180000, "currency": "EUR" },
+      { "daysAgo": 300, "account": "Fund B", "kind": "distribution", "symbol": "FUND-B", "amount": 220000, "currency": "EUR" },
+      { "daysAgo": 30, "account": "Bank A", "kind": "interest", "symbol": "DEP-12M", "amount": 3250, "currency": "EUR" },
+      { "daysAgo": 120, "account": "Bank A", "kind": "interest", "symbol": "DEP-12M", "amount": 3250, "currency": "EUR" }
+    ]
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "name": "Defensive investor, after Benjamin Graham",
+  "source": {
+    "title": "The defensive investor's rules, after Benjamin Graham's The Intelligent Investor",
+    "fileId": null
+  },
+  "origin": "library",
+  "summary": "A diversified book of large, financially strong companies with a dividend and growing earnings, bought only at a moderate price, for someone who wants safety and little work.",
+  "figures": [
+    {
+      "id": "nav",
+      "label": "Portfolio value",
+      "about": "Everything in the portfolio at the latest marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "positions",
+      "label": "Stocks held",
+      "about": "The stocks and funds held.",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash and deposits as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-by-holding",
+      "label": "Portfolio by holding",
+      "about": "Each holding's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Portfolio by class",
+      "about": "Each class's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "class",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-sector",
+      "label": "Portfolio by sector",
+      "about": "Each sector's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "sector",
+      "view": "bars"
+    },
+    {
+      "id": "weight-defensive",
+      "label": "Weight, Defensive stock",
+      "about": "Each Defensive stock holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "defensive"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "table"
+    }
+  ],
+  "classes": [
+    {
+      "id": "defensive",
+      "label": "Defensive stock",
+      "about": "A moderate price (P/E 15 or less), a dividend paid, earnings growing and modest debt (Graham, ch. 14).",
+      "criteria": [
+        {
+          "field": "pe_ratio",
+          "is": "lte",
+          "value": 15
+        },
+        {
+          "field": "dividend_yield_pct",
+          "is": "gt",
+          "value": 0
+        },
+        {
+          "field": "eps_growth_pct",
+          "is": "gt",
+          "value": 0
+        },
+        {
+          "field": "net_debt_to_ebitda",
+          "is": "lte",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "g-min-holdings",
+      "section": "Ch. 5",
+      "text": "Hold at least ten and at most about thirty stocks.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "gte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "g-max-holdings",
+      "section": "Ch. 5",
+      "text": "Hold no more than about thirty stocks.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "lte",
+        "limit": 30
+      }
+    },
+    {
+      "id": "g-cap",
+      "section": "Ch. 5",
+      "text": "No single defensive stock above 10% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-defensive",
+        "is": "lte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "g-bonds",
+      "section": "Ch. 4",
+      "text": "Keep at least a quarter outside stocks; cash stands in for bonds here.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "gte",
+        "limit": 25
+      }
+    },
+    {
+      "id": "g-buy-only",
+      "section": "Ch. 14",
+      "text": "Buy only a stock that passes every defensive test.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "nav",
+      "positions",
+      "cash-share"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Diversification",
+        "figures": [
+          "weight-by-holding",
+          "weight-by-sector"
+        ],
+        "from": "Ch. 5"
+      },
+      {
+        "kind": "figures",
+        "label": "Defensive stocks",
+        "figures": [
+          "weight-by-class",
+          "weight-defensive"
+        ],
+        "from": "Ch. 14"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      }
+    ],
+    "themes": []
+  },
+  "gaps": [
+    {
+      "section": "Ch. 14",
+      "asks": "Price to book at most 1.5, or P/E times price to book at most 22.5.",
+      "missing": "price to book: the filings' equity is read, but no book value per share field yet."
+    },
+    {
+      "section": "Ch. 14",
+      "asks": "A current ratio of at least 2 and long-term debt no more than net current assets.",
+      "missing": "current ratio and net current assets as fields."
+    },
+    {
+      "section": "Ch. 14",
+      "asks": "Dividends paid without a break for twenty years and earnings positive in each of the past ten.",
+      "missing": "a dividend and earnings record longer than the five years the filings read covers."
+    },
+    {
+      "section": "Ch. 4",
+      "asks": "Between 25% and 75% in high-grade bonds.",
+      "missing": "a bond share of the book is readable only when bonds are among the inputs; cash stands in."
+    }
+  ]
+}

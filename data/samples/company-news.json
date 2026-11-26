@@ -1,0 +1,22 @@
+{
+  "_note": "Fictional sample for the demo: invented headlines and example.com links, laid on the week around today by daysAgo.",
+  "items": [
+    { "symbol": "MA", "kind": "news", "title": "Sample headline: card network volumes steady into the quarter's end", "url": "https://example.com/news/ma-volumes", "source": "Example Wire", "form": null, "daysAgo": 0, "time": "13:40" },
+    { "symbol": "ASML", "kind": "report", "title": "Report from a foreign issuer: quarterly results release", "url": "https://example.com/filings/asml-6k", "source": "SEC EDGAR", "form": "6-K", "daysAgo": 0, "time": "06:02" },
+    { "symbol": "META", "kind": "news", "title": "Sample headline: what analysts watch in next week's results", "url": "https://example.com/news/meta-preview", "source": "Example Markets", "form": null, "daysAgo": 1, "time": "17:15" },
+    { "symbol": "BKNG", "kind": "news", "title": "Sample headline: travel demand holds up after the summer", "url": "https://example.com/news/bkng-demand", "source": "Example Wire", "form": null, "daysAgo": 1, "time": "11:20" },
+    { "symbol": "SPGI", "kind": "report", "title": "Current report: results of operations and financial condition", "url": "https://example.com/filings/spgi-8k", "source": "SEC EDGAR", "form": "8-K", "daysAgo": 2, "time": "12:31" },
+    { "symbol": "AMZN", "kind": "news", "title": "Sample headline: cloud unit adds data-centre capacity", "url": "https://example.com/news/amzn-cloud", "source": "Example Tech", "form": null, "daysAgo": 2, "time": "09:05" },
+    { "symbol": "NVO", "kind": "news", "title": "Sample headline: trial readout due later this year", "url": "https://example.com/news/nvo-trial", "source": "Example Health", "form": null, "daysAgo": 3, "time": "15:45" },
+    { "symbol": "GOOGL", "kind": "report", "title": "Proxy statement", "url": "https://example.com/filings/googl-def14a", "source": "SEC EDGAR", "form": "DEF 14A", "daysAgo": 4, "time": "21:10" },
+    { "symbol": "UBER", "kind": "news", "title": "Sample headline: new city launches for the delivery business", "url": "https://example.com/news/uber-cities", "source": "Example Wire", "form": null, "daysAgo": 5, "time": "10:30" },
+    { "symbol": "SHOP", "kind": "news", "title": "Sample headline: merchant tools update ahead of the holiday season", "url": "https://example.com/news/shop-merchant-tools", "source": "Example Tech", "form": null, "daysAgo": 1, "time": "12:10" },
+    { "symbol": "BIRK", "kind": "news", "title": "Sample headline: footwear maker opens its largest store yet", "url": "https://example.com/news/birk-store", "source": "Example Wire", "form": null, "daysAgo": 2, "time": "14:25" },
+    { "symbol": "MELI", "kind": "news", "title": "Sample headline: regional fintech arm widens its credit offer", "url": "https://example.com/news/meli-fintech", "source": "Example Markets", "form": null, "daysAgo": 3, "time": "16:05" },
+    { "symbol": "IBKR", "kind": "report", "title": "Current report", "url": "https://example.com/filings/ibkr-8k", "source": "SEC EDGAR", "form": "8-K", "daysAgo": 4, "time": "08:15" },
+    { "symbol": "AAPL", "kind": "news", "title": "Sample headline: holiday-quarter product line-up previewed", "url": "https://example.com/news/aapl-lineup", "source": "Example Tech", "form": null, "daysAgo": 0, "time": "14:55" },
+    { "symbol": "AAPL", "kind": "report", "title": "Current report", "url": "https://example.com/filings/aapl-8k", "source": "SEC EDGAR", "form": "8-K", "daysAgo": 3, "time": "20:05" },
+    { "symbol": "MSFT", "kind": "news", "title": "Sample headline: software unit price changes take effect", "url": "https://example.com/news/msft-prices", "source": "Example Markets", "form": null, "daysAgo": 1, "time": "08:40" },
+    { "symbol": "NVDA", "kind": "news", "title": "Sample headline: chip supply update from the annual conference", "url": "https://example.com/news/nvda-supply", "source": "Example Tech", "form": null, "daysAgo": 2, "time": "18:00" }
+  ]
+}

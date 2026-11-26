@@ -1,0 +1,268 @@
+{
+ "version": 1,
+ "shows": [
+  {
+   "slug": "the-compounding-table-sample",
+   "title": "The Compounding Table (a fictional show)",
+   "addedAt": "2026-10-01"
+  }
+ ],
+ "episodes": [
+  {
+   "id": "the-compounding-table-sample/platform-capex-and-patience",
+   "show": "the-compounding-table-sample",
+   "title": "Sample episode: platform capex and the market's patience",
+   "date": "2026-11-03",
+   "status": "read",
+   "reading": {
+    "summary": "The invented hosts, Ines Marlow and Teo Brandt, argue that the platforms' capital spending is still rising faster than their cloud revenue, that advertising has held up better than they expected, and that the market's patience is the variable to watch next quarter.",
+    "points": [
+     {
+      "headline": "Capex keeps climbing",
+      "line": "Marlow expects each large platform to guide its spending up again and the returns to arrive later than the market hopes.",
+      "symbols": [
+       "AMZN",
+       "GOOGL",
+       "META"
+      ]
+     },
+     {
+      "headline": "Ads held up",
+      "line": "Both hosts read digital advertising as firm through the quarter, helped by better-ranked feeds.",
+      "symbols": [
+       "META",
+       "GOOGL"
+      ]
+     },
+     {
+      "headline": "Cloud backlog is the tell",
+      "line": "Brandt says backlog growth, not this quarter's revenue, is what decides whether the spending is forgiven.",
+      "symbols": [
+       "AMZN",
+       "GOOGL"
+      ]
+     },
+     {
+      "headline": "Chip tools stay tight",
+      "line": "A short exchange on lithography lead times staying long into next year.",
+      "symbols": [
+       "ASML"
+      ]
+     }
+    ],
+    "perspective": {
+     "text": "This episode bears most on AMZN, GOOGL and META, together about 36% of the book. Rising capital spending with later returns reads against the free-cash-flow conversion their theses lean on, so it is a watch item rather than support. Each sits under its own cap (3.1 or D.3 by its class), and none is near one today. The point on lithography supports the ASML thesis's order-book pillar. Nothing here meets a kill signal; Quality Erosion (3.4) would need ROIC or margins to move, which the episode does not claim.",
+     "symbols": [
+      "AMZN",
+      "GOOGL",
+      "META",
+      "ASML"
+     ],
+     "sections": [
+      "3.1",
+      "D.3",
+      "3.4"
+     ]
+    }
+   },
+   "cut": false,
+   "error": null,
+   "readAt": "2026-11-03T07:00:00.000Z"
+  },
+  {
+   "id": "the-compounding-table-sample/payments-travel-and-the-consumer",
+   "show": "the-compounding-table-sample",
+   "title": "Sample episode: payments, travel and the late-year consumer",
+   "date": "2026-10-31",
+   "status": "read",
+   "reading": {
+    "summary": "A conversation on whether the consumer is slowing: the hosts see card volumes steady, travel bookings firm and ride-hailing still adding riders, with the softness confined to small merchants.",
+    "points": [
+     {
+      "headline": "Card volumes steady",
+      "line": "Brandt notes cross-border volumes growing at the same pace as the quarter before, in the show's invented figures.",
+      "symbols": [
+       "MA"
+      ]
+     },
+     {
+      "headline": "Travel still books",
+      "line": "Marlow reads travel demand as firm into the holidays, with pricing doing less of the work.",
+      "symbols": [
+       "BKNG"
+      ]
+     },
+     {
+      "headline": "Ride-hailing adds riders",
+      "line": "Both see ride-hailing growth coming from new riders more than from price.",
+      "symbols": [
+       "UBER"
+      ]
+     },
+     {
+      "headline": "Small merchants feel it",
+      "line": "The softness, they say, sits with small online sellers, not the large platforms.",
+      "symbols": [
+       "SHOP"
+      ]
+     }
+    ],
+    "perspective": {
+     "text": "For the book this is mostly support: MA, BKNG and UBER, about 30% together, each lean on volume rather than price in their theses, and the episode reads volume as steady. The point on small merchants is a watch item for SHOP, which fell hard this week; it touches the thesis pathway, not a rule. UBER at about 12% is under its cap. Nothing here triggers a kill signal.",
+     "symbols": [
+      "MA",
+      "BKNG",
+      "UBER",
+      "SHOP"
+     ],
+     "sections": [
+      "D.3"
+     ]
+    }
+   },
+   "cut": false,
+   "error": null,
+   "readAt": "2026-10-31T07:00:00.000Z"
+  },
+  {
+   "id": "the-compounding-table-sample/rates-the-dollar-and-latin-america",
+   "show": "the-compounding-table-sample",
+   "title": "Sample episode: rates, the dollar and Latin America",
+   "date": "2026-10-28",
+   "status": "read",
+   "reading": {
+    "summary": "The hosts discuss why long rates have stayed high while the policy rate fell, what a softer dollar means for emerging markets, and which kinds of businesses carry currency risk well.",
+    "points": [
+     {
+      "headline": "Long rates stay up",
+      "line": "Marlow expects the ten-year to stay above 4% on deficits and term premium.",
+      "symbols": []
+     },
+     {
+      "headline": "A softer dollar helps Latin America",
+      "line": "Brandt says a weaker dollar eases pressure on Latin American commerce and fintech.",
+      "symbols": [
+       "MELI"
+      ]
+     },
+     {
+      "headline": "Currency risk is a business model question",
+      "line": "They agree a business that prices locally and pays locally carries currency risk better than one that imports.",
+      "symbols": [
+       "MELI",
+       "NVO"
+      ]
+     }
+    ],
+    "perspective": {
+     "text": "Higher long rates weigh on the valuation of the longer-duration names more than on their businesses; the methodology judges the business, so this is context. MELI carries its own currency risk, and a softer dollar supports that thesis's pathway. NVO reports in Danish kroner; the book carries it in dollars, so the currency moves its weight a little. Nothing here touches a rule.",
+     "symbols": [
+      "MELI",
+      "NVO"
+     ],
+     "sections": []
+    }
+   },
+   "cut": false,
+   "error": null,
+   "readAt": "2026-10-28T07:00:00.000Z"
+  },
+  {
+   "id": "the-compounding-table-sample/ratings-data-and-the-quiet-compounders",
+   "show": "the-compounding-table-sample",
+   "title": "Sample episode: ratings, data and the quiet compounders",
+   "date": "2026-10-24",
+   "status": "read",
+   "reading": {
+    "summary": "An episode on businesses that compound without much news: ratings agencies, data providers and brokers that grow with activity rather than with price.",
+    "points": [
+     {
+      "headline": "Ratings ride issuance",
+      "line": "Marlow says ratings revenue follows debt issuance, which she expects to pick up as rates settle.",
+      "symbols": [
+       "SPGI"
+      ]
+     },
+     {
+      "headline": "Data is the steadier half",
+      "line": "Brandt calls the subscription data business the part that compounds in any year.",
+      "symbols": [
+       "SPGI"
+      ]
+     },
+     {
+      "headline": "Brokers grow with accounts",
+      "line": "They see brokers' earnings tied to accounts and balances more than to trading volumes over a cycle.",
+      "symbols": [
+       "IBKR"
+      ]
+     }
+    ],
+    "perspective": {
+     "text": "SPGI's thesis rests on recurring data revenue and returns on capital well above the 20% that Quality Erosion (3.4) tests; the episode supports both. IBKR is a small position, about 0.2% of the book, so its thesis matters more than its weight today. The book holds 13 stocks, inside the target count (3.5).",
+     "symbols": [
+      "SPGI",
+      "IBKR"
+     ],
+     "sections": [
+      "3.4",
+      "3.5"
+     ]
+    }
+   },
+   "cut": false,
+   "error": null,
+   "readAt": "2026-10-24T07:00:00.000Z"
+  },
+  {
+   "id": "the-compounding-table-sample/concentration-and-the-index",
+   "show": "the-compounding-table-sample",
+   "title": "Sample episode: concentration and owning the index twice",
+   "date": "2026-10-21",
+   "status": "read",
+   "reading": {
+    "summary": "The hosts debate whether a concentrated book of platforms is a bet on the index, and how a sector rule keeps a quality portfolio from becoming one trade.",
+    "points": [
+     {
+      "headline": "The index is a platform bet",
+      "line": "Brandt notes the largest ten companies now weigh more in the index than ever, in the show's reading.",
+      "symbols": [
+       "AMZN",
+       "GOOGL",
+       "META"
+      ]
+     },
+     {
+      "headline": "Sectors are the guardrail",
+      "line": "Marlow argues a rule across sectors does more than a cap per name.",
+      "symbols": []
+     },
+     {
+      "headline": "Consumer brands as ballast",
+      "line": "A short exchange on branded consumer goods as a different kind of compounder.",
+      "symbols": [
+       "BIRK"
+      ]
+     }
+    ],
+    "perspective": {
+     "text": "The book holds the three platforms at about 36%, so it owns much of what the index owns; the sector rule (3.2) is the methodology's guard here, and the Methodology screen reads it. BIRK adds a consumer brand the platforms do not cover. Nothing here is a breach; it is a reason to read 3.2 and 3.1 together.",
+     "symbols": [
+      "AMZN",
+      "GOOGL",
+      "META",
+      "BIRK"
+     ],
+     "sections": [
+      "3.2",
+      "3.1"
+     ]
+    }
+   },
+   "cut": false,
+   "error": null,
+   "readAt": "2026-10-21T07:00:00.000Z"
+  }
+ ],
+ "updated": "2026-11-03T07:00:00.000Z"
+}

@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "subjects": {
+    "stock:MA": {
+      "huntedAt": "2026-10-20T04:02:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h2610200402000",
+          "found": "2026-10-20",
+          "date": "2026-10-19",
+          "title": "Cross-border volumes kept growing in the quarter",
+          "summary": "A fictional payments newsletter reports cross-border volume up 15% on the year in the third quarter, the same pace as the quarter before. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Network growth",
+          "from": "newsletter",
+          "source": "Example Payments Weekly: The quarter in cards",
+          "sourceUrl": null,
+          "figure": {
+            "id": "h2610200402000",
+            "title": "Cross-border volume growth, year on year",
+            "caption": null,
+            "source": "Example Payments Weekly: The quarter in cards",
+            "sourceUrl": null,
+            "at": "2026-10-19",
+            "via": "hunter",
+            "image": null,
+            "chart": {
+              "type": "bar",
+              "labels": [
+                "Q4 25",
+                "Q1 26",
+                "Q2 26",
+                "Q3 26"
+              ],
+              "series": [
+                {
+                  "name": "Cross-border volume",
+                  "values": [
+                    17,
+                    16,
+                    15,
+                    15
+                  ]
+                }
+              ],
+              "unit": "%"
+            }
+          },
+          "dismissed": false
+        },
+        {
+          "id": "h2610200402001",
+          "found": "2026-10-20",
+          "date": "2026-10-17",
+          "title": "Regulators look again at interchange caps",
+          "summary": "A fictional podcast discussed a proposal to cap interchange fees on credit cards; nothing has been filed yet. It bears on returns on capital if it passes. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Returns on capital",
+          "from": "podcast",
+          "source": "Example Markets Podcast, episode 41",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:ASML": {
+      "huntedAt": "2026-10-19T04:01:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h2610190401000",
+          "found": "2026-10-19",
+          "date": "2026-10-15",
+          "title": "Orders for the newest machines held up",
+          "summary": "A fictional industry report counts bookings for the newest lithography systems flat on the quarter, after two quarters of growth. An update on pricing power rather than a break. Fictional in the demo.",
+          "stance": "update",
+          "pillar": "Pricing power",
+          "from": "web",
+          "source": "Example Semiconductor Review",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "market:rates-stay-higher": {
+      "huntedAt": "2026-10-20T04:03:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h2610200403000",
+          "found": "2026-10-20",
+          "date": "2026-10-16",
+          "title": "Core inflation printed above the target again",
+          "summary": "A fictional data note puts core inflation at 2.9% on the year in September, a tenth above August's. It backs the inflation pillar. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Inflation",
+          "from": "web",
+          "source": "Example Macro Notes",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:AMZN": {
+      "huntedAt": "2026-10-20T04:05:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261020050000",
+          "found": "2026-10-20",
+          "date": "2026-10-18",
+          "title": "Cloud backlog grew faster than cloud revenue",
+          "summary": "A fictional cloud industry note counts the company's contracted backlog up 40% on the year against revenue up in the mid-thirties: capacity built now is already sold. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "The cloud engine compounds",
+          "from": "web",
+          "source": "Example Cloud Quarterly",
+          "sourceUrl": null,
+          "figure": {
+            "id": "h261020050099",
+            "title": "Cloud backlog and revenue growth, year on year",
+            "caption": null,
+            "source": "Example Cloud Quarterly",
+            "sourceUrl": null,
+            "at": "2026-10-18",
+            "via": "hunter",
+            "image": null,
+            "chart": {
+              "type": "bar",
+              "labels": [
+                "Q4 25",
+                "Q1 26",
+                "Q2 26",
+                "Q3 26"
+              ],
+              "series": [
+                {
+                  "name": "Backlog",
+                  "values": [
+                    27,
+                    31,
+                    36,
+                    40
+                  ]
+                },
+                {
+                  "name": "Revenue",
+                  "values": [
+                    24,
+                    27,
+                    31,
+                    35
+                  ]
+                }
+              ],
+              "unit": "%"
+            }
+          },
+          "dismissed": false
+        },
+        {
+          "id": "h261020050001",
+          "found": "2026-10-20",
+          "date": "2026-10-16",
+          "title": "Data-centre power costs rise in two regions",
+          "summary": "A fictional energy newsletter reports power contracts for new data centres priced a fifth higher than a year ago in two US regions. A cost on the returns the build earns. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Returns above the cost of capital",
+          "from": "newsletter",
+          "source": "Example Energy Brief: Grids and the cloud",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:META": {
+      "huntedAt": "2026-10-19T04:05:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261019050002",
+          "found": "2026-10-19",
+          "date": "2026-10-17",
+          "title": "Ad prices rose for the fourth quarter running",
+          "summary": "A fictional ad-market survey puts the average price per ad up 9% on the year, with impressions up 11%: the better models show up in pricing. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Ads keep compounding",
+          "from": "web",
+          "source": "Example Ad Market Survey",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        },
+        {
+          "id": "h261019050003",
+          "found": "2026-10-19",
+          "date": "2026-10-15",
+          "title": "Capex plans for next year rise again",
+          "summary": "A fictional podcast discussion expects next year's capex guide a third above this year's. The pillar on the margin is the one it presses. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Spending peaks",
+          "from": "podcast",
+          "source": "Example Markets Podcast, episode 43",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:NVO": {
+      "huntedAt": "2026-10-18T04:05:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261018050004",
+          "found": "2026-10-18",
+          "date": "2026-10-14",
+          "title": "The rival's share of new patients passed 60%",
+          "summary": "A fictional prescriptions tracker puts the rival drug at 61% of new weekly patients, up from 52% in the summer. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Growth holds",
+          "from": "newsletter",
+          "source": "Example Pharma Weekly: The obesity market",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:UBER": {
+      "huntedAt": "2026-10-20T04:05:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261020050005",
+          "found": "2026-10-20",
+          "date": "2026-10-19",
+          "title": "A robotaxi fleet joins the network in two more cities",
+          "summary": "A fictional city-transport newsletter reports an autonomous fleet listing its cars on the network in two more US cities, rather than running its own app there. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Autonomy on the network",
+          "from": "newsletter",
+          "source": "Example City Mobility Letter",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        },
+        {
+          "id": "h261020050006",
+          "found": "2026-10-20",
+          "date": "2026-10-12",
+          "title": "Insurance costs per trip up again in the US",
+          "summary": "A fictional insurance data note puts commercial auto premiums per mile up 8% on the year; it bears on the margin pillar if fares do not follow. Fictional in the demo.",
+          "stance": "update",
+          "pillar": "Leverage",
+          "from": "web",
+          "source": "Example Insurance Data Note",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:GOOGL": {
+      "huntedAt": "2026-10-17T04:05:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261017050007",
+          "found": "2026-10-17",
+          "date": "2026-10-13",
+          "title": "Paid clicks held up where AI answers show",
+          "summary": "A fictional search-ads study finds paid clicks per query flat on the year in markets where AI answers are shown, against a fall the year before. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Search keeps growing",
+          "from": "web",
+          "source": "Example Search Ads Study",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:BIRK": {
+      "huntedAt": "2026-10-16T04:05:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261016050008",
+          "found": "2026-10-16",
+          "date": "2026-10-10",
+          "title": "Wholesale orders for spring came in lower",
+          "summary": "A fictional retail newsletter says two large department-store groups cut spring orders by a tenth while direct sales grew. A mix change more than a demand change. Fictional in the demo.",
+          "stance": "update",
+          "pillar": "Growth in the low teens",
+          "from": "newsletter",
+          "source": "Example Retail Letter: Spring orders",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "stock:MSFT": {
+      "huntedAt": "2026-10-15T04:05:00.000Z",
+      "sentence": "Found 1 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261015050009",
+          "found": "2026-10-15",
+          "date": "2026-10-11",
+          "title": "AI seats in the office suite doubled in a year",
+          "summary": "A fictional enterprise software survey counts paid AI seats in the office suite at twice last year's, with renewals above 80%. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Cloud growth",
+          "from": "web",
+          "source": "Example Enterprise Software Survey",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "market:ai-build-pays": {
+      "huntedAt": "2026-10-20T04:05:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261020050010",
+          "found": "2026-10-20",
+          "date": "2026-10-17",
+          "title": "Data-centre vacancy at a record low",
+          "summary": "A fictional property data note puts vacancy in the largest data-centre markets under 2%, with most new space let before it is finished. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "The capacity is rented",
+          "from": "web",
+          "source": "Example Data Centre Property Note",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        },
+        {
+          "id": "h261020050011",
+          "found": "2026-10-20",
+          "date": "2026-10-14",
+          "title": "Credit spreads on data-centre debt widened",
+          "summary": "A fictional credit newsletter reports spreads on bonds funding new data centres a quarter point wider than in the summer. Money is still available, at a higher price. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Money stays available",
+          "from": "newsletter",
+          "source": "Example Credit Brief",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    },
+    "market:consumer-holds-up": {
+      "huntedAt": "2026-10-19T04:05:00.000Z",
+      "sentence": "Found 2 new in the web, your newsletters and your podcasts.",
+      "finds": [
+        {
+          "id": "h261019050012",
+          "found": "2026-10-19",
+          "date": "2026-10-16",
+          "title": "Card spending on travel up 7% on the year",
+          "summary": "A fictional card-spending tracker shows travel and restaurant spending up 7% on the year in September, goods spending flat. Fictional in the demo.",
+          "stance": "backs",
+          "pillar": "Confidence",
+          "from": "web",
+          "source": "Example Card Spending Tracker",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        },
+        {
+          "id": "h261019050013",
+          "found": "2026-10-19",
+          "date": "2026-10-15",
+          "title": "Inflation printed 3.9%",
+          "summary": "A fictional data note for the demo puts headline inflation at 3.9% on the year, above the 3.5% the pillar allows. Fictional in the demo.",
+          "stance": "challenges",
+          "pillar": "Inflation under control",
+          "from": "web",
+          "source": "Example Macro Notes",
+          "sourceUrl": null,
+          "figure": null,
+          "dismissed": false
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-20T04:03:00.000Z"
+}

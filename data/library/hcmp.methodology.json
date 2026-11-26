@@ -1,0 +1,1367 @@
+{
+ "name": "HCMP Investment Methodology v3.4",
+ "source": {
+  "title": "Investment Methodology v3.4, HCMP (adopted by IC vote 1-0, 13 Oct 2026)",
+  "fileId": null
+ },
+ "origin": "library",
+ "summary": "A concentrated book of quality businesses, each sorted by a seven-threshold Classification Test into Compounding Machines (10% cap), Transitional holdings (20% cap) or Disruptive Growth (5% cap), with a Probation Hold for a near miss. The test decides the class (C1); its measurement bases (C4 to C8) are written so that anyone reading the same filings reaches the same archetype. Every buy, sale or reclassification is a logged vote, and a sale needs one of four named reasons.",
+ "figures": [
+  {
+   "id": "nav",
+   "label": "Net liquidation",
+   "about": "Everything in the account at the broker's marks.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "cash-weight",
+   "label": "Cash",
+   "about": "Cash as a share of net liquidation.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "cash"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "unrealised-pnl",
+   "label": "Unrealised P&L",
+   "about": "Market value less cost, every position.",
+   "unit": "money",
+   "expr": {
+    "op": "difference",
+    "a": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    },
+    "b": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "cost",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "positions",
+   "label": "Positions",
+   "about": "Open positions.",
+   "unit": "count",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "count",
+     "over": "holdings",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "weight-by-holding",
+   "label": "Portfolio by holding",
+   "about": "Weight of net liquidation, by holding.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "donut"
+  },
+  {
+   "id": "weight-by-archetype",
+   "label": "Portfolio by archetype",
+   "about": "Weight of net liquidation, by archetype (3.1).",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "class",
+   "view": "donut"
+  },
+  {
+   "id": "weight-cm",
+   "label": "Weight, Compounding Machines",
+   "about": "Each holding of the archetype as a share of net liquidation.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "class",
+       "is": "eq",
+       "value": "cm"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "weight-tr",
+   "label": "Weight, Transitional",
+   "about": "Each holding of the archetype as a share of net liquidation.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "class",
+       "is": "eq",
+       "value": "tr"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "weight-dg",
+   "label": "Weight, Disruptive Growth",
+   "about": "Each holding of the archetype as a share of net liquidation.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "class",
+       "is": "eq",
+       "value": "dg"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "oldest-mark",
+   "label": "Oldest mark",
+   "about": "Days since the oldest position mark.",
+   "unit": "days",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "holdings",
+     "field": "age_days",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "roic",
+   "label": "ROIC by holding",
+   "about": "Classification Test: ROIC at least 20%.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "min",
+     "over": "holdings",
+     "field": "roic_pct",
+     "where": [
+      {
+       "field": "class",
+       "is": "in",
+       "value": [
+        "cm",
+        "tr",
+        "dg"
+       ]
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "revenue-growth",
+   "label": "Organic growth by holding",
+   "about": "Classification Test: organic growth above zero.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "min",
+     "over": "holdings",
+     "field": "revenue_growth_pct",
+     "where": [
+      {
+       "field": "class",
+       "is": "in",
+       "value": [
+        "cm",
+        "tr",
+        "dg"
+       ]
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "fcf-margin",
+   "label": "FCF margin by holding",
+   "about": "Context for FCF conversion.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "min",
+     "over": "holdings",
+     "field": "fcf_margin_pct",
+     "where": [
+      {
+       "field": "class",
+       "is": "in",
+       "value": [
+        "cm",
+        "tr",
+        "dg"
+       ]
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "avg-revenue-growth",
+   "label": "Look-through revenue growth",
+   "about": "Average trailing revenue growth across holdings (unweighted).",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "revenue_growth_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "last-session-pnl",
+   "label": "Last session P&L",
+   "about": "Change since the previous close, from the broker.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "day_change",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "dcf-premium",
+   "label": "Price against own DCF",
+   "about": "Price as a percentage of the DCF base case per holding; 100 is at value.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "price_to_own_valuation_pct",
+     "where": [
+      {
+       "field": "price_to_own_valuation_pct",
+       "is": "not_null"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "returns-by-period",
+   "label": "Return over the last year",
+   "about": "Change in NAV over the last year.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "return",
+    "of": "nav",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "return-spy",
+   "label": "SPY over the last year",
+   "about": "The benchmark over the same period.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "return",
+    "of": "SPY",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "growth-of-100",
+   "label": "Growth of 100",
+   "about": "What 100 grew to, by day.",
+   "unit": "number",
+   "expr": {
+    "op": "series",
+    "stat": "growth_of_100",
+    "of": "nav",
+    "period": "1y"
+   },
+   "by": "date",
+   "view": "line"
+  },
+  {
+   "id": "drawdown",
+   "label": "Below the high-water mark",
+   "about": "How far NAV sits below its high.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "high_water_gap",
+    "of": "nav",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "max-drawdown",
+   "label": "Worst fall",
+   "about": "Worst peak-to-trough fall over the last year.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "max_drawdown",
+    "of": "nav",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "rolling-beta",
+   "label": "Beta vs SPY",
+   "about": "Beta of NAV to SPY over the last year.",
+   "unit": "ratio",
+   "expr": {
+    "op": "series",
+    "stat": "beta",
+    "of": "nav",
+    "vs": "SPY",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "top5",
+   "label": "Top five weight",
+   "about": "The five largest holdings together, as a share of NAV.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "not_in",
+       "value": [
+        "cash"
+       ]
+      }
+     ],
+     "top": 5
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "fcf-conversion",
+   "label": "Classification Test: FCF conversion",
+   "about": "FCF conversion per holding.",
+   "unit": "ratio",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "fcf_conversion",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "gross-margin",
+   "label": "Classification Test: gross margin",
+   "about": "Gross margin per holding.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "gross_margin_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "interest-cover",
+   "label": "Classification Test: interest cover",
+   "about": "Interest cover per holding.",
+   "unit": "ratio",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "interest_cover",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "fcf-share-growth",
+   "label": "Classification Test: FCF per share growth",
+   "about": "FCF per share growth per holding.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "fcf_per_share_growth_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "signals",
+   "label": "Classification readings",
+   "about": "Each holding's ROIC reading, the first Classification Test threshold.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "roic_pct",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "equity"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "vix",
+   "label": "VIX",
+   "about": "CBOE volatility index: above 30 is panic, below 15 complacency (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "VIX"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "us10y",
+   "label": "US 10-year yield",
+   "about": "The 10-year Treasury yield, in percent (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "US10Y"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "us2y",
+   "label": "US 2-year yield",
+   "about": "The 2-year Treasury yield, in percent (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "US2Y"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "yield-curve",
+   "label": "Yield curve, 10y less 2y",
+   "about": "Negative when inverted; the medium-term recession indicator (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "US10Y2Y"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "gold-silver",
+   "label": "Gold to silver ratio",
+   "about": "Ounces of silver per ounce of gold; high in fear, falling in risk-on (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "GOLDSILVER"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "dollar",
+   "label": "US dollar index",
+   "about": "Trade-weighted dollar, read against the ISM PMI (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "DXY"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "oil",
+   "label": "Oil, WTI",
+   "about": "West Texas Intermediate, dollars a barrel (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "WTI"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "spx-earnings-yield",
+   "label": "S&P 500 earnings yield",
+   "about": "Trailing twelve-month reported earnings over the index's close, in percent: S&P's earnings monthly (multpl), the index daily (0).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "SPXEY"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  }
+ ],
+ "classes": [
+  {
+   "id": "cm",
+   "label": "Compounding Machine",
+   "about": "No disruption engine (neither company revenue nor a line at least 15% of it grows above 20%) and at least 71% of the measurable thresholds; 10% cap (3.1, C1). An unread threshold leaves the count.",
+   "required": [
+    {
+     "field": "engine_growth_pct",
+     "is": "lte",
+     "value": 20
+    }
+   ],
+   "criteria": [
+    {
+     "field": "roic_pct",
+     "is": "gte",
+     "value": 20,
+     "or": [
+      {
+       "field": "invested_capital",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "operating_margin_pct",
+         "is": "gt",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "field": "roic_ex_goodwill_pct",
+       "is": "gte",
+       "value": 20,
+       "given": [
+        {
+         "field": "goodwill_share_of_capital_pct",
+         "is": "gt",
+         "value": 50
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "gross_margin_pct",
+     "is": "gte",
+     "value": 40
+    },
+    {
+     "field": "operating_margin_change_pts",
+     "is": "gt",
+     "value": 0
+    },
+    {
+     "field": "fcf_conversion",
+     "is": "gte",
+     "value": 0.9,
+     "given": [
+      {
+       "field": "loans_to_equity",
+       "is": "lte",
+       "value": 1
+      }
+     ],
+     "or": [
+      {
+       "field": "fcf_conversion_operating",
+       "is": "gte",
+       "value": 0.9,
+       "given": [
+        {
+         "field": "loans_to_equity",
+         "is": "lte",
+         "value": 1
+        },
+        {
+         "field": "nonoperating_share_of_net_income_pct",
+         "is": "gt",
+         "value": 20
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "interest_cover",
+     "is": "gt",
+     "value": 15,
+     "or": [
+      {
+       "field": "net_interest_expense",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "cash_to_debt_pct",
+         "is": "gte",
+         "value": 75
+        }
+       ]
+      },
+      {
+       "field": "net_interest_expense",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "net_debt",
+         "is": "lte",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "field": "interest_cover_net",
+       "is": "gt",
+       "value": 15,
+       "given": [
+        {
+         "field": "cash_to_debt_pct",
+         "is": "gte",
+         "value": 75
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "revenue_growth_pct",
+     "is": "gt",
+     "value": 0
+    },
+    {
+     "field": "fcf_per_share_growth_pct",
+     "is": "gt",
+     "value": 0
+    }
+   ],
+   "minimumShare": 71
+  },
+  {
+   "id": "tr",
+   "label": "Transitional",
+   "about": "A disruption engine (company revenue, or a line at least 15% of it, growing above 20%; D.1(a), C3) and at least 57% of the measurable thresholds; 20% cap (3.1, C2). Pathway and triggers in 30 days.",
+   "required": [
+    {
+     "field": "engine_growth_pct",
+     "is": "gt",
+     "value": 20
+    }
+   ],
+   "criteria": [
+    {
+     "field": "roic_pct",
+     "is": "gte",
+     "value": 20,
+     "or": [
+      {
+       "field": "invested_capital",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "operating_margin_pct",
+         "is": "gt",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "field": "roic_ex_goodwill_pct",
+       "is": "gte",
+       "value": 20,
+       "given": [
+        {
+         "field": "goodwill_share_of_capital_pct",
+         "is": "gt",
+         "value": 50
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "gross_margin_pct",
+     "is": "gte",
+     "value": 40
+    },
+    {
+     "field": "operating_margin_change_pts",
+     "is": "gt",
+     "value": 0
+    },
+    {
+     "field": "fcf_conversion",
+     "is": "gte",
+     "value": 0.9,
+     "given": [
+      {
+       "field": "loans_to_equity",
+       "is": "lte",
+       "value": 1
+      }
+     ],
+     "or": [
+      {
+       "field": "fcf_conversion_operating",
+       "is": "gte",
+       "value": 0.9,
+       "given": [
+        {
+         "field": "loans_to_equity",
+         "is": "lte",
+         "value": 1
+        },
+        {
+         "field": "nonoperating_share_of_net_income_pct",
+         "is": "gt",
+         "value": 20
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "interest_cover",
+     "is": "gt",
+     "value": 15,
+     "or": [
+      {
+       "field": "net_interest_expense",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "cash_to_debt_pct",
+         "is": "gte",
+         "value": 75
+        }
+       ]
+      },
+      {
+       "field": "net_interest_expense",
+       "is": "lte",
+       "value": 0,
+       "given": [
+        {
+         "field": "net_debt",
+         "is": "lte",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "field": "interest_cover_net",
+       "is": "gt",
+       "value": 15,
+       "given": [
+        {
+         "field": "cash_to_debt_pct",
+         "is": "gte",
+         "value": 75
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "field": "revenue_growth_pct",
+     "is": "gt",
+     "value": 0
+    },
+    {
+     "field": "fcf_per_share_growth_pct",
+     "is": "gt",
+     "value": 0
+    }
+   ],
+   "minimumShare": 57
+  },
+  {
+   "id": "dg",
+   "label": "Disruptive Growth",
+   "about": "An engine (D.1(a), C3) without the quality floor yet: below 57% of the measurable thresholds; 5% cap (3.1).",
+   "criteria": [
+    {
+     "field": "engine_growth_pct",
+     "is": "gt",
+     "value": 20
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "cap-cm",
+   "section": "3.1",
+   "text": "A Compounding Machine holds at most 10% of net liquidation.",
+   "severity": "breach",
+   "test": {
+    "figure": "weight-cm",
+    "is": "lte",
+    "limit": 10
+   }
+  },
+  {
+   "id": "cap-tr",
+   "section": "3.1",
+   "text": "A Transitional holding holds at most 20%.",
+   "severity": "breach",
+   "test": {
+    "figure": "weight-tr",
+    "is": "lte",
+    "limit": 20
+   }
+  },
+  {
+   "id": "cap-dg",
+   "section": "3.1",
+   "text": "A Disruptive Growth holding holds at most 5%.",
+   "severity": "breach",
+   "test": {
+    "figure": "weight-dg",
+    "is": "lte",
+    "limit": 5
+   }
+  },
+  {
+   "id": "ct-roic",
+   "section": "Classification Test",
+   "text": "ROIC at least 20% for every classified holding.",
+   "severity": "guideline",
+   "test": {
+    "figure": "roic",
+    "is": "gte",
+    "limit": 20
+   }
+  },
+  {
+   "id": "ct-growth",
+   "section": "Classification Test",
+   "text": "Organic growth above zero for every classified holding.",
+   "severity": "guideline",
+   "test": {
+    "figure": "revenue-growth",
+    "is": "gt",
+    "limit": 0
+   }
+  },
+  {
+   "id": "sell-reasons",
+   "section": "3.4",
+   "text": "A sale needs one of four reasons: Quality Erosion, Thesis Failure, Unpredictability, Opportunity Cost.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "ic-vote",
+   "section": "D.1(b)",
+   "text": "Every buy, sell or reclassification is a logged IC vote.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "new-money",
+   "section": "D.1(c)",
+   "text": "New money goes only to holdings within their cap and passing their tests.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "probation-no-new-money",
+   "section": "v3.1 (d)",
+   "text": "No new money into a Probation Hold; sell if still failing at the fourth quarterly filing.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "tariff",
+   "section": "v3.3",
+   "text": "A tariff counts as short-term only once ended by ruling or lapse.",
+   "severity": "guideline",
+   "test": null
+  },
+  {
+   "id": "ct-rest",
+   "section": "Classification Test",
+   "text": "Gross margin at least 40%, FCF conversion at least 0.9x, interest cover above 15x, FCF per share growth positive.",
+   "severity": "guideline",
+   "test": {
+    "figure": "gross-margin",
+    "is": "gte",
+    "limit": 40
+   }
+  },
+  {
+   "id": "probation-hold",
+   "section": "v3.1 (d)",
+   "text": "A holding one threshold short of an archetype may be held on probation: a named cure, your own valuation 30% above the price, a 5% cap, no new money, a vote, and a sale if still failing at the fourth quarterly filing.",
+   "severity": "guideline",
+   "test": null
+  },
+  {
+   "id": "vix-panic",
+   "section": "0",
+   "text": "VIX above 30 is a panic regime: fear-driven selling, a time to look for quality at a discount, not to sell.",
+   "severity": "watch",
+   "test": {
+    "figure": "vix",
+    "is": "lt",
+    "limit": 30
+   }
+  },
+  {
+   "id": "vix-complacency",
+   "section": "0",
+   "text": "VIX below 15 is complacency: leverage builds and corrections follow; tighten the entry discipline.",
+   "severity": "watch",
+   "test": {
+    "figure": "vix",
+    "is": "gt",
+    "limit": 15
+   }
+  },
+  {
+   "id": "curve-inverted",
+   "section": "0",
+   "text": "A 10y less 2y yield curve below zero is inverted: the medium-term recession indicator.",
+   "severity": "watch",
+   "test": {
+    "figure": "yield-curve",
+    "is": "gt",
+    "limit": 0
+   }
+  }
+ ],
+ "dashboard": {
+  "headline": [
+   "nav",
+   "cash-weight",
+   "unrealised-pnl",
+   "last-session-pnl",
+   "positions"
+  ],
+  "sections": [
+   {
+    "kind": "figures",
+    "label": "Weights",
+    "figures": [
+     "weight-by-holding",
+     "weight-by-archetype"
+    ],
+    "from": "3.1"
+   },
+   {
+    "kind": "figures",
+    "label": "Caps",
+    "figures": [
+     "weight-cm",
+     "weight-tr",
+     "weight-dg"
+    ],
+    "from": "3.1"
+   },
+   {
+    "kind": "figures",
+    "label": "Macroeconomic Analysis & Time-Horizon Framework",
+    "figures": [
+     "vix",
+     "us10y",
+     "us2y",
+     "yield-curve",
+     "gold-silver",
+     "dollar",
+     "oil",
+     "spx-earnings-yield"
+    ],
+    "from": "0"
+   },
+   {
+    "kind": "figures",
+    "label": "Performance",
+    "figures": [
+     "returns-by-period",
+     "return-spy",
+     "growth-of-100",
+     "drawdown",
+     "max-drawdown",
+     "rolling-beta"
+    ],
+    "from": "Reporting"
+   },
+   {
+    "kind": "figures",
+    "label": "Valuation and concentration",
+    "figures": [
+     "dcf-premium",
+     "top5"
+    ],
+    "from": "3.3"
+   },
+   {
+    "kind": "figures",
+    "label": "Classification Test",
+    "figures": [
+     "roic",
+     "revenue-growth",
+     "fcf-margin",
+     "gross-margin",
+     "fcf-conversion",
+     "interest-cover",
+     "fcf-share-growth",
+     "avg-revenue-growth"
+    ],
+    "from": "Classification Test"
+   },
+   {
+    "kind": "panel",
+    "id": "allocation",
+    "view": "chart"
+   },
+   {
+    "kind": "panel",
+    "id": "freshness",
+    "view": "table"
+   }
+  ],
+  "themes": []
+ },
+ "gaps": [
+  {
+   "section": "0",
+   "asks": "NAAIM exposure, the DXY against the ISM PMI, and bank stress as regime indicators.",
+   "missing": "NAAIM, ISM PMI and bank-stress series in the market feed; it carries daily prices and yields from Yahoo Finance, FRED and stooq, and S&P 500 earnings from multpl, so far."
+  },
+  {
+   "section": "C9",
+   "asks": "A quarter's margin effect given in basis points (currency, an ended tariff) times that quarter's revenue, summed over the test period, is removed before the operating margin is compared with the prior year.",
+   "missing": "basis-point effects are written in the filing's text, not in its facts; the adjustment is yours to make."
+  },
+  {
+   "section": "C3(b)",
+   "asks": "A line whose growth comes more than half from price increases is not an engine.",
+   "missing": "price and volume figures are in the filing's text, not its facts; the engine note names the line and leaves this to you."
+  }
+ ]
+}

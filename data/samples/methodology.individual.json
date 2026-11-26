@@ -1,0 +1,652 @@
+{
+ "name": "Sample: options income rules",
+ "adopted": "2026-09-01",
+ "source": {
+  "title": "Sample options methodology (fictional)",
+  "fileId": null
+ },
+ "origin": "sample",
+ "summary": "Own a handful of large US companies and sell options against them for income. Short calls are always covered, short puts only where the cash could take the shares, and no single company may dominate the book.",
+ "figures": [
+  {
+   "id": "net-worth",
+   "label": "Net worth",
+   "about": "Everything at the owner's share, real estate net of its mortgage.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "premium-month",
+   "label": "Premium, last month",
+   "about": "Option premium collected on contracts sold to open in the last month.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "option_open"
+      },
+      {
+       "field": "amount",
+       "is": "gt",
+       "value": 0
+      }
+     ],
+     "window": {
+      "kind": "last_months",
+      "months": 1
+     }
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "premium-by-month",
+   "label": "Premium by month",
+   "about": "Option premium collected, by month, over the last six months.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "transactions",
+     "field": "amount",
+     "where": [
+      {
+       "field": "kind",
+       "is": "eq",
+       "value": "option_open"
+      },
+      {
+       "field": "amount",
+       "is": "gt",
+       "value": 0
+      }
+     ],
+     "window": {
+      "kind": "last_months",
+      "months": 6
+     }
+    }
+   },
+   "by": "month",
+   "view": "bars"
+  },
+  {
+   "id": "put-share",
+   "label": "Short put obligation",
+   "about": "Cash needed if every short put were assigned, as a share of net worth.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "assignment_cash",
+     "where": []
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "expiring-soon",
+   "label": "Short options at 21 days",
+   "about": "Short contracts with 21 days or fewer to expiry.",
+   "unit": "count",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "count",
+     "over": "holdings",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "eq",
+       "value": "option"
+      },
+      {
+       "field": "quantity",
+       "is": "lt",
+       "value": 0
+      },
+      {
+       "field": "option_days_to_expiry",
+       "is": "lte",
+       "value": 21
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "ai-share",
+   "label": "AI and semiconductors",
+   "about": "Holdings tagged AI, as a share of net worth.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "themes",
+       "is": "contains",
+       "value": "AI"
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "cash-share",
+   "label": "Cash and deposits",
+   "about": "Share of net worth in cash and bank deposits.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "in",
+       "value": [
+        "cash",
+        "deposit"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "weight-by-symbol",
+   "label": "Weight by holding",
+   "about": "Each holding's share of net worth, shares and funds only.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "not_in",
+       "value": [
+        "cash",
+        "deposit",
+        "option"
+       ]
+      }
+     ]
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "value-by-class",
+   "label": "Value by class",
+   "about": "Net worth split by the methodology's classes.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": []
+    }
+   },
+   "by": "class",
+   "view": "donut"
+  },
+  {
+   "id": "options-delta-value",
+   "label": "Options delta value",
+   "about": "Share-equivalent exposure of every open contract, in money.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "option_delta_value",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "return-ytd",
+   "label": "Return this year",
+   "about": "Change in the account's value since 1 January, from the broker's own value series.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "return",
+    "of": "nav",
+    "period": "ytd"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "growth-of-100",
+   "label": "Growth of 100",
+   "about": "What 100 at the start grew to, by week.",
+   "unit": "number",
+   "expr": {
+    "op": "series",
+    "stat": "growth_of_100",
+    "of": "nav",
+    "period": "inception"
+   },
+   "by": "date",
+   "view": "line"
+  },
+  {
+   "id": "max-drawdown",
+   "label": "Worst fall",
+   "about": "The worst peak-to-trough fall since the start.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "max_drawdown",
+    "of": "nav",
+    "period": "inception"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "below-high",
+   "label": "Below the high",
+   "about": "How far the account sits below its highest value.",
+   "unit": "pct",
+   "expr": {
+    "op": "series",
+    "stat": "high_water_gap",
+    "of": "nav",
+    "period": "inception"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "beta-spy",
+   "label": "Beta to SPY",
+   "about": "Sensitivity of the account to SPY over the last year.",
+   "unit": "ratio",
+   "expr": {
+    "op": "series",
+    "stat": "beta",
+    "of": "nav",
+    "vs": "SPY",
+    "period": "1y"
+   },
+   "view": "tile"
+  },
+  {
+   "id": "top-five",
+   "label": "Top five together",
+   "about": "The five largest holdings outside cash and options, as a share of net worth.",
+   "unit": "pct",
+   "expr": {
+    "op": "ratio",
+    "num": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [
+      {
+       "field": "asset_class",
+       "is": "not_in",
+       "value": [
+        "cash",
+        "deposit",
+        "option"
+       ]
+      }
+     ],
+     "top": 5
+    },
+    "den": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "owner_value",
+     "where": [],
+     "whole": true
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "price-vs-own",
+   "label": "Price against own valuation",
+   "about": "Price as a percentage of the valuation recorded for the holding; 100 is fair value.",
+   "unit": "pct",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "avg",
+     "over": "holdings",
+     "field": "price_to_own_valuation_pct",
+     "where": [
+      {
+       "field": "price_to_own_valuation_pct",
+       "is": "not_null"
+      }
+     ]
+    }
+   },
+   "by": "symbol",
+   "view": "table"
+  },
+  {
+   "id": "day-change",
+   "label": "Change today",
+   "about": "Change in value since the previous close, where the broker reports it.",
+   "unit": "money",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "sum",
+     "over": "holdings",
+     "field": "day_change",
+     "where": []
+    }
+   },
+   "view": "tile"
+  },
+  {
+   "id": "vix",
+   "label": "VIX",
+   "about": "CBOE volatility index; premium is sold only when it pays (2.5).",
+   "unit": "number",
+   "expr": {
+    "op": "measure",
+    "of": {
+     "measure": "max",
+     "over": "markets",
+     "field": "market_level",
+     "where": [
+      {
+       "field": "market_symbol",
+       "is": "eq",
+       "value": "VIX"
+      }
+     ]
+    }
+   },
+   "view": "tile"
+  }
+ ],
+ "classes": [
+  {
+   "id": "core",
+   "label": "Core",
+   "about": "Shares and funds held for the long run.",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "in",
+     "value": [
+      "equity",
+      "etf"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "overlay",
+   "label": "Options overlay",
+   "about": "Contracts sold or bought against the core.",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "eq",
+     "value": "option"
+    }
+   ]
+  },
+  {
+   "id": "cash",
+   "label": "Cash",
+   "criteria": [
+    {
+     "field": "asset_class",
+     "is": "in",
+     "value": [
+      "cash",
+      "deposit"
+     ]
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "position-cap",
+   "section": "1.1",
+   "text": "No single company above 35% of the portfolio, shares and options together.",
+   "severity": "breach",
+   "test": {
+    "figure": "weight-by-symbol",
+    "is": "lte",
+    "limit": 35
+   }
+  },
+  {
+   "id": "ai-theme",
+   "section": "1.3",
+   "text": "AI and semiconductors stay under 60% of the portfolio.",
+   "severity": "guideline",
+   "test": {
+    "figure": "ai-share",
+    "is": "lte",
+    "limit": 60
+   }
+  },
+  {
+   "id": "cash-floor",
+   "section": "1.4",
+   "text": "Keep at least 5% in cash.",
+   "severity": "guideline",
+   "test": {
+    "figure": "cash-share",
+    "is": "gte",
+    "limit": 5
+   }
+  },
+  {
+   "id": "covered-calls",
+   "section": "2.1",
+   "text": "Never sell a call without the shares or a long call behind it.",
+   "severity": "breach",
+   "test": null
+  },
+  {
+   "id": "put-obligation",
+   "section": "2.2",
+   "text": "Short puts may not commit more than 30% of the portfolio if all were assigned.",
+   "severity": "breach",
+   "test": {
+    "figure": "put-share",
+    "is": "lte",
+    "limit": 30
+   }
+  },
+  {
+   "id": "roll-21",
+   "section": "2.4",
+   "text": "Close or roll short options with 21 days left.",
+   "severity": "guideline",
+   "test": {
+    "figure": "expiring-soon",
+    "is": "lte",
+    "limit": 0
+   }
+  },
+  {
+   "id": "drawdown-watch",
+   "section": "1.5",
+   "text": "Tell me when the account is 10% or more below its high.",
+   "severity": "watch",
+   "test": {
+    "figure": "below-high",
+    "is": "gte",
+    "limit": -10
+   }
+  },
+  {
+   "id": "top-five-cap",
+   "section": "1.2",
+   "text": "The five largest holdings stay under 70% of the portfolio together.",
+   "severity": "guideline",
+   "test": {
+    "figure": "top-five",
+    "is": "lte",
+    "limit": 70
+   }
+  },
+  {
+   "id": "vix-floor",
+   "section": "2.5",
+   "text": "Sell new premium only when the VIX is above 15; below that the premium does not pay for the risk.",
+   "severity": "watch",
+   "test": {
+    "figure": "vix",
+    "is": "gt",
+    "limit": 15
+   }
+  }
+ ],
+ "dashboard": {
+  "headline": [
+   "net-worth",
+   "return-ytd",
+   "premium-month",
+   "put-share",
+   "expiring-soon",
+   "day-change"
+  ],
+  "sections": [
+   {
+    "kind": "figures",
+    "label": "Income",
+    "figures": [
+     "premium-by-month"
+    ],
+    "from": "2"
+   },
+   {
+    "kind": "figures",
+    "label": "Performance",
+    "figures": [
+     "growth-of-100",
+     "max-drawdown",
+     "below-high",
+     "beta-spy"
+    ],
+    "from": "1.5"
+   },
+   {
+    "kind": "figures",
+    "label": "Market regime",
+    "figures": [
+     "vix"
+    ],
+    "from": "2.5"
+   },
+   {
+    "kind": "panel",
+    "id": "options",
+    "view": "chart",
+    "from": "2"
+   },
+   {
+    "kind": "figures",
+    "label": "Concentration",
+    "figures": [
+     "weight-by-symbol",
+     "top-five",
+     "value-by-class",
+     "ai-share",
+     "price-vs-own"
+    ],
+    "from": "1"
+   },
+   {
+    "kind": "panel",
+    "id": "allocation",
+    "view": "chart"
+   },
+   {
+    "kind": "panel",
+    "id": "themes",
+    "view": "chart",
+    "from": "1.3"
+   },
+   {
+    "kind": "panel",
+    "id": "overlap",
+    "view": "table"
+   },
+   {
+    "kind": "panel",
+    "id": "freshness",
+    "view": "table"
+   }
+  ],
+  "themes": [
+   "AI"
+  ]
+ }
+}

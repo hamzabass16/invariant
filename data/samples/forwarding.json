@@ -1,0 +1,21 @@
+{
+ "_note": "Fictional: the demo reads no inbox.",
+ "version": 1,
+ "confirmations": [
+  {
+   "kind": "newsletters",
+   "forAddress": "sample.investor@example.com",
+   "requestedAt": "2026-10-11T19:02:00.000Z",
+   "confirmedAt": "2026-10-11T19:03:00.000Z",
+   "how": "pressed"
+  },
+  {
+   "kind": "statements",
+   "forAddress": "sample.investor@example.com",
+   "requestedAt": "2026-10-05T08:40:00.000Z",
+   "confirmedAt": "2026-10-05T08:41:00.000Z",
+   "how": "pressed"
+  }
+ ],
+ "updated": "2026-11-04T06:00:00.000Z"
+}

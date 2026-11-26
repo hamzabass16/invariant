@@ -1,0 +1,6054 @@
+{
+ "SPY": {
+  "symbol": "SPY",
+  "bucket": "sp500",
+  "name": "SPY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100000",
+    "reportDate": "2026-09-30",
+    "netAssets": 24026296601
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 6527309566,
+    "reinvestment": 6399576,
+    "redemption": 682876289
+   },
+   {
+    "month": "2026-05",
+    "sales": 8458098442,
+    "reinvestment": 8223175,
+    "redemption": 1206192015
+   },
+   {
+    "month": "2026-06",
+    "sales": 9102162931,
+    "reinvestment": 8504124,
+    "redemption": 713105071
+   },
+   {
+    "month": "2026-07",
+    "sales": 5042375481,
+    "reinvestment": 11080950,
+    "redemption": 1137798485
+   },
+   {
+    "month": "2026-08",
+    "sales": 5519804944,
+    "reinvestment": 8271070,
+    "redemption": 973598841
+   },
+   {
+    "month": "2026-09",
+    "sales": 7817343915,
+    "reinvestment": 4471844,
+    "redemption": 1357000905
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IVV": {
+  "symbol": "IVV",
+  "bucket": "sp500",
+  "name": "IVV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100001",
+    "reportDate": "2026-09-30",
+    "netAssets": 184985413343
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 15288443496,
+    "reinvestment": 39630348,
+    "redemption": 4828660867
+   },
+   {
+    "month": "2026-05",
+    "sales": 14542812564,
+    "reinvestment": 81194908,
+    "redemption": 7823926203
+   },
+   {
+    "month": "2026-06",
+    "sales": 9210333385,
+    "reinvestment": 38980406,
+    "redemption": 7848043330
+   },
+   {
+    "month": "2026-07",
+    "sales": 13635861691,
+    "reinvestment": 31828808,
+    "redemption": 4105787059
+   },
+   {
+    "month": "2026-08",
+    "sales": 17207514828,
+    "reinvestment": 37517047,
+    "redemption": 7509333794
+   },
+   {
+    "month": "2026-09",
+    "sales": 11366204685,
+    "reinvestment": 49174697,
+    "redemption": 6836693073
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VOO": {
+  "symbol": "VOO",
+  "bucket": "sp500",
+  "name": "VOO (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100002",
+    "reportDate": "2026-09-30",
+    "netAssets": 318740997839
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 17843497807,
+    "reinvestment": 101221027,
+    "redemption": 12212074231
+   },
+   {
+    "month": "2026-05",
+    "sales": 20850265888,
+    "reinvestment": 149740154,
+    "redemption": 12812746341
+   },
+   {
+    "month": "2026-06",
+    "sales": 18857335281,
+    "reinvestment": 55873366,
+    "redemption": 9576519408
+   },
+   {
+    "month": "2026-07",
+    "sales": 16303580680,
+    "reinvestment": 17701904,
+    "redemption": 16507227836
+   },
+   {
+    "month": "2026-08",
+    "sales": 20838902190,
+    "reinvestment": 12412410,
+    "redemption": 11561423519
+   },
+   {
+    "month": "2026-09",
+    "sales": 23864106613,
+    "reinvestment": 72849329,
+    "redemption": 14437235151
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SPYM": {
+  "symbol": "SPYM",
+  "bucket": "sp500",
+  "name": "SPYM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100003",
+    "reportDate": "2026-09-30",
+    "netAssets": 308599639533
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 16451036215,
+    "reinvestment": 136589426,
+    "redemption": 17091055258
+   },
+   {
+    "month": "2026-05",
+    "sales": 25087487921,
+    "reinvestment": 38311708,
+    "redemption": 9571792797
+   },
+   {
+    "month": "2026-06",
+    "sales": 10719179324,
+    "reinvestment": 114359140,
+    "redemption": 13786257956
+   },
+   {
+    "month": "2026-07",
+    "sales": 19525292588,
+    "reinvestment": 36285511,
+    "redemption": 9110460738
+   },
+   {
+    "month": "2026-08",
+    "sales": 19217062318,
+    "reinvestment": 458236,
+    "redemption": 7633183172
+   },
+   {
+    "month": "2026-09",
+    "sales": 24481373196,
+    "reinvestment": 138877991,
+    "redemption": 17554592168
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VTI": {
+  "symbol": "VTI",
+  "bucket": "total_us",
+  "name": "VTI (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100004",
+    "reportDate": "2026-09-30",
+    "netAssets": 9525361426
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2037947403,
+    "reinvestment": 1061015,
+    "redemption": 449359167
+   },
+   {
+    "month": "2026-05",
+    "sales": 1747407307,
+    "reinvestment": 3337224,
+    "redemption": 210451589
+   },
+   {
+    "month": "2026-06",
+    "sales": 1860405699,
+    "reinvestment": 4377045,
+    "redemption": 202978222
+   },
+   {
+    "month": "2026-07",
+    "sales": 1865762924,
+    "reinvestment": 4206093,
+    "redemption": 530761891
+   },
+   {
+    "month": "2026-08",
+    "sales": 2509986533,
+    "reinvestment": 1998430,
+    "redemption": 554105806
+   },
+   {
+    "month": "2026-09",
+    "sales": 1958279419,
+    "reinvestment": 1118028,
+    "redemption": 526644142
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "ITOT": {
+  "symbol": "ITOT",
+  "bucket": "total_us",
+  "name": "ITOT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100005",
+    "reportDate": "2026-07-31",
+    "netAssets": 18195363801
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2479999377,
+    "reinvestment": 6685816,
+    "redemption": 619689098
+   },
+   {
+    "month": "2026-05",
+    "sales": 2277980641,
+    "reinvestment": 2835879,
+    "redemption": 671592583
+   },
+   {
+    "month": "2026-06",
+    "sales": 3074132007,
+    "reinvestment": 8354581,
+    "redemption": 824182629
+   },
+   {
+    "month": "2026-07",
+    "sales": 2083392863,
+    "reinvestment": 5070804,
+    "redemption": 462445989
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHB": {
+  "symbol": "SCHB",
+  "bucket": "total_us",
+  "name": "SCHB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100006",
+    "reportDate": "2026-09-30",
+    "netAssets": 32856061797
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3278573145,
+    "reinvestment": 2728715,
+    "redemption": 903083014
+   },
+   {
+    "month": "2026-05",
+    "sales": 2954019175,
+    "reinvestment": 12438427,
+    "redemption": 1395097804
+   },
+   {
+    "month": "2026-06",
+    "sales": 2834527612,
+    "reinvestment": 8898919,
+    "redemption": 691316316
+   },
+   {
+    "month": "2026-07",
+    "sales": 2591108461,
+    "reinvestment": 10835472,
+    "redemption": 1039440581
+   },
+   {
+    "month": "2026-08",
+    "sales": 2111530553,
+    "reinvestment": 15038984,
+    "redemption": 1672875202
+   },
+   {
+    "month": "2026-09",
+    "sales": 3470191380,
+    "reinvestment": 12517834,
+    "redemption": 1917332149
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "DIA": {
+  "symbol": "DIA",
+  "bucket": "us_large",
+  "name": "DIA (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100007",
+    "reportDate": "2026-09-30",
+    "netAssets": 26041706521
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1275041010,
+    "reinvestment": 1045192,
+    "redemption": 944653837
+   },
+   {
+    "month": "2026-05",
+    "sales": 633577806,
+    "reinvestment": 12314450,
+    "redemption": 1141146468
+   },
+   {
+    "month": "2026-06",
+    "sales": 720846190,
+    "reinvestment": 3167442,
+    "redemption": 1375435698
+   },
+   {
+    "month": "2026-07",
+    "sales": 996206848,
+    "reinvestment": 10082617,
+    "redemption": 1604447000
+   },
+   {
+    "month": "2026-08",
+    "sales": 934254794,
+    "reinvestment": 10516138,
+    "redemption": 1015024787
+   },
+   {
+    "month": "2026-09",
+    "sales": 1535799218,
+    "reinvestment": 1590679,
+    "redemption": 2049124626
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IWB": {
+  "symbol": "IWB",
+  "bucket": "us_large",
+  "name": "IWB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100008",
+    "reportDate": "2026-09-30",
+    "netAssets": 10405075543
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 458912196,
+    "reinvestment": 3363698,
+    "redemption": 691504987
+   },
+   {
+    "month": "2026-05",
+    "sales": 439554684,
+    "reinvestment": 2150822,
+    "redemption": 977842025
+   },
+   {
+    "month": "2026-06",
+    "sales": 338977616,
+    "reinvestment": 475225,
+    "redemption": 729125182
+   },
+   {
+    "month": "2026-07",
+    "sales": 305594204,
+    "reinvestment": 2272641,
+    "redemption": 1218370822
+   },
+   {
+    "month": "2026-08",
+    "sales": 563929772,
+    "reinvestment": 2976701,
+    "redemption": 1179145658
+   },
+   {
+    "month": "2026-09",
+    "sales": 352954303,
+    "reinvestment": 2952053,
+    "redemption": 972457193
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHX": {
+  "symbol": "SCHX",
+  "bucket": "us_large",
+  "name": "SCHX (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100009",
+    "reportDate": "2026-09-30",
+    "netAssets": 30870506617
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1438710920,
+    "reinvestment": 13045611,
+    "redemption": 2262124891
+   },
+   {
+    "month": "2026-05",
+    "sales": 1837715404,
+    "reinvestment": 15050780,
+    "redemption": 1998302255
+   },
+   {
+    "month": "2026-06",
+    "sales": 1059194631,
+    "reinvestment": 10934021,
+    "redemption": 1784337880
+   },
+   {
+    "month": "2026-07",
+    "sales": 1528809552,
+    "reinvestment": 3676100,
+    "redemption": 2008614848
+   },
+   {
+    "month": "2026-08",
+    "sales": 1603393147,
+    "reinvestment": 9804386,
+    "redemption": 2452047628
+   },
+   {
+    "month": "2026-09",
+    "sales": 1495937390,
+    "reinvestment": 8696047,
+    "redemption": 1903047315
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VV": {
+  "symbol": "VV",
+  "bucket": "us_large",
+  "name": "VV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100010",
+    "reportDate": "2026-09-30",
+    "netAssets": 36947987345
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1138859476,
+    "reinvestment": 3464178,
+    "redemption": 1890031247
+   },
+   {
+    "month": "2026-05",
+    "sales": 1609534213,
+    "reinvestment": 6244118,
+    "redemption": 2781962606
+   },
+   {
+    "month": "2026-06",
+    "sales": 1748176193,
+    "reinvestment": 17013179,
+    "redemption": 1377962777
+   },
+   {
+    "month": "2026-07",
+    "sales": 740905903,
+    "reinvestment": 12799891,
+    "redemption": 1656460367
+   },
+   {
+    "month": "2026-08",
+    "sales": 2065910470,
+    "reinvestment": 12928800,
+    "redemption": 1827070840
+   },
+   {
+    "month": "2026-09",
+    "sales": 997849951,
+    "reinvestment": 14999023,
+    "redemption": 1992650676
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MGC": {
+  "symbol": "MGC",
+  "bucket": "us_large",
+  "name": "MGC (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100011",
+    "reportDate": "2026-09-30",
+    "netAssets": 25663357228
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1284320892,
+    "reinvestment": 12254912,
+    "redemption": 1516443714
+   },
+   {
+    "month": "2026-05",
+    "sales": 1075646213,
+    "reinvestment": 9414069,
+    "redemption": 1968547106
+   },
+   {
+    "month": "2026-06",
+    "sales": 1126677437,
+    "reinvestment": 2885605,
+    "redemption": 1174215357
+   },
+   {
+    "month": "2026-07",
+    "sales": 1109829171,
+    "reinvestment": 8077394,
+    "redemption": 1359832810
+   },
+   {
+    "month": "2026-08",
+    "sales": 1347665357,
+    "reinvestment": 8862697,
+    "redemption": 1788136606
+   },
+   {
+    "month": "2026-09",
+    "sales": 930782159,
+    "reinvestment": 1342886,
+    "redemption": 1896666644
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "QQQ": {
+  "symbol": "QQQ",
+  "bucket": "nasdaq100",
+  "name": "QQQ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100012",
+    "reportDate": "2026-09-30",
+    "netAssets": 38778725179
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3340018345,
+    "reinvestment": 15329360,
+    "redemption": 1434710507
+   },
+   {
+    "month": "2026-05",
+    "sales": 3792857710,
+    "reinvestment": 13954705,
+    "redemption": 2106717316
+   },
+   {
+    "month": "2026-06",
+    "sales": 1965651125,
+    "reinvestment": 1094901,
+    "redemption": 2247071477
+   },
+   {
+    "month": "2026-07",
+    "sales": 2009296816,
+    "reinvestment": 18547519,
+    "redemption": 2234788814
+   },
+   {
+    "month": "2026-08",
+    "sales": 2243206623,
+    "reinvestment": 10846762,
+    "redemption": 821763787
+   },
+   {
+    "month": "2026-09",
+    "sales": 2182896560,
+    "reinvestment": 1066022,
+    "redemption": 1521590399
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "QQQM": {
+  "symbol": "QQQM",
+  "bucket": "nasdaq100",
+  "name": "QQQM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100013",
+    "reportDate": "2026-09-30",
+    "netAssets": 3775673256
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1644854805,
+    "reinvestment": 1374571,
+    "redemption": 146186270
+   },
+   {
+    "month": "2026-05",
+    "sales": 1793118426,
+    "reinvestment": 1822213,
+    "redemption": 134116383
+   },
+   {
+    "month": "2026-06",
+    "sales": 2146326156,
+    "reinvestment": 1515388,
+    "redemption": 182972926
+   },
+   {
+    "month": "2026-07",
+    "sales": 979885825,
+    "reinvestment": 813964,
+    "redemption": 185246762
+   },
+   {
+    "month": "2026-08",
+    "sales": 1422134179,
+    "reinvestment": 125251,
+    "redemption": 150187839
+   },
+   {
+    "month": "2026-09",
+    "sales": 1312529760,
+    "reinvestment": 1208063,
+    "redemption": 127561910
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VUG": {
+  "symbol": "VUG",
+  "bucket": "growth",
+  "name": "VUG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100014",
+    "reportDate": "2026-09-30",
+    "netAssets": 7017081408
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 275275293,
+    "reinvestment": 155891,
+    "redemption": 374929661
+   },
+   {
+    "month": "2026-05",
+    "sales": 533229269,
+    "reinvestment": 2795437,
+    "redemption": 253268052
+   },
+   {
+    "month": "2026-06",
+    "sales": 442400791,
+    "reinvestment": 1500118,
+    "redemption": 198018770
+   },
+   {
+    "month": "2026-07",
+    "sales": 300751320,
+    "reinvestment": 874026,
+    "redemption": 352348819
+   },
+   {
+    "month": "2026-08",
+    "sales": 647469173,
+    "reinvestment": 1048628,
+    "redemption": 229579418
+   },
+   {
+    "month": "2026-09",
+    "sales": 490108510,
+    "reinvestment": 1748919,
+    "redemption": 384545884
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IWF": {
+  "symbol": "IWF",
+  "bucket": "growth",
+  "name": "IWF (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100015",
+    "reportDate": "2026-09-30",
+    "netAssets": 36668459014
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2202109819,
+    "reinvestment": 12675114,
+    "redemption": 1849107055
+   },
+   {
+    "month": "2026-05",
+    "sales": 1400154450,
+    "reinvestment": 2987721,
+    "redemption": 1209063315
+   },
+   {
+    "month": "2026-06",
+    "sales": 2211798683,
+    "reinvestment": 14589091,
+    "redemption": 1930223750
+   },
+   {
+    "month": "2026-07",
+    "sales": 2076696931,
+    "reinvestment": 428251,
+    "redemption": 1073388186
+   },
+   {
+    "month": "2026-08",
+    "sales": 1846619984,
+    "reinvestment": 15867572,
+    "redemption": 1653264111
+   },
+   {
+    "month": "2026-09",
+    "sales": 2083788984,
+    "reinvestment": 7078143,
+    "redemption": 1558367812
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHG": {
+  "symbol": "SCHG",
+  "bucket": "growth",
+  "name": "SCHG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100016",
+    "reportDate": "2026-09-30",
+    "netAssets": 23528532366
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1390618412,
+    "reinvestment": 2879437,
+    "redemption": 831779169
+   },
+   {
+    "month": "2026-05",
+    "sales": 1391397081,
+    "reinvestment": 7223297,
+    "redemption": 750457824
+   },
+   {
+    "month": "2026-06",
+    "sales": 1278649795,
+    "reinvestment": 7061621,
+    "redemption": 1005471540
+   },
+   {
+    "month": "2026-07",
+    "sales": 1244868457,
+    "reinvestment": 2455551,
+    "redemption": 1008038734
+   },
+   {
+    "month": "2026-08",
+    "sales": 761935962,
+    "reinvestment": 7577364,
+    "redemption": 1067211481
+   },
+   {
+    "month": "2026-09",
+    "sales": 1019439862,
+    "reinvestment": 1821339,
+    "redemption": 845309492
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SPYG": {
+  "symbol": "SPYG",
+  "bucket": "growth",
+  "name": "SPYG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100017",
+    "reportDate": "2026-09-30",
+    "netAssets": 4124058009
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 348670366,
+    "reinvestment": 832254,
+    "redemption": 97563373
+   },
+   {
+    "month": "2026-05",
+    "sales": 295866235,
+    "reinvestment": 625605,
+    "redemption": 221092639
+   },
+   {
+    "month": "2026-06",
+    "sales": 259050760,
+    "reinvestment": 1252968,
+    "redemption": 154633891
+   },
+   {
+    "month": "2026-07",
+    "sales": 433554794,
+    "reinvestment": 1787658,
+    "redemption": 211927480
+   },
+   {
+    "month": "2026-08",
+    "sales": 337080364,
+    "reinvestment": 1837334,
+    "redemption": 185409485
+   },
+   {
+    "month": "2026-09",
+    "sales": 472250580,
+    "reinvestment": 77184,
+    "redemption": 130418039
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IVW": {
+  "symbol": "IVW",
+  "bucket": "growth",
+  "name": "IVW (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100018",
+    "reportDate": "2026-09-30",
+    "netAssets": 6127584269
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 472088255,
+    "reinvestment": 1674948,
+    "redemption": 342786309
+   },
+   {
+    "month": "2026-05",
+    "sales": 397410158,
+    "reinvestment": 2487325,
+    "redemption": 312882474
+   },
+   {
+    "month": "2026-06",
+    "sales": 514665712,
+    "reinvestment": 86905,
+    "redemption": 355657382
+   },
+   {
+    "month": "2026-07",
+    "sales": 515296269,
+    "reinvestment": 2088717,
+    "redemption": 273077152
+   },
+   {
+    "month": "2026-08",
+    "sales": 380829109,
+    "reinvestment": 2082614,
+    "redemption": 362986114
+   },
+   {
+    "month": "2026-09",
+    "sales": 420835856,
+    "reinvestment": 1346235,
+    "redemption": 276983689
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MGK": {
+  "symbol": "MGK",
+  "bucket": "growth",
+  "name": "MGK (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100019",
+    "reportDate": "2026-09-30",
+    "netAssets": 2904058628
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 395817933,
+    "reinvestment": 1080788,
+    "redemption": 171494850
+   },
+   {
+    "month": "2026-05",
+    "sales": 389851409,
+    "reinvestment": 351404,
+    "redemption": 130370396
+   },
+   {
+    "month": "2026-06",
+    "sales": 307801724,
+    "reinvestment": 1133825,
+    "redemption": 63572863
+   },
+   {
+    "month": "2026-07",
+    "sales": 291018754,
+    "reinvestment": 613254,
+    "redemption": 93631499
+   },
+   {
+    "month": "2026-08",
+    "sales": 267139113,
+    "reinvestment": 627450,
+    "redemption": 66584927
+   },
+   {
+    "month": "2026-09",
+    "sales": 342587228,
+    "reinvestment": 904540,
+    "redemption": 121228038
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VTV": {
+  "symbol": "VTV",
+  "bucket": "value",
+  "name": "VTV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100020",
+    "reportDate": "2026-09-30",
+    "netAssets": 37913477072
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2394981089,
+    "reinvestment": 12294646,
+    "redemption": 2020711946
+   },
+   {
+    "month": "2026-05",
+    "sales": 1604812942,
+    "reinvestment": 536704,
+    "redemption": 838151231
+   },
+   {
+    "month": "2026-06",
+    "sales": 2173270026,
+    "reinvestment": 4198378,
+    "redemption": 1121786531
+   },
+   {
+    "month": "2026-07",
+    "sales": 1316497492,
+    "reinvestment": 11839368,
+    "redemption": 1911199006
+   },
+   {
+    "month": "2026-08",
+    "sales": 2026894111,
+    "reinvestment": 14565743,
+    "redemption": 2009516814
+   },
+   {
+    "month": "2026-09",
+    "sales": 2337682148,
+    "reinvestment": 18638078,
+    "redemption": 1033121495
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IWD": {
+  "symbol": "IWD",
+  "bucket": "value",
+  "name": "IWD (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100021",
+    "reportDate": "2026-09-30",
+    "netAssets": 21066523527
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 868558222,
+    "reinvestment": 8329098,
+    "redemption": 1125296442
+   },
+   {
+    "month": "2026-05",
+    "sales": 570070792,
+    "reinvestment": 925844,
+    "redemption": 941043215
+   },
+   {
+    "month": "2026-06",
+    "sales": 856568039,
+    "reinvestment": 6650837,
+    "redemption": 1070293998
+   },
+   {
+    "month": "2026-07",
+    "sales": 840958914,
+    "reinvestment": 7601572,
+    "redemption": 1262418015
+   },
+   {
+    "month": "2026-08",
+    "sales": 836405219,
+    "reinvestment": 7341020,
+    "redemption": 555816484
+   },
+   {
+    "month": "2026-09",
+    "sales": 979702565,
+    "reinvestment": 5810097,
+    "redemption": 1251329077
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHV": {
+  "symbol": "SCHV",
+  "bucket": "value",
+  "name": "SCHV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100022",
+    "reportDate": "2026-07-31",
+    "netAssets": 28432086894
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 835584460,
+    "reinvestment": 4782379,
+    "redemption": 778331577
+   },
+   {
+    "month": "2026-05",
+    "sales": 1918653773,
+    "reinvestment": 7220107,
+    "redemption": 714970713
+   },
+   {
+    "month": "2026-06",
+    "sales": 801086904,
+    "reinvestment": 3006174,
+    "redemption": 1499840181
+   },
+   {
+    "month": "2026-07",
+    "sales": 879039212,
+    "reinvestment": 11839249,
+    "redemption": 1064177804
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IVE": {
+  "symbol": "IVE",
+  "bucket": "value",
+  "name": "IVE (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100023",
+    "reportDate": "2026-09-30",
+    "netAssets": 2820878819
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 409007132,
+    "reinvestment": 961959,
+    "redemption": 156830385
+   },
+   {
+    "month": "2026-05",
+    "sales": 320858776,
+    "reinvestment": 1521,
+    "redemption": 132666841
+   },
+   {
+    "month": "2026-06",
+    "sales": 206262522,
+    "reinvestment": 168613,
+    "redemption": 63020490
+   },
+   {
+    "month": "2026-07",
+    "sales": 266458433,
+    "reinvestment": 346145,
+    "redemption": 130261893
+   },
+   {
+    "month": "2026-08",
+    "sales": 392254584,
+    "reinvestment": 254132,
+    "redemption": 133233447
+   },
+   {
+    "month": "2026-09",
+    "sales": 306177138,
+    "reinvestment": 573722,
+    "redemption": 102026906
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IJH": {
+  "symbol": "IJH",
+  "bucket": "mid_small",
+  "name": "IJH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100024",
+    "reportDate": "2026-09-30",
+    "netAssets": 24035768359
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1599281923,
+    "reinvestment": 11695209,
+    "redemption": 872927765
+   },
+   {
+    "month": "2026-05",
+    "sales": 1480163317,
+    "reinvestment": 11099552,
+    "redemption": 710273514
+   },
+   {
+    "month": "2026-06",
+    "sales": 1388826094,
+    "reinvestment": 2191264,
+    "redemption": 1103548494
+   },
+   {
+    "month": "2026-07",
+    "sales": 1142697248,
+    "reinvestment": 8315066,
+    "redemption": 1221437955
+   },
+   {
+    "month": "2026-08",
+    "sales": 1190045565,
+    "reinvestment": 6737247,
+    "redemption": 765921701
+   },
+   {
+    "month": "2026-09",
+    "sales": 732403772,
+    "reinvestment": 11447034,
+    "redemption": 1372414850
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VO": {
+  "symbol": "VO",
+  "bucket": "mid_small",
+  "name": "VO (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100025",
+    "reportDate": "2026-09-30",
+    "netAssets": 28680663389
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1476911440,
+    "reinvestment": 795006,
+    "redemption": 1623701811
+   },
+   {
+    "month": "2026-05",
+    "sales": 1624199266,
+    "reinvestment": 5908725,
+    "redemption": 1375592592
+   },
+   {
+    "month": "2026-06",
+    "sales": 839362179,
+    "reinvestment": 5581878,
+    "redemption": 997590524
+   },
+   {
+    "month": "2026-07",
+    "sales": 779162101,
+    "reinvestment": 11765311,
+    "redemption": 1052435557
+   },
+   {
+    "month": "2026-08",
+    "sales": 833294109,
+    "reinvestment": 1942064,
+    "redemption": 1229555885
+   },
+   {
+    "month": "2026-09",
+    "sales": 900636901,
+    "reinvestment": 9525682,
+    "redemption": 624962813
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IWM": {
+  "symbol": "IWM",
+  "bucket": "mid_small",
+  "name": "IWM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100026",
+    "reportDate": "2026-09-30",
+    "netAssets": 9437303349
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 833943717,
+    "reinvestment": 1986539,
+    "redemption": 399787648
+   },
+   {
+    "month": "2026-05",
+    "sales": 624383775,
+    "reinvestment": 1841809,
+    "redemption": 353500114
+   },
+   {
+    "month": "2026-06",
+    "sales": 383850422,
+    "reinvestment": 3093088,
+    "redemption": 271728817
+   },
+   {
+    "month": "2026-07",
+    "sales": 489851048,
+    "reinvestment": 3417263,
+    "redemption": 221383471
+   },
+   {
+    "month": "2026-08",
+    "sales": 689018750,
+    "reinvestment": 278578,
+    "redemption": 407351909
+   },
+   {
+    "month": "2026-09",
+    "sales": 430647876,
+    "reinvestment": 952611,
+    "redemption": 327132002
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IJR": {
+  "symbol": "IJR",
+  "bucket": "mid_small",
+  "name": "IJR (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100027",
+    "reportDate": "2026-09-30",
+    "netAssets": 3297445428
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 298093692,
+    "reinvestment": 850174,
+    "redemption": 193994664
+   },
+   {
+    "month": "2026-05",
+    "sales": 291805621,
+    "reinvestment": 1191779,
+    "redemption": 186974985
+   },
+   {
+    "month": "2026-06",
+    "sales": 434145159,
+    "reinvestment": 736052,
+    "redemption": 85383064
+   },
+   {
+    "month": "2026-07",
+    "sales": 249109210,
+    "reinvestment": 1059126,
+    "redemption": 119406422
+   },
+   {
+    "month": "2026-08",
+    "sales": 421768254,
+    "reinvestment": 5135,
+    "redemption": 178349186
+   },
+   {
+    "month": "2026-09",
+    "sales": 404074734,
+    "reinvestment": 1370362,
+    "redemption": 153810707
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VB": {
+  "symbol": "VB",
+  "bucket": "mid_small",
+  "name": "VB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100028",
+    "reportDate": "2026-09-30",
+    "netAssets": 18054663871
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1100965615,
+    "reinvestment": 5054813,
+    "redemption": 748763746
+   },
+   {
+    "month": "2026-05",
+    "sales": 575243121,
+    "reinvestment": 1400532,
+    "redemption": 715263632
+   },
+   {
+    "month": "2026-06",
+    "sales": 873810322,
+    "reinvestment": 210964,
+    "redemption": 743783007
+   },
+   {
+    "month": "2026-07",
+    "sales": 1138476032,
+    "reinvestment": 6038135,
+    "redemption": 944138810
+   },
+   {
+    "month": "2026-08",
+    "sales": 1167220654,
+    "reinvestment": 3377595,
+    "redemption": 640261388
+   },
+   {
+    "month": "2026-09",
+    "sales": 756427028,
+    "reinvestment": 272092,
+    "redemption": 420223444
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VXF": {
+  "symbol": "VXF",
+  "bucket": "mid_small",
+  "name": "VXF (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100029",
+    "reportDate": "2026-09-30",
+    "netAssets": 25096748303
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1336937323,
+    "reinvestment": 8675653,
+    "redemption": 508268749
+   },
+   {
+    "month": "2026-05",
+    "sales": 1753048299,
+    "reinvestment": 9244265,
+    "redemption": 1324284342
+   },
+   {
+    "month": "2026-06",
+    "sales": 1289307131,
+    "reinvestment": 5940469,
+    "redemption": 569450457
+   },
+   {
+    "month": "2026-07",
+    "sales": 1242006271,
+    "reinvestment": 6320646,
+    "redemption": 1097474161
+   },
+   {
+    "month": "2026-08",
+    "sales": 1412476244,
+    "reinvestment": 510437,
+    "redemption": 1360364966
+   },
+   {
+    "month": "2026-09",
+    "sales": 1469014441,
+    "reinvestment": 2707259,
+    "redemption": 705612333
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHD": {
+  "symbol": "SCHD",
+  "bucket": "dividend",
+  "name": "SCHD (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100030",
+    "reportDate": "2026-09-30",
+    "netAssets": 3564695203
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1099913362,
+    "reinvestment": 1513096,
+    "redemption": 159088113
+   },
+   {
+    "month": "2026-05",
+    "sales": 1158156110,
+    "reinvestment": 607570,
+    "redemption": 195450092
+   },
+   {
+    "month": "2026-06",
+    "sales": 1039868216,
+    "reinvestment": 1179580,
+    "redemption": 84285124
+   },
+   {
+    "month": "2026-07",
+    "sales": 969001795,
+    "reinvestment": 1620014,
+    "redemption": 203387383
+   },
+   {
+    "month": "2026-08",
+    "sales": 1019660260,
+    "reinvestment": 1110879,
+    "redemption": 76154245
+   },
+   {
+    "month": "2026-09",
+    "sales": 1029391782,
+    "reinvestment": 743498,
+    "redemption": 121242624
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VIG": {
+  "symbol": "VIG",
+  "bucket": "dividend",
+  "name": "VIG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100031",
+    "reportDate": "2026-09-30",
+    "netAssets": 40531137425
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3310790664,
+    "reinvestment": 5438680,
+    "redemption": 2232195787
+   },
+   {
+    "month": "2026-05",
+    "sales": 2493505245,
+    "reinvestment": 4892331,
+    "redemption": 1014793696
+   },
+   {
+    "month": "2026-06",
+    "sales": 2370748879,
+    "reinvestment": 2309278,
+    "redemption": 2173286329
+   },
+   {
+    "month": "2026-07",
+    "sales": 1740138491,
+    "reinvestment": 14835521,
+    "redemption": 890389258
+   },
+   {
+    "month": "2026-08",
+    "sales": 2956259477,
+    "reinvestment": 17716706,
+    "redemption": 922481661
+   },
+   {
+    "month": "2026-09",
+    "sales": 1829518594,
+    "reinvestment": 13405820,
+    "redemption": 1398732911
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VYM": {
+  "symbol": "VYM",
+  "bucket": "dividend",
+  "name": "VYM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100032",
+    "reportDate": "2026-09-30",
+    "netAssets": 40062803744
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1438965377,
+    "reinvestment": 12403705,
+    "redemption": 2178732197
+   },
+   {
+    "month": "2026-05",
+    "sales": 1823414722,
+    "reinvestment": 13001001,
+    "redemption": 1517103709
+   },
+   {
+    "month": "2026-06",
+    "sales": 1765030161,
+    "reinvestment": 18762872,
+    "redemption": 956046312
+   },
+   {
+    "month": "2026-07",
+    "sales": 2933435050,
+    "reinvestment": 14778127,
+    "redemption": 2262830168
+   },
+   {
+    "month": "2026-08",
+    "sales": 2302839264,
+    "reinvestment": 10200605,
+    "redemption": 2005855386
+   },
+   {
+    "month": "2026-09",
+    "sales": 2813138116,
+    "reinvestment": 17672410,
+    "redemption": 1746742731
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "DGRO": {
+  "symbol": "DGRO",
+  "bucket": "dividend",
+  "name": "DGRO (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100033",
+    "reportDate": "2026-09-30",
+    "netAssets": 31152631829
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1629831524,
+    "reinvestment": 3377506,
+    "redemption": 798387588
+   },
+   {
+    "month": "2026-05",
+    "sales": 2181953201,
+    "reinvestment": 1541850,
+    "redemption": 1497242224
+   },
+   {
+    "month": "2026-06",
+    "sales": 2522388658,
+    "reinvestment": 6250343,
+    "redemption": 623403511
+   },
+   {
+    "month": "2026-07",
+    "sales": 1344335781,
+    "reinvestment": 15351662,
+    "redemption": 904529909
+   },
+   {
+    "month": "2026-08",
+    "sales": 2299141673,
+    "reinvestment": 3290939,
+    "redemption": 666679275
+   },
+   {
+    "month": "2026-09",
+    "sales": 2365716645,
+    "reinvestment": 4372478,
+    "redemption": 915813056
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "DVY": {
+  "symbol": "DVY",
+  "bucket": "dividend",
+  "name": "DVY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100034",
+    "reportDate": "2026-09-30",
+    "netAssets": 39877453714
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1697689685,
+    "reinvestment": 19647209,
+    "redemption": 2131882366
+   },
+   {
+    "month": "2026-05",
+    "sales": 1738228984,
+    "reinvestment": 7418041,
+    "redemption": 2105784106
+   },
+   {
+    "month": "2026-06",
+    "sales": 3177946956,
+    "reinvestment": 6752486,
+    "redemption": 1930230370
+   },
+   {
+    "month": "2026-07",
+    "sales": 3222207668,
+    "reinvestment": 978106,
+    "redemption": 797693510
+   },
+   {
+    "month": "2026-08",
+    "sales": 2292906883,
+    "reinvestment": 275182,
+    "redemption": 1946631854
+   },
+   {
+    "month": "2026-09",
+    "sales": 3458667651,
+    "reinvestment": 11788056,
+    "redemption": 2029582591
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SDY": {
+  "symbol": "SDY",
+  "bucket": "dividend",
+  "name": "SDY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100035",
+    "reportDate": "2026-09-30",
+    "netAssets": 23416517357
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2186834279,
+    "reinvestment": 11042076,
+    "redemption": 769368220
+   },
+   {
+    "month": "2026-05",
+    "sales": 2143631590,
+    "reinvestment": 10117224,
+    "redemption": 1234216458
+   },
+   {
+    "month": "2026-06",
+    "sales": 1426559071,
+    "reinvestment": 1848674,
+    "redemption": 850971921
+   },
+   {
+    "month": "2026-07",
+    "sales": 1867877220,
+    "reinvestment": 403115,
+    "redemption": 961737008
+   },
+   {
+    "month": "2026-08",
+    "sales": 1618872131,
+    "reinvestment": 522600,
+    "redemption": 897515672
+   },
+   {
+    "month": "2026-09",
+    "sales": 1527888976,
+    "reinvestment": 2406895,
+    "redemption": 1123487545
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "NOBL": {
+  "symbol": "NOBL",
+  "bucket": "dividend",
+  "name": "NOBL (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100036",
+    "reportDate": "2026-09-30",
+    "netAssets": 4221438532
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 674470517,
+    "reinvestment": 1147972,
+    "redemption": 235973968
+   },
+   {
+    "month": "2026-05",
+    "sales": 1426128288,
+    "reinvestment": 1550797,
+    "redemption": 228402151
+   },
+   {
+    "month": "2026-06",
+    "sales": 1364559835,
+    "reinvestment": 321245,
+    "redemption": 126845154
+   },
+   {
+    "month": "2026-07",
+    "sales": 1026131683,
+    "reinvestment": 488718,
+    "redemption": 168008959
+   },
+   {
+    "month": "2026-08",
+    "sales": 1184201295,
+    "reinvestment": 1159759,
+    "redemption": 230322956
+   },
+   {
+    "month": "2026-09",
+    "sales": 1058101398,
+    "reinvestment": 964310,
+    "redemption": 249445040
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "QUAL": {
+  "symbol": "QUAL",
+  "bucket": "factor",
+  "name": "QUAL (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100037",
+    "reportDate": "2026-09-30",
+    "netAssets": 21987739502
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 746215549,
+    "reinvestment": 3902104,
+    "redemption": 1302916289
+   },
+   {
+    "month": "2026-05",
+    "sales": 778633057,
+    "reinvestment": 1404559,
+    "redemption": 2031655685
+   },
+   {
+    "month": "2026-06",
+    "sales": 647128031,
+    "reinvestment": 4630990,
+    "redemption": 1571930291
+   },
+   {
+    "month": "2026-07",
+    "sales": 1035086821,
+    "reinvestment": 4403892,
+    "redemption": 1289991494
+   },
+   {
+    "month": "2026-08",
+    "sales": 878005311,
+    "reinvestment": 1589462,
+    "redemption": 1607415927
+   },
+   {
+    "month": "2026-09",
+    "sales": 1237703108,
+    "reinvestment": 5105811,
+    "redemption": 1828056417
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MTUM": {
+  "symbol": "MTUM",
+  "bucket": "factor",
+  "name": "MTUM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100038",
+    "reportDate": "2026-09-30",
+    "netAssets": 24583455081
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 494853952,
+    "reinvestment": 8865007,
+    "redemption": 2192135925
+   },
+   {
+    "month": "2026-05",
+    "sales": 982492629,
+    "reinvestment": 11932954,
+    "redemption": 1749853817
+   },
+   {
+    "month": "2026-06",
+    "sales": 918270846,
+    "reinvestment": 5345964,
+    "redemption": 1254198498
+   },
+   {
+    "month": "2026-07",
+    "sales": 1242631528,
+    "reinvestment": 3184924,
+    "redemption": 2083147206
+   },
+   {
+    "month": "2026-08",
+    "sales": 1358437562,
+    "reinvestment": 10843970,
+    "redemption": 2488964319
+   },
+   {
+    "month": "2026-09",
+    "sales": 904396961,
+    "reinvestment": 9129127,
+    "redemption": 1612970202
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "USMV": {
+  "symbol": "USMV",
+  "bucket": "factor",
+  "name": "USMV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100039",
+    "reportDate": "2026-07-31",
+    "netAssets": 27709246446
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 978275556,
+    "reinvestment": 941261,
+    "redemption": 2370515575
+   },
+   {
+    "month": "2026-05",
+    "sales": 1486586241,
+    "reinvestment": 5844387,
+    "redemption": 1938990820
+   },
+   {
+    "month": "2026-06",
+    "sales": 1449809253,
+    "reinvestment": 11007525,
+    "redemption": 2134809489
+   },
+   {
+    "month": "2026-07",
+    "sales": 769606239,
+    "reinvestment": 9506162,
+    "redemption": 2102301433
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "RSP": {
+  "symbol": "RSP",
+  "bucket": "factor",
+  "name": "RSP (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100040",
+    "reportDate": "2026-09-30",
+    "netAssets": 37802279690
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1093043580,
+    "reinvestment": 13184623,
+    "redemption": 2528159743
+   },
+   {
+    "month": "2026-05",
+    "sales": 2027082754,
+    "reinvestment": 10542662,
+    "redemption": 1356255479
+   },
+   {
+    "month": "2026-06",
+    "sales": 1654736349,
+    "reinvestment": 10037225,
+    "redemption": 2064940563
+   },
+   {
+    "month": "2026-07",
+    "sales": 993794380,
+    "reinvestment": 10529922,
+    "redemption": 2208927854
+   },
+   {
+    "month": "2026-08",
+    "sales": 1158681157,
+    "reinvestment": 9653351,
+    "redemption": 2208069415
+   },
+   {
+    "month": "2026-09",
+    "sales": 1986643468,
+    "reinvestment": 9380195,
+    "redemption": 2938032963
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "JEPI": {
+  "symbol": "JEPI",
+  "bucket": "options_income",
+  "name": "JEPI (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100041",
+    "reportDate": "2026-09-30",
+    "netAssets": 38890911011
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2043215660,
+    "reinvestment": 1956229,
+    "redemption": 1001437049
+   },
+   {
+    "month": "2026-05",
+    "sales": 2208868331,
+    "reinvestment": 10464593,
+    "redemption": 1098587470
+   },
+   {
+    "month": "2026-06",
+    "sales": 2012580858,
+    "reinvestment": 15468656,
+    "redemption": 2164941203
+   },
+   {
+    "month": "2026-07",
+    "sales": 2254758519,
+    "reinvestment": 2742628,
+    "redemption": 1688030623
+   },
+   {
+    "month": "2026-08",
+    "sales": 1821686104,
+    "reinvestment": 6911613,
+    "redemption": 1882811346
+   },
+   {
+    "month": "2026-09",
+    "sales": 2251879181,
+    "reinvestment": 12117797,
+    "redemption": 1198558234
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "JEPQ": {
+  "symbol": "JEPQ",
+  "bucket": "options_income",
+  "name": "JEPQ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100042",
+    "reportDate": "2026-09-30",
+    "netAssets": 25771749560
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1101576606,
+    "reinvestment": 10617183,
+    "redemption": 1503996146
+   },
+   {
+    "month": "2026-05",
+    "sales": 1773654741,
+    "reinvestment": 1643299,
+    "redemption": 700498374
+   },
+   {
+    "month": "2026-06",
+    "sales": 1119339645,
+    "reinvestment": 11086817,
+    "redemption": 1468042046
+   },
+   {
+    "month": "2026-07",
+    "sales": 1156331647,
+    "reinvestment": 7604868,
+    "redemption": 556065668
+   },
+   {
+    "month": "2026-08",
+    "sales": 708443326,
+    "reinvestment": 5740035,
+    "redemption": 953574852
+   },
+   {
+    "month": "2026-09",
+    "sales": 1405980614,
+    "reinvestment": 10231347,
+    "redemption": 521075796
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "QYLD": {
+  "symbol": "QYLD",
+  "bucket": "options_income",
+  "name": "QYLD (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100043",
+    "reportDate": "2026-09-30",
+    "netAssets": 30335634092
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1919927212,
+    "reinvestment": 719931,
+    "redemption": 847156648
+   },
+   {
+    "month": "2026-05",
+    "sales": 1796692649,
+    "reinvestment": 6802438,
+    "redemption": 1812426713
+   },
+   {
+    "month": "2026-06",
+    "sales": 1496498972,
+    "reinvestment": 11555600,
+    "redemption": 855635612
+   },
+   {
+    "month": "2026-07",
+    "sales": 1231103264,
+    "reinvestment": 3885069,
+    "redemption": 1330294096
+   },
+   {
+    "month": "2026-08",
+    "sales": 1958146909,
+    "reinvestment": 11361799,
+    "redemption": 1678704840
+   },
+   {
+    "month": "2026-09",
+    "sales": 1665789043,
+    "reinvestment": 11390515,
+    "redemption": 608397814
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLK": {
+  "symbol": "XLK",
+  "bucket": "technology",
+  "name": "XLK (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100044",
+    "reportDate": "2026-09-30",
+    "netAssets": 21422651240
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1354456730,
+    "reinvestment": 2233550,
+    "redemption": 706526497
+   },
+   {
+    "month": "2026-05",
+    "sales": 1238585323,
+    "reinvestment": 4914515,
+    "redemption": 510023433
+   },
+   {
+    "month": "2026-06",
+    "sales": 892104034,
+    "reinvestment": 2973924,
+    "redemption": 683367900
+   },
+   {
+    "month": "2026-07",
+    "sales": 916881553,
+    "reinvestment": 2946279,
+    "redemption": 573413760
+   },
+   {
+    "month": "2026-08",
+    "sales": 1553241657,
+    "reinvestment": 5993062,
+    "redemption": 524948274
+   },
+   {
+    "month": "2026-09",
+    "sales": 1200802122,
+    "reinvestment": 8308193,
+    "redemption": 498553781
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VGT": {
+  "symbol": "VGT",
+  "bucket": "technology",
+  "name": "VGT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100045",
+    "reportDate": "2026-09-30",
+    "netAssets": 13073472132
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 968428241,
+    "reinvestment": 5371668,
+    "redemption": 315381994
+   },
+   {
+    "month": "2026-05",
+    "sales": 660920734,
+    "reinvestment": 5534034,
+    "redemption": 664616376
+   },
+   {
+    "month": "2026-06",
+    "sales": 1007691146,
+    "reinvestment": 756633,
+    "redemption": 431366721
+   },
+   {
+    "month": "2026-07",
+    "sales": 617940875,
+    "reinvestment": 5524302,
+    "redemption": 266478238
+   },
+   {
+    "month": "2026-08",
+    "sales": 1002791065,
+    "reinvestment": 3882220,
+    "redemption": 434983297
+   },
+   {
+    "month": "2026-09",
+    "sales": 842876696,
+    "reinvestment": 6427762,
+    "redemption": 321830482
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SMH": {
+  "symbol": "SMH",
+  "bucket": "technology",
+  "name": "SMH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100046",
+    "reportDate": "2026-09-30",
+    "netAssets": 34429786861
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1238114762,
+    "reinvestment": 11116667,
+    "redemption": 1294838535
+   },
+   {
+    "month": "2026-05",
+    "sales": 1351467072,
+    "reinvestment": 1084077,
+    "redemption": 993993152
+   },
+   {
+    "month": "2026-06",
+    "sales": 1471075938,
+    "reinvestment": 12208318,
+    "redemption": 1121550221
+   },
+   {
+    "month": "2026-07",
+    "sales": 1020005567,
+    "reinvestment": 14052407,
+    "redemption": 961148000
+   },
+   {
+    "month": "2026-08",
+    "sales": 1452443400,
+    "reinvestment": 4253162,
+    "redemption": 725406675
+   },
+   {
+    "month": "2026-09",
+    "sales": 1462722451,
+    "reinvestment": 4541885,
+    "redemption": 1681778209
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLF": {
+  "symbol": "XLF",
+  "bucket": "financials",
+  "name": "XLF (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100047",
+    "reportDate": "2026-09-30",
+    "netAssets": 12750867543
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 380368553,
+    "reinvestment": 219468,
+    "redemption": 584187682
+   },
+   {
+    "month": "2026-05",
+    "sales": 542842186,
+    "reinvestment": 2724815,
+    "redemption": 810550538
+   },
+   {
+    "month": "2026-06",
+    "sales": 353161554,
+    "reinvestment": 3368441,
+    "redemption": 850439599
+   },
+   {
+    "month": "2026-07",
+    "sales": 728294682,
+    "reinvestment": 1340637,
+    "redemption": 921586632
+   },
+   {
+    "month": "2026-08",
+    "sales": 358657072,
+    "reinvestment": 1326300,
+    "redemption": 994689991
+   },
+   {
+    "month": "2026-09",
+    "sales": 463792636,
+    "reinvestment": 5370318,
+    "redemption": 808049969
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VFH": {
+  "symbol": "VFH",
+  "bucket": "financials",
+  "name": "VFH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100048",
+    "reportDate": "2026-09-30",
+    "netAssets": 14090851093
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 435890839,
+    "reinvestment": 4671015,
+    "redemption": 851276496
+   },
+   {
+    "month": "2026-05",
+    "sales": 731120221,
+    "reinvestment": 1281999,
+    "redemption": 580169475
+   },
+   {
+    "month": "2026-06",
+    "sales": 413240126,
+    "reinvestment": 6178093,
+    "redemption": 995402603
+   },
+   {
+    "month": "2026-07",
+    "sales": 823316159,
+    "reinvestment": 4783294,
+    "redemption": 1242176446
+   },
+   {
+    "month": "2026-08",
+    "sales": 642956835,
+    "reinvestment": 1092129,
+    "redemption": 1096761996
+   },
+   {
+    "month": "2026-09",
+    "sales": 447962682,
+    "reinvestment": 2051578,
+    "redemption": 902378007
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLV": {
+  "symbol": "XLV",
+  "bucket": "health",
+  "name": "XLV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100049",
+    "reportDate": "2026-09-30",
+    "netAssets": 5185078801
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 317500151,
+    "reinvestment": 1245422,
+    "redemption": 255575141
+   },
+   {
+    "month": "2026-05",
+    "sales": 442070303,
+    "reinvestment": 2328146,
+    "redemption": 139167002
+   },
+   {
+    "month": "2026-06",
+    "sales": 487630795,
+    "reinvestment": 363152,
+    "redemption": 137680305
+   },
+   {
+    "month": "2026-07",
+    "sales": 394873964,
+    "reinvestment": 683859,
+    "redemption": 205252440
+   },
+   {
+    "month": "2026-08",
+    "sales": 393955122,
+    "reinvestment": 39145,
+    "redemption": 271325056
+   },
+   {
+    "month": "2026-09",
+    "sales": 396744427,
+    "reinvestment": 30204,
+    "redemption": 230279312
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VHT": {
+  "symbol": "VHT",
+  "bucket": "health",
+  "name": "VHT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100050",
+    "reportDate": "2026-09-30",
+    "netAssets": 34354866635
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1818554835,
+    "reinvestment": 2711369,
+    "redemption": 1633379609
+   },
+   {
+    "month": "2026-05",
+    "sales": 2188424049,
+    "reinvestment": 8536636,
+    "redemption": 1090004201
+   },
+   {
+    "month": "2026-06",
+    "sales": 1680758681,
+    "reinvestment": 12042680,
+    "redemption": 1761634864
+   },
+   {
+    "month": "2026-07",
+    "sales": 2303300013,
+    "reinvestment": 11908716,
+    "redemption": 929113360
+   },
+   {
+    "month": "2026-08",
+    "sales": 2103239692,
+    "reinvestment": 5460392,
+    "redemption": 1118559762
+   },
+   {
+    "month": "2026-09",
+    "sales": 1861198421,
+    "reinvestment": 1657973,
+    "redemption": 1826273827
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLE": {
+  "symbol": "XLE",
+  "bucket": "energy",
+  "name": "XLE (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100051",
+    "reportDate": "2026-09-30",
+    "netAssets": 10746219654
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 805759192,
+    "reinvestment": 1325044,
+    "redemption": 215039270
+   },
+   {
+    "month": "2026-05",
+    "sales": 692414271,
+    "reinvestment": 2776960,
+    "redemption": 233633532
+   },
+   {
+    "month": "2026-06",
+    "sales": 464838812,
+    "reinvestment": 4343314,
+    "redemption": 388578182
+   },
+   {
+    "month": "2026-07",
+    "sales": 754175504,
+    "reinvestment": 1915320,
+    "redemption": 355636815
+   },
+   {
+    "month": "2026-08",
+    "sales": 413989308,
+    "reinvestment": 4232232,
+    "redemption": 485325496
+   },
+   {
+    "month": "2026-09",
+    "sales": 594244645,
+    "reinvestment": 4547528,
+    "redemption": 291709333
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VDE": {
+  "symbol": "VDE",
+  "bucket": "energy",
+  "name": "VDE (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100052",
+    "reportDate": "2026-09-30",
+    "netAssets": 25736392904
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1158117356,
+    "reinvestment": 2380009,
+    "redemption": 1501758480
+   },
+   {
+    "month": "2026-05",
+    "sales": 1324227138,
+    "reinvestment": 10438988,
+    "redemption": 1430347370
+   },
+   {
+    "month": "2026-06",
+    "sales": 991068860,
+    "reinvestment": 2555499,
+    "redemption": 1367067357
+   },
+   {
+    "month": "2026-07",
+    "sales": 1539248351,
+    "reinvestment": 11868107,
+    "redemption": 898859698
+   },
+   {
+    "month": "2026-08",
+    "sales": 1485534525,
+    "reinvestment": 10790702,
+    "redemption": 841533984
+   },
+   {
+    "month": "2026-09",
+    "sales": 1413690716,
+    "reinvestment": 7880286,
+    "redemption": 1180695167
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VNQ": {
+  "symbol": "VNQ",
+  "bucket": "real_estate",
+  "name": "VNQ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100053",
+    "reportDate": "2026-09-30",
+    "netAssets": 15969548202
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 888372106,
+    "reinvestment": 1216570,
+    "redemption": 477867175
+   },
+   {
+    "month": "2026-05",
+    "sales": 1023952016,
+    "reinvestment": 1788487,
+    "redemption": 825672786
+   },
+   {
+    "month": "2026-06",
+    "sales": 848599562,
+    "reinvestment": 5665838,
+    "redemption": 429643168
+   },
+   {
+    "month": "2026-07",
+    "sales": 1113900358,
+    "reinvestment": 7463796,
+    "redemption": 720700070
+   },
+   {
+    "month": "2026-08",
+    "sales": 716051123,
+    "reinvestment": 3571373,
+    "redemption": 842429728
+   },
+   {
+    "month": "2026-09",
+    "sales": 668614071,
+    "reinvestment": 6944404,
+    "redemption": 842988286
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLRE": {
+  "symbol": "XLRE",
+  "bucket": "real_estate",
+  "name": "XLRE (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100054",
+    "reportDate": "2026-09-30",
+    "netAssets": 7794186390
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 468886833,
+    "reinvestment": 2998773,
+    "redemption": 222615918
+   },
+   {
+    "month": "2026-05",
+    "sales": 622036104,
+    "reinvestment": 1441958,
+    "redemption": 435108865
+   },
+   {
+    "month": "2026-06",
+    "sales": 660437210,
+    "reinvestment": 3480910,
+    "redemption": 440764789
+   },
+   {
+    "month": "2026-07",
+    "sales": 329659327,
+    "reinvestment": 859545,
+    "redemption": 461209035
+   },
+   {
+    "month": "2026-08",
+    "sales": 733556938,
+    "reinvestment": 511856,
+    "redemption": 430269884
+   },
+   {
+    "month": "2026-09",
+    "sales": 544045305,
+    "reinvestment": 3511844,
+    "redemption": 424046807
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLI": {
+  "symbol": "XLI",
+  "bucket": "other_sectors",
+  "name": "XLI (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100055",
+    "reportDate": "2026-09-30",
+    "netAssets": 23483209739
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1346178963,
+    "reinvestment": 8125197,
+    "redemption": 741713005
+   },
+   {
+    "month": "2026-05",
+    "sales": 1182322937,
+    "reinvestment": 5540677,
+    "redemption": 952214633
+   },
+   {
+    "month": "2026-06",
+    "sales": 1532370981,
+    "reinvestment": 7178870,
+    "redemption": 891966502
+   },
+   {
+    "month": "2026-07",
+    "sales": 1431278391,
+    "reinvestment": 31819,
+    "redemption": 503916592
+   },
+   {
+    "month": "2026-08",
+    "sales": 1192155255,
+    "reinvestment": 6099047,
+    "redemption": 570632254
+   },
+   {
+    "month": "2026-09",
+    "sales": 912758787,
+    "reinvestment": 1794038,
+    "redemption": 1054256006
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLY": {
+  "symbol": "XLY",
+  "bucket": "other_sectors",
+  "name": "XLY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100056",
+    "reportDate": "2026-07-31",
+    "netAssets": 41820831772
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2203134080,
+    "reinvestment": 15791972,
+    "redemption": 1736558532
+   },
+   {
+    "month": "2026-05",
+    "sales": 2762889980,
+    "reinvestment": 8476965,
+    "redemption": 890423365
+   },
+   {
+    "month": "2026-06",
+    "sales": 1732754849,
+    "reinvestment": 8569347,
+    "redemption": 2317665142
+   },
+   {
+    "month": "2026-07",
+    "sales": 2331653650,
+    "reinvestment": 2375883,
+    "redemption": 2484446912
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLP": {
+  "symbol": "XLP",
+  "bucket": "other_sectors",
+  "name": "XLP (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100057",
+    "reportDate": "2026-09-30",
+    "netAssets": 27779395674
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1683200341,
+    "reinvestment": 317995,
+    "redemption": 1464581619
+   },
+   {
+    "month": "2026-05",
+    "sales": 1685833004,
+    "reinvestment": 11317083,
+    "redemption": 1056132528
+   },
+   {
+    "month": "2026-06",
+    "sales": 756902876,
+    "reinvestment": 1193628,
+    "redemption": 1495521837
+   },
+   {
+    "month": "2026-07",
+    "sales": 1159546950,
+    "reinvestment": 10717193,
+    "redemption": 1196472914
+   },
+   {
+    "month": "2026-08",
+    "sales": 934331706,
+    "reinvestment": 13410688,
+    "redemption": 1003188574
+   },
+   {
+    "month": "2026-09",
+    "sales": 1199588907,
+    "reinvestment": 8822995,
+    "redemption": 669801239
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLU": {
+  "symbol": "XLU",
+  "bucket": "other_sectors",
+  "name": "XLU (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100058",
+    "reportDate": "2026-09-30",
+    "netAssets": 6802116214
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 513855062,
+    "reinvestment": 258277,
+    "redemption": 304595624
+   },
+   {
+    "month": "2026-05",
+    "sales": 377365764,
+    "reinvestment": 2314338,
+    "redemption": 261600916
+   },
+   {
+    "month": "2026-06",
+    "sales": 541783804,
+    "reinvestment": 1346780,
+    "redemption": 355074653
+   },
+   {
+    "month": "2026-07",
+    "sales": 498882064,
+    "reinvestment": 2078708,
+    "redemption": 162380487
+   },
+   {
+    "month": "2026-08",
+    "sales": 500097435,
+    "reinvestment": 216142,
+    "redemption": 325238149
+   },
+   {
+    "month": "2026-09",
+    "sales": 343316337,
+    "reinvestment": 2786947,
+    "redemption": 215075973
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLC": {
+  "symbol": "XLC",
+  "bucket": "other_sectors",
+  "name": "XLC (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100059",
+    "reportDate": "2026-09-30",
+    "netAssets": 11929196821
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 467876122,
+    "reinvestment": 4493118,
+    "redemption": 545347094
+   },
+   {
+    "month": "2026-05",
+    "sales": 718923937,
+    "reinvestment": 5713153,
+    "redemption": 509260341
+   },
+   {
+    "month": "2026-06",
+    "sales": 593860205,
+    "reinvestment": 2907064,
+    "redemption": 528553188
+   },
+   {
+    "month": "2026-07",
+    "sales": 682925024,
+    "reinvestment": 996905,
+    "redemption": 608689447
+   },
+   {
+    "month": "2026-08",
+    "sales": 448683114,
+    "reinvestment": 1446435,
+    "redemption": 415047226
+   },
+   {
+    "month": "2026-09",
+    "sales": 766677708,
+    "reinvestment": 1893490,
+    "redemption": 614290161
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "XLB": {
+  "symbol": "XLB",
+  "bucket": "other_sectors",
+  "name": "XLB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100060",
+    "reportDate": "2026-09-30",
+    "netAssets": 20450752021
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1025812221,
+    "reinvestment": 8300052,
+    "redemption": 1100629903
+   },
+   {
+    "month": "2026-05",
+    "sales": 887357376,
+    "reinvestment": 4091729,
+    "redemption": 1096349906
+   },
+   {
+    "month": "2026-06",
+    "sales": 928987061,
+    "reinvestment": 4644847,
+    "redemption": 557363884
+   },
+   {
+    "month": "2026-07",
+    "sales": 997225170,
+    "reinvestment": 4719517,
+    "redemption": 1068710522
+   },
+   {
+    "month": "2026-08",
+    "sales": 895236169,
+    "reinvestment": 5529731,
+    "redemption": 829440886
+   },
+   {
+    "month": "2026-09",
+    "sales": 1486013980,
+    "reinvestment": 127534,
+    "redemption": 764691116
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VXUS": {
+  "symbol": "VXUS",
+  "bucket": "ex_us",
+  "name": "VXUS (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100061",
+    "reportDate": "2026-09-30",
+    "netAssets": 26869613640
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 4308026426,
+    "reinvestment": 3912537,
+    "redemption": 1319343333
+   },
+   {
+    "month": "2026-05",
+    "sales": 4361687563,
+    "reinvestment": 9170049,
+    "redemption": 569641848
+   },
+   {
+    "month": "2026-06",
+    "sales": 3164001934,
+    "reinvestment": 13274873,
+    "redemption": 1164872218
+   },
+   {
+    "month": "2026-07",
+    "sales": 4283485279,
+    "reinvestment": 7179575,
+    "redemption": 1425111891
+   },
+   {
+    "month": "2026-08",
+    "sales": 3892201699,
+    "reinvestment": 3955831,
+    "redemption": 1300092503
+   },
+   {
+    "month": "2026-09",
+    "sales": 4681846735,
+    "reinvestment": 1004161,
+    "redemption": 1523909943
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IXUS": {
+  "symbol": "IXUS",
+  "bucket": "ex_us",
+  "name": "IXUS (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100062",
+    "reportDate": "2026-09-30",
+    "netAssets": 10386757191
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2541482216,
+    "reinvestment": 4736420,
+    "redemption": 300600370
+   },
+   {
+    "month": "2026-05",
+    "sales": 1950489814,
+    "reinvestment": 1416072,
+    "redemption": 364878462
+   },
+   {
+    "month": "2026-06",
+    "sales": 2833126933,
+    "reinvestment": 3974003,
+    "redemption": 481044245
+   },
+   {
+    "month": "2026-07",
+    "sales": 2197698278,
+    "reinvestment": 4345639,
+    "redemption": 592853913
+   },
+   {
+    "month": "2026-08",
+    "sales": 2400156967,
+    "reinvestment": 665742,
+    "redemption": 382543573
+   },
+   {
+    "month": "2026-09",
+    "sales": 3713211453,
+    "reinvestment": 1903912,
+    "redemption": 211151046
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VEU": {
+  "symbol": "VEU",
+  "bucket": "ex_us",
+  "name": "VEU (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100063",
+    "reportDate": "2026-09-30",
+    "netAssets": 22325205466
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 4272275530,
+    "reinvestment": 10508331,
+    "redemption": 737436079
+   },
+   {
+    "month": "2026-05",
+    "sales": 4616763216,
+    "reinvestment": 4015160,
+    "redemption": 1206379528
+   },
+   {
+    "month": "2026-06",
+    "sales": 2925620397,
+    "reinvestment": 1368769,
+    "redemption": 1131128334
+   },
+   {
+    "month": "2026-07",
+    "sales": 4682485603,
+    "reinvestment": 562676,
+    "redemption": 1085721086
+   },
+   {
+    "month": "2026-08",
+    "sales": 3893918992,
+    "reinvestment": 7036692,
+    "redemption": 722712497
+   },
+   {
+    "month": "2026-09",
+    "sales": 3688754037,
+    "reinvestment": 3771317,
+    "redemption": 939969338
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VEA": {
+  "symbol": "VEA",
+  "bucket": "developed",
+  "name": "VEA (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100064",
+    "reportDate": "2026-09-30",
+    "netAssets": 13686302876
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 710237462,
+    "reinvestment": 6682937,
+    "redemption": 475826944
+   },
+   {
+    "month": "2026-05",
+    "sales": 842267698,
+    "reinvestment": 1951967,
+    "redemption": 660819468
+   },
+   {
+    "month": "2026-06",
+    "sales": 604585334,
+    "reinvestment": 4903216,
+    "redemption": 423655075
+   },
+   {
+    "month": "2026-07",
+    "sales": 657657560,
+    "reinvestment": 6746925,
+    "redemption": 713839099
+   },
+   {
+    "month": "2026-08",
+    "sales": 867322684,
+    "reinvestment": 514739,
+    "redemption": 687655722
+   },
+   {
+    "month": "2026-09",
+    "sales": 561011434,
+    "reinvestment": 5818119,
+    "redemption": 430252151
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IEFA": {
+  "symbol": "IEFA",
+  "bucket": "developed",
+  "name": "IEFA (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100065",
+    "reportDate": "2026-09-30",
+    "netAssets": 21470718605
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 671144098,
+    "reinvestment": 7977299,
+    "redemption": 560084514
+   },
+   {
+    "month": "2026-05",
+    "sales": 597278947,
+    "reinvestment": 1524433,
+    "redemption": 727383295
+   },
+   {
+    "month": "2026-06",
+    "sales": 1220124051,
+    "reinvestment": 2282916,
+    "redemption": 1268287722
+   },
+   {
+    "month": "2026-07",
+    "sales": 702146284,
+    "reinvestment": 1639028,
+    "redemption": 502766525
+   },
+   {
+    "month": "2026-08",
+    "sales": 671162876,
+    "reinvestment": 3206144,
+    "redemption": 833265970
+   },
+   {
+    "month": "2026-09",
+    "sales": 1108486212,
+    "reinvestment": 1289291,
+    "redemption": 767928896
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EFA": {
+  "symbol": "EFA",
+  "bucket": "developed",
+  "name": "EFA (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100066",
+    "reportDate": "2026-09-30",
+    "netAssets": 21241436952
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1263796115,
+    "reinvestment": 860433,
+    "redemption": 1176585077
+   },
+   {
+    "month": "2026-05",
+    "sales": 1237353786,
+    "reinvestment": 6942433,
+    "redemption": 1168213207
+   },
+   {
+    "month": "2026-06",
+    "sales": 752384167,
+    "reinvestment": 926452,
+    "redemption": 537477481
+   },
+   {
+    "month": "2026-07",
+    "sales": 731518936,
+    "reinvestment": 10295929,
+    "redemption": 876574560
+   },
+   {
+    "month": "2026-08",
+    "sales": 734560695,
+    "reinvestment": 6115183,
+    "redemption": 509090688
+   },
+   {
+    "month": "2026-09",
+    "sales": 697698394,
+    "reinvestment": 419015,
+    "redemption": 1117218256
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHF": {
+  "symbol": "SCHF",
+  "bucket": "developed",
+  "name": "SCHF (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100067",
+    "reportDate": "2026-09-30",
+    "netAssets": 5174101730
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 438781805,
+    "reinvestment": 938232,
+    "redemption": 127189631
+   },
+   {
+    "month": "2026-05",
+    "sales": 386231579,
+    "reinvestment": 356318,
+    "redemption": 282298922
+   },
+   {
+    "month": "2026-06",
+    "sales": 443704561,
+    "reinvestment": 1953430,
+    "redemption": 279256828
+   },
+   {
+    "month": "2026-07",
+    "sales": 390427984,
+    "reinvestment": 849768,
+    "redemption": 256768943
+   },
+   {
+    "month": "2026-08",
+    "sales": 497496790,
+    "reinvestment": 51783,
+    "redemption": 304277815
+   },
+   {
+    "month": "2026-09",
+    "sales": 431796748,
+    "reinvestment": 1195730,
+    "redemption": 209034400
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VWO": {
+  "symbol": "VWO",
+  "bucket": "emerging",
+  "name": "VWO (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100068",
+    "reportDate": "2026-09-30",
+    "netAssets": 8592067483
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 681116005,
+    "reinvestment": 3720633,
+    "redemption": 367444514
+   },
+   {
+    "month": "2026-05",
+    "sales": 728967708,
+    "reinvestment": 3486806,
+    "redemption": 241914910
+   },
+   {
+    "month": "2026-06",
+    "sales": 412951372,
+    "reinvestment": 4071502,
+    "redemption": 463207380
+   },
+   {
+    "month": "2026-07",
+    "sales": 501166723,
+    "reinvestment": 2686376,
+    "redemption": 456936999
+   },
+   {
+    "month": "2026-08",
+    "sales": 597971886,
+    "reinvestment": 554113,
+    "redemption": 271680922
+   },
+   {
+    "month": "2026-09",
+    "sales": 731789001,
+    "reinvestment": 2592971,
+    "redemption": 496985833
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IEMG": {
+  "symbol": "IEMG",
+  "bucket": "emerging",
+  "name": "IEMG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100069",
+    "reportDate": "2026-09-30",
+    "netAssets": 12186586031
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 551113122,
+    "reinvestment": 625163,
+    "redemption": 323830773
+   },
+   {
+    "month": "2026-05",
+    "sales": 583314126,
+    "reinvestment": 1079478,
+    "redemption": 595815466
+   },
+   {
+    "month": "2026-06",
+    "sales": 741904341,
+    "reinvestment": 5575931,
+    "redemption": 712527378
+   },
+   {
+    "month": "2026-07",
+    "sales": 921222071,
+    "reinvestment": 949079,
+    "redemption": 727504192
+   },
+   {
+    "month": "2026-08",
+    "sales": 932810004,
+    "reinvestment": 4894892,
+    "redemption": 317653019
+   },
+   {
+    "month": "2026-09",
+    "sales": 610964266,
+    "reinvestment": 734817,
+    "redemption": 527277763
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EEM": {
+  "symbol": "EEM",
+  "bucket": "emerging",
+  "name": "EEM (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100070",
+    "reportDate": "2026-09-30",
+    "netAssets": 35213274867
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1407055767,
+    "reinvestment": 4301942,
+    "redemption": 963313789
+   },
+   {
+    "month": "2026-05",
+    "sales": 1740954632,
+    "reinvestment": 14190391,
+    "redemption": 914716252
+   },
+   {
+    "month": "2026-06",
+    "sales": 2153918490,
+    "reinvestment": 12829668,
+    "redemption": 1004628847
+   },
+   {
+    "month": "2026-07",
+    "sales": 2246384336,
+    "reinvestment": 12091296,
+    "redemption": 1383960093
+   },
+   {
+    "month": "2026-08",
+    "sales": 1143721028,
+    "reinvestment": 11031756,
+    "redemption": 1603938224
+   },
+   {
+    "month": "2026-09",
+    "sales": 1946418074,
+    "reinvestment": 15257071,
+    "redemption": 1527949941
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EWJ": {
+  "symbol": "EWJ",
+  "bucket": "countries",
+  "name": "EWJ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100071",
+    "reportDate": "2026-09-30",
+    "netAssets": 7730305428
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 380666033,
+    "reinvestment": 1194734,
+    "redemption": 424812342
+   },
+   {
+    "month": "2026-05",
+    "sales": 189232565,
+    "reinvestment": 1947532,
+    "redemption": 325726036
+   },
+   {
+    "month": "2026-06",
+    "sales": 318830620,
+    "reinvestment": 3009044,
+    "redemption": 483714690
+   },
+   {
+    "month": "2026-07",
+    "sales": 262611633,
+    "reinvestment": 846796,
+    "redemption": 566128329
+   },
+   {
+    "month": "2026-08",
+    "sales": 203799331,
+    "reinvestment": 2120005,
+    "redemption": 573970255
+   },
+   {
+    "month": "2026-09",
+    "sales": 309928485,
+    "reinvestment": 2159374,
+    "redemption": 433841426
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "INDA": {
+  "symbol": "INDA",
+  "bucket": "countries",
+  "name": "INDA (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100072",
+    "reportDate": "2026-09-30",
+    "netAssets": 29691481201
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 912257174,
+    "reinvestment": 2524469,
+    "redemption": 1796566583
+   },
+   {
+    "month": "2026-05",
+    "sales": 1752049032,
+    "reinvestment": 1625460,
+    "redemption": 1499090037
+   },
+   {
+    "month": "2026-06",
+    "sales": 829454928,
+    "reinvestment": 5090661,
+    "redemption": 823002804
+   },
+   {
+    "month": "2026-07",
+    "sales": 812082796,
+    "reinvestment": 8060005,
+    "redemption": 1522024804
+   },
+   {
+    "month": "2026-08",
+    "sales": 1551076001,
+    "reinvestment": 3793331,
+    "redemption": 1140317126
+   },
+   {
+    "month": "2026-09",
+    "sales": 1145504752,
+    "reinvestment": 4252110,
+    "redemption": 1953234257
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MCHI": {
+  "symbol": "MCHI",
+  "bucket": "countries",
+  "name": "MCHI (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100073",
+    "reportDate": "2026-07-31",
+    "netAssets": 36103829225
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1554550684,
+    "reinvestment": 1402731,
+    "redemption": 1725752706
+   },
+   {
+    "month": "2026-05",
+    "sales": 2158641572,
+    "reinvestment": 450499,
+    "redemption": 1515039462
+   },
+   {
+    "month": "2026-06",
+    "sales": 1344801172,
+    "reinvestment": 10051736,
+    "redemption": 1288577195
+   },
+   {
+    "month": "2026-07",
+    "sales": 1498296031,
+    "reinvestment": 2756116,
+    "redemption": 1777618232
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EWZ": {
+  "symbol": "EWZ",
+  "bucket": "countries",
+  "name": "EWZ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100074",
+    "reportDate": "2026-09-30",
+    "netAssets": 3837949307
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 116727377,
+    "reinvestment": 700480,
+    "redemption": 410160878
+   },
+   {
+    "month": "2026-05",
+    "sales": 81907105,
+    "reinvestment": 1702870,
+    "redemption": 381091429
+   },
+   {
+    "month": "2026-06",
+    "sales": 120749587,
+    "reinvestment": 964385,
+    "redemption": 454216369
+   },
+   {
+    "month": "2026-07",
+    "sales": 136874048,
+    "reinvestment": 201352,
+    "redemption": 386030617
+   },
+   {
+    "month": "2026-08",
+    "sales": 153750975,
+    "reinvestment": 712727,
+    "redemption": 336046332
+   },
+   {
+    "month": "2026-09",
+    "sales": 121695527,
+    "reinvestment": 570314,
+    "redemption": 347846705
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EWY": {
+  "symbol": "EWY",
+  "bucket": "countries",
+  "name": "EWY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100075",
+    "reportDate": "2026-09-30",
+    "netAssets": 41860110730
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1208963402,
+    "reinvestment": 19271552,
+    "redemption": 2166672214
+   },
+   {
+    "month": "2026-05",
+    "sales": 1186814230,
+    "reinvestment": 11462265,
+    "redemption": 2086563553
+   },
+   {
+    "month": "2026-06",
+    "sales": 1322002472,
+    "reinvestment": 18048617,
+    "redemption": 1401701414
+   },
+   {
+    "month": "2026-07",
+    "sales": 1142621924,
+    "reinvestment": 4591232,
+    "redemption": 2217689682
+   },
+   {
+    "month": "2026-08",
+    "sales": 2168856400,
+    "reinvestment": 16804569,
+    "redemption": 1568183778
+   },
+   {
+    "month": "2026-09",
+    "sales": 1175416878,
+    "reinvestment": 15497735,
+    "redemption": 1781714087
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "EWT": {
+  "symbol": "EWT",
+  "bucket": "countries",
+  "name": "EWT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100076",
+    "reportDate": "2026-09-30",
+    "netAssets": 34138268218
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1634333120,
+    "reinvestment": 9553171,
+    "redemption": 1890494010
+   },
+   {
+    "month": "2026-05",
+    "sales": 1312001526,
+    "reinvestment": 12008089,
+    "redemption": 1603509844
+   },
+   {
+    "month": "2026-06",
+    "sales": 1608678428,
+    "reinvestment": 16948909,
+    "redemption": 2126261199
+   },
+   {
+    "month": "2026-07",
+    "sales": 1531646362,
+    "reinvestment": 2175375,
+    "redemption": 1529903119
+   },
+   {
+    "month": "2026-08",
+    "sales": 2003693930,
+    "reinvestment": 10772229,
+    "redemption": 1583950776
+   },
+   {
+    "month": "2026-09",
+    "sales": 1771458176,
+    "reinvestment": 15747781,
+    "redemption": 1880259624
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "TQQQ": {
+  "symbol": "TQQQ",
+  "bucket": "leveraged",
+  "name": "TQQQ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100077",
+    "reportDate": "2026-09-30",
+    "netAssets": 39551764472
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1285649244,
+    "reinvestment": 14770970,
+    "redemption": 1400130160
+   },
+   {
+    "month": "2026-05",
+    "sales": 1515137073,
+    "reinvestment": 3977019,
+    "redemption": 1544824153
+   },
+   {
+    "month": "2026-06",
+    "sales": 2315439315,
+    "reinvestment": 3633319,
+    "redemption": 2454418401
+   },
+   {
+    "month": "2026-07",
+    "sales": 2153970733,
+    "reinvestment": 18562323,
+    "redemption": 2731041397
+   },
+   {
+    "month": "2026-08",
+    "sales": 1784966743,
+    "reinvestment": 6206793,
+    "redemption": 2540615436
+   },
+   {
+    "month": "2026-09",
+    "sales": 2356488170,
+    "reinvestment": 1594867,
+    "redemption": 1825634131
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SQQQ": {
+  "symbol": "SQQQ",
+  "bucket": "leveraged",
+  "name": "SQQQ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100078",
+    "reportDate": "2026-09-30",
+    "netAssets": 19419418775
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 547071338,
+    "reinvestment": 3913749,
+    "redemption": 1287907207
+   },
+   {
+    "month": "2026-05",
+    "sales": 772705879,
+    "reinvestment": 8364041,
+    "redemption": 1579356354
+   },
+   {
+    "month": "2026-06",
+    "sales": 946272311,
+    "reinvestment": 1041712,
+    "redemption": 1551933561
+   },
+   {
+    "month": "2026-07",
+    "sales": 504471965,
+    "reinvestment": 7407278,
+    "redemption": 1519584519
+   },
+   {
+    "month": "2026-08",
+    "sales": 863820827,
+    "reinvestment": 3506688,
+    "redemption": 1318840425
+   },
+   {
+    "month": "2026-09",
+    "sales": 1083171543,
+    "reinvestment": 2455792,
+    "redemption": 1056341381
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SOXL": {
+  "symbol": "SOXL",
+  "bucket": "leveraged",
+  "name": "SOXL (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100079",
+    "reportDate": "2026-09-30",
+    "netAssets": 35915370309
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1279620800,
+    "reinvestment": 15489885,
+    "redemption": 2130074823
+   },
+   {
+    "month": "2026-05",
+    "sales": 1193488129,
+    "reinvestment": 17253453,
+    "redemption": 1975892346
+   },
+   {
+    "month": "2026-06",
+    "sales": 2001282331,
+    "reinvestment": 15043015,
+    "redemption": 2539908249
+   },
+   {
+    "month": "2026-07",
+    "sales": 854300877,
+    "reinvestment": 478524,
+    "redemption": 2348762429
+   },
+   {
+    "month": "2026-08",
+    "sales": 1955568662,
+    "reinvestment": 2866245,
+    "redemption": 1835656195
+   },
+   {
+    "month": "2026-09",
+    "sales": 1555782829,
+    "reinvestment": 16036345,
+    "redemption": 1365467535
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "GOVT": {
+  "symbol": "GOVT",
+  "bucket": "treasuries",
+  "name": "GOVT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100080",
+    "reportDate": "2026-09-30",
+    "netAssets": 33005120348
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3093522585,
+    "reinvestment": 10542443,
+    "redemption": 1835247322
+   },
+   {
+    "month": "2026-05",
+    "sales": 3095368176,
+    "reinvestment": 5788619,
+    "redemption": 707042877
+   },
+   {
+    "month": "2026-06",
+    "sales": 3580252320,
+    "reinvestment": 5699450,
+    "redemption": 1752690681
+   },
+   {
+    "month": "2026-07",
+    "sales": 2809797769,
+    "reinvestment": 35632,
+    "redemption": 897769845
+   },
+   {
+    "month": "2026-08",
+    "sales": 3036863612,
+    "reinvestment": 6272280,
+    "redemption": 840807211
+   },
+   {
+    "month": "2026-09",
+    "sales": 4174006663,
+    "reinvestment": 8545604,
+    "redemption": 1363855418
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IEF": {
+  "symbol": "IEF",
+  "bucket": "treasuries",
+  "name": "IEF (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100081",
+    "reportDate": "2026-09-30",
+    "netAssets": 12138110505
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2234055667,
+    "reinvestment": 240097,
+    "redemption": 610426682
+   },
+   {
+    "month": "2026-05",
+    "sales": 2108377018,
+    "reinvestment": 3450521,
+    "redemption": 489399033
+   },
+   {
+    "month": "2026-06",
+    "sales": 2488935328,
+    "reinvestment": 2884461,
+    "redemption": 407254652
+   },
+   {
+    "month": "2026-07",
+    "sales": 2761905966,
+    "reinvestment": 3424122,
+    "redemption": 430092990
+   },
+   {
+    "month": "2026-08",
+    "sales": 1776835786,
+    "reinvestment": 55271,
+    "redemption": 509239121
+   },
+   {
+    "month": "2026-09",
+    "sales": 2442656164,
+    "reinvestment": 3560389,
+    "redemption": 700662299
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "TLT": {
+  "symbol": "TLT",
+  "bucket": "treasuries",
+  "name": "TLT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100082",
+    "reportDate": "2026-09-30",
+    "netAssets": 32630969252
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3525409415,
+    "reinvestment": 6338413,
+    "redemption": 1060303522
+   },
+   {
+    "month": "2026-05",
+    "sales": 3848369664,
+    "reinvestment": 10373455,
+    "redemption": 1231082029
+   },
+   {
+    "month": "2026-06",
+    "sales": 3757383074,
+    "reinvestment": 16176002,
+    "redemption": 808127906
+   },
+   {
+    "month": "2026-07",
+    "sales": 2332012250,
+    "reinvestment": 5912338,
+    "redemption": 740007988
+   },
+   {
+    "month": "2026-08",
+    "sales": 2945047858,
+    "reinvestment": 15865417,
+    "redemption": 1746113463
+   },
+   {
+    "month": "2026-09",
+    "sales": 2471590344,
+    "reinvestment": 2401905,
+    "redemption": 1185383369
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SHY": {
+  "symbol": "SHY",
+  "bucket": "treasuries",
+  "name": "SHY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100083",
+    "reportDate": "2026-09-30",
+    "netAssets": 12578289484
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3438944141,
+    "reinvestment": 3569791,
+    "redemption": 293520636
+   },
+   {
+    "month": "2026-05",
+    "sales": 2159849661,
+    "reinvestment": 4542155,
+    "redemption": 401306542
+   },
+   {
+    "month": "2026-06",
+    "sales": 2126635317,
+    "reinvestment": 244456,
+    "redemption": 452607706
+   },
+   {
+    "month": "2026-07",
+    "sales": 1732240298,
+    "reinvestment": 3618983,
+    "redemption": 440643872
+   },
+   {
+    "month": "2026-08",
+    "sales": 1705602227,
+    "reinvestment": 5583229,
+    "redemption": 631678891
+   },
+   {
+    "month": "2026-09",
+    "sales": 2267958843,
+    "reinvestment": 5849088,
+    "redemption": 468870506
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VGIT": {
+  "symbol": "VGIT",
+  "bucket": "treasuries",
+  "name": "VGIT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100084",
+    "reportDate": "2026-09-30",
+    "netAssets": 41965074770
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2900241030,
+    "reinvestment": 6625574,
+    "redemption": 1393749700
+   },
+   {
+    "month": "2026-05",
+    "sales": 3516451696,
+    "reinvestment": 850894,
+    "redemption": 1803611121
+   },
+   {
+    "month": "2026-06",
+    "sales": 4144768256,
+    "reinvestment": 12937747,
+    "redemption": 2053296632
+   },
+   {
+    "month": "2026-07",
+    "sales": 2408039308,
+    "reinvestment": 11163059,
+    "redemption": 1912123134
+   },
+   {
+    "month": "2026-08",
+    "sales": 4517410961,
+    "reinvestment": 6517641,
+    "redemption": 2130881732
+   },
+   {
+    "month": "2026-09",
+    "sales": 4356300055,
+    "reinvestment": 16679778,
+    "redemption": 2035213684
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VGSH": {
+  "symbol": "VGSH",
+  "bucket": "treasuries",
+  "name": "VGSH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100085",
+    "reportDate": "2026-09-30",
+    "netAssets": 21676946169
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3577520864,
+    "reinvestment": 7218883,
+    "redemption": 800316908
+   },
+   {
+    "month": "2026-05",
+    "sales": 2903302906,
+    "reinvestment": 7480466,
+    "redemption": 612896190
+   },
+   {
+    "month": "2026-06",
+    "sales": 2653523474,
+    "reinvestment": 5399199,
+    "redemption": 602885088
+   },
+   {
+    "month": "2026-07",
+    "sales": 2101612345,
+    "reinvestment": 2499999,
+    "redemption": 901915547
+   },
+   {
+    "month": "2026-08",
+    "sales": 3773069102,
+    "reinvestment": 3663145,
+    "redemption": 717592367
+   },
+   {
+    "month": "2026-09",
+    "sales": 3646566494,
+    "reinvestment": 7518264,
+    "redemption": 1210737559
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHR": {
+  "symbol": "SCHR",
+  "bucket": "treasuries",
+  "name": "SCHR (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100086",
+    "reportDate": "2026-09-30",
+    "netAssets": 18743057639
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2284301512,
+    "reinvestment": 411,
+    "redemption": 745324894
+   },
+   {
+    "month": "2026-05",
+    "sales": 3580755878,
+    "reinvestment": 3857568,
+    "redemption": 1106971128
+   },
+   {
+    "month": "2026-06",
+    "sales": 2135246409,
+    "reinvestment": 5559701,
+    "redemption": 843745925
+   },
+   {
+    "month": "2026-07",
+    "sales": 3755845588,
+    "reinvestment": 6169541,
+    "redemption": 590691972
+   },
+   {
+    "month": "2026-08",
+    "sales": 3590187558,
+    "reinvestment": 37827,
+    "redemption": 455497985
+   },
+   {
+    "month": "2026-09",
+    "sales": 3095388578,
+    "reinvestment": 1422137,
+    "redemption": 1040572554
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SGOV": {
+  "symbol": "SGOV",
+  "bucket": "bills",
+  "name": "SGOV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100087",
+    "reportDate": "2026-09-30",
+    "netAssets": 21016735861
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 6486074170,
+    "reinvestment": 9874351,
+    "redemption": 1102471136
+   },
+   {
+    "month": "2026-05",
+    "sales": 7126054452,
+    "reinvestment": 401710,
+    "redemption": 1073934313
+   },
+   {
+    "month": "2026-06",
+    "sales": 6173306550,
+    "reinvestment": 911207,
+    "redemption": 1087337166
+   },
+   {
+    "month": "2026-07",
+    "sales": 6119387895,
+    "reinvestment": 4504798,
+    "redemption": 498356243
+   },
+   {
+    "month": "2026-08",
+    "sales": 4810228024,
+    "reinvestment": 7104894,
+    "redemption": 502038919
+   },
+   {
+    "month": "2026-09",
+    "sales": 4867465711,
+    "reinvestment": 6790734,
+    "redemption": 441437082
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "BIL": {
+  "symbol": "BIL",
+  "bucket": "bills",
+  "name": "BIL (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100088",
+    "reportDate": "2026-09-30",
+    "netAssets": 3813627520
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2948754331,
+    "reinvestment": 39093,
+    "redemption": 179261905
+   },
+   {
+    "month": "2026-05",
+    "sales": 3826484087,
+    "reinvestment": 1303163,
+    "redemption": 197365169
+   },
+   {
+    "month": "2026-06",
+    "sales": 5440829914,
+    "reinvestment": 223491,
+    "redemption": 163664480
+   },
+   {
+    "month": "2026-07",
+    "sales": 3664857536,
+    "reinvestment": 1494581,
+    "redemption": 223708440
+   },
+   {
+    "month": "2026-08",
+    "sales": 4539142642,
+    "reinvestment": 792202,
+    "redemption": 92544214
+   },
+   {
+    "month": "2026-09",
+    "sales": 6103631645,
+    "reinvestment": 876089,
+    "redemption": 218724403
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SHV": {
+  "symbol": "SHV",
+  "bucket": "bills",
+  "name": "SHV (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100089",
+    "reportDate": "2026-09-30",
+    "netAssets": 2278304368
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3949129334,
+    "reinvestment": 943495,
+    "redemption": 53949282
+   },
+   {
+    "month": "2026-05",
+    "sales": 3084805707,
+    "reinvestment": 649489,
+    "redemption": 108912963
+   },
+   {
+    "month": "2026-06",
+    "sales": 5552763630,
+    "reinvestment": 122682,
+    "redemption": 112645445
+   },
+   {
+    "month": "2026-07",
+    "sales": 3140985436,
+    "reinvestment": 454786,
+    "redemption": 73811803
+   },
+   {
+    "month": "2026-08",
+    "sales": 5549276266,
+    "reinvestment": 412184,
+    "redemption": 76615017
+   },
+   {
+    "month": "2026-09",
+    "sales": 5373013396,
+    "reinvestment": 558966,
+    "redemption": 81579875
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "USFR": {
+  "symbol": "USFR",
+  "bucket": "bills",
+  "name": "USFR (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100090",
+    "reportDate": "2026-07-31",
+    "netAssets": 40451132625
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 5562601003,
+    "reinvestment": 2246187,
+    "redemption": 820049507
+   },
+   {
+    "month": "2026-05",
+    "sales": 5246677602,
+    "reinvestment": 19162583,
+    "redemption": 1492523664
+   },
+   {
+    "month": "2026-06",
+    "sales": 5843823503,
+    "reinvestment": 7333117,
+    "redemption": 1960664250
+   },
+   {
+    "month": "2026-07",
+    "sales": 6524458068,
+    "reinvestment": 5711899,
+    "redemption": 1791713317
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "TFLO": {
+  "symbol": "TFLO",
+  "bucket": "bills",
+  "name": "TFLO (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100091",
+    "reportDate": "2026-09-30",
+    "netAssets": 20500649006
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 6353838531,
+    "reinvestment": 4855625,
+    "redemption": 834038268
+   },
+   {
+    "month": "2026-05",
+    "sales": 4299483357,
+    "reinvestment": 1664962,
+    "redemption": 1177993394
+   },
+   {
+    "month": "2026-06",
+    "sales": 5304748860,
+    "reinvestment": 7844405,
+    "redemption": 486835469
+   },
+   {
+    "month": "2026-07",
+    "sales": 3886727921,
+    "reinvestment": 529203,
+    "redemption": 1141822949
+   },
+   {
+    "month": "2026-08",
+    "sales": 3624788488,
+    "reinvestment": 7329851,
+    "redemption": 639844468
+   },
+   {
+    "month": "2026-09",
+    "sales": 5482387483,
+    "reinvestment": 2105876,
+    "redemption": 610966169
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "JPST": {
+  "symbol": "JPST",
+  "bucket": "ultra_short",
+  "name": "JPST (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100092",
+    "reportDate": "2026-09-30",
+    "netAssets": 38406238767
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2414461635,
+    "reinvestment": 265052,
+    "redemption": 2006358122
+   },
+   {
+    "month": "2026-05",
+    "sales": 2432294271,
+    "reinvestment": 7263363,
+    "redemption": 1940700238
+   },
+   {
+    "month": "2026-06",
+    "sales": 996061325,
+    "reinvestment": 12977461,
+    "redemption": 1190768920
+   },
+   {
+    "month": "2026-07",
+    "sales": 1171149461,
+    "reinvestment": 2712449,
+    "redemption": 2043147888
+   },
+   {
+    "month": "2026-08",
+    "sales": 2469572304,
+    "reinvestment": 14961001,
+    "redemption": 1922155034
+   },
+   {
+    "month": "2026-09",
+    "sales": 1366062892,
+    "reinvestment": 9412749,
+    "redemption": 1385009933
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MINT": {
+  "symbol": "MINT",
+  "bucket": "ultra_short",
+  "name": "MINT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100093",
+    "reportDate": "2026-09-30",
+    "netAssets": 11946353105
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 503491068,
+    "reinvestment": 1227058,
+    "redemption": 617675481
+   },
+   {
+    "month": "2026-05",
+    "sales": 776749279,
+    "reinvestment": 2856378,
+    "redemption": 320586004
+   },
+   {
+    "month": "2026-06",
+    "sales": 487770678,
+    "reinvestment": 2682186,
+    "redemption": 568645066
+   },
+   {
+    "month": "2026-07",
+    "sales": 958402163,
+    "reinvestment": 3665681,
+    "redemption": 406988957
+   },
+   {
+    "month": "2026-08",
+    "sales": 633315035,
+    "reinvestment": 158355,
+    "redemption": 561586895
+   },
+   {
+    "month": "2026-09",
+    "sales": 714562419,
+    "reinvestment": 3819670,
+    "redemption": 516030150
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "PULS": {
+  "symbol": "PULS",
+  "bucket": "ultra_short",
+  "name": "PULS (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100094",
+    "reportDate": "2026-09-30",
+    "netAssets": 25157149620
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 701462641,
+    "reinvestment": 10548481,
+    "redemption": 535916797
+   },
+   {
+    "month": "2026-05",
+    "sales": 1238147429,
+    "reinvestment": 9478626,
+    "redemption": 1143103650
+   },
+   {
+    "month": "2026-06",
+    "sales": 1772475545,
+    "reinvestment": 3938860,
+    "redemption": 899250725
+   },
+   {
+    "month": "2026-07",
+    "sales": 1629484726,
+    "reinvestment": 7208815,
+    "redemption": 551687730
+   },
+   {
+    "month": "2026-08",
+    "sales": 936956961,
+    "reinvestment": 6218583,
+    "redemption": 736857162
+   },
+   {
+    "month": "2026-09",
+    "sales": 661367100,
+    "reinvestment": 9319258,
+    "redemption": 1157415052
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "ICSH": {
+  "symbol": "ICSH",
+  "bucket": "ultra_short",
+  "name": "ICSH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100095",
+    "reportDate": "2026-09-30",
+    "netAssets": 3157006380
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 314942753,
+    "reinvestment": 439828,
+    "redemption": 83888049
+   },
+   {
+    "month": "2026-05",
+    "sales": 336218271,
+    "reinvestment": 1381158,
+    "redemption": 83908251
+   },
+   {
+    "month": "2026-06",
+    "sales": 430777474,
+    "reinvestment": 529032,
+    "redemption": 132023097
+   },
+   {
+    "month": "2026-07",
+    "sales": 320751421,
+    "reinvestment": 1493690,
+    "redemption": 176544191
+   },
+   {
+    "month": "2026-08",
+    "sales": 419305339,
+    "reinvestment": 543109,
+    "redemption": 184814204
+   },
+   {
+    "month": "2026-09",
+    "sales": 343269276,
+    "reinvestment": 363109,
+    "redemption": 65069322
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "AGG": {
+  "symbol": "AGG",
+  "bucket": "core_bonds",
+  "name": "AGG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100096",
+    "reportDate": "2026-09-30",
+    "netAssets": 9007622778
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2425596160,
+    "reinvestment": 4315562,
+    "redemption": 290070858
+   },
+   {
+    "month": "2026-05",
+    "sales": 2806431785,
+    "reinvestment": 1166007,
+    "redemption": 356093024
+   },
+   {
+    "month": "2026-06",
+    "sales": 1726906540,
+    "reinvestment": 2791484,
+    "redemption": 297648807
+   },
+   {
+    "month": "2026-07",
+    "sales": 2107806314,
+    "reinvestment": 4217611,
+    "redemption": 186451987
+   },
+   {
+    "month": "2026-08",
+    "sales": 2611495784,
+    "reinvestment": 1705677,
+    "redemption": 428289475
+   },
+   {
+    "month": "2026-09",
+    "sales": 1938877977,
+    "reinvestment": 955058,
+    "redemption": 385019748
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "BND": {
+  "symbol": "BND",
+  "bucket": "core_bonds",
+  "name": "BND (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100097",
+    "reportDate": "2026-09-30",
+    "netAssets": 2738062132
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1241894678,
+    "reinvestment": 1255429,
+    "redemption": 90819634
+   },
+   {
+    "month": "2026-05",
+    "sales": 1264659608,
+    "reinvestment": 818891,
+    "redemption": 76321781
+   },
+   {
+    "month": "2026-06",
+    "sales": 2225643758,
+    "reinvestment": 948483,
+    "redemption": 135718394
+   },
+   {
+    "month": "2026-07",
+    "sales": 2108761803,
+    "reinvestment": 216185,
+    "redemption": 63412278
+   },
+   {
+    "month": "2026-08",
+    "sales": 2322081727,
+    "reinvestment": 1303003,
+    "redemption": 97256616
+   },
+   {
+    "month": "2026-09",
+    "sales": 1765762356,
+    "reinvestment": 1233807,
+    "redemption": 100211475
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHZ": {
+  "symbol": "SCHZ",
+  "bucket": "core_bonds",
+  "name": "SCHZ (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100098",
+    "reportDate": "2026-09-30",
+    "netAssets": 38341675481
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 4237482885,
+    "reinvestment": 4293806,
+    "redemption": 1233280380
+   },
+   {
+    "month": "2026-05",
+    "sales": 3024626954,
+    "reinvestment": 16140602,
+    "redemption": 1838394013
+   },
+   {
+    "month": "2026-06",
+    "sales": 2819111330,
+    "reinvestment": 2961583,
+    "redemption": 1883250126
+   },
+   {
+    "month": "2026-07",
+    "sales": 2555390820,
+    "reinvestment": 11021890,
+    "redemption": 1167796118
+   },
+   {
+    "month": "2026-08",
+    "sales": 3683418139,
+    "reinvestment": 7873617,
+    "redemption": 885048185
+   },
+   {
+    "month": "2026-09",
+    "sales": 4207604321,
+    "reinvestment": 2565919,
+    "redemption": 1818389199
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IUSB": {
+  "symbol": "IUSB",
+  "bucket": "core_bonds",
+  "name": "IUSB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100099",
+    "reportDate": "2026-09-30",
+    "netAssets": 23248124680
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 3448147136,
+    "reinvestment": 9384137,
+    "redemption": 1007314655
+   },
+   {
+    "month": "2026-05",
+    "sales": 2191847829,
+    "reinvestment": 6827386,
+    "redemption": 948140229
+   },
+   {
+    "month": "2026-06",
+    "sales": 2113966268,
+    "reinvestment": 6408038,
+    "redemption": 831760619
+   },
+   {
+    "month": "2026-07",
+    "sales": 2578321997,
+    "reinvestment": 10661524,
+    "redemption": 1370945387
+   },
+   {
+    "month": "2026-08",
+    "sales": 2379093243,
+    "reinvestment": 3148062,
+    "redemption": 894368722
+   },
+   {
+    "month": "2026-09",
+    "sales": 3297598496,
+    "reinvestment": 6056348,
+    "redemption": 1227362645
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "LQD": {
+  "symbol": "LQD",
+  "bucket": "corporate",
+  "name": "LQD (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100100",
+    "reportDate": "2026-09-30",
+    "netAssets": 32132936477
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 964376329,
+    "reinvestment": 12138272,
+    "redemption": 1085143303
+   },
+   {
+    "month": "2026-05",
+    "sales": 1747656565,
+    "reinvestment": 7678941,
+    "redemption": 1266327739
+   },
+   {
+    "month": "2026-06",
+    "sales": 1933188899,
+    "reinvestment": 7751801,
+    "redemption": 683015476
+   },
+   {
+    "month": "2026-07",
+    "sales": 906171070,
+    "reinvestment": 3658640,
+    "redemption": 1279165139
+   },
+   {
+    "month": "2026-08",
+    "sales": 1272864489,
+    "reinvestment": 634817,
+    "redemption": 643244413
+   },
+   {
+    "month": "2026-09",
+    "sales": 891873882,
+    "reinvestment": 6669311,
+    "redemption": 1047064850
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VCIT": {
+  "symbol": "VCIT",
+  "bucket": "corporate",
+  "name": "VCIT (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100101",
+    "reportDate": "2026-09-30",
+    "netAssets": 30438482391
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1053928554,
+    "reinvestment": 7267303,
+    "redemption": 841226569
+   },
+   {
+    "month": "2026-05",
+    "sales": 1440230150,
+    "reinvestment": 680613,
+    "redemption": 687651263
+   },
+   {
+    "month": "2026-06",
+    "sales": 1542281659,
+    "reinvestment": 13939520,
+    "redemption": 688316041
+   },
+   {
+    "month": "2026-07",
+    "sales": 1832851912,
+    "reinvestment": 1411122,
+    "redemption": 732288268
+   },
+   {
+    "month": "2026-08",
+    "sales": 1258772933,
+    "reinvestment": 12967464,
+    "redemption": 1373425715
+   },
+   {
+    "month": "2026-09",
+    "sales": 1182149447,
+    "reinvestment": 14735373,
+    "redemption": 1759966586
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VCSH": {
+  "symbol": "VCSH",
+  "bucket": "corporate",
+  "name": "VCSH (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100102",
+    "reportDate": "2026-09-30",
+    "netAssets": 28061582820
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1232245286,
+    "reinvestment": 11864603,
+    "redemption": 1254323858
+   },
+   {
+    "month": "2026-05",
+    "sales": 1016372369,
+    "reinvestment": 11120204,
+    "redemption": 1560368345
+   },
+   {
+    "month": "2026-06",
+    "sales": 1419383979,
+    "reinvestment": 7559302,
+    "redemption": 1081136235
+   },
+   {
+    "month": "2026-07",
+    "sales": 763336094,
+    "reinvestment": 10795955,
+    "redemption": 1248304753
+   },
+   {
+    "month": "2026-08",
+    "sales": 880622010,
+    "reinvestment": 652549,
+    "redemption": 1537332514
+   },
+   {
+    "month": "2026-09",
+    "sales": 1589638021,
+    "reinvestment": 11382756,
+    "redemption": 757947764
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IGSB": {
+  "symbol": "IGSB",
+  "bucket": "corporate",
+  "name": "IGSB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100103",
+    "reportDate": "2026-09-30",
+    "netAssets": 2402037706
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 352550019,
+    "reinvestment": 303383,
+    "redemption": 128894142
+   },
+   {
+    "month": "2026-05",
+    "sales": 228597669,
+    "reinvestment": 142702,
+    "redemption": 103969249
+   },
+   {
+    "month": "2026-06",
+    "sales": 267379296,
+    "reinvestment": 593646,
+    "redemption": 77570986
+   },
+   {
+    "month": "2026-07",
+    "sales": 216201950,
+    "reinvestment": 675605,
+    "redemption": 92262765
+   },
+   {
+    "month": "2026-08",
+    "sales": 315466150,
+    "reinvestment": 16762,
+    "redemption": 73880230
+   },
+   {
+    "month": "2026-09",
+    "sales": 368695119,
+    "reinvestment": 684920,
+    "redemption": 101194449
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IGIB": {
+  "symbol": "IGIB",
+  "bucket": "corporate",
+  "name": "IGIB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100104",
+    "reportDate": "2026-09-30",
+    "netAssets": 31227357912
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1516893382,
+    "reinvestment": 10489805,
+    "redemption": 896883173
+   },
+   {
+    "month": "2026-05",
+    "sales": 1516605187,
+    "reinvestment": 5635563,
+    "redemption": 1652742228
+   },
+   {
+    "month": "2026-06",
+    "sales": 1255296078,
+    "reinvestment": 2790888,
+    "redemption": 1100344875
+   },
+   {
+    "month": "2026-07",
+    "sales": 1083929348,
+    "reinvestment": 6432091,
+    "redemption": 636389010
+   },
+   {
+    "month": "2026-08",
+    "sales": 1643093895,
+    "reinvestment": 8477601,
+    "redemption": 1679052737
+   },
+   {
+    "month": "2026-09",
+    "sales": 1445096483,
+    "reinvestment": 14652837,
+    "redemption": 1036478383
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "HYG": {
+  "symbol": "HYG",
+  "bucket": "high_yield",
+  "name": "HYG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100105",
+    "reportDate": "2026-09-30",
+    "netAssets": 30921453854
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 707326171,
+    "reinvestment": 9088708,
+    "redemption": 1330033766
+   },
+   {
+    "month": "2026-05",
+    "sales": 773435268,
+    "reinvestment": 6127157,
+    "redemption": 1456621686
+   },
+   {
+    "month": "2026-06",
+    "sales": 1473891223,
+    "reinvestment": 7014659,
+    "redemption": 1359656928
+   },
+   {
+    "month": "2026-07",
+    "sales": 1204940698,
+    "reinvestment": 11252371,
+    "redemption": 2018883357
+   },
+   {
+    "month": "2026-08",
+    "sales": 857382384,
+    "reinvestment": 14372530,
+    "redemption": 1001432133
+   },
+   {
+    "month": "2026-09",
+    "sales": 675663866,
+    "reinvestment": 5999209,
+    "redemption": 1421737154
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "JNK": {
+  "symbol": "JNK",
+  "bucket": "high_yield",
+  "name": "JNK (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100106",
+    "reportDate": "2026-09-30",
+    "netAssets": 26085698847
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 739282208,
+    "reinvestment": 5177169,
+    "redemption": 1612661518
+   },
+   {
+    "month": "2026-05",
+    "sales": 828155383,
+    "reinvestment": 4189876,
+    "redemption": 1141433456
+   },
+   {
+    "month": "2026-06",
+    "sales": 593364488,
+    "reinvestment": 27912,
+    "redemption": 1764485163
+   },
+   {
+    "month": "2026-07",
+    "sales": 1530687902,
+    "reinvestment": 1405496,
+    "redemption": 1008913144
+   },
+   {
+    "month": "2026-08",
+    "sales": 648049277,
+    "reinvestment": 9038422,
+    "redemption": 1861192094
+   },
+   {
+    "month": "2026-09",
+    "sales": 1460635902,
+    "reinvestment": 1199096,
+    "redemption": 1598841090
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "USHY": {
+  "symbol": "USHY",
+  "bucket": "high_yield",
+  "name": "USHY (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100107",
+    "reportDate": "2026-07-31",
+    "netAssets": 8159758925
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 220870357,
+    "reinvestment": 3290455,
+    "redemption": 653651902
+   },
+   {
+    "month": "2026-05",
+    "sales": 482572902,
+    "reinvestment": 3240267,
+    "redemption": 737128705
+   },
+   {
+    "month": "2026-06",
+    "sales": 238734571,
+    "reinvestment": 258708,
+    "redemption": 655940069
+   },
+   {
+    "month": "2026-07",
+    "sales": 406078280,
+    "reinvestment": 543100,
+    "redemption": 854209192
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MUB": {
+  "symbol": "MUB",
+  "bucket": "munis",
+  "name": "MUB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100108",
+    "reportDate": "2026-09-30",
+    "netAssets": 13686500614
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1608669377,
+    "reinvestment": 5704396,
+    "redemption": 752903568
+   },
+   {
+    "month": "2026-05",
+    "sales": 2059694827,
+    "reinvestment": 6740787,
+    "redemption": 566575163
+   },
+   {
+    "month": "2026-06",
+    "sales": 1282410882,
+    "reinvestment": 1815049,
+    "redemption": 712782679
+   },
+   {
+    "month": "2026-07",
+    "sales": 2685212950,
+    "reinvestment": 3990517,
+    "redemption": 562720235
+   },
+   {
+    "month": "2026-08",
+    "sales": 1922437690,
+    "reinvestment": 6726431,
+    "redemption": 455564817
+   },
+   {
+    "month": "2026-09",
+    "sales": 1808246132,
+    "reinvestment": 4718839,
+    "redemption": 432286030
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VTEB": {
+  "symbol": "VTEB",
+  "bucket": "munis",
+  "name": "VTEB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100109",
+    "reportDate": "2026-09-30",
+    "netAssets": 20108177734
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2115177375,
+    "reinvestment": 2791326,
+    "redemption": 430658259
+   },
+   {
+    "month": "2026-05",
+    "sales": 1400101359,
+    "reinvestment": 7106337,
+    "redemption": 562894524
+   },
+   {
+    "month": "2026-06",
+    "sales": 2178316097,
+    "reinvestment": 8505632,
+    "redemption": 886616687
+   },
+   {
+    "month": "2026-07",
+    "sales": 2262439610,
+    "reinvestment": 2626506,
+    "redemption": 542451628
+   },
+   {
+    "month": "2026-08",
+    "sales": 2653679190,
+    "reinvestment": 9441718,
+    "redemption": 1110978402
+   },
+   {
+    "month": "2026-09",
+    "sales": 1999561029,
+    "reinvestment": 9222876,
+    "redemption": 842424388
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SUB": {
+  "symbol": "SUB",
+  "bucket": "munis",
+  "name": "SUB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100110",
+    "reportDate": "2026-09-30",
+    "netAssets": 21843461076
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2123043290,
+    "reinvestment": 5145263,
+    "redemption": 504528852
+   },
+   {
+    "month": "2026-05",
+    "sales": 2472437658,
+    "reinvestment": 7718520,
+    "redemption": 1131583010
+   },
+   {
+    "month": "2026-06",
+    "sales": 2145874322,
+    "reinvestment": 5793109,
+    "redemption": 1250243539
+   },
+   {
+    "month": "2026-07",
+    "sales": 2963559772,
+    "reinvestment": 9264321,
+    "redemption": 457094750
+   },
+   {
+    "month": "2026-08",
+    "sales": 2324389538,
+    "reinvestment": 3661210,
+    "redemption": 795733160
+   },
+   {
+    "month": "2026-09",
+    "sales": 1993214391,
+    "reinvestment": 10397613,
+    "redemption": 1221070820
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "MBB": {
+  "symbol": "MBB",
+  "bucket": "mortgage",
+  "name": "MBB (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100111",
+    "reportDate": "2026-09-30",
+    "netAssets": 20289026757
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 886076646,
+    "reinvestment": 8517465,
+    "redemption": 821485420
+   },
+   {
+    "month": "2026-05",
+    "sales": 710249209,
+    "reinvestment": 1869302,
+    "redemption": 1439172613
+   },
+   {
+    "month": "2026-06",
+    "sales": 1201027039,
+    "reinvestment": 6631838,
+    "redemption": 1131316836
+   },
+   {
+    "month": "2026-07",
+    "sales": 688794481,
+    "reinvestment": 8020279,
+    "redemption": 1470969984
+   },
+   {
+    "month": "2026-08",
+    "sales": 939750988,
+    "reinvestment": 5986255,
+    "redemption": 660302728
+   },
+   {
+    "month": "2026-09",
+    "sales": 1034203068,
+    "reinvestment": 3103835,
+    "redemption": 1098796641
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VMBS": {
+  "symbol": "VMBS",
+  "bucket": "mortgage",
+  "name": "VMBS (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100112",
+    "reportDate": "2026-09-30",
+    "netAssets": 14083395390
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 360905564,
+    "reinvestment": 1809930,
+    "redemption": 701477164
+   },
+   {
+    "month": "2026-05",
+    "sales": 793653772,
+    "reinvestment": 6922265,
+    "redemption": 877994385
+   },
+   {
+    "month": "2026-06",
+    "sales": 810698674,
+    "reinvestment": 3668209,
+    "redemption": 685800223
+   },
+   {
+    "month": "2026-07",
+    "sales": 403258872,
+    "reinvestment": 2832869,
+    "redemption": 931241096
+   },
+   {
+    "month": "2026-08",
+    "sales": 530836108,
+    "reinvestment": 4949709,
+    "redemption": 1012591611
+   },
+   {
+    "month": "2026-09",
+    "sales": 776461228,
+    "reinvestment": 1591435,
+    "redemption": 1056704557
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "TIP": {
+  "symbol": "TIP",
+  "bucket": "tips",
+  "name": "TIP (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100113",
+    "reportDate": "2026-09-30",
+    "netAssets": 18368108884
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 979376980,
+    "reinvestment": 4826429,
+    "redemption": 1009539358
+   },
+   {
+    "month": "2026-05",
+    "sales": 827795732,
+    "reinvestment": 3747865,
+    "redemption": 868078946
+   },
+   {
+    "month": "2026-06",
+    "sales": 1056440151,
+    "reinvestment": 7331434,
+    "redemption": 850062255
+   },
+   {
+    "month": "2026-07",
+    "sales": 1070365462,
+    "reinvestment": 5203367,
+    "redemption": 740369793
+   },
+   {
+    "month": "2026-08",
+    "sales": 750441143,
+    "reinvestment": 3172656,
+    "redemption": 714665478
+   },
+   {
+    "month": "2026-09",
+    "sales": 631586307,
+    "reinvestment": 9139195,
+    "redemption": 615267401
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "SCHP": {
+  "symbol": "SCHP",
+  "bucket": "tips",
+  "name": "SCHP (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100114",
+    "reportDate": "2026-09-30",
+    "netAssets": 38287119275
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 2383121192,
+    "reinvestment": 3162826,
+    "redemption": 1557857919
+   },
+   {
+    "month": "2026-05",
+    "sales": 2180360127,
+    "reinvestment": 19118074,
+    "redemption": 1350944551
+   },
+   {
+    "month": "2026-06",
+    "sales": 1921162688,
+    "reinvestment": 18187477,
+    "redemption": 986167028
+   },
+   {
+    "month": "2026-07",
+    "sales": 1952553084,
+    "reinvestment": 1293314,
+    "redemption": 1609839684
+   },
+   {
+    "month": "2026-08",
+    "sales": 1743563357,
+    "reinvestment": 965151,
+    "redemption": 1827537996
+   },
+   {
+    "month": "2026-09",
+    "sales": 1599112812,
+    "reinvestment": 2404011,
+    "redemption": 1663433325
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "VTIP": {
+  "symbol": "VTIP",
+  "bucket": "tips",
+  "name": "VTIP (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100115",
+    "reportDate": "2026-09-30",
+    "netAssets": 25609952230
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1018971992,
+    "reinvestment": 7367982,
+    "redemption": 1261335402
+   },
+   {
+    "month": "2026-05",
+    "sales": 1431346734,
+    "reinvestment": 7488678,
+    "redemption": 1223853025
+   },
+   {
+    "month": "2026-06",
+    "sales": 940155454,
+    "reinvestment": 2776231,
+    "redemption": 793478843
+   },
+   {
+    "month": "2026-07",
+    "sales": 1604510214,
+    "reinvestment": 3926095,
+    "redemption": 818658227
+   },
+   {
+    "month": "2026-08",
+    "sales": 901227350,
+    "reinvestment": 8644193,
+    "redemption": 740805724
+   },
+   {
+    "month": "2026-09",
+    "sales": 1620901366,
+    "reinvestment": 2318684,
+    "redemption": 534354902
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "BNDX": {
+  "symbol": "BNDX",
+  "bucket": "intl_bonds",
+  "name": "BNDX (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100116",
+    "reportDate": "2026-09-30",
+    "netAssets": 16297689262
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 857315604,
+    "reinvestment": 611570,
+    "redemption": 402407225
+   },
+   {
+    "month": "2026-05",
+    "sales": 822460877,
+    "reinvestment": 7786303,
+    "redemption": 390424346
+   },
+   {
+    "month": "2026-06",
+    "sales": 768060063,
+    "reinvestment": 594865,
+    "redemption": 968847426
+   },
+   {
+    "month": "2026-07",
+    "sales": 1085404476,
+    "reinvestment": 4528651,
+    "redemption": 394491172
+   },
+   {
+    "month": "2026-08",
+    "sales": 688776478,
+    "reinvestment": 7669547,
+    "redemption": 592218912
+   },
+   {
+    "month": "2026-09",
+    "sales": 742141463,
+    "reinvestment": 6514269,
+    "redemption": 514643924
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ },
+ "IAGG": {
+  "symbol": "IAGG",
+  "bucket": "intl_bonds",
+  "name": "IAGG (sample)",
+  "reports": [
+   {
+    "accession": "0000000000-26-100117",
+    "reportDate": "2026-09-30",
+    "netAssets": 29440812340
+   }
+  ],
+  "months": [
+   {
+    "month": "2026-04",
+    "sales": 1902650150,
+    "reinvestment": 1603571,
+    "redemption": 1362164221
+   },
+   {
+    "month": "2026-05",
+    "sales": 1901030963,
+    "reinvestment": 5126518,
+    "redemption": 663351771
+   },
+   {
+    "month": "2026-06",
+    "sales": 946930650,
+    "reinvestment": 9704788,
+    "redemption": 1417830869
+   },
+   {
+    "month": "2026-07",
+    "sales": 1318201593,
+    "reinvestment": 14223206,
+    "redemption": 1564500494
+   },
+   {
+    "month": "2026-08",
+    "sales": 1191672113,
+    "reinvestment": 4771226,
+    "redemption": 1668006415
+   },
+   {
+    "month": "2026-09",
+    "sales": 1469923573,
+    "reinvestment": 3606397,
+    "redemption": 1207194571
+   }
+  ],
+  "readAt": "2026-11-20T05:10:00.000Z",
+  "error": null
+ }
+}

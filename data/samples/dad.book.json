@@ -1,0 +1,433 @@
+{
+ "asOf": "2026-10-09",
+ "fx": {
+  "base": "EUR",
+  "asOf": "2026-10-09",
+  "rates": {
+   "USD": 0.86,
+   "GBP": 1.16
+  },
+  "source": "fictional sample rates"
+ },
+ "holdings": [
+  {
+   "id": "bk:cur",
+   "account": "Bank A",
+   "source": "statements",
+   "assetClass": "cash",
+   "symbol": "EUR",
+   "name": "Current account",
+   "quantity": 1,
+   "price": 1,
+   "value": 85000,
+   "costBasis": null,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "GR",
+   "sector": null,
+   "themes": [
+    "Cash"
+   ]
+  },
+  {
+   "id": "bk:dep1",
+   "account": "Bank A",
+   "source": "statements",
+   "assetClass": "deposit",
+   "symbol": "DEP-12M",
+   "name": "12-month term deposit",
+   "quantity": 1,
+   "price": null,
+   "value": 150000,
+   "costBasis": null,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "GR",
+   "sector": null,
+   "themes": [
+    "Fixed income"
+   ],
+   "deposit": {
+    "ratePct": 2.4,
+    "start": "2026-01-15",
+    "maturity": "2027-01-15"
+   }
+  },
+  {
+   "id": "bk:dep2",
+   "account": "Bank B",
+   "source": "statements",
+   "assetClass": "deposit",
+   "symbol": "DEP-3M",
+   "name": "3-month USD deposit",
+   "quantity": 1,
+   "price": null,
+   "value": 60000,
+   "costBasis": null,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "CY",
+   "sector": null,
+   "themes": [
+    "Fixed income"
+   ],
+   "deposit": {
+    "ratePct": 3.9,
+    "start": "2026-09-01",
+    "maturity": "2026-12-01"
+   }
+  },
+  {
+   "id": "bk:gb29",
+   "account": "Bank A",
+   "source": "statements",
+   "assetClass": "bond",
+   "symbol": "GR0000000000",
+   "name": "Hellenic Republic 2029 (sample)",
+   "quantity": 100,
+   "price": 101.2,
+   "value": 101200,
+   "costBasis": 98000,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "GR",
+   "sector": null,
+   "themes": [
+    "Fixed income"
+   ],
+   "bond": {
+    "issuer": "Hellenic Republic",
+    "isin": null,
+    "coupon": 3.375,
+    "maturity": "2029-06-15",
+    "yieldPct": 2.9,
+    "rating": null
+   }
+  },
+  {
+   "id": "bk:corp",
+   "account": "Bank B",
+   "source": "statements",
+   "assetClass": "bond",
+   "symbol": "XS0000000000",
+   "name": "Bank senior note 2027 (sample)",
+   "quantity": 50,
+   "price": 99.4,
+   "value": 49700,
+   "costBasis": 50000,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "CY",
+   "sector": null,
+   "themes": [
+    "Fixed income"
+   ],
+   "bond": {
+    "issuer": "Sample Bank plc",
+    "isin": null,
+    "coupon": 4.0,
+    "maturity": "2027-03-20",
+    "yieldPct": null,
+    "rating": null
+   }
+  },
+  {
+   "id": "bk:nvda",
+   "account": "Bank A",
+   "source": "statements",
+   "assetClass": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA (sample, bank custody)",
+   "quantity": 120,
+   "price": 140.0,
+   "value": 16800,
+   "costBasis": 9000,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "bank_statement",
+   "country": "US",
+   "sector": "Technology",
+   "themes": [
+    "AI and semiconductors"
+   ]
+  },
+  {
+   "id": "vc:a",
+   "account": "Fund A",
+   "source": "statements",
+   "assetClass": "private_fund",
+   "symbol": "FUND-A",
+   "name": "Alpha Ventures II (sample)",
+   "quantity": 1,
+   "price": null,
+   "value": 240000,
+   "costBasis": 200000,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "fund_report",
+   "country": "US",
+   "sector": null,
+   "themes": [
+    "Venture"
+   ],
+   "fund": {
+    "manager": "Alpha Ventures",
+    "vintage": 2021,
+    "commitment": 300000,
+    "called": 210000,
+    "distributions": 30000,
+    "reported": {
+     "dpi": 0.14,
+     "tvpi": 1.29,
+     "irrPct": 9.8
+    }
+   }
+  },
+  {
+   "id": "vc:b",
+   "account": "Fund B",
+   "source": "statements",
+   "assetClass": "private_fund",
+   "symbol": "FUND-B",
+   "name": "Beta Growth Fund I (sample)",
+   "quantity": 1,
+   "price": null,
+   "value": 180000,
+   "costBasis": 150000,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "fund_report",
+   "country": "GB",
+   "sector": null,
+   "themes": [
+    "Venture"
+   ],
+   "fund": {
+    "manager": "Beta Capital",
+    "vintage": 2022,
+    "commitment": 250000,
+    "called": 150000,
+    "distributions": 0,
+    "reported": {
+     "dpi": 0.0,
+     "tvpi": 1.2,
+     "irrPct": null
+    }
+   }
+  },
+  {
+   "id": "re:ath",
+   "account": "Real estate",
+   "source": "manual",
+   "assetClass": "real_estate",
+   "symbol": "PROP-1",
+   "name": "Apartment, Athens (sample)",
+   "quantity": 1,
+   "price": null,
+   "value": 420000,
+   "costBasis": 310000,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "manual",
+   "country": "GR",
+   "sector": null,
+   "themes": [
+    "Real estate"
+   ],
+   "property": {
+    "address": "Kolonaki, Athens (sample)",
+    "country": "GR",
+    "ownershipPct": 100,
+    "purchasePrice": 310000,
+    "purchaseDate": "2018-05-01",
+    "mortgage": 60000,
+    "monthlyRent": 1700,
+    "rental": "long_term",
+    "valuationSource": "owner estimate, Jun 2026",
+    "valuationDate": "2026-06-30"
+   }
+  },
+  {
+   "id": "re:isl",
+   "account": "Real estate",
+   "source": "manual",
+   "assetClass": "real_estate",
+   "symbol": "PROP-2",
+   "name": "Villa, Cyclades (sample)",
+   "quantity": 1,
+   "price": null,
+   "value": 900000,
+   "costBasis": 650000,
+   "currency": "EUR",
+   "asOf": "2026-10-09",
+   "valuation": "manual",
+   "country": "GR",
+   "sector": null,
+   "themes": [
+    "Real estate"
+   ],
+   "property": {
+    "address": "Paros (sample)",
+    "country": "GR",
+    "ownershipPct": 50,
+    "purchasePrice": 650000,
+    "purchaseDate": "2021-04-01",
+    "mortgage": 0,
+    "monthlyRent": null,
+    "rental": "short_stay",
+    "valuationSource": "agent appraisal, Mar 2025",
+    "valuationDate": "2025-03-31"
+   }
+  }
+ ],
+ "lookThrough": [
+  {
+   "parentId": "vc:a",
+   "name": "Helix AI Labs (sample)",
+   "ticker": null,
+   "sector": "Software",
+   "country": "US",
+   "stage": "Series B",
+   "themes": [
+    "AI and semiconductors"
+   ],
+   "fairValue": 9000000.0,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:a",
+   "name": "Northwind Payments (sample)",
+   "ticker": null,
+   "sector": "Fintech",
+   "country": "GB",
+   "stage": "Series C",
+   "themes": [
+    "Fintech"
+   ],
+   "fairValue": 6000000.0,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:a",
+   "name": "Corvid Bio (sample)",
+   "ticker": null,
+   "sector": "Biotech",
+   "country": "US",
+   "stage": "Series A",
+   "themes": [
+    "Healthcare and biotech"
+   ],
+   "fairValue": 3000000.0,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:a",
+   "name": "NVIDIA Corp",
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "country": "US",
+   "stage": "Public (post-IPO holding)",
+   "themes": [
+    "AI and semiconductors"
+   ],
+   "fairValue": 2000000.0,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:b",
+   "name": "Helix AI Labs Inc.",
+   "ticker": null,
+   "sector": "Software",
+   "country": "US",
+   "stage": "Series B",
+   "themes": [
+    "AI and semiconductors"
+   ],
+   "fairValue": null,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:b",
+   "name": "Gridline Energy (sample)",
+   "ticker": null,
+   "sector": "Energy",
+   "country": "DE",
+   "stage": "Series B",
+   "themes": [
+    "Energy and climate"
+   ],
+   "fairValue": null,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:b",
+   "name": "Northwind Payments",
+   "ticker": null,
+   "sector": "Fintech",
+   "country": "GB",
+   "stage": "Series C",
+   "themes": [
+    "Fintech"
+   ],
+   "fairValue": null,
+   "asOf": "2026-06-30"
+  },
+  {
+   "parentId": "vc:b",
+   "name": "Kestrel Robotics (sample)",
+   "ticker": null,
+   "sector": "Industrials",
+   "country": "US",
+   "stage": "Seed",
+   "themes": [
+    "AI and semiconductors",
+    "Industrials"
+   ],
+   "fairValue": null,
+   "asOf": "2026-06-30"
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2026-07-20",
+   "account": "Fund A",
+   "kind": "capital_call",
+   "symbol": "FUND-A",
+   "quantity": 0,
+   "price": null,
+   "amount": -30000,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-08-05",
+   "account": "Fund A",
+   "kind": "distribution",
+   "symbol": "FUND-A",
+   "quantity": 0,
+   "price": null,
+   "amount": 12000,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-06-15",
+   "account": "Bank A",
+   "kind": "coupon",
+   "symbol": "GR0000000000",
+   "quantity": 0,
+   "price": null,
+   "amount": 3375,
+   "currency": "EUR"
+  }
+ ],
+ "market": {
+  "asOf": "2026-10-09",
+  "rate": 0.025,
+  "spots": {},
+  "source": "fictional sample"
+ }
+}

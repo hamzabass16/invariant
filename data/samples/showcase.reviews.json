@@ -1,0 +1,212 @@
+{
+  "weekly": {
+    "prose": "A hard week for the book: -3.06% against SPY's -0.56%, which leaves the year at -2.52% against SPY's +11.69%. Most of the gap came from results landing together. GOOGL fell 12.6% and cost 1.15 points, SHOP fell 6.6% and META 4.3%; MA, SPGI and BIRK rose and added about 0.6 points between them.\n\nBehaviour held: no trades, and all three rules the app can read were followed. The holdings check is where the work is. NVO's sale is decided and still owed, BIRK has no class that places it, and five holdings sit on the Quality Erosion watch of 3.4 with ROIC under 20%: SPGI at 12.8%, AMZN at 12.9%, UBER at 15.2%, MELI at 17.9% and SHOP at 18.8%.\n\nNothing in the week calls for a trade by itself. The questions for the coming week are whether NVO's exit is carried out on its own terms, and whether the results of the five on watch move ROIC back towards 20% or confirm the drift. The book stays concentrated, the top three at 40.5% of it, with no cash to fund a buy without a sale.",
+    "news": {
+      "holdings": [
+        {
+          "symbol": "GOOGL",
+          "date": "2026-10-29",
+          "text": "GOOGL reported its third quarter; cloud revenue grew faster than search, and the company raised its capital spending plan for next year.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/29/alphabet-q3-capex",
+          "read": "The fall was on the spending plan, not on the quarter. The thesis pillar on free cash flow conversion is the one to watch."
+        },
+        {
+          "symbol": "META",
+          "date": "2026-10-29",
+          "text": "META's revenue beat its own guidance, but expenses for next year were guided above what the market had priced.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/29/meta-q3-expenses",
+          "read": "Costs, not demand, moved the shares."
+        },
+        {
+          "symbol": "SHOP",
+          "date": "2026-10-28",
+          "text": "SHOP's merchant volume grew in line with the last quarter, while its operating margin narrowed on higher spending on payments.",
+          "url": "https://harbourdesk.example.org/companies/shopify-q3-review",
+          "read": "ROIC at 18.8% keeps it on the 3.4 watch; the next two quarters decide whether it is drift or a step."
+        },
+        {
+          "symbol": "MA",
+          "date": "2026-10-30",
+          "text": "MA's cross-border volume rose again and its net revenue grew faster than the quarter before.",
+          "url": "https://quarterlycourier.example.net/payments/mastercard-cross-border",
+          "read": "The engine the thesis names held up; the shares led the book this week."
+        },
+        {
+          "symbol": "ASML",
+          "date": "2026-10-30",
+          "text": "ASML fell on the last day of the week after a peer's cautious remarks on memory spending next year.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/30/chip-equipment-slide",
+          "read": "A sector move, not company news."
+        },
+        {
+          "symbol": "NVO",
+          "date": "2026-10-27",
+          "text": "NVO cut its prices in two European markets.",
+          "url": "https://harbourdesk.example.org/companies/novo-pricing-europe",
+          "read": "The sale is already decided under the methodology; the news does not change it."
+        }
+      ],
+      "markets": [
+        {
+          "topic": "macro",
+          "head": "The Fed holds and keeps its options open",
+          "date": "2026-10-28",
+          "text": "The Federal Reserve left its policy range unchanged and said future moves depend on the data, after a month of mixed labour figures.",
+          "url": "https://ledgerwire.example.com/macro/2026/10/28/fed-holds"
+        },
+        {
+          "topic": "macro",
+          "head": "Yields drift lower into month end",
+          "date": "2026-10-30",
+          "text": "Ten-year Treasury yields ended the week lower as inflation expectations eased.",
+          "url": "https://quarterlycourier.example.net/rates/yields-month-end"
+        },
+        {
+          "topic": "tech",
+          "head": "Results week puts AI spending in focus",
+          "date": "2026-10-30",
+          "text": "The largest platforms raised their spending plans for data centres; investors rewarded revenue growth and punished cost guidance.",
+          "url": "https://harbourdesk.example.org/tech/ai-capex-results-week"
+        },
+        {
+          "topic": "geopolitics",
+          "head": "Trade talks extend their deadline",
+          "date": "2026-10-29",
+          "text": "Negotiators agreed to extend talks on chip export rules by a month, leaving the current rules in place.",
+          "url": "https://ledgerwire.example.com/world/2026/10/29/export-talks-extended"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-05",
+          "item": "Bank of England decision",
+          "url": null
+        },
+        {
+          "date": "2026-11-06",
+          "item": "US employment report for October",
+          "url": "https://quarterlycourier.example.net/calendar/us-jobs-october"
+        },
+        {
+          "date": "2026-11-10",
+          "item": "US consumer prices for October",
+          "url": null
+        }
+      ]
+    },
+    "questions": [
+      {
+        "question": "Which holding cost the book most this week, and is it on watch?",
+        "answer": "GOOGL: -12.6% on the week, -1.15 points of the book's -3.06%. It is not on the Quality Erosion watch of 3.4. The fall came with its results, so its thesis is the one to read again before anything is decided."
+      },
+      {
+        "question": "How far is the largest holding from its cap?",
+        "answer": "AMZN is 14.86% of the book against the 20% cap of a Transitional Holding (D.3), about USD 3,737 below it at the last close. No holding is over its cap."
+      }
+    ]
+  },
+  "monthly": {
+    "prose": "October cost the book 4.01% against SPY's -0.91%, and the year now reads -2.52% against SPY's +11.69%. The month split cleanly: MA (+15.7%, +1.56 points), SPGI (+18.3%) and SHOP (+6.2%) carried it, while META (-15.2%, -2.28 points), GOOGL (-18.7%, -1.81 points) and ASML (-13.6%, -1.27 points) took more than they gave.\n\nBehaviour is where the month fell short. Two of the three rules the app reads were followed; the third, C.2, asks for a vote within a week of a trade, and SPGI and UBER were both traded on 1 Oct with none filed. That alone makes the month Not backed, whatever the returns. The holdings check reads as it did a week ago: NVO's sale is decided and owed, BIRK has no class, and five holdings are on the 3.4 watch for ROIC under 20%.\n\nFor November the list is short. File the two votes C.2 asks for. Carry out NVO's exit or record why it waits. Read the five on watch against their next results. The top three hold 40.5% of the book, which moves with SPY at 0.77, while its holdings move together at only 0.19 on average: the concentration is in size, not in a single bet.",
+    "news": {
+      "holdings": [
+        {
+          "symbol": "MA",
+          "date": "2026-10-30",
+          "text": "MA closed the month with its strongest quarter of cross-border growth this year.",
+          "url": "https://quarterlycourier.example.net/payments/mastercard-october",
+          "read": "The month's best contributor. The thesis's engine read as strong as it was written."
+        },
+        {
+          "symbol": "SPGI",
+          "date": "2026-10-24",
+          "text": "SPGI's ratings revenue rose with a busy month of bond issuance.",
+          "url": "https://harbourdesk.example.org/companies/sp-global-ratings-october",
+          "read": "A cyclical lift; ROIC at 12.8% keeps it on the 3.4 watch regardless."
+        },
+        {
+          "symbol": "META",
+          "date": "2026-10-29",
+          "text": "META's expense guidance for next year set the tone for its month.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/29/meta-q3-expenses",
+          "read": "The month's largest drag on the book, on costs rather than demand."
+        },
+        {
+          "symbol": "GOOGL",
+          "date": "2026-10-29",
+          "text": "GOOGL's raised capital spending plan outweighed a quarter of faster cloud growth.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/29/alphabet-q3-capex",
+          "read": "Second-largest drag. The free cash flow pillar is the one the results test."
+        },
+        {
+          "symbol": "ASML",
+          "date": "2026-10-15",
+          "text": "ASML's orders came in below what the market had hoped for, though its backlog stayed high.",
+          "url": "https://harbourdesk.example.org/companies/asml-q3-orders",
+          "read": "The thesis rests on the backlog, which held. Orders are a watch item."
+        }
+      ],
+      "markets": [
+        {
+          "topic": "macro",
+          "head": "A month of mixed labour data",
+          "date": "2026-10-10",
+          "text": "Job growth slowed while wage growth held steady, keeping rate expectations broadly unchanged through the month.",
+          "url": "https://quarterlycourier.example.net/macro/october-labour"
+        },
+        {
+          "topic": "macro",
+          "head": "The Fed holds at its October meeting",
+          "date": "2026-10-28",
+          "text": "Policy was left unchanged, as markets had priced.",
+          "url": "https://ledgerwire.example.com/macro/2026/10/28/fed-holds"
+        },
+        {
+          "topic": "tech",
+          "head": "Chip equipment makers lag the market",
+          "date": "2026-10-30",
+          "text": "Equipment makers ended October lower on worries about memory spending next year.",
+          "url": "https://ledgerwire.example.com/markets/2026/10/30/chip-equipment-slide"
+        },
+        {
+          "topic": "geopolitics",
+          "head": "Export rule talks run into November",
+          "date": "2026-10-29",
+          "text": "Talks on chip export rules were extended a month, leaving current rules in place.",
+          "url": "https://ledgerwire.example.com/world/2026/10/29/export-talks-extended"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-05",
+          "item": "Bank of England decision",
+          "url": null
+        },
+        {
+          "date": "2026-11-06",
+          "item": "US employment report for October",
+          "url": "https://quarterlycourier.example.net/calendar/us-jobs-october"
+        },
+        {
+          "date": "2026-11-10",
+          "item": "US consumer prices for October",
+          "url": null
+        },
+        {
+          "date": "2026-12-09",
+          "item": "Federal Reserve decision",
+          "url": null
+        }
+      ]
+    },
+    "questions": [
+      {
+        "question": "Which rule was not followed in October, and what answers it?",
+        "answer": "C.2: a vote within a week of each trade. SPGI and UBER were traded on 1 Oct and neither has a vote filed. A Decision Log entry for each, with the class voted, answers it; the app records the vote and never applies it as the class."
+      },
+      {
+        "question": "What carried the month, and what cost it most?",
+        "answer": "MA led at +15.7%, adding 1.56 points; SPGI rose 18.3% and SHOP 6.2%. META cost the most at -15.2%, 2.28 points, then GOOGL at -18.7%, 1.81 points, and ASML at -13.6%, 1.27 points. The book ended the month at -4.01% against SPY's -0.91%."
+      }
+    ]
+  }
+}

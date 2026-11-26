@@ -1,0 +1,182 @@
+{
+ "note": "A fictional sample: invented after-hours prints of the showcase's holdings and a few large companies after the close of 3 Nov 2026, against their closes in the demo's closes sample.",
+ "closeDay": "2026-11-03",
+ "moves": [
+  {
+   "symbol": "SHOP",
+   "session": "post",
+   "price": 137.69,
+   "close": 142.57,
+   "at": "2026-11-04T00:56:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "UBER",
+   "session": "post",
+   "price": 67.84,
+   "close": 66.6,
+   "at": "2026-11-04T00:48:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "AMZN",
+   "session": "post",
+   "price": 251.72,
+   "close": 250.69,
+   "at": "2026-11-04T00:59:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "META",
+   "session": "post",
+   "price": 617.18,
+   "close": 621.03,
+   "at": "2026-11-04T00:58:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "GOOGL",
+   "session": "post",
+   "price": 280.79,
+   "close": 280.03,
+   "at": "2026-11-04T00:57:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "MA",
+   "session": "post",
+   "price": 648.34,
+   "close": 647.18,
+   "at": "2026-11-04T00:19:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "ASML",
+   "session": "post",
+   "price": 1546.67,
+   "close": 1552.1,
+   "at": "2026-11-04T00:31:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "MELI",
+   "session": "post",
+   "price": 1643.58,
+   "close": 1662.2,
+   "at": "2026-11-04T00:44:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "NVO",
+   "session": "post",
+   "price": 40.57,
+   "close": 40.19,
+   "at": "2026-11-04T00:07:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "BKNG",
+   "session": "post",
+   "price": 156.01,
+   "close": 155.67,
+   "at": "2026-11-03T23:52:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "SPGI",
+   "session": "post",
+   "price": 465.66,
+   "close": 466.03,
+   "at": "2026-11-03T23:23:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "IBKR",
+   "session": "post",
+   "price": 77.86,
+   "close": 77.46,
+   "at": "2026-11-04T00:25:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "BIRK",
+   "session": "post",
+   "price": 35.26,
+   "close": 35.53,
+   "at": "2026-11-03T23:46:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "NVDA",
+   "session": "post",
+   "price": 197.83,
+   "close": 195.46,
+   "at": "2026-11-04T00:59:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "MSFT",
+   "session": "post",
+   "price": 511.89,
+   "close": 510.21,
+   "at": "2026-11-04T00:58:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "AAPL",
+   "session": "post",
+   "price": 235.26,
+   "close": 235.71,
+   "at": "2026-11-04T00:59:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "AVGO",
+   "session": "post",
+   "price": 355.07,
+   "close": 351.97,
+   "at": "2026-11-04T00:55:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "TSM",
+   "session": "post",
+   "price": 300.85,
+   "close": 298.94,
+   "at": "2026-11-04T00:51:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "COST",
+   "session": "post",
+   "price": 929.42,
+   "close": 928.31,
+   "at": "2026-11-04T00:34:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "V",
+   "session": "post",
+   "price": 352.04,
+   "close": 351.72,
+   "at": "2026-11-04T00:46:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "NFLX",
+   "session": "post",
+   "price": 111.69,
+   "close": 112.15,
+   "at": "2026-11-04T00:53:00Z",
+   "currency": "USD"
+  },
+  {
+   "symbol": "KO",
+   "session": "post",
+   "price": 71.34,
+   "close": 71.3,
+   "at": "2026-11-03T22:58:00Z",
+   "currency": "USD"
+  }
+ ]
+}

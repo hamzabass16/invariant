@@ -1,0 +1,40 @@
+{
+  "name": "The Income Ledger: what Theo's dashboard must show",
+  "floor": 70,
+  "figures": [
+    { "id": "net-worth", "label": "Portfolio value" },
+    { "id": "income-ttm", "label": "Dividends, last twelve months (1.1)", "weight": 2 },
+    { "id": "income-growth", "label": "Income growth, trailing twelve months against the prior twelve (1.2)", "weight": 2 },
+    { "id": "yield-on-cost", "label": "Yield on cost, whole portfolio (2.4)" },
+    { "id": "yield-on-cost-by-holding", "label": "Yield on cost per holding (2.4)" },
+    { "id": "income-by-month", "label": "Dividend income by month, two years (5.1)" },
+    { "id": "income-by-holding", "label": "Income by holding (5.1)" },
+    { "id": "projected-income", "label": "Projected annual income from today's yields (5.1)", "note": "needs dividend yield; no input supplies it" },
+    { "id": "yield-by-holding", "label": "Dividend yield per holding (5.2)", "note": "needs dividend yield" },
+    { "id": "payout-by-holding", "label": "Payout ratio per holding (2.2)", "note": "needs payout ratio" },
+    { "id": "years-raised", "label": "Years of raises per holding (2.1)", "note": "needs dividend history" },
+    { "id": "dividend-growth-5y", "label": "Five-year dividend growth per holding (2.3)", "note": "needs dividend history" },
+    { "id": "weight-by-holding", "label": "Weight per holding (3.1)" },
+    { "id": "weight-by-sector", "label": "Weight per sector (3.2)" },
+    { "id": "holdings-count", "label": "Number of companies (3.3)" },
+    { "id": "cash-share", "label": "Cash share (4.1)" },
+    { "id": "contributions-ttm", "label": "Contributions over twelve months (6.2)" },
+    { "id": "growth-of-100", "label": "Growth of 100 since inception (5.3)" },
+    { "id": "return-3y", "label": "Three-year return (5.3)" }
+  ],
+  "rules": [
+    { "id": "income-growth", "label": "Income grows at least 7% a year (1.2)", "section": "1.2", "weight": 2 },
+    { "id": "raises", "label": "Ten years of raises (2.1)", "section": "2.1", "note": "needs dividend history" },
+    { "id": "payout", "label": "Payout at most 60% (2.2)", "section": "2.2", "note": "needs payout ratio" },
+    { "id": "dividend-growth", "label": "Five-year dividend growth at least 6% (2.3)", "section": "2.3", "note": "needs dividend history" },
+    { "id": "position-cap", "label": "No holding above 12% (3.1)", "section": "3.1", "weight": 2 },
+    { "id": "sector-cap", "label": "No sector above 25% (3.2)", "section": "3.2" },
+    { "id": "min-holdings", "label": "At least twelve companies (3.3)", "section": "3.3" },
+    { "id": "cash-floor", "label": "Cash at least 3% (4.1)", "section": "4.1" },
+    { "id": "cash-cap", "label": "Cash at most 10% (4.1)", "section": "4.1" },
+    { "id": "reinvest", "label": "Reinvest within the month (6.1)", "section": "6.1", "testable": false },
+    { "id": "contribute", "label": "Add 2,000 a month (6.2)", "section": "6.2" }
+  ],
+  "classes": [],
+  "panels": ["allocation"]
+}

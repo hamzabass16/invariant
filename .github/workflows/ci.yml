@@ -1,0 +1,44 @@
+# Every pull request and every push to main runs the checks AGENTS.md lists
+# (docs/ARCHITECTURE.md §7). The build runs in demo mode, so CI needs no
+# secret: no database, no Drive, no model, no mail.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      STORAGE: demo
+      DEMO_PUBLIC: "1"
+      AUTH_SECRET: ci-only-not-a-secret
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - run: npm run typecheck
+      - name: Checks
+        run: |
+          set -e
+          for c in guard setup screens performance decisions library todo options exposure data synthetic report vault statements import research analyst markets earnings theses community agents model mcp pdf; do
+            echo "::group::check:$c"
+            npm run -s check:$c
+            echo "::endgroup::"
+          done
+      - run: npm run build

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "at": "2026-10-10T18:00:00.000Z",
+  "asOf": "2026-11-03",
+  "windows": {
+    "window": "1Y",
+    "irr": "Since start",
+    "alpha": "1Y"
+  },
+  "against": "Quality compounders v3.4",
+  "overall": "A year is short for a long-horizon methodology. The book trails SPY on every window past a month while swinging more than the market, which a concentrated build accepts for a while but not indefinitely.",
+  "items": [
+    {
+      "card": "returns",
+      "tone": "watch",
+      "sections": [
+        "D.6"
+      ],
+      "reading": "Trailing SPY over six months, the year and since the start is the gap D.6's quarterly test of buy dollars against SPY exists to catch. One year is too short to call, but that test is the one to read next."
+    },
+    {
+      "card": "irr",
+      "tone": "noise",
+      "sections": [],
+      "reading": "With no money added or taken out, the money-weighted and time-weighted returns are the same: the timing of deposits has neither helped nor hurt yet."
+    },
+    {
+      "card": "alpha",
+      "tone": "noise",
+      "sections": [],
+      "reading": "The alpha cannot be told from chance over one year, so under a long-horizon methodology it says nothing yet about the classification's edge. Its direction is worth following as the record lengthens."
+    },
+    {
+      "card": "risk",
+      "tone": "in_line",
+      "sections": [
+        "3.5"
+      ],
+      "reading": "A beta above one and volatility above the market's fit a book held to a small number of names. The methodology accepts that swing in exchange for owning fewer, stronger businesses."
+    },
+    {
+      "card": "drawdown",
+      "tone": "watch",
+      "sections": [],
+      "reading": "The worst fall from a high was deeper than the market's, and the book is back near its high. A book of resilient compounders should, over time, fall less than the market, not more."
+    },
+    {
+      "card": "days",
+      "tone": "watch",
+      "sections": [],
+      "reading": "Losing more than SPY on its down days while only matching it on up days is the opposite of what quality compounders should show. Down capture is the figure to watch under this methodology."
+    },
+    {
+      "card": "look_through",
+      "tone": "watch",
+      "sections": [],
+      "reading": "Against SPY and QQQ the book should read richer on the tests its classes set, returns on capital and margins above all. Where a class sits near or under its own thresholds, the look-through is where that drift shows first."
+    },
+    {
+      "card": "by_holding",
+      "tone": "watch",
+      "sections": [],
+      "reading": "Read each holding against the tests of the class it sits in: the ones furthest under their class's thresholds are the first to re-test at their next results."
+    }
+  ],
+  "dropped": []
+}

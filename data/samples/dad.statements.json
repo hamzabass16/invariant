@@ -1,0 +1,154 @@
+{
+ "version": 1,
+ "documents": [
+  {
+   "id": "a1b2c3d4e5f60718",
+   "name": "Bank B statement September.pdf",
+   "receivedAt": "2026-10-09T07:00:00.000Z",
+   "via": "inbox",
+   "status": "review",
+   "sentence": "1 figure was not found printed in the document. Check the figures against the document, then use them or remove it.",
+   "readFrom": "text",
+   "extraction": {
+    "kind": "bank_statement",
+    "institution": "Bank B",
+    "account": "0042",
+    "asOf": "2026-09-30",
+    "currency": "EUR",
+    "totalValue": 412300,
+    "positions": [
+     {
+      "assetClass": "deposit",
+      "name": "Term deposit 3 months",
+      "isin": null,
+      "ticker": null,
+      "currency": "USD",
+      "quantity": null,
+      "price": null,
+      "value": 150000,
+      "valueRef": 129000,
+      "costBasis": null,
+      "country": null,
+      "sector": null,
+      "themes": [
+       "Fixed income"
+      ],
+      "coupon": null,
+      "maturity": "2026-12-15",
+      "yieldPct": null,
+      "rating": null,
+      "ratePct": 4.1
+     },
+     {
+      "assetClass": "bond",
+      "name": "Corporate bond 4.25% 2029",
+      "isin": "XS0000000000",
+      "ticker": null,
+      "currency": "EUR",
+      "quantity": 200000,
+      "price": null,
+      "value": 201300,
+      "valueRef": 201300,
+      "costBasis": null,
+      "country": null,
+      "sector": null,
+      "themes": [
+       "Fixed income"
+      ],
+      "coupon": 4.25,
+      "maturity": "2029-03-01",
+      "yieldPct": null,
+      "rating": null,
+      "ratePct": null
+     },
+     {
+      "assetClass": "cash",
+      "name": "Current account EUR",
+      "isin": null,
+      "ticker": null,
+      "currency": "EUR",
+      "quantity": null,
+      "price": null,
+      "value": 82000,
+      "valueRef": 82000,
+      "costBasis": null,
+      "country": null,
+      "sector": null,
+      "themes": [
+       "Cash"
+      ],
+      "coupon": null,
+      "maturity": null,
+      "yieldPct": null,
+      "rating": null,
+      "ratePct": null
+     }
+    ],
+    "fund": null,
+    "notes": []
+   },
+   "unchecked": [
+    "Corporate bond 4.25% 2029: value"
+   ],
+   "confirmedAt": null
+  },
+  {
+   "id": "0f1e2d3c4b5a6978",
+   "name": "Fund A Q2 2026 report.pdf",
+   "receivedAt": "2026-08-20T09:30:00.000Z",
+   "via": "inbox",
+   "status": "applied",
+   "sentence": null,
+   "readFrom": "text",
+   "extraction": {
+    "kind": "fund_report",
+    "institution": "Fund A Partners",
+    "account": null,
+    "asOf": "2026-06-30",
+    "currency": "USD",
+    "totalValue": null,
+    "positions": [],
+    "fund": {
+     "name": "Fund A",
+     "manager": "Fund A Partners",
+     "vintage": 2021,
+     "currency": "USD",
+     "nav": 310000,
+     "commitment": 500000,
+     "called": 350000,
+     "distributions": 60000,
+     "dpi": 0.17,
+     "tvpi": 1.06,
+     "irrPct": 3.1,
+     "companies": []
+    },
+    "notes": []
+   },
+   "unchecked": [],
+   "confirmedAt": null
+  },
+  {
+   "id": "99aa88bb77cc66dd",
+   "name": "Your statement is ready.pdf",
+   "receivedAt": "2026-10-02T06:10:00.000Z",
+   "via": "inbox",
+   "status": "ignored",
+   "sentence": "A notice or a forwarding note, not a statement. Send the statement itself (the PDF attached to the bank's email).",
+   "readFrom": "text",
+   "extraction": {
+    "kind": "notice",
+    "institution": "Bank A",
+    "account": null,
+    "asOf": "2026-10-02",
+    "currency": "EUR",
+    "totalValue": null,
+    "positions": [],
+    "fund": null,
+    "notes": []
+   },
+   "unchecked": [],
+   "confirmedAt": null
+  }
+ ],
+ "updated": "2026-10-09T07:00:00.000Z"
+}

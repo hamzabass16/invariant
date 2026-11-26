@@ -1,0 +1,370 @@
+{
+  "name": "Dividend growth",
+  "source": {
+    "title": "A dividend growth framework, as practised by income investors",
+    "fileId": null
+  },
+  "origin": "library",
+  "summary": "A book of companies that have raised their dividend for a decade, pay it from free cash flow with room to spare, and keep raising it; judged on the income, not the price.",
+  "figures": [
+    {
+      "id": "nav",
+      "label": "Portfolio value",
+      "about": "Everything in the portfolio at the latest marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "positions",
+      "label": "Stocks held",
+      "about": "The stocks and funds held.",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash and deposits as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-by-holding",
+      "label": "Portfolio by holding",
+      "about": "Each holding's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Portfolio by class",
+      "about": "Each class's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "class",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-sector",
+      "label": "Portfolio by sector",
+      "about": "Each sector's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "sector",
+      "view": "bars"
+    },
+    {
+      "id": "weight-grower",
+      "label": "Weight, Dividend grower",
+      "about": "Each Dividend grower holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "grower"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "table"
+    },
+    {
+      "id": "yield",
+      "label": "Average yield",
+      "about": "The average dividend yield of the stocks held.",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "field": "dividend_yield_pct",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    }
+  ],
+  "classes": [
+    {
+      "id": "grower",
+      "label": "Dividend grower",
+      "about": "Ten years of raises, a payout under 60%, five-year dividend growth of 5% or more and a yield of at least 1.5%.",
+      "criteria": [
+        {
+          "field": "dividend_years_raised",
+          "is": "gte",
+          "value": 10
+        },
+        {
+          "field": "payout_ratio_pct",
+          "is": "lte",
+          "value": 60
+        },
+        {
+          "field": "dividend_growth_5y_pct",
+          "is": "gte",
+          "value": 5
+        },
+        {
+          "field": "dividend_yield_pct",
+          "is": "gte",
+          "value": 1.5
+        },
+        {
+          "field": "fcf_margin_pct",
+          "is": "gt",
+          "value": 0
+        }
+      ],
+      "minimum": 4
+    }
+  ],
+  "rules": [
+    {
+      "id": "dg-min",
+      "section": "Diversification",
+      "text": "Hold at least twenty payers.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "gte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "dg-cap",
+      "section": "Diversification",
+      "text": "No single payer above 8% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-by-holding",
+        "is": "lte",
+        "limit": 8
+      }
+    },
+    {
+      "id": "dg-sector",
+      "section": "Diversification",
+      "text": "No sector above 25% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "weight-by-sector",
+        "is": "lte",
+        "limit": 25
+      }
+    },
+    {
+      "id": "dg-yield",
+      "section": "Income",
+      "text": "Keep the average yield of the stocks held at 2% or more.",
+      "severity": "guideline",
+      "test": {
+        "figure": "yield",
+        "is": "gte",
+        "limit": 2
+      }
+    },
+    {
+      "id": "dg-cut",
+      "section": "Selling",
+      "text": "Sell a holding that cuts or freezes its dividend, after reading why.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "nav",
+      "yield",
+      "positions"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Payers",
+        "figures": [
+          "weight-by-holding",
+          "weight-by-class",
+          "weight-grower"
+        ],
+        "from": "Diversification"
+      },
+      {
+        "kind": "figures",
+        "label": "Sectors",
+        "figures": [
+          "weight-by-sector"
+        ],
+        "from": "Diversification"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      }
+    ],
+    "themes": []
+  },
+  "gaps": [
+    {
+      "section": "Selling",
+      "asks": "A dividend cut or freeze as an alert.",
+      "missing": "a change in the declared dividend per share as a field a rule can test."
+    },
+    {
+      "section": "Income",
+      "asks": "Income growth of the whole book year on year.",
+      "missing": "a series of the book's income by year as a figure; Dividends shows it, a rule cannot test it yet."
+    }
+  ]
+}

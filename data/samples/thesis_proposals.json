@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "byKey": {
+    "stock:META": {
+      "key": "stock:META",
+      "subject": {
+        "kind": "stock",
+        "symbol": "META"
+      },
+      "at": "2026-11-02T09:12:00.000Z",
+      "document": {
+        "name": "example-research-meta-q3-2026.pdf",
+        "bytes": 412000,
+        "readFrom": "text"
+      },
+      "source": "Example Research: Meta Platforms after the Q3 2026 results",
+      "date": "2026-10-30",
+      "kind": "document",
+      "summary": "A fictional research note for the demo. Ad revenue grew 26% on the year in the third quarter and the price per ad rose 9%. The company guided next year's capex about a third above this year's and said it expects spending to peak in 2027, a year later than it said in the spring. The operating margin fell 5.9 points on the year, which bears on the margin pillars and on the 3.4 erosion review if it keeps falling.",
+      "changes": [
+        {
+          "target": "text",
+          "before": "The margin is falling while the company spends on AI capacity and headsets. The case is that the ad business pays for both and the spending peaks within two years.",
+          "after": "The margin is falling while the company spends on AI capacity and headsets. The case is that the ad business pays for both; the company now expects the spending to peak in 2027, a year later than first thought.",
+          "name": null,
+          "test": null,
+          "reason": "The note quotes the company on 29 Oct 2026: capex peaks in 2027, not 2026.",
+          "id": "c1",
+          "where": "Thesis, paragraph 2",
+          "pillarId": null
+        },
+        {
+          "target": "pillar",
+          "before": "The operating margin narrows by no more than 3 points in a year.",
+          "after": "The operating margin narrows by no more than 5 points in a year while the build runs.",
+          "name": "Spending peaks",
+          "test": null,
+          "reason": "A margin down 5.9 points with ad growth at 26%: the note reads the fall as spending, not pricing, with the peak a year later. The words move to 5 points; the test on the pillar stays as it is until you change it, and the 3.4 erosion review still applies.",
+          "id": "c2",
+          "where": "Pillar: Spending peaks",
+          "pillarId": "p3"
+        },
+        {
+          "target": "watch",
+          "before": "Capex guidance against ad revenue growth.",
+          "after": "Capex guidance against ad revenue growth, and the year the company says spending peaks.",
+          "name": null,
+          "test": null,
+          "reason": "The peak year moved once; the note says it is the figure to follow.",
+          "id": "c3",
+          "where": "Watch item",
+          "pillarId": null
+        }
+      ],
+      "dropped": [],
+      "unchecked": [],
+      "against": "Quality compounders v3.4"
+    }
+  },
+  "updated": "2026-11-02T09:12:00.000Z"
+}

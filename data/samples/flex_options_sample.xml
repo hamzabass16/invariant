@@ -1,0 +1,25 @@
+<FlexQueryResponse queryName="sample" type="AF">
+<FlexStatements count="1">
+<FlexStatement accountId="U0000000" fromDate="20261009" toDate="20261009" period="LastBusinessDay" whenGenerated="20261010;060000">
+<AccountInformation accountId="U0000000" currency="USD" />
+<OpenPositions>
+<OpenPosition assetCategory="STK" subCategory="COMMON" symbol="AAPL" description="APPLE INC" conid="265598" position="300" markPrice="230" positionValue="69000" costBasisMoney="54000" currency="USD" levelOfDetail="SUMMARY" />
+<OpenPosition assetCategory="STK" subCategory="ETF" symbol="QQQ" description="INVESCO QQQ TRUST" conid="320227571" position="10" markPrice="500" positionValue="5000" costBasisMoney="4500" currency="USD" levelOfDetail="SUMMARY" />
+<OpenPosition assetCategory="OPT" symbol="AAPL  261120C00245000" description="AAPL 20NOV26 245 C" conid="9001" underlyingSymbol="AAPL" putCall="C" strike="245" expiry="20261120" multiplier="100" position="-2" markPrice="3.1" positionValue="-620" costBasisMoney="-900" currency="USD" levelOfDetail="SUMMARY" />
+<OpenPosition assetCategory="OPT" symbol="MSFT  261016P00415000" description="MSFT 16OCT26 415 P" conid="9002" underlyingSymbol="MSFT" putCall="P" strike="415" expiry="20261016" multiplier="100" position="-1" markPrice="4.2" positionValue="-420" costBasisMoney="-610" currency="USD" levelOfDetail="SUMMARY" />
+<OpenPosition assetCategory="OPT" symbol="AAPL  261120C00245000" conid="9001" position="-2" levelOfDetail="LOT" />
+</OpenPositions>
+<Trades>
+<Trade assetCategory="OPT" symbol="AAPL  261120C00245000" underlyingSymbol="AAPL" putCall="C" strike="245" expiry="20261120" multiplier="100" tradeDate="20260929" quantity="-2" tradePrice="4.5" netCash="898.7" buySell="SELL" openCloseIndicator="O" currency="USD" levelOfDetail="EXECUTION" />
+<Trade assetCategory="STK" symbol="AAPL" tradeDate="20260930" quantity="10" tradePrice="228" netCash="-2281" buySell="BUY" openCloseIndicator="O" currency="USD" levelOfDetail="EXECUTION" />
+<Trade assetCategory="OPT" symbol="AAPL  260926C00235000" underlyingSymbol="AAPL" putCall="C" strike="235" expiry="20260926" multiplier="100" tradeDate="20260924" quantity="2" tradePrice="4.1" netCash="-821.3" buySell="BUY" openCloseIndicator="C" currency="USD" levelOfDetail="EXECUTION" />
+</Trades>
+<OptionEAE>
+<OptionEAE assetCategory="OPT" symbol="MSFT  260918P00410000" underlyingSymbol="MSFT" putCall="P" strike="410" expiry="20260918" multiplier="100" date="20260918" transactionType="Expiration" quantity="1" currency="USD" />
+</OptionEAE>
+<CashReport>
+<CashReportCurrency currency="BASE_SUMMARY" endingCash="62000" />
+</CashReport>
+</FlexStatement>
+</FlexStatements>
+</FlexQueryResponse>

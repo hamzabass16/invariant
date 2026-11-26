@@ -1,0 +1,338 @@
+{
+  "name": "Magic formula, after Joel Greenblatt",
+  "source": {
+    "title": "The magic formula, after Joel Greenblatt's The Little Book That Beats the Market",
+    "fileId": null
+  },
+  "origin": "library",
+  "summary": "Good businesses at bargain prices: a high return on capital and a low price on earnings, twenty to thirty of them held about a year each, utilities and financials left out.",
+  "figures": [
+    {
+      "id": "nav",
+      "label": "Portfolio value",
+      "about": "Everything in the portfolio at the latest marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "positions",
+      "label": "Stocks held",
+      "about": "The stocks and funds held.",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash and deposits as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-by-holding",
+      "label": "Portfolio by holding",
+      "about": "Each holding's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Portfolio by class",
+      "about": "Each class's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "class",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-sector",
+      "label": "Portfolio by sector",
+      "about": "Each sector's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "sector",
+      "view": "bars"
+    },
+    {
+      "id": "weight-magic",
+      "label": "Weight, Magic formula stock",
+      "about": "Each Magic formula stock holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "magic"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "table"
+    }
+  ],
+  "classes": [
+    {
+      "id": "magic",
+      "label": "Magic formula stock",
+      "about": "A high return on capital (ROIC 25% or more) at a low price (P/E 15 or less), outside utilities and financials.",
+      "required": [
+        {
+          "field": "sector",
+          "is": "not_in",
+          "value": [
+            "Utilities",
+            "Financials"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "field": "roic_pct",
+          "is": "gte",
+          "value": 25
+        },
+        {
+          "field": "pe_ratio",
+          "is": "lte",
+          "value": 15
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "mf-min",
+      "section": "Step 6",
+      "text": "Hold twenty to thirty stocks.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "gte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "mf-max",
+      "section": "Step 6",
+      "text": "Hold no more than thirty stocks.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "lte",
+        "limit": 30
+      }
+    },
+    {
+      "id": "mf-cap",
+      "section": "Step 6",
+      "text": "Keep each holding near an equal share, no more than 7%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "weight-by-holding",
+        "is": "lte",
+        "limit": 7
+      }
+    },
+    {
+      "id": "mf-year",
+      "section": "Step 7",
+      "text": "Sell each holding after about a year and replace it from the current ranking.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "nav",
+      "positions",
+      "cash-share"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Equal weights",
+        "figures": [
+          "weight-by-holding",
+          "weight-magic"
+        ],
+        "from": "Step 6"
+      },
+      {
+        "kind": "figures",
+        "label": "Classes and sectors",
+        "figures": [
+          "weight-by-class",
+          "weight-by-sector"
+        ],
+        "from": "Step 2"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      }
+    ],
+    "themes": []
+  },
+  "gaps": [
+    {
+      "section": "Step 3",
+      "asks": "Earnings yield as EBIT over enterprise value.",
+      "missing": "EBIT over enterprise value as a field; the P/E stands in."
+    },
+    {
+      "section": "Step 4",
+      "asks": "Return on capital as EBIT over net working capital plus net fixed assets.",
+      "missing": "Greenblatt's tangible return on capital as a field; ROIC stands in."
+    },
+    {
+      "section": "Step 5",
+      "asks": "Rank every company on both measures and buy the best combined ranks.",
+      "missing": "a ranking across the screener's companies as a class test; the screener lists the class's companies, unranked."
+    },
+    {
+      "section": "Step 7",
+      "asks": "Hold each stock about a year.",
+      "missing": "a holding period per position from the lots, as a field a rule can test."
+    }
+  ]
+}

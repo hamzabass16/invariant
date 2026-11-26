@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "bySymbol": {
+    "MSFT": {
+      "ownValuation": {
+        "low": 388.8,
+        "base": 486,
+        "high": 567,
+        "asOf": "2026-11-03",
+        "basis": "Fwd P/E 30× base"
+      },
+      "since": "2026-08-17",
+      "note": "Buy below 420, the bear case on forward earnings.",
+      "sector": null,
+      "levels": {
+        "below": 420,
+        "above": 560
+      },
+      "triggers": [
+        {
+          "id": "t1",
+          "kind": "trigger",
+          "field": "price",
+          "is": "lte",
+          "value": 420,
+          "note": "Below 420: the price pays for the build; buy a first position."
+        }
+      ],
+      "revaluation": null
+    },
+    "V": {
+      "ownValuation": {
+        "low": 268.4,
+        "base": 341.6,
+        "high": 414.8,
+        "asOf": "2026-11-03",
+        "basis": "Fwd P/E 28× base"
+      },
+      "since": "2026-06-29",
+      "note": "An alternative to the payment network held, if its weight must come down.",
+      "sector": null,
+      "levels": {
+        "below": 300,
+        "above": null
+      },
+      "triggers": [
+        {
+          "id": "t1",
+          "kind": "trigger",
+          "field": "price",
+          "is": "lte",
+          "value": 300,
+          "note": "Below 300: buy."
+        }
+      ],
+      "revaluation": null
+    },
+    "COST": {
+      "ownValuation": {
+        "low": 741.6,
+        "base": 906.4,
+        "high": 1071.2,
+        "asOf": "2026-11-03",
+        "basis": "Fwd P/E 44× base"
+      },
+      "since": "2026-05-04",
+      "note": "Buy back at the five-year median forward P/E, about 840.",
+      "sector": null,
+      "levels": {
+        "below": 840,
+        "above": null
+      },
+      "triggers": [
+        {
+          "id": "t1",
+          "kind": "trigger",
+          "field": "price",
+          "is": "lte",
+          "value": 840,
+          "note": "Below 840: back at the five-year median multiple."
+        }
+      ],
+      "revaluation": null
+    },
+    "NOW": {
+      "ownValuation": {
+        "low": 104,
+        "base": 135.2,
+        "high": 166.4,
+        "asOf": "2026-11-03",
+        "basis": "Fwd P/FCF 26× base"
+      },
+      "since": "2026-02-04",
+      "note": "Re-enter only with growth back above 20%.",
+      "sector": null,
+      "levels": {
+        "below": 105,
+        "above": 150
+      },
+      "triggers": [
+        {
+          "id": "t1",
+          "kind": "trigger",
+          "field": "price",
+          "is": "lte",
+          "value": 105,
+          "note": "Below 105: re-read the thesis against the latest results."
+        }
+      ],
+      "revaluation": null
+    },
+    "AVGO": {
+      "ownValuation": {
+        "low": 259.2,
+        "base": 324,
+        "high": 388.8,
+        "asOf": "2026-11-03",
+        "basis": "Fwd P/FCF 40× base"
+      },
+      "since": "2026-03-09",
+      "note": "Buy back below 300.",
+      "sector": null,
+      "levels": {
+        "below": 300,
+        "above": 420
+      },
+      "triggers": [
+        {
+          "id": "t1",
+          "kind": "trigger",
+          "field": "price",
+          "is": "lte",
+          "value": 300,
+          "note": "Below 300: buy back."
+        }
+      ],
+      "revaluation": null
+    }
+  },
+  "updated": "2026-11-03T18:00:00.000Z"
+}

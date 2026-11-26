@@ -1,0 +1,3088 @@
+{
+ "version": 1,
+ "bySymbol": {
+  "AMZN": {
+   "text": "A fictional thesis for the demo. Two businesses under one roof: a retailer run close to break-even on purpose, and a cloud and advertising engine that earns most of the profit. The store buys the customer relationship; the cloud rents out the capacity the store taught the company to build.\n\nFree cash flow is thin today because the data-centre build runs ahead of revenue. The bet is that the capex earns its keep within three years, as the first cloud build did, and that the store's margin keeps widening on advertising and same-day logistics.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "The cloud engine compounds",
+     "text": "The cloud segment keeps growing at 20% a year or more.",
+     "test": {
+      "field": "engine_growth_pct",
+      "is": "gte",
+      "value": 20
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The margin widens",
+     "text": "The operating margin held or widened over the year.",
+     "test": {
+      "field": "operating_margin_change_pts",
+      "is": "gte",
+      "value": 0
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Returns above the cost of capital",
+     "text": "Return on invested capital stays at 12% or more while the build runs.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 12
+     }
+    },
+    {
+     "id": "p4",
+     "name": "The cash comes back",
+     "text": "Free cash flow back above 5% of revenue once the build slows.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 5
+     }
+    }
+   ],
+   "pathway": "Over three to five years the capex should turn into operating cash: free cash flow back above 5% of revenue by 2028, the cloud segment above a fifth of revenue, and the store's operating margin above 6%.",
+   "watch": [
+    "Capex guidance against cloud revenue growth each quarter.",
+    "North America retail operating margin.",
+    "Cloud backlog and how long it runs."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 760000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": -1.5,
+    "sbcPct": 3,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 90000,
+    "investments": 0,
+    "debt": 115000,
+    "balanceLabel": "latest quarter",
+    "shares": 10900,
+    "price": 250.69,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       8,
+       7,
+       7,
+       6,
+       6,
+       5,
+       5,
+       4,
+       4
+      ],
+      "marginEndPct": 14.7
+     },
+     "base": {
+      "growthPct": [
+       11,
+       11,
+       10,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 17.7
+     },
+     "bull": {
+      "growthPct": [
+       14,
+       13,
+       13,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7
+      ],
+      "marginEndPct": 20.7
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": "operating_leverage",
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 250.69,
+    "perShare": {
+     "revenue": 70.4,
+     "grossProfit": 35.7,
+     "eps": 7.4,
+     "fcf": -1.05
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 8.6,
+     "fcf": 1.5
+    },
+    "multiples": {
+     "ps": {
+      "bear": 2.9,
+      "base": 3.6,
+      "bull": 4.3
+     },
+     "pgp": {
+      "bear": 5.6,
+      "base": 7,
+      "bull": 8.4
+     },
+     "forward_pe": {
+      "bear": 24,
+      "base": 30,
+      "bull": 36
+     },
+     "forward_pfcf": {
+      "bear": 133.7,
+      "base": 167.1,
+      "bull": 200.5
+     },
+     "trailing_pe": {
+      "bear": 27.1,
+      "base": 33.9,
+      "bull": 40.7
+     },
+     "trailing_pfcf": null
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo. Your stage: the cash goes into capacity, not losses, so the filings' break even understates it."
+   },
+   "evidence": [
+    {
+     "id": "e261031amzn1",
+     "at": "2026-10-31",
+     "source": "Fictional Q3 2026 results call notes",
+     "kind": "document",
+     "summary": "A fictional reading for the demo. Cloud revenue grew in the mid-thirties on the year, capex guidance for next year rose again, and the company said new capacity is sold out for the next two quarters.",
+     "changes": "The pathway now names 2028 for free cash flow back above 5% of revenue; the pillars did not move.",
+     "via": "claude"
+    }
+   ],
+   "figures": [
+    {
+     "id": "f261031amzn",
+     "title": "Capex against operating cash flow",
+     "caption": "Fictional figures: capex has run ahead of operating cash for four quarters; the pillar asks for the gap to close.",
+     "source": "Sample company filings, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-31",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "bar",
+      "labels": [
+       "Q4 25",
+       "Q1 26",
+       "Q2 26",
+       "Q3 26"
+      ],
+      "series": [
+       {
+        "name": "Capex",
+        "values": [
+         39,
+         42,
+         46,
+         50
+        ]
+       },
+       {
+        "name": "Operating cash flow",
+        "values": [
+         44,
+         38,
+         41,
+         47
+        ]
+       }
+      ],
+      "unit": "USD bn"
+     }
+    }
+   ],
+   "since": "2025-11-10",
+   "updatedAt": "2026-10-31T18:00:00.000Z"
+  },
+  "ASML": {
+   "text": "A fictional thesis for the demo. The company is the only supplier of its class of tool, so every leading-edge customer passes through it whoever wins the end market; each tool shipped adds years of service and upgrades that steady cash flow through the cycle.\n\nThe risk is the cycle itself and export rules, not competition. Bought on a dip after the 2025 orders scare; added again when the newest systems started shipping in volume.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Pricing power",
+     "text": "Gross margin holds above its past peak through the cycle.",
+     "test": {
+      "field": "gross_margin_pct",
+      "is": "gte",
+      "value": 50
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Cash pillar",
+     "text": "Free cash flow matches or exceeds net income.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 1
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Returns on a light base",
+     "text": "Return on invested capital far above the cost of capital.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 40
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Growth through the cycle",
+     "text": "Revenue grows 10% a year or more on average.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    }
+   ],
+   "pathway": "Over three to seven years the growing installed base should hold the gross margin above its past peak through the cycle and turn all of net income into free cash flow.",
+   "watch": [
+    "Export licences on servicing tools already sold.",
+    "Orders for the newest systems each quarter.",
+    "The share of revenue from the installed base."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "EUR",
+    "revenue": 33000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 33.8,
+    "sbcPct": 1,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 13000,
+    "investments": 0,
+    "debt": 4500,
+    "balanceLabel": "latest quarter",
+    "shares": 393,
+    "price": 1552.14,
+    "priceCurrency": "USD",
+    "fx": 1.16,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       4,
+       6,
+       6,
+       5,
+       5,
+       4,
+       4,
+       3,
+       3
+      ],
+      "marginEndPct": 49.3
+     },
+     "base": {
+      "growthPct": [
+       10,
+       12,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6
+      ],
+      "marginEndPct": 53.4
+     },
+     "bull": {
+      "growthPct": [
+       15,
+       16,
+       15,
+       14,
+       13,
+       12,
+       10,
+       9,
+       8
+      ],
+      "marginEndPct": 57.4
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "EUR",
+    "priceCurrency": "USD",
+    "fx": 1.16,
+    "price": 1552.14,
+    "perShare": {
+     "revenue": 84,
+     "grossProfit": 44.4,
+     "eps": 25,
+     "fcf": 28.4
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 31.5,
+     "fcf": 33
+    },
+    "multiples": {
+     "ps": {
+      "bear": 12.7,
+      "base": 15.9,
+      "bull": 19.1
+     },
+     "pgp": {
+      "bear": 24.1,
+      "base": 30.1,
+      "bull": 36.1
+     },
+     "forward_pe": {
+      "bear": 32,
+      "base": 40,
+      "bull": 48
+     },
+     "forward_pfcf": {
+      "bear": 32.4,
+      "base": 40.5,
+      "bull": 48.6
+     },
+     "trailing_pe": {
+      "bear": 42.8,
+      "base": 53.5,
+      "bull": 64.2
+     },
+     "trailing_pfcf": {
+      "bear": 37.7,
+      "base": 47.1,
+      "bull": 56.5
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo, in euros per share at 1.16 dollars to the euro."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-02-02",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "BIRK": {
+   "text": "A fictional thesis for the demo. A brand of two centuries that sells a product with almost no fashion risk at a premium price, made in its own factories. Growth comes from closed-toe shoes, more of its own stores and Asia.\n\nIt is on Probation Hold: the methodology's tests do not place it while the goodwill from its buyout weighs on returns. The case is that returns on the business itself are high and rising, and that the probation ends with the fourth quarterly filing.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Premium price holds",
+     "text": "Gross margin at 55% or more.",
+     "test": {
+      "field": "gross_margin_pct",
+      "is": "gte",
+      "value": 55
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Growth in the low teens",
+     "text": "Revenue grows 12% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 12
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Returns on the business itself",
+     "text": "Return on capital without the buyout's goodwill at 50% or more.",
+     "test": {
+      "field": "roic_ex_goodwill_pct",
+      "is": "gte",
+      "value": 50
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Debt keeps falling",
+     "text": "Net debt under 1.5 times EBITDA.",
+     "test": {
+      "field": "net_debt_to_ebitda",
+      "is": "lte",
+      "value": 1.5
+     }
+    }
+   ],
+   "pathway": "By the fourth quarterly filing the probation should end: net debt under 1.5 times EBITDA, the margin held, and a class the tests give it.",
+   "watch": [
+    "Wholesale orders against direct-to-consumer growth.",
+    "The private-equity owner's remaining stake and any sale.",
+    "Gross margin as the new factory ramps."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "EUR",
+    "revenue": 2100,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 12.3,
+    "sbcPct": 0.5,
+    "waccPct": 10,
+    "terminalGrowthPct": 2.5,
+    "cash": 230,
+    "investments": 0,
+    "debt": 1130,
+    "balanceLabel": "latest quarter",
+    "shares": 188,
+    "price": 35.53,
+    "priceCurrency": "USD",
+    "fx": 1.16,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       6,
+       6,
+       5,
+       5,
+       4,
+       4,
+       3,
+       3,
+       3
+      ],
+      "marginEndPct": 15.9
+     },
+     "base": {
+      "growthPct": [
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5,
+       4
+      ],
+      "marginEndPct": 18.9
+     },
+     "bull": {
+      "growthPct": [
+       15,
+       14,
+       13,
+       12,
+       11,
+       10,
+       8,
+       7,
+       6
+      ],
+      "marginEndPct": 21.9
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "EUR",
+    "priceCurrency": "USD",
+    "fx": 1.16,
+    "price": 35.53,
+    "perShare": {
+     "revenue": 11.2,
+     "grossProfit": 6.5,
+     "eps": 1.95,
+     "fcf": 1.38
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 2.25,
+     "fcf": 1.6
+    },
+    "multiples": {
+     "ps": {
+      "bear": 2.2,
+      "base": 2.7,
+      "bull": 3.2
+     },
+     "pgp": {
+      "bear": 3.8,
+      "base": 4.7,
+      "bull": 5.6
+     },
+     "forward_pe": {
+      "bear": 13,
+      "base": 17,
+      "bull": 21
+     },
+     "forward_pfcf": {
+      "bear": 15.3,
+      "base": 19.1,
+      "bull": 22.9
+     },
+     "trailing_pe": {
+      "bear": 12.6,
+      "base": 15.7,
+      "bull": 18.8
+     },
+     "trailing_pfcf": {
+      "bear": 17.8,
+      "base": 22.2,
+      "bull": 26.6
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo, in euros per share at 1.16 dollars to the euro."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-09-11",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "BKNG": {
+   "text": "A fictional thesis for the demo. The largest travel marketplace outside China, paid by hotels for the demand it brings. Its scale in Europe's independent hotels is the moat: each hotel lists because the travellers are there, and the travellers come because the hotels are.\n\nThe move from agency to merchant payments lifts the take on each booking, and buybacks shrink the share count every year.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Room nights keep growing",
+     "text": "Revenue grows 8% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 8
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Scale margin",
+     "text": "Operating margin at 30% or more.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Cash-rich model",
+     "text": "Free cash flow at 30% of revenue or more.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Search does not take the traveller",
+     "text": "AI assistants send bookings through the marketplace rather than around it.",
+     "test": null
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Direct traffic share against paid search.",
+    "Merchant revenue as a share of the total.",
+    "Any assistant that books hotels directly."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 26800,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 33.8,
+    "sbcPct": 3,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 16000,
+    "investments": 0,
+    "debt": 17000,
+    "balanceLabel": "latest quarter",
+    "shares": 820,
+    "price": 155.67,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       5,
+       5,
+       4,
+       4,
+       4,
+       3,
+       3,
+       3,
+       3
+      ],
+      "marginEndPct": 23.7
+     },
+     "base": {
+      "growthPct": [
+       9,
+       9,
+       8,
+       8,
+       7,
+       6,
+       6,
+       5,
+       4
+      ],
+      "marginEndPct": 26.7
+     },
+     "bull": {
+      "growthPct": [
+       12,
+       11,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 29.7
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 155.67,
+    "perShare": {
+     "revenue": 32.7,
+     "grossProfit": null,
+     "eps": 8.1,
+     "fcf": 11
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 9.3,
+     "fcf": 12.1
+    },
+    "multiples": {
+     "ps": {
+      "bear": 3.8,
+      "base": 4.8,
+      "bull": 5.8
+     },
+     "pgp": null,
+     "forward_pe": {
+      "bear": 16,
+      "base": 20,
+      "bull": 24
+     },
+     "forward_pfcf": {
+      "bear": 10.3,
+      "base": 12.9,
+      "bull": 15.5
+     },
+     "trailing_pe": {
+      "bear": 15.4,
+      "base": 19.2,
+      "bull": 23
+     },
+     "trailing_pfcf": {
+      "bear": 11.4,
+      "base": 14.2,
+      "bull": 17
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo, per share after the split."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2025-12-15",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "GOOGL": {
+   "text": "A fictional thesis for the demo. Search is still the cheapest way for a buyer to find a seller, and the company owns the place most searches start. Around it sit the cloud, the video platform and the chips it designs for itself.\n\nThe worry is that AI answers replace the paid link. The case is that the company runs the models at the lowest cost per answer, so it can put ads in answers without giving the margin away.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Search keeps growing",
+     "text": "Revenue grows 10% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The margin holds",
+     "text": "Operating margin at 30% or more while the AI build runs.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Cloud becomes the second engine",
+     "text": "The cloud segment grows 25% a year or more.",
+     "test": {
+      "field": "engine_growth_pct",
+      "is": "gte",
+      "value": 25
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Cash conversion",
+     "text": "Free cash flow at 70% of net income or more once the build slows.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 0.7
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Paid clicks against AI answers shown.",
+    "Capex against cloud revenue.",
+    "Remedies in the search case."
+   ],
+   "dcf": {
+    "basis": "earnings",
+    "currency": "USD",
+    "revenue": 400000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 31,
+    "sbcPct": 0,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 175000,
+    "investments": 0,
+    "debt": 33000,
+    "balanceLabel": "latest quarter",
+    "shares": 12200,
+    "price": 280.03,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       6,
+       6,
+       5,
+       5,
+       5,
+       4,
+       4,
+       3,
+       3
+      ],
+      "marginEndPct": 29.1
+     },
+     "base": {
+      "growthPct": [
+       11,
+       10,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5,
+       4
+      ],
+      "marginEndPct": 32.1
+     },
+     "bull": {
+      "growthPct": [
+       14,
+       13,
+       12,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7
+      ],
+      "marginEndPct": 35.1
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 280.03,
+    "perShare": {
+     "revenue": 32.8,
+     "grossProfit": 20,
+     "eps": 10.1,
+     "fcf": 3.9
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 11.2,
+     "fcf": 4.6
+    },
+    "multiples": {
+     "ps": {
+      "bear": 6.8,
+      "base": 8.5,
+      "bull": 10.2
+     },
+     "pgp": {
+      "bear": 11.2,
+      "base": 14,
+      "bull": 16.8
+     },
+     "forward_pe": {
+      "bear": 21,
+      "base": 25,
+      "bull": 30
+     },
+     "forward_pfcf": {
+      "bear": 48.7,
+      "base": 60.9,
+      "bull": 73.1
+     },
+     "trailing_pe": {
+      "bear": 22.2,
+      "base": 27.7,
+      "bull": 33.2
+     },
+     "trailing_pfcf": {
+      "bear": 57.4,
+      "base": 71.8,
+      "bull": 86.2
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2025-10-20",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "IBKR": {
+   "text": "A fictional thesis for the demo. A broker run by its software: the lowest cost per account in the industry, so it can pay more on cash and charge less on margin than anyone and still earn the widest margin. Accounts grow in the high twenties a year, mostly from abroad.\n\nA starter position; it grows to a full one only below the level below.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Accounts compound",
+     "text": "Revenue grows 10% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Earnings keep pace",
+     "text": "Earnings per share grow 10% a year or more.",
+     "test": {
+      "field": "eps_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Commissions and interest, not trading",
+     "text": "The core broker is 80% of revenue or more.",
+     "test": {
+      "field": "engine_share_pct",
+      "is": "gte",
+      "value": 80
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Net interest margin as rates fall.",
+    "New accounts each month."
+   ],
+   "dcf": {
+    "basis": "earnings",
+    "currency": "USD",
+    "revenue": 6500,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 50,
+    "sbcPct": 0,
+    "waccPct": 9.5,
+    "terminalGrowthPct": 3,
+    "cash": 0,
+    "investments": 0,
+    "debt": 0,
+    "balanceLabel": "latest quarter",
+    "shares": 1700,
+    "price": 77.46,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       4,
+       5,
+       5,
+       5,
+       4,
+       4,
+       4,
+       3,
+       3
+      ],
+      "marginEndPct": 74.9
+     },
+     "base": {
+      "growthPct": [
+       12,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 79.9
+     },
+     "bull": {
+      "growthPct": [
+       18,
+       17,
+       15,
+       14,
+       12,
+       11,
+       10,
+       8,
+       7
+      ],
+      "marginEndPct": 84.9
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 77.46,
+    "perShare": {
+     "revenue": 3.85,
+     "grossProfit": null,
+     "eps": 2.21,
+     "fcf": null
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 2.55,
+     "fcf": null
+    },
+    "multiples": {
+     "ps": {
+      "bear": 16.1,
+      "base": 20.1,
+      "bull": 24.1
+     },
+     "pgp": null,
+     "forward_pe": {
+      "bear": 24,
+      "base": 30,
+      "bull": 36
+     },
+     "forward_pfcf": null,
+     "trailing_pe": {
+      "bear": 28,
+      "base": 35,
+      "bull": 42
+     },
+     "trailing_pfcf": null
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-04-14",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "MA": {
+   "text": "A fictional thesis for the demo. The company runs a two-sided network that every participant pays to use, so revenue follows nominal spending and the margin widens as volume grows on a fixed cost base.\n\nThe second leg is services sold on top of the network: fraud, identity and data products priced like software, growing faster than the network itself and lifting the mix.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Network growth",
+     "text": "Revenue keeps compounding at a low double-digit rate.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Returns on capital",
+     "text": "Returns stay far above the cost of capital.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Cash conversion",
+     "text": "Free cash flow matches net income.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 0.9
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Agents pay through the network",
+     "text": "Machine-to-machine commerce raises transaction counts rather than routing around the rails.",
+     "test": null
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Free cash flow yield against the level at which the position was built.",
+    "Buybacks and dividends against free cash flow, and the debt that funds any gap.",
+    "Interchange rulings in the US and the EU."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 32200,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 47.6,
+    "sbcPct": 1.8,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 9000,
+    "investments": 0,
+    "debt": 24600,
+    "balanceLabel": "latest quarter",
+    "shares": 905,
+    "price": 647.18,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       6,
+       6,
+       5,
+       5,
+       4,
+       4,
+       4,
+       3,
+       3
+      ],
+      "marginEndPct": 57.1
+     },
+     "base": {
+      "growthPct": [
+       12,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 61.1
+     },
+     "bull": {
+      "growthPct": [
+       16,
+       15,
+       14,
+       13,
+       12,
+       10,
+       9,
+       8,
+       7
+      ],
+      "marginEndPct": 65.1
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 647.18,
+    "perShare": {
+     "revenue": 35.6,
+     "grossProfit": null,
+     "eps": 17.9,
+     "fcf": 18.4
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 20,
+     "fcf": 21
+    },
+    "multiples": {
+     "ps": {
+      "bear": 14.6,
+      "base": 18.2,
+      "bull": 21.8
+     },
+     "pgp": null,
+     "forward_pe": {
+      "bear": 21.5,
+      "base": 28,
+      "bull": 36
+     },
+     "forward_pfcf": {
+      "bear": 24.6,
+      "base": 30.8,
+      "bull": 37
+     },
+     "trailing_pe": {
+      "bear": 29,
+      "base": 36.2,
+      "bull": 43.4
+     },
+     "trailing_pfcf": {
+      "bear": 28.2,
+      "base": 35.2,
+      "bull": 42.2
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo. The cases the Q3 report read the price against."
+   },
+   "evidence": [
+    {
+     "id": "e261009a1b2",
+     "at": "2026-10-09",
+     "source": "Fictional Q3 2026 results call transcript",
+     "kind": "document",
+     "summary": "A fictional transcript for the demo. Switched volume grew at a low double-digit rate, value-added services grew faster than the network, and the company said agentic commerce rides the existing rails rather than routing around them.",
+     "changes": "The fourth pillar (agents pay through the network) now names transaction counts as its reading; nothing else moved.",
+     "via": "claude",
+     "call": {
+      "guidance": [
+       {
+        "metric": "Net revenue growth",
+        "period": "FY2026",
+        "said": "At the high end of a low-teens range.",
+        "before": "Low teens, at the Q2 call.",
+        "change": "kept",
+        "where": "call",
+        "bearsOn": null,
+        "reading": null,
+        "why": null,
+        "source": null
+       }
+      ],
+      "qa": [
+       {
+        "analyst": "A fictional analyst, Example Securities",
+        "asked": "Do agents route payments around the card networks?",
+        "answered": "No: agent payments run on the existing rails and tokens.",
+        "bearsOn": null,
+        "reading": null,
+        "source": null
+       }
+      ],
+      "remarks": [
+       "Switched volume grew at a low double-digit rate."
+      ],
+      "beats": []
+     }
+    }
+   ],
+   "figures": [
+    {
+     "id": "f2610150",
+     "title": "Gross dollar volume growth by year",
+     "caption": "Fictional figures: growth slowing from the reopening years toward the high single digits the pillar asks for.",
+     "source": "Sample company filings, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-15",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "bar",
+      "labels": [
+       "2021",
+       "2022",
+       "2023",
+       "2024",
+       "2025"
+      ],
+      "series": [
+       {
+        "name": "Volume growth",
+        "values": [
+         19,
+         14,
+         11.5,
+         10.2,
+         9.4
+        ]
+       },
+       {
+        "name": "Cross-border growth",
+        "values": [
+         27,
+         31,
+         22,
+         17,
+         15
+        ]
+       }
+      ],
+      "unit": "%"
+     }
+    }
+   ],
+   "since": "2025-11-03",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "MELI": {
+   "text": "A fictional thesis for the demo. The marketplace, the payments wallet and the credit book of Latin America, each feeding the others: the store brings the shoppers, the wallet keeps their money, and the credit book lends against what both know about them.\n\nThe margin is thin by choice while free shipping and the credit book grow. The case is that it widens again once the logistics network is built out.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Growth at scale",
+     "text": "Revenue grows 25% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 25
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The fintech engine",
+     "text": "The fintech segment grows 30% a year or more.",
+     "test": {
+      "field": "engine_growth_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p3",
+     "name": "The margin comes back",
+     "text": "Operating margin at 10% or more.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Returns hold",
+     "text": "Return on invested capital at 15% or more.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 15
+     }
+    }
+   ],
+   "pathway": "By 2028 the logistics build should be done and the operating margin back above 12%, with the credit book's losses steady through a cycle.",
+   "watch": [
+    "Credit losses in the Mexican and Brazilian books.",
+    "Free shipping thresholds and their cost.",
+    "Peso and real against the dollar."
+   ],
+   "dcf": {
+    "basis": "earnings",
+    "currency": "USD",
+    "revenue": 27000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 7.6,
+    "sbcPct": 0,
+    "waccPct": 11,
+    "terminalGrowthPct": 3.5,
+    "cash": 3000,
+    "investments": 0,
+    "debt": 6300,
+    "balanceLabel": "latest quarter",
+    "shares": 50.7,
+    "price": 1662.16,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       15,
+       13,
+       12,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 8
+     },
+     "base": {
+      "growthPct": [
+       25,
+       23,
+       21,
+       19,
+       17,
+       15,
+       13,
+       11,
+       9
+      ],
+      "marginEndPct": 10.5
+     },
+     "bull": {
+      "growthPct": [
+       32,
+       29,
+       26,
+       23,
+       20,
+       18,
+       16,
+       14,
+       12
+      ],
+      "marginEndPct": 13
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 1662.16,
+    "perShare": {
+     "revenue": 532,
+     "grossProfit": 227,
+     "eps": 40.5,
+     "fcf": 188
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 52,
+     "fcf": 60
+    },
+    "multiples": {
+     "ps": {
+      "bear": 2.5,
+      "base": 3.1,
+      "bull": 3.7
+     },
+     "pgp": {
+      "bear": 5.8,
+      "base": 7.3,
+      "bull": 8.8
+     },
+     "forward_pe": {
+      "bear": 28,
+      "base": 38,
+      "bull": 48
+     },
+     "forward_pfcf": {
+      "bear": 22.2,
+      "base": 27.7,
+      "bull": 33.2
+     },
+     "trailing_pe": {
+      "bear": 32.8,
+      "base": 41,
+      "bull": 49.2
+     },
+     "trailing_pfcf": {
+      "bear": 7,
+      "base": 8.8,
+      "bull": 10.6
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-03-02",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "META": {
+   "text": "A fictional thesis for the demo. The largest audience any company has ever had, sold to advertisers who measure every dollar. Better models make the ads work better, so the AI spend shows up in prices per ad before it shows up anywhere else.\n\nThe margin is falling while the company spends on AI capacity and headsets. The case is that the ad business pays for both and the spending peaks within two years.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Ads keep compounding",
+     "text": "Revenue grows 15% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 15
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The margin stays high",
+     "text": "Operating margin at 35% or more.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 35
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Spending peaks",
+     "text": "The operating margin narrows by no more than 3 points in a year.",
+     "test": {
+      "field": "operating_margin_change_pts",
+      "is": "gte",
+      "value": -3
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Cash conversion",
+     "text": "Free cash flow at 60% of net income or more.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 0.6
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Capex guidance against ad revenue growth.",
+    "Reality Labs' operating loss.",
+    "Time spent among younger users."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 200000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 18,
+    "sbcPct": 8,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 50000,
+    "investments": 0,
+    "debt": 45000,
+    "balanceLabel": "latest quarter",
+    "shares": 2560,
+    "price": 621.03,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       8,
+       7,
+       6,
+       6,
+       5,
+       5,
+       4,
+       4,
+       3
+      ],
+      "marginEndPct": 31.3
+     },
+     "base": {
+      "growthPct": [
+       15,
+       14,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6
+      ],
+      "marginEndPct": 35.3
+     },
+     "bull": {
+      "growthPct": [
+       20,
+       18,
+       16,
+       14,
+       13,
+       12,
+       10,
+       9,
+       8
+      ],
+      "marginEndPct": 39.3
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 621.03,
+    "perShare": {
+     "revenue": 78.1,
+     "grossProfit": 63.8,
+     "eps": 23,
+     "fcf": 14
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 27.5,
+     "fcf": 17
+    },
+    "multiples": {
+     "ps": {
+      "bear": 6.4,
+      "base": 8,
+      "bull": 9.6
+     },
+     "pgp": {
+      "bear": 7.8,
+      "base": 9.7,
+      "bull": 11.6
+     },
+     "forward_pe": {
+      "bear": 18,
+      "base": 23,
+      "bull": 28
+     },
+     "forward_pfcf": {
+      "bear": 29.2,
+      "base": 36.5,
+      "bull": 43.8
+     },
+     "trailing_pe": {
+      "bear": 21.6,
+      "base": 27,
+      "bull": 32.4
+     },
+     "trailing_pfcf": {
+      "bear": 35.5,
+      "base": 44.4,
+      "bull": 53.3
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [
+    {
+     "id": "e261030meta1",
+     "at": "2026-10-30",
+     "source": "Note after the Q3 2026 results",
+     "kind": "note",
+     "summary": "A fictional note for the demo. Ad revenue grew in the mid-twenties again, but next year's capex guide is higher than this year's by a third. The spending has not peaked yet; the trigger on the margin is met and wants a decision.",
+     "changes": null,
+     "via": "you"
+    }
+   ],
+   "figures": [],
+   "since": "2025-10-27",
+   "updatedAt": "2026-10-30T18:00:00.000Z"
+  },
+  "NVO": {
+   "text": "A fictional thesis for the demo. The first company to sell a weekly injection that works for weight loss, with the factories to make it. The case was that demand would outrun supply for years and the price would hold.\n\nIt has not: a rival's drug took share, the price fell and growth slowed to single digits. The kill signal on growth is met and the sale is set for 7 November.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Growth holds",
+     "text": "Revenue grows 8% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 8
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Pricing power",
+     "text": "Gross margin at 80% or more.",
+     "test": {
+      "field": "gross_margin_pct",
+      "is": "gte",
+      "value": 80
+     }
+    },
+    {
+     "id": "p3",
+     "name": "The margin holds",
+     "text": "The operating margin held or widened over the year.",
+     "test": {
+      "field": "operating_margin_change_pts",
+      "is": "gte",
+      "value": 0
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Returns",
+     "text": "Return on invested capital at 25% or more.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 25
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Prescriptions against the rival's each week.",
+    "The oral pill's launch.",
+    "List price cuts in the US."
+   ],
+   "dcf": {
+    "basis": "earnings",
+    "currency": "DKK",
+    "revenue": 310000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 30,
+    "sbcPct": 0,
+    "waccPct": 9,
+    "terminalGrowthPct": 2.5,
+    "cash": 20000,
+    "investments": 0,
+    "debt": 124000,
+    "balanceLabel": "latest quarter",
+    "shares": 4430,
+    "price": 40.19,
+    "priceCurrency": "USD",
+    "fx": 0.155,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       -2,
+       0,
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2
+      ],
+      "marginEndPct": 18.9
+     },
+     "base": {
+      "growthPct": [
+       4,
+       4,
+       4,
+       4,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "marginEndPct": 22.9
+     },
+     "bull": {
+      "growthPct": [
+       8,
+       8,
+       7,
+       7,
+       6,
+       5,
+       5,
+       4,
+       4
+      ],
+      "marginEndPct": 26.9
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "DKK",
+    "priceCurrency": "USD",
+    "fx": 0.155,
+    "price": 40.19,
+    "perShare": {
+     "revenue": 70,
+     "grossProfit": 56.7,
+     "eps": 23.9,
+     "fcf": 6.6
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 22,
+     "fcf": 9
+    },
+    "multiples": {
+     "ps": {
+      "bear": 3,
+      "base": 3.7,
+      "bull": 4.4
+     },
+     "pgp": {
+      "bear": 3.7,
+      "base": 4.6,
+      "bull": 5.5
+     },
+     "forward_pe": {
+      "bear": 9,
+      "base": 12,
+      "bull": 15
+     },
+     "forward_pfcf": {
+      "bear": 23,
+      "base": 28.8,
+      "bull": 34.6
+     },
+     "trailing_pe": {
+      "bear": 8.6,
+      "base": 10.8,
+      "bull": 13
+     },
+     "trailing_pfcf": {
+      "bear": 31.4,
+      "base": 39.3,
+      "bull": 47.2
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo, in kroner per share at 0.155 dollars to the krone."
+   },
+   "evidence": [
+    {
+     "id": "e261008nvo01",
+     "at": "2026-10-08",
+     "source": "Fictional weekly prescriptions table",
+     "kind": "data",
+     "summary": "A fictional table for the demo. New prescriptions fell for the sixth week in a row while the rival's rose; the company's share of new patients is under 40% for the first time.",
+     "changes": "The thesis now says the case has not held; the kill signal on growth is met.",
+     "via": "claude"
+    }
+   ],
+   "figures": [],
+   "since": "2025-12-01",
+   "updatedAt": "2026-10-08T18:00:00.000Z"
+  },
+  "SHOP": {
+   "text": "A fictional thesis for the demo. The software a merchant runs a store on, from the first sale to the largest brands, paid as a share of what they sell. Payments are most of the revenue and grow with the merchants.\n\nThe company stopped building warehouses and turned to free cash flow; the case is that it keeps growing above 25% while the margin widens.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Merchants grow",
+     "text": "Revenue grows 25% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 25
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Cash, not warehouses",
+     "text": "Free cash flow at 15% of revenue or more.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 15
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Payments mix",
+     "text": "Gross margin at 45% or more as payments grow.",
+     "test": {
+      "field": "gross_margin_pct",
+      "is": "gte",
+      "value": 45
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Leverage",
+     "text": "The operating margin held or widened over the year.",
+     "test": {
+      "field": "operating_margin_change_pts",
+      "is": "gte",
+      "value": 0
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Payments penetration of the volume sold.",
+    "Enterprise merchants won from the incumbents.",
+    "Agentic checkout through assistants."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 12200,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 17.7,
+    "sbcPct": 3,
+    "waccPct": 10,
+    "terminalGrowthPct": 3,
+    "cash": 6000,
+    "investments": 0,
+    "debt": 1100,
+    "balanceLabel": "latest quarter",
+    "shares": 1310,
+    "price": 142.57,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       15,
+       14,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6
+      ],
+      "marginEndPct": 33.1
+     },
+     "base": {
+      "growthPct": [
+       25,
+       24,
+       22,
+       20,
+       18,
+       16,
+       14,
+       12,
+       10
+      ],
+      "marginEndPct": 37.1
+     },
+     "bull": {
+      "growthPct": [
+       30,
+       28,
+       26,
+       24,
+       22,
+       20,
+       18,
+       15,
+       12
+      ],
+      "marginEndPct": 41.1
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pfcf",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 142.57,
+    "perShare": {
+     "revenue": 9.3,
+     "grossProfit": 4.45,
+     "eps": 1.05,
+     "fcf": 1.65
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 1.3,
+     "fcf": 2.15
+    },
+    "multiples": {
+     "ps": {
+      "bear": 12.2,
+      "base": 15.3,
+      "bull": 18.4
+     },
+     "pgp": {
+      "bear": 25.6,
+      "base": 32,
+      "bull": 38.4
+     },
+     "forward_pe": {
+      "bear": 87.8,
+      "base": 109.7,
+      "bull": 131.6
+     },
+     "forward_pfcf": {
+      "bear": 50,
+      "base": 65,
+      "bull": 80
+     },
+     "trailing_pe": {
+      "bear": 108.6,
+      "base": 135.8,
+      "bull": 163
+     },
+     "trailing_pfcf": {
+      "bear": 69.1,
+      "base": 86.4,
+      "bull": 103.7
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-01-12",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "SPGI": {
+   "text": "A fictional thesis for the demo. Half of a ratings duopoly that every bond issuer must pay, beside the index business whose fees grow with the money that tracks it. Neither needs much capital, and both price like a toll.\n\nTrimmed twice this year for the cap; the remaining position is the core.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "The toll margin",
+     "text": "Operating margin at 40% or more.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 40
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Steady growth",
+     "text": "Revenue grows 6% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 6
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Cash conversion",
+     "text": "Free cash flow at least matches net income.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 1
+     }
+    },
+    {
+     "id": "p4",
+     "name": "The dividend record",
+     "text": "Ten or more years of dividend increases.",
+     "test": {
+      "field": "dividend_years_raised",
+      "is": "gte",
+      "value": 10
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Bond issuance volumes each quarter.",
+    "The data business's growth after the spin-off.",
+    "Index fee rates as passive funds cut prices."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 15200,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 35,
+    "sbcPct": 1.2,
+    "waccPct": 8.5,
+    "terminalGrowthPct": 3,
+    "cash": 1900,
+    "investments": 0,
+    "debt": 13300,
+    "balanceLabel": "latest quarter",
+    "shares": 305,
+    "price": 466.03,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       4,
+       4,
+       4,
+       4,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "marginEndPct": 39.8
+     },
+     "base": {
+      "growthPct": [
+       8,
+       8,
+       8,
+       7,
+       7,
+       6,
+       6,
+       5,
+       5
+      ],
+      "marginEndPct": 42.8
+     },
+     "bull": {
+      "growthPct": [
+       11,
+       10,
+       10,
+       9,
+       9,
+       8,
+       7,
+       7,
+       6
+      ],
+      "marginEndPct": 45.8
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 466.03,
+    "perShare": {
+     "revenue": 49.8,
+     "grossProfit": 35.1,
+     "eps": 15.5,
+     "fcf": 18
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 19.6,
+     "fcf": 19.8
+    },
+    "multiples": {
+     "ps": {
+      "bear": 7.5,
+      "base": 9.4,
+      "bull": 11.3
+     },
+     "pgp": {
+      "bear": 10.6,
+      "base": 13.3,
+      "bull": 16
+     },
+     "forward_pe": {
+      "bear": 20,
+      "base": 25,
+      "bull": 30
+     },
+     "forward_pfcf": {
+      "bear": 18.8,
+      "base": 23.5,
+      "bull": 28.2
+     },
+     "trailing_pe": {
+      "bear": 24.1,
+      "base": 30.1,
+      "bull": 36.1
+     },
+     "trailing_pfcf": {
+      "bear": 20.7,
+      "base": 25.9,
+      "bull": 31.1
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2025-11-24",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "UBER": {
+   "text": "A fictional thesis for the demo. The one network that moves people and dinners in most cities outside China, with the most drivers, so the shortest waits, so the most riders. The losses are over; the cash is what the market has not priced.\n\nBought in a rotation out of S&P Global on 1 October. The risk is robotaxis owned by someone else; the case is that the network rents them rather than competes with them.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Trips keep growing",
+     "text": "Revenue grows 15% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 15
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The cash is real",
+     "text": "Free cash flow at 15% of revenue or more.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 15
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Leverage",
+     "text": "The operating margin widens a point a year or more.",
+     "test": {
+      "field": "operating_margin_change_pts",
+      "is": "gte",
+      "value": 1
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Autonomy on the network",
+     "text": "Robotaxi fleets join the network rather than run apart from it.",
+     "test": null
+    }
+   ],
+   "pathway": "Over three years free cash flow should pass 20% of revenue, with robotaxi partners in ten or more cities on the network.",
+   "watch": [
+    "Robotaxi partners and the cities they run in.",
+    "Take rate on mobility.",
+    "Insurance costs in the US."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 52000,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 18.3,
+    "sbcPct": 3.5,
+    "waccPct": 9.5,
+    "terminalGrowthPct": 3,
+    "cash": 12600,
+    "investments": 0,
+    "debt": 9700,
+    "balanceLabel": "latest quarter",
+    "shares": 2100,
+    "price": 66.6,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       10,
+       9,
+       8,
+       7,
+       6,
+       5,
+       5,
+       4,
+       4
+      ],
+      "marginEndPct": 10.5
+     },
+     "base": {
+      "growthPct": [
+       16,
+       15,
+       14,
+       13,
+       12,
+       10,
+       9,
+       8,
+       7
+      ],
+      "marginEndPct": 13.5
+     },
+     "bull": {
+      "growthPct": [
+       20,
+       19,
+       18,
+       16,
+       15,
+       13,
+       12,
+       10,
+       9
+      ],
+      "marginEndPct": 16.5
+     }
+    },
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "valuation": {
+    "stage": null,
+    "method": "forward_pfcf",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 66.6,
+    "perShare": {
+     "revenue": 24.8,
+     "grossProfit": 10.5,
+     "eps": 4.25,
+     "fcf": 4.55
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 3.6,
+     "fcf": 4.9
+    },
+    "multiples": {
+     "ps": {
+      "bear": 2.2,
+      "base": 2.7,
+      "bull": 3.2
+     },
+     "pgp": {
+      "bear": 5,
+      "base": 6.3,
+      "bull": 7.6
+     },
+     "forward_pe": {
+      "bear": 14.8,
+      "base": 18.5,
+      "bull": 22.2
+     },
+     "forward_pfcf": {
+      "bear": 12,
+      "base": 16,
+      "bull": 20
+     },
+     "trailing_pe": {
+      "bear": 12.6,
+      "base": 15.7,
+      "bull": 18.8
+     },
+     "trailing_pfcf": {
+      "bear": 11.7,
+      "base": 14.6,
+      "bull": 17.5
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo. Trailing EPS carries a one-off tax gain, so the method is free cash flow."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-10-01",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "MSFT": {
+   "text": "A fictional thesis for the demo. Sold in January 2025 when the price ran ahead of the cloud's growth. The software every office runs on, and the second cloud, now selling AI seats on top of both.\n\nWatching for a price that pays for the capex: the case is good, the price was the problem.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Cloud growth",
+     "text": "The cloud segment grows 25% a year or more.",
+     "test": {
+      "field": "engine_growth_pct",
+      "is": "gte",
+      "value": 25
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The margin holds",
+     "text": "Operating margin at 40% or more through the build.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 40
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Returns",
+     "text": "Return on invested capital at 25% or more.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 25
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "AI seats sold in the office suite.",
+    "Capex against cloud revenue."
+   ],
+   "dcf": null,
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 470,
+    "perShare": {
+     "revenue": 39,
+     "grossProfit": 26.7,
+     "eps": 14.3,
+     "fcf": 9.4
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 16.2,
+     "fcf": 10.4
+    },
+    "multiples": {
+     "ps": {
+      "bear": 9.7,
+      "base": 12.1,
+      "bull": 14.5
+     },
+     "pgp": {
+      "bear": 14.1,
+      "base": 17.6,
+      "bull": 21.1
+     },
+     "forward_pe": {
+      "bear": 24,
+      "base": 30,
+      "bull": 35
+     },
+     "forward_pfcf": {
+      "bear": 36.2,
+      "base": 45.2,
+      "bull": 54.2
+     },
+     "trailing_pe": {
+      "bear": 26.3,
+      "base": 32.9,
+      "bull": 39.5
+     },
+     "trailing_pfcf": {
+      "bear": 40,
+      "base": 50,
+      "bull": 60
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-08-17",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "V": {
+   "text": "A fictional thesis for the demo. The other half of the card duopoly: the same toll on spending as the network held, with more of it outside the US. Sold in June 2025 to make room under the cap.\n\nWatching as the alternative if the position held has to be cut for its weight.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Volume growth",
+     "text": "Revenue grows 9% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 9
+     }
+    },
+    {
+     "id": "p2",
+     "name": "The margin",
+     "text": "Operating margin at 60% or more.",
+     "test": {
+      "field": "operating_margin_pct",
+      "is": "gte",
+      "value": 60
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Cross-border volume growth.",
+    "The same interchange rulings as the network held."
+   ],
+   "dcf": null,
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 345,
+    "perShare": {
+     "revenue": 19.9,
+     "grossProfit": null,
+     "eps": 10.6,
+     "fcf": 11.1
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 12.2,
+     "fcf": 12.6
+    },
+    "multiples": {
+     "ps": {
+      "bear": 13.8,
+      "base": 17.3,
+      "bull": 20.8
+     },
+     "pgp": null,
+     "forward_pe": {
+      "bear": 22,
+      "base": 28,
+      "bull": 34
+     },
+     "forward_pfcf": {
+      "bear": 21.9,
+      "base": 27.4,
+      "bull": 32.9
+     },
+     "trailing_pe": {
+      "bear": 26,
+      "base": 32.5,
+      "bull": 39
+     },
+     "trailing_pfcf": {
+      "bear": 24.9,
+      "base": 31.1,
+      "bull": 37.3
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-06-29",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "COST": {
+   "text": "A fictional thesis for the demo. A membership club that sells at cost and earns its profit on the fee, so it can price below anyone and members renew at over 90%. Sold in August 2025 at more than fifty times earnings.\n\nThe business never disappointed; only the price. Watching for the multiple to come back to its five-year median.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Members renew",
+     "text": "Revenue grows 6% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 6
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Returns",
+     "text": "Return on invested capital at 20% or more.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 20
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Renewal rates in the US and Canada.",
+    "The next fee increase.",
+    "Comparable sales excluding fuel."
+   ],
+   "dcf": null,
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 930,
+    "perShare": {
+     "revenue": 625,
+     "grossProfit": 79,
+     "eps": 18.9,
+     "fcf": 18
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 20.6,
+     "fcf": 19.5
+    },
+    "multiples": {
+     "ps": {
+      "bear": 1.2,
+      "base": 1.5,
+      "bull": 1.8
+     },
+     "pgp": {
+      "bear": 9.4,
+      "base": 11.8,
+      "bull": 14.2
+     },
+     "forward_pe": {
+      "bear": 36,
+      "base": 44,
+      "bull": 52
+     },
+     "forward_pfcf": {
+      "bear": 38.2,
+      "base": 47.7,
+      "bull": 57.2
+     },
+     "trailing_pe": {
+      "bear": 39.4,
+      "base": 49.2,
+      "bull": 59
+     },
+     "trailing_pfcf": {
+      "bear": 41.4,
+      "base": 51.7,
+      "bull": 62
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-05-04",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "NOW": {
+   "text": "A fictional thesis for the demo. The workflow platform large companies run their service desks and approvals on, sold by seat and growing into AI agents that do the work the seats did. Sold in February 2026 at a loss when growth slowed for two quarters.\n\nWatching for growth to settle above 20% and for agents to show up as revenue, not as a discount.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Growth settles",
+     "text": "Revenue grows 20% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 20
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Cash margin",
+     "text": "Free cash flow at 30% of revenue or more.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 30
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Current remaining performance obligations growth.",
+    "AI agent revenue disclosed."
+   ],
+   "dcf": null,
+   "valuation": {
+    "stage": null,
+    "method": "forward_pfcf",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 120,
+    "perShare": {
+     "revenue": 12.8,
+     "grossProfit": 10.2,
+     "eps": 1.75,
+     "fcf": 4.4
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 2.1,
+     "fcf": 5.2
+    },
+    "multiples": {
+     "ps": {
+      "bear": 7.5,
+      "base": 9.4,
+      "bull": 11.3
+     },
+     "pgp": {
+      "bear": 9.4,
+      "base": 11.8,
+      "bull": 14.2
+     },
+     "forward_pe": {
+      "bear": 45.7,
+      "base": 57.1,
+      "bull": 68.5
+     },
+     "forward_pfcf": {
+      "bear": 20,
+      "base": 26,
+      "bull": 32
+     },
+     "trailing_pe": {
+      "bear": 54.9,
+      "base": 68.6,
+      "bull": 82.3
+     },
+     "trailing_pfcf": {
+      "bear": 21.8,
+      "base": 27.3,
+      "bull": 32.8
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo, per share after the split."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-02-04",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  },
+  "AVGO": {
+   "text": "A fictional thesis for the demo. Custom AI chips for the largest cloud buyers, beside the networking chips every data centre needs and a software arm bought for its cash. Sold in February and March 2026 to fund the rotation into the chip-tool maker held.\n\nWatching as the second way to own the AI build: the customers design, this company makes it work.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "AI revenue",
+     "text": "Revenue grows 20% a year or more.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 20
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Cash margin",
+     "text": "Free cash flow at 40% of revenue or more.",
+     "test": {
+      "field": "fcf_margin_pct",
+      "is": "gte",
+      "value": 40
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Debt from the software deal",
+     "text": "Net debt under twice EBITDA.",
+     "test": {
+      "field": "net_debt_to_ebitda",
+      "is": "lte",
+      "value": 2
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Custom chip customers named.",
+    "Software renewals after the price changes."
+   ],
+   "dcf": null,
+   "valuation": {
+    "stage": null,
+    "method": "forward_pfcf",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 360,
+    "perShare": {
+     "revenue": 13.6,
+     "grossProfit": 10.7,
+     "eps": 4.9,
+     "fcf": 6.4
+    },
+    "perShareLabel": "Per share, TTM to 2026Q3",
+    "forward": {
+     "eps": 8.8,
+     "fcf": 8.1
+    },
+    "multiples": {
+     "ps": {
+      "bear": 21.2,
+      "base": 26.5,
+      "bull": 31.8
+     },
+     "pgp": {
+      "bear": 26.9,
+      "base": 33.6,
+      "bull": 40.3
+     },
+     "forward_pe": {
+      "bear": 32.7,
+      "base": 40.9,
+      "bull": 49.1
+     },
+     "forward_pfcf": {
+      "bear": 32,
+      "base": 40,
+      "bull": 48
+     },
+     "trailing_pe": {
+      "bear": 58.8,
+      "base": 73.5,
+      "bull": 88.2
+     },
+     "trailing_pfcf": {
+      "bear": 45,
+      "base": 56.3,
+      "bull": 67.6
+     }
+    },
+    "tam": null,
+    "asOf": "2026-11-03",
+    "note": "Fictional inputs for the demo."
+   },
+   "evidence": [],
+   "figures": [],
+   "since": "2026-03-09",
+   "updatedAt": "2026-10-12T18:00:00.000Z"
+  }
+ },
+ "markets": [
+  {
+   "id": "rates-stay-higher",
+   "title": "Rates stay higher for longer",
+   "text": "A fictional market thesis for the demo. Inflation settles above the old target, so the ten-year yield holds above 4% through the cycle and the curve stays flat or slightly positive.\n\nWhat that means for the book: long-duration growth stocks are priced for cuts that come slowly; cash-generative businesses with pricing power hold their multiples better.",
+   "pillars": [
+    {
+     "id": "m1",
+     "name": "Ten-year yield",
+     "text": "The ten-year yield stays at or above 4%.",
+     "test": {
+      "field": "US10Y",
+      "is": "gte",
+      "value": 4
+     }
+    },
+    {
+     "id": "m2",
+     "name": "Inflation",
+     "text": "Headline inflation stays at or above 2.5% a year.",
+     "test": {
+      "field": "CPIYOY",
+      "is": "gte",
+      "value": 2.5
+     }
+    },
+    {
+     "id": "m3",
+     "name": "The curve",
+     "text": "The ten-year less two-year spread stays positive.",
+     "test": {
+      "field": "US10Y2Y",
+      "is": "gte",
+      "value": 0
+     }
+    }
+   ],
+   "watch": [
+    "Term premium after each Treasury refunding.",
+    "The Fed's own projection of the long-run rate."
+   ],
+   "evidence": [
+    {
+     "id": "e261029rate1",
+     "at": "2026-10-29",
+     "source": "Note after the October Fed meeting",
+     "kind": "note",
+     "summary": "A fictional note for the demo. The Fed cut by a quarter point and said the next move depends on inflation, which printed 3.9% on the year. The ten-year yield rose on the day.",
+     "changes": null,
+     "via": "you"
+    }
+   ],
+   "figures": [
+    {
+     "id": "f2610151",
+     "title": "Ten-year yield against the policy rate",
+     "caption": "Fictional figures: the long rate has held above 4% while the policy rate came down.",
+     "source": "Sample rates data, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-15",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "line",
+      "labels": [
+       "2026-04-30",
+       "2026-05-29",
+       "2026-06-30",
+       "2026-07-31",
+       "2026-08-31",
+       "2026-09-30"
+      ],
+      "series": [
+       {
+        "name": "Ten-year yield",
+        "values": [
+         4.31,
+         4.42,
+         4.38,
+         4.25,
+         4.18,
+         4.22
+        ]
+       },
+       {
+        "name": "Policy rate",
+        "values": [
+         4.33,
+         4.33,
+         4.08,
+         4.08,
+         3.83,
+         3.83
+        ]
+       }
+      ],
+      "unit": "%"
+     }
+    }
+   ],
+   "basket": [
+    "MA",
+    "SPGI",
+    "BKNG",
+    "IBKR"
+   ],
+   "since": "2026-01-05",
+   "updatedAt": "2026-10-29T18:00:00.000Z"
+  },
+  {
+   "id": "ai-build-pays",
+   "title": "The AI build pays for itself",
+   "text": "A fictional market thesis for the demo. The largest companies are spending more on data centres than ever, and the market treats it as a bubble or a sure thing in turn. The thesis: the spending earns its cost of capital, because the capacity is rented out as fast as it is built.\n\nIt is expressed through the companies that sell the capacity and the tools to build it, and tested on the market's own temperature: no panic, no euphoria, money still cheap enough to fund it.",
+   "pillars": [
+    {
+     "id": "m1",
+     "name": "Money stays available",
+     "text": "The ten-year yield stays under 5%.",
+     "test": {
+      "field": "US10Y",
+      "is": "lte",
+      "value": 5
+     }
+    },
+    {
+     "id": "m2",
+     "name": "No euphoria",
+     "text": "The fear and greed index stays under 75.",
+     "test": {
+      "field": "FEARGREED",
+      "is": "lte",
+      "value": 75
+     }
+    },
+    {
+     "id": "m3",
+     "name": "No panic",
+     "text": "The VIX stays under 25.",
+     "test": {
+      "field": "VIX",
+      "is": "lte",
+      "value": 25
+     }
+    },
+    {
+     "id": "m4",
+     "name": "The capacity is rented",
+     "text": "Cloud revenue keeps pace with capex at the companies in the basket.",
+     "test": null
+    }
+   ],
+   "watch": [
+    "Cloud backlog at the three largest providers.",
+    "Power contracts signed for new data centres.",
+    "Chip-tool orders each quarter."
+   ],
+   "evidence": [
+    {
+     "id": "e261031ai001",
+     "at": "2026-10-31",
+     "source": "Fictional summary of the quarter's cloud results",
+     "kind": "document",
+     "summary": "A fictional summary for the demo. The three largest clouds grew 30% or more on the year and each said new capacity is sold out; capex guides for next year rose by a quarter to a third.",
+     "changes": "The fourth pillar now names the basket's companies; nothing else moved.",
+     "via": "claude"
+    }
+   ],
+   "figures": [
+    {
+     "id": "f261031ai01",
+     "title": "Capex of the three largest clouds",
+     "caption": "Fictional figures: combined quarterly capex, rising every quarter this year.",
+     "source": "Sample company filings, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-31",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "bar",
+      "labels": [
+       "Q4 25",
+       "Q1 26",
+       "Q2 26",
+       "Q3 26"
+      ],
+      "series": [
+       {
+        "name": "Capex",
+        "values": [
+         98,
+         104,
+         113,
+         121
+        ]
+       }
+      ],
+      "unit": "USD bn"
+     }
+    }
+   ],
+   "basket": [
+    "AMZN",
+    "GOOGL",
+    "META",
+    "ASML"
+   ],
+   "since": "2026-02-02",
+   "updatedAt": "2026-10-31T18:00:00.000Z"
+  },
+  {
+   "id": "consumer-holds-up",
+   "title": "The consumer keeps spending",
+   "text": "A fictional market thesis for the demo. Jobs hold, wages beat inflation, and people keep paying for travel, rides and a few small luxuries even while goods prices stay high.\n\nIt is expressed through the companies that sell those: trips, hotel nights, rides, sandals and online stores.",
+   "pillars": [
+    {
+     "id": "m1",
+     "name": "Jobs hold",
+     "text": "Unemployment stays at or under 4.8%.",
+     "test": {
+      "field": "UNRATE",
+      "is": "lte",
+      "value": 4.8
+     }
+    },
+    {
+     "id": "m2",
+     "name": "Confidence",
+     "text": "Consumer sentiment stays at or above 60.",
+     "test": {
+      "field": "SENTIMENT",
+      "is": "gte",
+      "value": 60
+     }
+    },
+    {
+     "id": "m3",
+     "name": "Inflation under control",
+     "text": "Headline inflation at or under 3.5% a year.",
+     "test": {
+      "field": "CPIYOY",
+      "is": "lte",
+      "value": 3.5
+     }
+    }
+   ],
+   "watch": [
+    "Card spending on travel and restaurants.",
+    "Hotel rates in Europe this winter.",
+    "Consumer credit delinquencies."
+   ],
+   "evidence": [],
+   "figures": [],
+   "basket": [
+    "BKNG",
+    "UBER",
+    "BIRK",
+    "SHOP",
+    "MELI"
+   ],
+   "since": "2026-04-06",
+   "updatedAt": "2026-04-06T18:00:00.000Z"
+  }
+ ],
+ "updated": "2026-11-03T18:00:00.000Z"
+}

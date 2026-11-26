@@ -1,0 +1,1013 @@
+{
+  "name": "Owner's Manual, third edition",
+  "adopted": "2026-02-01",
+  "summary": "About ten businesses sorted into Compounder, Transitional and Growth archetypes, each with a position cap, judged on written fundamentals thresholds and bought only at a discount to the owner's own valuation. Returns are context, never the verdict.",
+  "source": {
+    "title": "Owner's Manual, third edition (fictional)",
+    "fileId": null
+  },
+  "origin": "document",
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Portfolio value",
+      "about": "Everything in the account at today's marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash as a share of the portfolio (1.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "cash"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "largest-holding",
+      "label": "Largest holding",
+      "about": "The biggest holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "max",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "top-three",
+      "label": "Three largest",
+      "about": "The three largest holdings together as a share of the portfolio (1.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "owner_value",
+          "top": 3
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "probation-count",
+      "label": "On probation",
+      "about": "Holdings tagged Probation.",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "probation"
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "day-change",
+      "label": "Day's change",
+      "about": "Change since the previous close (5.2).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "day_change"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "day-change-pct",
+      "label": "Day's change, %",
+      "about": "The day's change as a share of the portfolio (5.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "day_change"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Weight by archetype",
+      "about": "Each archetype's share of the portfolio (1.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "donut",
+      "by": "class"
+    },
+    {
+      "id": "weight-compounders",
+      "label": "Compounders",
+      "about": "Each Compounder's share of the portfolio (1.2, cap 10%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "compounder"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "weight-transitional",
+      "label": "Transitional",
+      "about": "Each Transitional holding's share (1.2, cap 20%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "transitional"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "weight-growth",
+      "label": "Growth",
+      "about": "Each Growth holding's share (1.2, cap 5%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "growth"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "weight-probation",
+      "label": "Probation",
+      "about": "Each Probation holding's share (1.2, cap 5%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "probation"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "price-vs-own",
+      "label": "Price against own valuation",
+      "about": "Price as a share of my base valuation: 100 at fair value, 80 at a 20% discount (3.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "price_to_own_valuation_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "valuation-age",
+      "label": "Age of own valuation",
+      "about": "Days since I last set my valuation of each holding (3.3).",
+      "unit": "days",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "field": "own_valuation_age_days",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ]
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "revenue-growth",
+      "label": "Revenue growth",
+      "about": "Trailing twelve months revenue growth, per holding (2.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "revenue_growth_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "fcf-margin",
+      "label": "FCF margin",
+      "about": "Free cash flow margin, per Compounder (2.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "compounder"
+            }
+          ],
+          "field": "fcf_margin_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "roic",
+      "label": "ROIC",
+      "about": "Return on invested capital, per Compounder (2.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "compounder"
+            }
+          ],
+          "field": "roic_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "leverage",
+      "label": "Net debt to EBITDA",
+      "about": "Leverage, per Compounder (2.1).",
+      "unit": "ratio",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "compounder"
+            }
+          ],
+          "field": "net_debt_to_ebitda"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "gross-margin",
+      "label": "Gross margin",
+      "about": "Gross margin, per Transitional holding (2.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "transitional"
+            }
+          ],
+          "field": "gross_margin_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "fcf-per-share-growth",
+      "label": "FCF per share growth",
+      "about": "Free cash flow per share growth, per holding (2.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ],
+          "field": "fcf_per_share_growth_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "probation-days",
+      "label": "Days on probation",
+      "about": "Days since each Probation holding went on probation (4.1).",
+      "unit": "days",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            },
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "probation"
+            }
+          ],
+          "field": "record_days"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "return-1y",
+      "label": "Return, 1 year",
+      "about": "Change in the portfolio's value over the last year (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "return",
+        "of": "nav",
+        "period": "1y"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "return-1y-spy",
+      "label": "SPY, 1 year",
+      "about": "SPY's change over the last year (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "return",
+        "of": "SPY",
+        "period": "1y"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "return-1y-qqq",
+      "label": "QQQ, 1 year",
+      "about": "QQQ's change over the last year (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "return",
+        "of": "QQQ",
+        "period": "1y"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "growth-of-100",
+      "label": "Growth of 100",
+      "about": "What 100 at inception has become, by day (5.1).",
+      "unit": "number",
+      "expr": {
+        "op": "series",
+        "stat": "growth_of_100",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "line",
+      "by": "date"
+    },
+    {
+      "id": "growth-of-100-spy",
+      "label": "Growth of 100, SPY",
+      "about": "What 100 in SPY at inception has become, by day (5.1).",
+      "unit": "number",
+      "expr": {
+        "op": "series",
+        "stat": "growth_of_100",
+        "of": "SPY",
+        "period": "inception"
+      },
+      "view": "line",
+      "by": "date"
+    },
+    {
+      "id": "max-drawdown",
+      "label": "Worst drawdown",
+      "about": "The worst peak-to-trough fall since inception (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "max_drawdown",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "beta-spy",
+      "label": "Beta to SPY",
+      "about": "Sensitivity to SPY over the last year (5.1).",
+      "unit": "ratio",
+      "expr": {
+        "op": "series",
+        "stat": "beta",
+        "of": "nav",
+        "period": "1y",
+        "vs": "SPY"
+      },
+      "view": "tile"
+    }
+  ],
+  "classes": [
+    {
+      "id": "probation",
+      "label": "Probation",
+      "about": "Failed one threshold; four quarters to recover.",
+      "criteria": [
+        {
+          "field": "themes",
+          "is": "contains",
+          "value": "Probation"
+        }
+      ]
+    },
+    {
+      "id": "compounder",
+      "label": "Compounder",
+      "criteria": [
+        {
+          "field": "themes",
+          "is": "contains",
+          "value": "Compounder"
+        }
+      ]
+    },
+    {
+      "id": "transitional",
+      "label": "Transitional",
+      "criteria": [
+        {
+          "field": "themes",
+          "is": "contains",
+          "value": "Transitional"
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "label": "Growth",
+      "criteria": [
+        {
+          "field": "themes",
+          "is": "contains",
+          "value": "Growth"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "cap-compounder",
+      "section": "1.2",
+      "text": "A Compounder is at most 10% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-compounders",
+        "is": "lte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "cap-transitional",
+      "section": "1.2",
+      "text": "A Transitional holding is at most 20% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-transitional",
+        "is": "lte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "cap-growth",
+      "section": "1.2",
+      "text": "A Growth holding is at most 5% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-growth",
+        "is": "lte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "cap-probation",
+      "section": "1.2",
+      "text": "A Probation holding is at most 5% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-probation",
+        "is": "lte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "top-three-cap",
+      "section": "1.3",
+      "text": "The three largest holdings together at most 45%.",
+      "severity": "breach",
+      "test": {
+        "figure": "top-three",
+        "is": "lte",
+        "limit": 45
+      }
+    },
+    {
+      "id": "cash-floor",
+      "section": "1.4",
+      "text": "Cash at least 5% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "gte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "compounder-growth",
+      "section": "2.1",
+      "text": "A Compounder grows revenue at least 10%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "revenue-growth",
+        "is": "gte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "compounder-fcf",
+      "section": "2.1",
+      "text": "A Compounder has a free cash flow margin of at least 20%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "fcf-margin",
+        "is": "gte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "compounder-roic",
+      "section": "2.1",
+      "text": "A Compounder earns a return on invested capital of at least 20%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "roic",
+        "is": "gte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "compounder-leverage",
+      "section": "2.1",
+      "text": "A Compounder's net debt to EBITDA is at most 2x.",
+      "severity": "guideline",
+      "test": {
+        "figure": "leverage",
+        "is": "lte",
+        "limit": 2
+      }
+    },
+    {
+      "id": "transitional-growth",
+      "section": "2.2",
+      "text": "A Transitional business grows revenue at least 15%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "revenue-growth",
+        "is": "gte",
+        "limit": 15
+      }
+    },
+    {
+      "id": "transitional-margin",
+      "section": "2.2",
+      "text": "A Transitional business has a gross margin of at least 50%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "gross-margin",
+        "is": "gte",
+        "limit": 50
+      }
+    },
+    {
+      "id": "growth-growth",
+      "section": "2.3",
+      "text": "A Growth business grows revenue at least 25%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "revenue-growth",
+        "is": "gte",
+        "limit": 25
+      }
+    },
+    {
+      "id": "kill-fcf",
+      "section": "2.4",
+      "text": "Free cash flow per share must grow; a fall is a kill signal.",
+      "severity": "breach",
+      "test": {
+        "figure": "fcf-per-share-growth",
+        "is": "gt",
+        "limit": 0
+      }
+    },
+    {
+      "id": "buy-zone",
+      "section": "3.1",
+      "text": "Tell me when a holding trades at or below 80% of my base valuation.",
+      "severity": "watch",
+      "test": {
+        "figure": "price-vs-own",
+        "is": "gt",
+        "limit": 80
+      }
+    },
+    {
+      "id": "rich-zone",
+      "section": "3.2",
+      "text": "Tell me when a holding trades above 120% of my base valuation.",
+      "severity": "watch",
+      "test": {
+        "figure": "price-vs-own",
+        "is": "lte",
+        "limit": 120
+      }
+    },
+    {
+      "id": "valuation-fresh",
+      "section": "3.3",
+      "text": "My valuation of each holding must be under a year old.",
+      "severity": "guideline",
+      "test": {
+        "figure": "valuation-age",
+        "is": "lt",
+        "limit": 365
+      }
+    },
+    {
+      "id": "probation-clock",
+      "section": "4.1",
+      "text": "A Probation holding is sold if still failing after 365 days; tell me at 300.",
+      "severity": "watch",
+      "test": {
+        "figure": "probation-days",
+        "is": "lt",
+        "limit": 300
+      }
+    },
+    {
+      "id": "no-new-money",
+      "section": "4.2",
+      "text": "No new money into a holding on probation.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "net-worth",
+      "cash-share",
+      "largest-holding",
+      "top-three",
+      "probation-count",
+      "day-change"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Archetypes and caps",
+        "figures": [
+          "weight-by-class",
+          "weight-compounders",
+          "weight-transitional",
+          "weight-growth",
+          "weight-probation"
+        ],
+        "from": "1"
+      },
+      {
+        "kind": "figures",
+        "label": "Valuation",
+        "figures": [
+          "price-vs-own",
+          "valuation-age"
+        ],
+        "from": "3"
+      },
+      {
+        "kind": "figures",
+        "label": "Thresholds",
+        "figures": [
+          "revenue-growth",
+          "fcf-margin",
+          "roic",
+          "leverage",
+          "gross-margin",
+          "fcf-per-share-growth"
+        ],
+        "from": "2"
+      },
+      {
+        "kind": "figures",
+        "label": "Probation",
+        "figures": [
+          "probation-days"
+        ],
+        "from": "4"
+      },
+      {
+        "kind": "figures",
+        "label": "Results",
+        "figures": [
+          "return-1y",
+          "return-1y-spy",
+          "return-1y-qqq",
+          "growth-of-100",
+          "growth-of-100-spy",
+          "max-drawdown",
+          "beta-spy",
+          "day-change-pct"
+        ],
+        "from": "5"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      },
+      {
+        "kind": "panel",
+        "id": "themes",
+        "view": "chart"
+      }
+    ],
+    "themes": [
+      "AI and semiconductors"
+    ]
+  }
+}

@@ -1,0 +1,7109 @@
+{
+ "_note": "Fictional: no real company's headline, filing or figure. The sources are invented outlets on example.com. The demo runs no agent.",
+ "version": 1,
+ "companies": {
+  "MA": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "MA-1",
+     "symbol": "MA",
+     "day": "2026-11-04",
+     "headline": "Cross-border volumes held into the quarter's end",
+     "lines": "A sample report says cross-border and domestic volumes held steady into the end of the quarter. That bears on Network growth: the pillar needs volumes to keep compounding, and nothing here says they slowed.",
+     "bearsOn": "Network growth",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: card network volumes steady into the quarter's end",
+       "source": "Example Wire",
+       "url": "https://example.com/news/ma-volumes",
+       "at": "2026-11-04",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    },
+    {
+     "id": "MA-2",
+     "symbol": "MA",
+     "day": "2026-11-04",
+     "headline": "Agent payments pilot named in a sample filing",
+     "lines": "A sample current report describes a pilot of agent-initiated payments routed over the network. It is early and names no figures, so it updates Agents pay through the network rather than backing it.",
+     "bearsOn": "Agents pay through the network",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample current report: agent payments pilot",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/ma-8k",
+       "at": "2026-11-03",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "news",
+     "title": "Sample headline: card network volumes steady into the quarter's end",
+     "source": "Example Wire",
+     "url": "https://example.com/news/ma-volumes",
+     "at": "2026-11-04",
+     "text": null,
+     "form": null
+    },
+    {
+     "ref": "S2",
+     "kind": "filing",
+     "title": "Sample current report: agent payments pilot",
+     "source": "SEC EDGAR",
+     "url": "https://example.com/filings/ma-8k",
+     "at": "2026-11-03",
+     "text": null,
+     "form": "8-K"
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-03",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    },
+    {
+     "title": "Sample headline: MA story, retold",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/ma-repeat",
+     "at": "2026-11-03",
+     "reason": "repeat",
+     "why": "The same story as one already kept."
+    },
+    {
+     "title": "Sample headline: sponsorship deal renewed for a football league",
+     "source": "Example Lifestyle",
+     "url": "https://example.com/news/ma-off",
+     "at": "2026-11-03",
+     "reason": "off_lens",
+     "why": "Bears on no pillar, rule or kill signal."
+    }
+   ],
+   "sentence": "2 findings from 2 items kept of 5.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "MA-e1",
+     "symbol": "MA",
+     "day": "2026-10-27",
+     "headline": "Buyback pace kept up in the quarter",
+     "lines": "A sample filing shows the buyback ran at the pace of the quarter before. It backs Returns on capital: cash keeps going back while the network grows.",
+     "bearsOn": "Returns on capital",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample quarterly report: share repurchases",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/ma-10q",
+       "at": "2026-10-27",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "MA-e2",
+     "symbol": "MA",
+     "day": "2026-10-19",
+     "headline": "A regulator's consultation on card fees",
+     "lines": "A sample regulator note opens a consultation on cross-border card fees. Nothing is decided; it challenges Returns on capital only if fees are capped.",
+     "bearsOn": "Returns on capital",
+     "stance": "challenges",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample notice: consultation on cross-border card fees",
+       "source": "Example Regulator",
+       "url": "https://example.com/notices/card-fees",
+       "at": "2026-10-19",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ]
+  },
+  "ASML": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "ASML-1",
+     "symbol": "ASML",
+     "day": "2026-11-04",
+     "headline": "Quarterly release filed as a 6-K",
+     "lines": "The sample release reports the quarter on a 6-K. The app's results report reads its figures; the release bears on Pricing power through the mix it describes, which the report sets against a year before.",
+     "bearsOn": "Pricing power",
+     "stance": "update",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Report from a foreign issuer: quarterly results release",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/asml-6k",
+       "at": "2026-11-02",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "ASML-2",
+     "symbol": "ASML",
+     "day": "2026-11-04",
+     "headline": "Export rules on older machines widened",
+     "lines": "A sample trade notice widens the licence rule to an older class of machine. It challenges the Cash pillar for the region's share of sales, which the release does not split.",
+     "bearsOn": "Cash pillar",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample notice: export licences for lithography tools",
+       "source": "Example Trade Register",
+       "url": "https://example.com/notices/export-rules",
+       "at": "2026-11-03",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "filing",
+     "title": "Report from a foreign issuer: quarterly results release",
+     "source": "SEC EDGAR",
+     "url": "https://example.com/filings/asml-6k",
+     "at": "2026-11-02",
+     "text": null,
+     "form": "8-K"
+    },
+    {
+     "ref": "S2",
+     "kind": "news",
+     "title": "Sample notice: export licences for lithography tools",
+     "source": "Example Trade Register",
+     "url": "https://example.com/notices/export-rules",
+     "at": "2026-11-03",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: analysts lift price targets across the sector",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/targets",
+     "at": "2026-11-03",
+     "reason": "junk_source",
+     "why": "A price-target roundup from an aggregator."
+    },
+    {
+     "title": "Sample headline: ASML last quarter's story",
+     "source": "Example Wire",
+     "url": "https://example.com/news/asml-stale",
+     "at": "2026-11-03",
+     "reason": "stale",
+     "why": "Older than the week read."
+    }
+   ],
+   "sentence": "2 findings from 2 items kept of 4.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "ASML-e1",
+     "symbol": "ASML",
+     "day": "2026-10-26",
+     "headline": "A chipmaker raised its spending plan",
+     "lines": "A sample report says a large chipmaker raised next year's equipment budget. It backs Pricing power: demand for the newest tools stays ahead of supply.",
+     "bearsOn": "Pricing power",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: chipmaker lifts its equipment budget",
+       "source": "Example Semiconductor Weekly",
+       "url": "https://example.com/news/capex-plan",
+       "at": "2026-10-26",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "AMZN": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "AMZN-1",
+     "symbol": "AMZN",
+     "day": "2026-11-04",
+     "headline": "Cloud unit adds data-centre capacity",
+     "lines": "A sample report says the cloud unit added data-centre capacity. It does not say by how much or at what cost, so it is an update: more capacity can carry growth, and it also raises the spending the cash conversion has to absorb.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample headline: cloud unit adds data-centre capacity",
+       "source": "Example Tech",
+       "url": "https://example.com/news/amzn-cloud",
+       "at": "2026-11-03",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "news",
+     "title": "Sample headline: cloud unit adds data-centre capacity",
+     "source": "Example Tech",
+     "url": "https://example.com/news/amzn-cloud",
+     "at": "2026-11-03",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-03",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 2.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "AMZN-e1",
+     "symbol": "AMZN",
+     "day": "2026-10-28",
+     "headline": "Results: cloud growth picked up",
+     "lines": "The app's results report reads faster cloud growth in the quarter. It backs the holding against 3.4: the segment that earns most is growing fastest.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "backs",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/amzn-q3",
+       "at": "2026-10-28",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "AMZN-e2",
+     "symbol": "AMZN",
+     "day": "2026-10-17",
+     "headline": "Spending plans raised again",
+     "lines": "A sample report says the company raised its capital spending plan for the year. It challenges cash conversion under 3.4 until the new capacity earns.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: spending plan raised for the year",
+       "source": "Example Wire",
+       "url": "https://example.com/news/amzn-capex",
+       "at": "2026-10-17",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "META": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [],
+   "kept": [],
+   "dropped": [
+    {
+     "title": "Sample headline: a new headset colourway",
+     "source": "Example Lifestyle",
+     "url": "https://example.com/news/meta-off",
+     "at": "2026-11-03",
+     "reason": "off_lens",
+     "why": "Bears on no pillar, rule or kill signal."
+    },
+    {
+     "title": "Sample headline: analysts lift price targets across the sector",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/targets",
+     "at": "2026-11-03",
+     "reason": "junk_source",
+     "why": "A price-target roundup from an aggregator."
+    }
+   ],
+   "sentence": "Nothing bears on the lens: 2 items left out.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "META-e1",
+     "symbol": "META",
+     "day": "2026-10-28",
+     "headline": "Results: costs grew faster than revenue",
+     "lines": "The app's results report reads costs growing faster than revenue in the quarter. It challenges the Compounding Machine margin test under 3.4 if it lasts a second quarter.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/meta-q3",
+       "at": "2026-10-28",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "META-e2",
+     "symbol": "META",
+     "day": "2026-10-20",
+     "headline": "Advertising prices rose in a sample survey",
+     "lines": "A sample agency survey says ad prices on the company's apps rose on the year. It backs the cash the business makes, which funds the spending.",
+     "bearsOn": "Returns on capital",
+     "stance": "backs",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample survey: ad prices by platform",
+       "source": "Example Ad Monitor",
+       "url": "https://example.com/news/ad-prices",
+       "at": "2026-10-20",
+       "kind": "news",
+       "tier": "analysis"
+      }
+     ]
+    }
+   ]
+  },
+  "UBER": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "UBER-1",
+     "symbol": "UBER",
+     "day": "2026-11-04",
+     "headline": "Results: free cash flow rose on the year",
+     "lines": "The app's results report reads higher free cash flow on the quarter a year before. It backs the holding against the ROIC watch under 3.4: cash now funds the buyback.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "backs",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/uber-q3",
+       "at": "2026-11-04",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "UBER-2",
+     "symbol": "UBER",
+     "day": "2026-11-04",
+     "headline": "A city caps ride-hailing licences",
+     "lines": "A sample city notice caps new ride-hailing licences for a year. One city is a small share of trips, so it is an update to watch, not a break.",
+     "bearsOn": "D.1(c) triggers",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample notice: licence cap for ride-hailing",
+       "source": "Example City Gazette",
+       "url": "https://example.com/notices/licence-cap",
+       "at": "2026-11-03",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "report",
+     "title": "Results report: quarter to September",
+     "source": "Invariant",
+     "url": "https://example.com/reports/uber-q3",
+     "at": "2026-11-04",
+     "text": null,
+     "form": null
+    },
+    {
+     "ref": "S2",
+     "kind": "news",
+     "title": "Sample notice: licence cap for ride-hailing",
+     "source": "Example City Gazette",
+     "url": "https://example.com/notices/licence-cap",
+     "at": "2026-11-03",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-03",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    },
+    {
+     "title": "Sample headline: UBER story, retold",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/uber-repeat",
+     "at": "2026-11-03",
+     "reason": "repeat",
+     "why": "The same story as one already kept."
+    }
+   ],
+   "sentence": "2 findings from 2 items kept of 4.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "UBER-e1",
+     "symbol": "UBER",
+     "day": "2026-10-23",
+     "headline": "Autonomous rides added in two cities",
+     "lines": "A sample report says a partner's autonomous rides went live on the app in two more cities. It backs the platform reading: others' vehicles still come to its demand.",
+     "bearsOn": "D.1(b) pathway",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: autonomous rides in two more cities",
+       "source": "Example Mobility",
+       "url": "https://example.com/news/av-cities",
+       "at": "2026-10-23",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "GOOGL": {
+   "day": "2026-11-04",
+   "readAt": "2026-11-04T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "GOOGL-1",
+     "symbol": "GOOGL",
+     "day": "2026-11-04",
+     "headline": "Results: cloud margin widened",
+     "lines": "The app's results report reads a wider cloud operating margin. It backs the Compounding Machine margin test under 3.4.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "backs",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/googl-q3",
+       "at": "2026-10-29",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "report",
+     "title": "Results report: quarter to September",
+     "source": "Invariant",
+     "url": "https://example.com/reports/googl-q3",
+     "at": "2026-10-29",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: analysts lift price targets across the sector",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/targets",
+     "at": "2026-11-03",
+     "reason": "junk_source",
+     "why": "A price-target roundup from an aggregator."
+    },
+    {
+     "title": "Sample headline: a phone launch event",
+     "source": "Example Lifestyle",
+     "url": "https://example.com/news/googl-off",
+     "at": "2026-11-03",
+     "reason": "off_lens",
+     "why": "Bears on no pillar, rule or kill signal."
+    },
+    {
+     "title": "Sample headline: GOOGL last quarter's story",
+     "source": "Example Wire",
+     "url": "https://example.com/news/googl-stale",
+     "at": "2026-11-03",
+     "reason": "stale",
+     "why": "Older than the week read."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 4.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "GOOGL-e1",
+     "symbol": "GOOGL",
+     "day": "2026-10-22",
+     "headline": "A court sets the remedies hearing",
+     "lines": "A sample court docket sets the date for a remedies hearing in the search case. Nothing is decided; it challenges the search business only if the remedy reaches distribution deals.",
+     "bearsOn": "D.1(c) triggers",
+     "stance": "challenges",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample docket: remedies hearing scheduled",
+       "source": "Example Court Records",
+       "url": "https://example.com/dockets/search-case",
+       "at": "2026-10-22",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ]
+  },
+  "SHOP": {
+   "day": "2026-11-03",
+   "readAt": "2026-11-03T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "SHOP-1",
+     "symbol": "SHOP",
+     "day": "2026-11-03",
+     "headline": "Results: merchant growth held, take rate up",
+     "lines": "The app's results report reads merchant volume growing at the pace of the quarter before and a higher take rate. It backs the ROIC watch under 3.4 slowly: margins rose, returns are still under 20%.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/shop-q3",
+       "at": "2026-11-03",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "report",
+     "title": "Results report: quarter to September",
+     "source": "Invariant",
+     "url": "https://example.com/reports/shop-q3",
+     "at": "2026-11-03",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-02",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 2.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "SHOP-e1",
+     "symbol": "SHOP",
+     "day": "2026-10-21",
+     "headline": "Payments product launched in a new market",
+     "lines": "A sample release says the payments product launched in a new market. An update on the pathway, with no figures yet.",
+     "bearsOn": "D.1(b) pathway",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample press release: payments in a new market",
+       "source": "Example Wire",
+       "url": "https://example.com/news/shop-payments",
+       "at": "2026-10-21",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "BIRK": {
+   "day": "2026-11-03",
+   "readAt": "2026-11-03T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "BIRK-1",
+     "symbol": "BIRK",
+     "day": "2026-11-03",
+     "headline": "No class places it, and the filing explains why",
+     "lines": "The sample annual report shows gross margin holding but returns under the classes' tests. It bears on Section 2's review owed for a holding no class places.",
+     "bearsOn": "Section 2 summary: no qualifying archetype",
+     "stance": "challenges",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Sample annual report: margins and returns",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/birk-20f",
+       "at": "2026-11-01",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "filing",
+     "title": "Sample annual report: margins and returns",
+     "source": "SEC EDGAR",
+     "url": "https://example.com/filings/birk-20f",
+     "at": "2026-11-01",
+     "text": null,
+     "form": "8-K"
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: a celebrity wears the sandals",
+     "source": "Example Lifestyle",
+     "url": "https://example.com/news/birk-off",
+     "at": "2026-11-02",
+     "reason": "off_lens",
+     "why": "Bears on no pillar, rule or kill signal."
+    },
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-02",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 3.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "BIRK-e1",
+     "symbol": "BIRK",
+     "day": "2026-10-25",
+     "headline": "Wholesale orders slowed in a sample survey",
+     "lines": "A sample retailer survey says spring wholesale orders slowed. It challenges the growth the holding would need to qualify for a class.",
+     "bearsOn": "Section 2 summary: no qualifying archetype",
+     "stance": "challenges",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample survey: footwear wholesale orders",
+       "source": "Example Retail Pulse",
+       "url": "https://example.com/news/footwear-orders",
+       "at": "2026-10-25",
+       "kind": "news",
+       "tier": "analysis"
+      }
+     ]
+    }
+   ]
+  },
+  "SPGI": {
+   "day": "2026-11-03",
+   "readAt": "2026-11-03T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "SPGI-1",
+     "symbol": "SPGI",
+     "day": "2026-11-03",
+     "headline": "Bond issuance kept the ratings unit busy",
+     "lines": "A sample market report says corporate bond issuance stayed high in October. It backs the ratings revenue the ROIC watch under 3.4 rests on.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample report: October bond issuance",
+       "source": "Example Credit Monitor",
+       "url": "https://example.com/news/issuance",
+       "at": "2026-11-02",
+       "kind": "news",
+       "tier": "analysis"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "news",
+     "title": "Sample report: October bond issuance",
+     "source": "Example Credit Monitor",
+     "url": "https://example.com/news/issuance",
+     "at": "2026-11-02",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: SPGI last quarter's story",
+     "source": "Example Wire",
+     "url": "https://example.com/news/spgi-stale",
+     "at": "2026-11-02",
+     "reason": "stale",
+     "why": "Older than the week read."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 2.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "SPGI-e1",
+     "symbol": "SPGI",
+     "day": "2026-10-26",
+     "headline": "Index licensing fees renegotiated",
+     "lines": "A sample report says a large fund manager renegotiated index fees. One client, no figures: an update to the margin test.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample headline: index fees renegotiated",
+       "source": "Example Funds Journal",
+       "url": "https://example.com/news/index-fees",
+       "at": "2026-10-26",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "BKNG": {
+   "day": "2026-11-03",
+   "readAt": "2026-11-03T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "BKNG-1",
+     "symbol": "BKNG",
+     "day": "2026-11-03",
+     "headline": "Room nights grew in the quarter",
+     "lines": "The sample release reports room nights up on the year and a higher share booked direct. It backs the Compounding Machine tests on returns.",
+     "bearsOn": "Returns on capital",
+     "stance": "backs",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Sample current report: quarterly results release",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/bkng-8k",
+       "at": "2026-10-29",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "filing",
+     "title": "Sample current report: quarterly results release",
+     "source": "SEC EDGAR",
+     "url": "https://example.com/filings/bkng-8k",
+     "at": "2026-10-29",
+     "text": null,
+     "form": "8-K"
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: 5 stocks to buy before the year ends",
+     "source": "Example Listicle",
+     "url": "https://example.com/news/five-stocks",
+     "at": "2026-11-02",
+     "reason": "junk_title",
+     "why": "A 'stocks to buy' list, not news."
+    },
+    {
+     "title": "Sample headline: analysts lift price targets across the sector",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/targets",
+     "at": "2026-11-02",
+     "reason": "junk_source",
+     "why": "A price-target roundup from an aggregator."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 3.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "BKNG-e1",
+     "symbol": "BKNG",
+     "day": "2026-10-18",
+     "headline": "A regulator names the platform a gatekeeper",
+     "lines": "A sample notice names the platform under a digital markets rule. Compliance costs are not given; it challenges margins at the edge.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample notice: gatekeeper designation",
+       "source": "Example Regulator",
+       "url": "https://example.com/notices/gatekeeper",
+       "at": "2026-10-18",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ]
+  },
+  "MELI": {
+   "day": "2026-11-02",
+   "readAt": "2026-11-02T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "MELI-1",
+     "symbol": "MELI",
+     "day": "2026-11-02",
+     "headline": "Credit book grew faster than payments",
+     "lines": "The app's results report reads the lending book growing faster than payment volume. It challenges the ROIC watch under 3.4 if losses rise with it.",
+     "bearsOn": "3.4 Quality Erosion: ROIC below 20%",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Results report: quarter to September",
+       "source": "Invariant",
+       "url": "https://example.com/reports/meli-q3",
+       "at": "2026-11-02",
+       "kind": "report",
+       "tier": "filing"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "report",
+     "title": "Results report: quarter to September",
+     "source": "Invariant",
+     "url": "https://example.com/reports/meli-q3",
+     "at": "2026-11-02",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: a football sponsorship",
+     "source": "Example Lifestyle",
+     "url": "https://example.com/news/meli-off",
+     "at": "2026-11-01",
+     "reason": "off_lens",
+     "why": "Bears on no pillar, rule or kill signal."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 2.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "MELI-e1",
+     "symbol": "MELI",
+     "day": "2026-10-24",
+     "headline": "Free shipping threshold lowered in its largest market",
+     "lines": "A sample report says the free shipping threshold was lowered. It updates the margin reading: more orders, lower margin per order.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample headline: free shipping threshold lowered",
+       "source": "Example LatAm Retail",
+       "url": "https://example.com/news/shipping",
+       "at": "2026-10-24",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "NVO": {
+   "day": "2026-11-02",
+   "readAt": "2026-11-02T06:10:00.000Z",
+   "findings": [
+    {
+     "id": "NVO-1",
+     "symbol": "NVO",
+     "day": "2026-11-02",
+     "headline": "The sale is decided; the price has not moved since",
+     "lines": "The Decision Log keeps the sale decided. A sample report on a rival's trial does not change it; it is noted against the exit owed.",
+     "bearsOn": "Section 2 summary: exit owed",
+     "stance": "update",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: rival weight-loss trial reads out",
+       "source": "Example Pharma Wire",
+       "url": "https://example.com/news/trial",
+       "at": "2026-11-01",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ],
+   "kept": [
+    {
+     "ref": "S1",
+     "kind": "news",
+     "title": "Sample headline: rival weight-loss trial reads out",
+     "source": "Example Pharma Wire",
+     "url": "https://example.com/news/trial",
+     "at": "2026-11-01",
+     "text": null,
+     "form": null
+    }
+   ],
+   "dropped": [
+    {
+     "title": "Sample headline: NVO last quarter's story",
+     "source": "Example Wire",
+     "url": "https://example.com/news/nvo-stale",
+     "at": "2026-11-01",
+     "reason": "stale",
+     "why": "Older than the week read."
+    }
+   ],
+   "sentence": "1 finding from 1 item kept of 2.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "NVO-e1",
+     "symbol": "NVO",
+     "day": "2026-10-16",
+     "headline": "Prices cut in a sample tender",
+     "lines": "A sample report says list prices were cut to win a national tender. It challenges the margin test the holding already failed.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "challenges",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Sample headline: prices cut in a national tender",
+       "source": "Example Pharma Wire",
+       "url": "https://example.com/news/tender",
+       "at": "2026-10-16",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  "IBKR": {
+   "day": "2026-11-01",
+   "readAt": "2026-11-01T06:10:00.000Z",
+   "findings": [],
+   "kept": [],
+   "dropped": [
+    {
+     "title": "Sample headline: IBKR story, retold",
+     "source": "Example Aggregator",
+     "url": "https://example.com/news/ibkr-repeat",
+     "at": "2026-10-31",
+     "reason": "repeat",
+     "why": "The same story as one already kept."
+    }
+   ],
+   "sentence": "Nothing bears on the lens: 1 item left out.",
+   "failed": false,
+   "earlier": [
+    {
+     "id": "IBKR-e1",
+     "symbol": "IBKR",
+     "day": "2026-10-25",
+     "headline": "Client accounts grew again in the month",
+     "lines": "A sample monthly metrics release reports more client accounts and higher margin loans. It backs the returns tests; the position is too small to move the book.",
+     "bearsOn": "Returns on capital",
+     "stance": "backs",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample monthly metrics release",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/ibkr-metrics",
+       "at": "2026-10-25",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "pricedIn": {
+  "MA": {
+   "symbol": "MA",
+   "day": "2026-11-01",
+   "at": "2026-11-01T18:20:00.000Z",
+   "facts": {
+    "symbol": "MA",
+    "name": "Sample card network",
+    "price": 520.0,
+    "currency": "USD",
+    "implied": {
+     "cagrPct": 11.4,
+     "firstYearGrowthPct": 12.0,
+     "marginPct": 58.0,
+     "basis": "free cash flow less stock pay, 10 years, WACC 8.5%"
+    },
+    "delivered": {
+     "cagrPct": 12.6,
+     "years": 5,
+     "lastPct": 12.2
+    },
+    "guidance": "Sample guidance: net revenue growth at the high end of low teens.",
+    "cases": {
+     "low": 430,
+     "base": 560,
+     "high": 660,
+     "basis": "P/FCF by stage"
+    },
+    "pillars": [
+     {
+      "name": "Network growth",
+      "text": "Volumes compound in the low teens."
+     },
+     {
+      "name": "Returns on capital",
+      "text": "Returns stay far above the cost of capital."
+     },
+     {
+      "name": "Agents pay through the network",
+      "text": "Agent-initiated payments run on the existing rails."
+     }
+    ]
+   },
+   "summary": "The price assumes revenue grows about 11.4% a year at a 58% margin, close to the 12.6% a year delivered over five years. Growth at the pace delivered is priced in; agent payments are not.",
+   "pillars": [
+    {
+     "id": "MA:network-growth",
+     "pillar": "Network growth",
+     "verdict": "priced",
+     "evidence": "The implied 11.4% a year sits just under the 12.6% delivered and the guidance's low teens.",
+     "sources": [
+      {
+       "title": "Sample headline: card network volumes steady into the quarter's end",
+       "url": "https://example.com/news/ma-volumes"
+      }
+     ]
+    },
+    {
+     "id": "MA:returns-on-capital",
+     "pillar": "Returns on capital",
+     "verdict": "partly",
+     "evidence": "A 58% end margin keeps returns high, but leaves no room for the margin to widen further.",
+     "sources": []
+    },
+    {
+     "id": "MA:agents-pay-through-the-network",
+     "pillar": "Agents pay through the network",
+     "verdict": "not_priced",
+     "evidence": "The implied growth needs nothing beyond today's volumes; a new payment flow would be upside the price does not carry.",
+     "sources": [
+      {
+       "title": "Sample current report: agent payments pilot",
+       "url": "https://example.com/filings/ma-8k"
+      }
+     ]
+    }
+   ],
+   "web": true,
+   "costUsd": 0.0412
+  },
+  "ASML": {
+   "symbol": "ASML",
+   "day": "2026-10-30",
+   "at": "2026-10-30T19:02:00.000Z",
+   "facts": {
+    "symbol": "ASML",
+    "name": "Sample lithography maker",
+    "price": 1500.0,
+    "currency": "USD",
+    "implied": {
+     "cagrPct": 13.2,
+     "firstYearGrowthPct": 14.0,
+     "marginPct": 33.0,
+     "basis": "free cash flow less stock pay, 10 years, WACC 9.0%"
+    },
+    "delivered": {
+     "cagrPct": 18.1,
+     "years": 5,
+     "lastPct": 15.4
+    },
+    "guidance": "Sample guidance: next year's sales growth in the low teens.",
+    "cases": {
+     "low": 1150,
+     "base": 1450,
+     "high": 1800,
+     "basis": "P/E by stage"
+    },
+    "pillars": [
+     {
+      "name": "Pricing power",
+      "text": "The newest machines sell at rising prices."
+     },
+     {
+      "name": "Cash pillar",
+      "text": "Free cash flow keeps funding buybacks through the cycle."
+     }
+    ]
+   },
+   "summary": "The price assumes revenue grows about 13.2% a year at a 33% margin, under the 18.1% a year delivered over five years. Pricing power is priced in; the cash pillar is partly carried.",
+   "pillars": [
+    {
+     "id": "ASML:pricing-power",
+     "pillar": "Pricing power",
+     "verdict": "priced",
+     "evidence": "The implied 13.2% a year matches the guidance's low teens; investors already pay for rising prices on the newest machines.",
+     "sources": [
+      {
+       "title": "Sample headline: chipmaker lifts its equipment budget",
+       "url": "https://example.com/news/capex-plan"
+      }
+     ]
+    },
+    {
+     "id": "ASML:cash-pillar",
+     "pillar": "Cash pillar",
+     "verdict": "partly",
+     "evidence": "A 33% end margin carries today's cash, but not the buybacks through a downturn the pillar names.",
+     "sources": []
+    }
+   ],
+   "web": true,
+   "costUsd": 0.0331
+  }
+ },
+ "runs": [
+  {
+   "id": "writer:UBER:2611042305",
+   "agent": "writer",
+   "subject": "UBER",
+   "at": "2026-11-04T23:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "study",
+     "model": "claude-sonnet-5-5",
+     "read": 16,
+     "kept": 16,
+     "tokensIn": 38000,
+     "tokensOut": 9100,
+     "searches": 0,
+     "costUsd": 0.2505,
+     "note": null
+    },
+    {
+     "id": "brief",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 1400,
+     "searches": 0,
+     "costUsd": 0.0396,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.2901,
+   "sentence": "The results study's 16 sections and the deck's words."
+  },
+  {
+   "id": "newsletter_reader:newsletter-0:261104225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-0",
+   "at": "2026-11-04T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "earnings_reaction:UBER:2611042230",
+   "agent": "earnings_reaction",
+   "subject": "UBER",
+   "at": "2026-11-04T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "reader:UBER:2611042210",
+   "agent": "reader",
+   "subject": "UBER",
+   "at": "2026-11-04T22:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "release",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 15200,
+     "tokensOut": 2300,
+     "searches": 0,
+     "costUsd": 0.0801,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 21,
+     "kept": 20,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 figure not printed, dropped and named"
+    }
+   ],
+   "findings": 20,
+   "costUsd": 0.0801,
+   "sentence": "The release's quarter read; 1 figure the text does not print was dropped."
+  },
+  {
+   "id": "macro_reports:FOMC rate decision:2611042",
+   "agent": "macro_reports",
+   "subject": "FOMC rate decision",
+   "at": "2026-11-04T21:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "figures",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "SPY, QQQ, IWM, TLT, UUP, GLD, USO and the book"
+    },
+    {
+     "id": "outcome",
+     "model": "claude-sonnet-5-5",
+     "read": 5,
+     "kept": 4,
+     "tokensIn": 5600,
+     "tokensOut": 1400,
+     "searches": 4,
+     "costUsd": 0.0386,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0386,
+   "sentence": "Outcome read with its page; the moves are the app's."
+  },
+  {
+   "id": "market_recap:2026-11-04:2611042040",
+   "agent": "market_recap",
+   "subject": "2026-11-04",
+   "at": "2026-11-04T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "analyst:Which holdings pull ROIC under 2",
+   "agent": "analyst",
+   "subject": "Which holdings pull ROIC under 20%?",
+   "at": "2026-11-04T09:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-sonnet-5-5",
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 11200,
+     "tokensOut": 1300,
+     "searches": 0,
+     "costUsd": 0.0532,
+     "note": "4 tool calls, every figure from the tools"
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.0532,
+   "sentence": "Answered from the app's tools."
+  },
+  {
+   "id": "lenses:value:2611040650",
+   "agent": "lenses",
+   "subject": "value",
+   "at": "2026-11-04T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 5,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 5,
+   "costUsd": 0.0288,
+   "sentence": "5 of today's findings read through the value lens."
+  },
+  {
+   "id": "lenses:growth:2611040650",
+   "agent": "lenses",
+   "subject": "growth",
+   "at": "2026-11-04T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 6,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0288,
+   "sentence": "6 of today's findings read through the growth lens."
+  },
+  {
+   "id": "lenses:dividend:2611040650",
+   "agent": "lenses",
+   "subject": "dividend",
+   "at": "2026-11-04T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 3,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0288,
+   "sentence": "3 of today's findings read through the dividend lens."
+  },
+  {
+   "id": "agent_builder:a1:2611040630",
+   "agent": "agent_builder",
+   "subject": "a1",
+   "at": "2026-11-04T06:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "run",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 8600,
+     "tokensOut": 1500,
+     "searches": 0,
+     "costUsd": 0.0483,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0483,
+   "sentence": "Your agent Management watch: 2 findings from 9 items."
+  },
+  {
+   "id": "company_news:META:2611040615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-11-04T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 0,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 0,
+     "kept": 0,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "0 bore on nothing in the lens"
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0,
+   "sentence": "Nothing bears on the lens: 2 items left out."
+  },
+  {
+   "id": "company_news:GOOGL:2611040614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-11-04T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "company_news:AMZN:2611040613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-11-04T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 2."
+  },
+  {
+   "id": "company_news:ASML:2611040612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-11-04T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 4100,
+     "tokensOut": 1400,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.01176,
+   "sentence": "2 findings from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:MA:2611040611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-11-04T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 4100,
+     "tokensOut": 1400,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.01176,
+   "sentence": "2 findings from 2 items kept of 5."
+  },
+  {
+   "id": "company_news:UBER:2611040610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-11-04T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 4100,
+     "tokensOut": 1400,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.01176,
+   "sentence": "2 findings from 2 items kept of 4."
+  },
+  {
+   "id": "property_watch:book:2611040605",
+   "agent": "property_watch",
+   "subject": "book",
+   "at": "2026-11-04T06:05:00.000Z",
+   "status": "skipped",
+   "steps": [],
+   "findings": 0,
+   "costUsd": 0,
+   "sentence": "No property in the book, so nothing to watch."
+  },
+  {
+   "id": "words:data-sample-metal-index:2611040605",
+   "agent": "words",
+   "subject": "data-sample-metal-index",
+   "at": "2026-11-04T06:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "data",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 4200,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0261,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0261,
+   "sentence": "Read with its page."
+  },
+  {
+   "id": "planner:day:2611040600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-11-04T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 26,
+     "kept": 18,
+     "tokensIn": 9200,
+     "tokensOut": 1800,
+     "searches": 0,
+     "costUsd": 0.0912,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 18,
+     "kept": 16,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped: one subject not a candidate, one past two extra runs"
+    }
+   ],
+   "findings": 16,
+   "costUsd": 0.0912,
+   "sentence": "16 tasks planned, 2 extra runs; 2 dropped by the check."
+  },
+  {
+   "id": "newsletter_reader:newsletter-1:261103225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-1",
+   "at": "2026-11-03T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "earnings_reaction:SHOP:2611032230",
+   "agent": "earnings_reaction",
+   "subject": "SHOP",
+   "at": "2026-11-03T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "macro_reports:US jobs report:2611032140",
+   "agent": "macro_reports",
+   "subject": "US jobs report",
+   "at": "2026-11-03T21:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "figures",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "SPY, QQQ, IWM, TLT, UUP, GLD, USO and the book"
+    },
+    {
+     "id": "outcome",
+     "model": "claude-sonnet-5-5",
+     "read": 5,
+     "kept": 4,
+     "tokensIn": 5600,
+     "tokensOut": 1400,
+     "searches": 4,
+     "costUsd": 0.0386,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0386,
+   "sentence": "Outcome read with its page; the moves are the app's."
+  },
+  {
+   "id": "market_recap:2026-11-03:2611032040",
+   "agent": "market_recap",
+   "subject": "2026-11-03",
+   "at": "2026-11-03T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "perf_insights:performance:2611030815",
+   "agent": "perf_insights",
+   "subject": "performance",
+   "at": "2026-11-03T08:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9600,
+     "tokensOut": 2200,
+     "searches": 0,
+     "costUsd": 0.0618,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 8,
+     "kept": 7,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 reading quoted a figure its card does not show"
+    }
+   ],
+   "findings": 7,
+   "costUsd": 0.0618,
+   "sentence": "An overall line and 7 readings."
+  },
+  {
+   "id": "lenses:value:2611030650",
+   "agent": "lenses",
+   "subject": "value",
+   "at": "2026-11-03T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 5,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 5,
+   "costUsd": 0.0288,
+   "sentence": "5 of today's findings read through the value lens."
+  },
+  {
+   "id": "lenses:growth:2611030650",
+   "agent": "lenses",
+   "subject": "growth",
+   "at": "2026-11-03T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 6,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0288,
+   "sentence": "6 of today's findings read through the growth lens."
+  },
+  {
+   "id": "lenses:dividend:2611030650",
+   "agent": "lenses",
+   "subject": "dividend",
+   "at": "2026-11-03T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 3,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0288,
+   "sentence": "3 of today's findings read through the dividend lens."
+  },
+  {
+   "id": "agent_builder:a1:2611030630",
+   "agent": "agent_builder",
+   "subject": "a1",
+   "at": "2026-11-03T06:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "run",
+     "model": "claude-sonnet-5-5",
+     "read": 7,
+     "kept": 0,
+     "tokensIn": 5400,
+     "tokensOut": 300,
+     "searches": 0,
+     "costUsd": 0.0207,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 0,
+     "kept": 0,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.0207,
+   "sentence": "Your agent Management watch: nothing new."
+  },
+  {
+   "id": "company_news:BKNG:2611030619",
+   "agent": "company_news",
+   "subject": "BKNG",
+   "at": "2026-11-03T06:19:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 3."
+  },
+  {
+   "id": "company_news:SPGI:2611030618",
+   "agent": "company_news",
+   "subject": "SPGI",
+   "at": "2026-11-03T06:18:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 2."
+  },
+  {
+   "id": "company_news:BIRK:2611030617",
+   "agent": "company_news",
+   "subject": "BIRK",
+   "at": "2026-11-03T06:17:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 3."
+  },
+  {
+   "id": "company_news:SHOP:2611030616",
+   "agent": "company_news",
+   "subject": "SHOP",
+   "at": "2026-11-03T06:16:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 2."
+  },
+  {
+   "id": "planner:day:2611030600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-11-03T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 24,
+     "kept": 15,
+     "tokensIn": 8800,
+     "tokensOut": 1600,
+     "searches": 0,
+     "costUsd": 0.084,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 15,
+     "kept": 15,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 15,
+   "costUsd": 0.084,
+   "sentence": "15 tasks planned, 1 extra run."
+  },
+  {
+   "id": "newsletter_reader:podcast-1:2611030520",
+   "agent": "newsletter_reader",
+   "subject": "podcast-1",
+   "at": "2026-11-03T05:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "podcast",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 22000,
+     "tokensOut": 1800,
+     "searches": 0,
+     "costUsd": 0.0101,
+     "note": "transcript cut at the limit and said so"
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0101,
+   "sentence": "An episode written up with a perspective on the book."
+  },
+  {
+   "id": "thesis_hunter:stock:MA:2611030405",
+   "agent": "thesis_hunter",
+   "subject": "stock:MA",
+   "at": "2026-11-03T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "thesis_hunter:market:rates-stay-higher:2",
+   "agent": "thesis_hunter",
+   "subject": "market:rates-stay-higher",
+   "at": "2026-11-03T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "newsletter_reader:newsletter-2:261102225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-2",
+   "at": "2026-11-02T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "earnings_reaction:MELI:2611022230",
+   "agent": "earnings_reaction",
+   "subject": "MELI",
+   "at": "2026-11-02T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "reader:ASML:2611022105",
+   "agent": "reader",
+   "subject": "ASML",
+   "at": "2026-11-02T21:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "release",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 18400,
+     "tokensOut": 2600,
+     "searches": 0,
+     "costUsd": 0.0942,
+     "note": "every figure found in the printed text"
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 24,
+     "kept": 24,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 24,
+   "costUsd": 0.0942,
+   "sentence": "The 6-K's quarter read; 24 figures checked against the release."
+  },
+  {
+   "id": "market_recap:2026-11-02:2611022040",
+   "agent": "market_recap",
+   "subject": "2026-11-02",
+   "at": "2026-11-02T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "lenses:value:2611020650",
+   "agent": "lenses",
+   "subject": "value",
+   "at": "2026-11-02T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 5,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 5,
+   "costUsd": 0.0288,
+   "sentence": "5 of today's findings read through the value lens."
+  },
+  {
+   "id": "lenses:growth:2611020650",
+   "agent": "lenses",
+   "subject": "growth",
+   "at": "2026-11-02T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 6,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0288,
+   "sentence": "6 of today's findings read through the growth lens."
+  },
+  {
+   "id": "lenses:dividend:2611020650",
+   "agent": "lenses",
+   "subject": "dividend",
+   "at": "2026-11-02T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 3,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0288,
+   "sentence": "3 of today's findings read through the dividend lens."
+  },
+  {
+   "id": "writer:weekly:2611020640",
+   "agent": "writer",
+   "subject": "weekly",
+   "at": "2026-11-02T06:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 7800,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0369,
+     "note": null
+    },
+    {
+     "id": "answer",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 11200,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0501,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.087,
+   "sentence": "Commentary and 2 answers written from the review's figures."
+  },
+  {
+   "id": "review_news:weekly:2611020635",
+   "agent": "review_news",
+   "subject": "weekly",
+   "at": "2026-11-02T06:35:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "news",
+     "model": "claude-sonnet-5-5",
+     "read": 14,
+     "kept": 11,
+     "tokensIn": 12400,
+     "tokensOut": 3100,
+     "searches": 10,
+     "costUsd": 0.0838,
+     "note": null
+    }
+   ],
+   "findings": 11,
+   "costUsd": 0.0838,
+   "sentence": "11 items with their pages; 1 without a date left out."
+  },
+  {
+   "id": "agent_builder:a2:2611020632",
+   "agent": "agent_builder",
+   "subject": "a2",
+   "at": "2026-11-02T06:32:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "run",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 6100,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0318,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0318,
+   "sentence": "Your agent Pricing and regulators: 1 finding from 6 items."
+  },
+  {
+   "id": "company_news:NVO:2611020621",
+   "agent": "company_news",
+   "subject": "NVO",
+   "at": "2026-11-02T06:21:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 2."
+  },
+  {
+   "id": "company_news:MELI:2611020620",
+   "agent": "company_news",
+   "subject": "MELI",
+   "at": "2026-11-02T06:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1400,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.00018,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00738,
+   "sentence": "1 finding from 1 item kept of 2."
+  },
+  {
+   "id": "planner:day:2611020600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-11-02T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 24,
+     "kept": 15,
+     "tokensIn": 8800,
+     "tokensOut": 1600,
+     "searches": 0,
+     "costUsd": 0.084,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 15,
+     "kept": 15,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 15,
+   "costUsd": 0.084,
+   "sentence": "15 tasks planned, 1 extra run."
+  },
+  {
+   "id": "thesis_hunter:stock:ASML:2611020405",
+   "agent": "thesis_hunter",
+   "subject": "stock:ASML",
+   "at": "2026-11-02T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "newsletter_reader:newsletter-3:261101225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-3",
+   "at": "2026-11-01T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "priced_in:MA:2611011820",
+   "agent": "priced_in",
+   "subject": "MA",
+   "at": "2026-11-01T18:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 4,
+     "tokensIn": 6100,
+     "tokensOut": 1500,
+     "searches": 4,
+     "costUsd": 0.0412,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 4,
+   "costUsd": 0.0412,
+   "sentence": "Growth at the pace delivered is priced in; agent payments are not."
+  },
+  {
+   "id": "analyst:How far is AMZN from its cap?:26",
+   "agent": "analyst",
+   "subject": "How far is AMZN from its cap?",
+   "at": "2026-11-01T09:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-sonnet-5-5",
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 11200,
+     "tokensOut": 1300,
+     "searches": 0,
+     "costUsd": 0.0532,
+     "note": "4 tool calls, every figure from the tools"
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.0532,
+   "sentence": "Answered from the app's tools."
+  },
+  {
+   "id": "lenses:value:2611010650",
+   "agent": "lenses",
+   "subject": "value",
+   "at": "2026-11-01T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 5,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 5,
+   "costUsd": 0.0288,
+   "sentence": "5 of today's findings read through the value lens."
+  },
+  {
+   "id": "lenses:growth:2611010650",
+   "agent": "lenses",
+   "subject": "growth",
+   "at": "2026-11-01T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 6,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0288,
+   "sentence": "6 of today's findings read through the growth lens."
+  },
+  {
+   "id": "lenses:dividend:2611010650",
+   "agent": "lenses",
+   "subject": "dividend",
+   "at": "2026-11-01T06:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 3,
+     "tokensIn": 4100,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0288,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0288,
+   "sentence": "3 of today's findings read through the dividend lens."
+  },
+  {
+   "id": "writer:monthly:2611010645",
+   "agent": "writer",
+   "subject": "monthly",
+   "at": "2026-11-01T06:45:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 9100,
+     "tokensOut": 1000,
+     "searches": 0,
+     "costUsd": 0.0423,
+     "note": null
+    },
+    {
+     "id": "answer",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 12600,
+     "tokensOut": 1200,
+     "searches": 0,
+     "costUsd": 0.0558,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.0981,
+   "sentence": "The October review's commentary and 2 answers."
+  },
+  {
+   "id": "review_news:monthly:2611010638",
+   "agent": "review_news",
+   "subject": "monthly",
+   "at": "2026-11-01T06:38:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "news",
+     "model": "claude-sonnet-5-5",
+     "read": 16,
+     "kept": 12,
+     "tokensIn": 13200,
+     "tokensOut": 3300,
+     "searches": 12,
+     "costUsd": 0.0891,
+     "note": null
+    }
+   ],
+   "findings": 12,
+   "costUsd": 0.0891,
+   "sentence": "12 items with their pages."
+  },
+  {
+   "id": "company_news:IBKR:2611010622",
+   "agent": "company_news",
+   "subject": "IBKR",
+   "at": "2026-11-01T06:22:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days, then 21"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 1,
+     "kept": 0,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "1 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 0,
+     "kept": 0,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "0 bore on nothing in the lens"
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0,
+   "sentence": "Nothing bears on the lens: 1 item left out."
+  },
+  {
+   "id": "planner:day:2611010600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-11-01T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 24,
+     "kept": 15,
+     "tokensIn": 8800,
+     "tokensOut": 1600,
+     "searches": 0,
+     "costUsd": 0.084,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 15,
+     "kept": 15,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 15,
+   "costUsd": 0.084,
+   "sentence": "15 tasks planned, 1 extra run."
+  },
+  {
+   "id": "newsletter_reader:newsletter-4:261031225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-4",
+   "at": "2026-10-31T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "planner:day:2610310600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-10-31T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 24,
+     "kept": 15,
+     "tokensIn": 8800,
+     "tokensOut": 1600,
+     "searches": 0,
+     "costUsd": 0.084,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 15,
+     "kept": 15,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 15,
+   "costUsd": 0.084,
+   "sentence": "15 tasks planned, 1 extra run."
+  },
+  {
+   "id": "calendar_agent:month:2610310530",
+   "agent": "calendar_agent",
+   "subject": "month",
+   "at": "2026-10-31T05:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "find",
+     "model": "claude-sonnet-5-5",
+     "read": 14,
+     "kept": 6,
+     "tokensIn": 8100,
+     "tokensOut": 2300,
+     "searches": 6,
+     "costUsd": 0.0612,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 6,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 already on the calendar"
+    }
+   ],
+   "findings": 4,
+   "costUsd": 0.0612,
+   "sentence": "4 dated events added for the next 60 days, each with its official page."
+  },
+  {
+   "id": "newsletter_reader:podcast-4:2610310520",
+   "agent": "newsletter_reader",
+   "subject": "podcast-4",
+   "at": "2026-10-31T05:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "podcast",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 22000,
+     "tokensOut": 1800,
+     "searches": 0,
+     "costUsd": 0.0101,
+     "note": "transcript cut at the limit and said so"
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0101,
+   "sentence": "An episode written up with a perspective on the book."
+  },
+  {
+   "id": "newsletter_reader:newsletter-5:261030225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-5",
+   "at": "2026-10-30T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "market_recap:2026-10-30:2610302040",
+   "agent": "market_recap",
+   "subject": "2026-10-30",
+   "at": "2026-10-30T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "agent_builder:a3:2610301940",
+   "agent": "agent_builder",
+   "subject": "a3",
+   "at": "2026-10-30T19:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "compile",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2100,
+     "tokensOut": 260,
+     "searches": 0,
+     "costUsd": 0.0008,
+     "note": null
+    },
+    {
+     "id": "test",
+     "model": "claude-sonnet-5-5",
+     "read": 11,
+     "kept": 1,
+     "tokensIn": 9400,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0447,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0455,
+   "sentence": "Your agent Cash returns: tested on the past week, 1 finding."
+  },
+  {
+   "id": "priced_in:ASML:2610301902",
+   "agent": "priced_in",
+   "subject": "ASML",
+   "at": "2026-10-30T19:02:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 5200,
+     "tokensOut": 1200,
+     "searches": 3,
+     "costUsd": 0.0331,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0331,
+   "sentence": "The price carries pricing power; the cash pillar is partly carried."
+  },
+  {
+   "id": "planner:day:2610300600",
+   "agent": "planner",
+   "subject": "day",
+   "at": "2026-10-30T06:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-opus-5-5",
+     "read": 24,
+     "kept": 15,
+     "tokensIn": 8800,
+     "tokensOut": 1600,
+     "searches": 0,
+     "costUsd": 0.084,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 15,
+     "kept": 15,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 15,
+   "costUsd": 0.084,
+   "sentence": "15 tasks planned, 1 extra run."
+  },
+  {
+   "id": "newsletter_reader:newsletter-6:261029225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-6",
+   "at": "2026-10-29T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "earnings_reaction:GOOGL:2610292230",
+   "agent": "earnings_reaction",
+   "subject": "GOOGL",
+   "at": "2026-10-29T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "market_recap:2026-10-29:2610292040",
+   "agent": "market_recap",
+   "subject": "2026-10-29",
+   "at": "2026-10-29T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "newsletter_reader:newsletter-7:261028225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-7",
+   "at": "2026-10-28T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "earnings_reaction:AMZN:2610282230",
+   "agent": "earnings_reaction",
+   "subject": "AMZN",
+   "at": "2026-10-28T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "earnings_reaction:META:2610282230",
+   "agent": "earnings_reaction",
+   "subject": "META",
+   "at": "2026-10-28T22:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "call",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 21000,
+     "tokensOut": 2400,
+     "searches": 2,
+     "costUsd": 0.0999,
+     "note": null
+    },
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 6,
+     "kept": 1,
+     "tokensIn": 14200,
+     "tokensOut": 1800,
+     "searches": 8,
+     "costUsd": 0.0701,
+     "note": null
+    },
+    {
+     "id": "why",
+     "model": "claude-sonnet-5-5",
+     "read": 3,
+     "kept": 1,
+     "tokensIn": 5400,
+     "tokensOut": 700,
+     "searches": 3,
+     "costUsd": 0.0267,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.1967,
+   "sentence": "The call, the commentary and why the shares moved, every point with its page."
+  },
+  {
+   "id": "macro_reports:Euro area GDP flash:261028",
+   "agent": "macro_reports",
+   "subject": "Euro area GDP flash",
+   "at": "2026-10-28T21:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "figures",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "SPY, QQQ, IWM, TLT, UUP, GLD, USO and the book"
+    },
+    {
+     "id": "outcome",
+     "model": "claude-sonnet-5-5",
+     "read": 5,
+     "kept": 4,
+     "tokensIn": 5600,
+     "tokensOut": 1400,
+     "searches": 4,
+     "costUsd": 0.0386,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0386,
+   "sentence": "Outcome read with its page; the moves are the app's."
+  },
+  {
+   "id": "market_recap:2026-10-28:2610282040",
+   "agent": "market_recap",
+   "subject": "2026-10-28",
+   "at": "2026-10-28T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "company_news:AMZN:2610280613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-10-28T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:UBER:2610280610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-10-28T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "newsletter_reader:newsletter-8:261027225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-8",
+   "at": "2026-10-27T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "market_recap:2026-10-27:2610272040",
+   "agent": "market_recap",
+   "subject": "2026-10-27",
+   "at": "2026-10-27T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "company_news:GOOGL:2610270614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-10-27T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 5."
+  },
+  {
+   "id": "company_news:MA:2610270611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-10-27T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 5."
+  },
+  {
+   "id": "newsletter_reader:podcast-8:2610270520",
+   "agent": "newsletter_reader",
+   "subject": "podcast-8",
+   "at": "2026-10-27T05:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "podcast",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 22000,
+     "tokensOut": 1800,
+     "searches": 0,
+     "costUsd": 0.0101,
+     "note": "transcript cut at the limit and said so"
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0101,
+   "sentence": "An episode written up with a perspective on the book."
+  },
+  {
+   "id": "thesis_hunter:stock:MA:2610270405",
+   "agent": "thesis_hunter",
+   "subject": "stock:MA",
+   "at": "2026-10-27T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "newsletter_reader:newsletter-9:261026225",
+   "agent": "newsletter_reader",
+   "subject": "newsletter-9",
+   "at": "2026-10-26T22:50:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "newsletter",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 6200,
+     "tokensOut": 900,
+     "searches": 0,
+     "costUsd": 0.0026,
+     "note": "6 points, 3 pictures placed"
+    }
+   ],
+   "findings": 6,
+   "costUsd": 0.0026,
+   "sentence": "A newsletter read into 6 points."
+  },
+  {
+   "id": "market_recap:2026-10-26:2610262040",
+   "agent": "market_recap",
+   "subject": "2026-10-26",
+   "at": "2026-10-26T20:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "write",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0609,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0609,
+   "sentence": "The session's recap and why each holding moved, every point with its page."
+  },
+  {
+   "id": "reader:MA:2610261320",
+   "agent": "reader",
+   "subject": "MA",
+   "at": "2026-10-26T13:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "thesis_doc",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 3,
+     "tokensIn": 9100,
+     "tokensOut": 1700,
+     "searches": 0,
+     "costUsd": 0.0528,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0528,
+   "sentence": "A document for the thesis: 3 changes proposed, waiting for you."
+  },
+  {
+   "id": "perf_insights:performance:2610260810",
+   "agent": "perf_insights",
+   "subject": "performance",
+   "at": "2026-10-26T08:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "read",
+     "model": "claude-sonnet-5-5",
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 9300,
+     "tokensOut": 2100,
+     "searches": 0,
+     "costUsd": 0.0594,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 8,
+     "kept": 8,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 8,
+   "costUsd": 0.0594,
+   "sentence": "An overall line and 8 readings."
+  },
+  {
+   "id": "writer:weekly:2610260640",
+   "agent": "writer",
+   "subject": "weekly",
+   "at": "2026-10-26T06:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "commentary",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 7400,
+     "tokensOut": 850,
+     "searches": 0,
+     "costUsd": 0.035,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.035,
+   "sentence": "Commentary written from the review's figures."
+  },
+  {
+   "id": "review_news:weekly:2610260635",
+   "agent": "review_news",
+   "subject": "weekly",
+   "at": "2026-10-26T06:35:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "news",
+     "model": "claude-sonnet-5-5",
+     "read": 12,
+     "kept": 10,
+     "tokensIn": 11800,
+     "tokensOut": 2900,
+     "searches": 9,
+     "costUsd": 0.0789,
+     "note": null
+    }
+   ],
+   "findings": 10,
+   "costUsd": 0.0789,
+   "sentence": "10 items with their pages."
+  },
+  {
+   "id": "company_news:META:2610260615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-10-26T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 6."
+  },
+  {
+   "id": "company_news:ASML:2610260612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-10-26T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 6."
+  },
+  {
+   "id": "thesis_hunter:stock:ASML:2610260405",
+   "agent": "thesis_hunter",
+   "subject": "stock:ASML",
+   "at": "2026-10-26T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "analyst:What changed in the class mix th",
+   "agent": "analyst",
+   "subject": "What changed in the class mix this month?",
+   "at": "2026-10-25T09:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "plan",
+     "model": "claude-sonnet-5-5",
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 11200,
+     "tokensOut": 1300,
+     "searches": 0,
+     "costUsd": 0.0532,
+     "note": "4 tool calls, every figure from the tools"
+    }
+   ],
+   "findings": 0,
+   "costUsd": 0.0532,
+   "sentence": "Answered from the app's tools."
+  },
+  {
+   "id": "agent_builder:a1:2610232005",
+   "agent": "agent_builder",
+   "subject": "a1",
+   "at": "2026-10-23T20:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "compile",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2300,
+     "tokensOut": 280,
+     "searches": 0,
+     "costUsd": 0.0009,
+     "note": null
+    },
+    {
+     "id": "test",
+     "model": "claude-sonnet-5-5",
+     "read": 13,
+     "kept": 3,
+     "tokensIn": 10200,
+     "tokensOut": 1700,
+     "searches": 0,
+     "costUsd": 0.0561,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 3,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.057,
+   "sentence": "Your agent Management watch: tested on the past week, 3 findings."
+  },
+  {
+   "id": "words:screen:2610231912",
+   "agent": "words",
+   "subject": "screen",
+   "at": "2026-10-23T19:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "screen",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 3,
+     "tokensIn": 2400,
+     "tokensOut": 300,
+     "searches": 0,
+     "costUsd": 0.0009,
+     "note": null
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0009,
+   "sentence": "Compiled into 3 filters on the screener's fields."
+  },
+  {
+   "id": "macro_reports:US CPI:2610222140",
+   "agent": "macro_reports",
+   "subject": "US CPI",
+   "at": "2026-10-22T21:40:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "figures",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "SPY, QQQ, IWM, TLT, UUP, GLD, USO and the book"
+    },
+    {
+     "id": "outcome",
+     "model": "claude-sonnet-5-5",
+     "read": 5,
+     "kept": 4,
+     "tokensIn": 5600,
+     "tokensOut": 1400,
+     "searches": 4,
+     "costUsd": 0.0386,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0386,
+   "sentence": "Outcome read with its page; the moves are the app's."
+  },
+  {
+   "id": "company_news:AMZN:2610210613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-10-21T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:UBER:2610210610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-10-21T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "company_news:GOOGL:2610200614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-10-20T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 5."
+  },
+  {
+   "id": "company_news:MA:2610200611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-10-20T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 5."
+  },
+  {
+   "id": "thesis_hunter:stock:MA:2610200405",
+   "agent": "thesis_hunter",
+   "subject": "stock:MA",
+   "at": "2026-10-20T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "company_news:META:2610190615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-10-19T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 6."
+  },
+  {
+   "id": "company_news:ASML:2610190612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-10-19T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 6."
+  },
+  {
+   "id": "methodology:evaluation:2610141020",
+   "agent": "methodology",
+   "subject": "evaluation",
+   "at": "2026-10-14T10:20:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "evaluation",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 4,
+     "tokensIn": 6800,
+     "tokensOut": 1100,
+     "searches": 0,
+     "costUsd": 0.0369,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 4,
+   "costUsd": 0.0369,
+   "sentence": "4 tests proposed from the methodology's words."
+  },
+  {
+   "id": "company_news:AMZN:2610140613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-10-14T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:UBER:2610140610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-10-14T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "methodology:Quality compounders v3.4:261",
+   "agent": "methodology",
+   "subject": "Quality compounders v3.4",
+   "at": "2026-10-13T10:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "draft",
+     "model": "claude-opus-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 42000,
+     "tokensOut": 9800,
+     "searches": 0,
+     "costUsd": 1.365,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 0,
+   "costUsd": 1.365,
+   "sentence": "Drafted: 3 classes, 19 rules, 35 figures; confirmed by you."
+  },
+  {
+   "id": "company_news:GOOGL:2610130614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-10-13T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 5."
+  },
+  {
+   "id": "company_news:MA:2610130611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-10-13T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 5."
+  },
+  {
+   "id": "thesis_hunter:stock:MA:2610130405",
+   "agent": "thesis_hunter",
+   "subject": "stock:MA",
+   "at": "2026-10-13T04:05:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 9,
+     "kept": 9,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "newsletters and podcasts of the past 14 days"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 9,
+     "kept": 2,
+     "tokensIn": 7400,
+     "tokensOut": 1900,
+     "searches": 6,
+     "costUsd": 0.0698,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 2,
+   "costUsd": 0.0698,
+   "sentence": "2 finds."
+  },
+  {
+   "id": "company_news:META:2610120615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-10-12T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 6."
+  },
+  {
+   "id": "company_news:ASML:2610120612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-10-12T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 6."
+  },
+  {
+   "id": "words:wdemo2:2610091800",
+   "agent": "words",
+   "subject": "wdemo2",
+   "at": "2026-10-09T18:00:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "watcher",
+     "model": "claude-haiku-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 1900,
+     "tokensOut": 220,
+     "searches": 0,
+     "costUsd": 0.0007,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.0007,
+   "sentence": "Compiled as any listed holding's weight in the book at or above 14%."
+  },
+  {
+   "id": "company_news:AMZN:2610070613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-10-07T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:UBER:2610070610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-10-07T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "company_news:GOOGL:2610060614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-10-06T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 5."
+  },
+  {
+   "id": "company_news:MA:2610060611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-10-06T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 5."
+  },
+  {
+   "id": "company_news:META:2610050615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-10-05T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 6."
+  },
+  {
+   "id": "company_news:ASML:2610050612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-10-05T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 6."
+  },
+  {
+   "id": "calendar_agent:month:2610010530",
+   "agent": "calendar_agent",
+   "subject": "month",
+   "at": "2026-10-01T05:30:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "find",
+     "model": "claude-sonnet-5-5",
+     "read": 12,
+     "kept": 5,
+     "tokensIn": 7800,
+     "tokensOut": 2100,
+     "searches": 6,
+     "costUsd": 0.0583,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 5,
+     "kept": 3,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 outside the window"
+    }
+   ],
+   "findings": 3,
+   "costUsd": 0.0583,
+   "sentence": "3 dated events added."
+  },
+  {
+   "id": "company_news:AMZN:2609300613",
+   "agent": "company_news",
+   "subject": "AMZN",
+   "at": "2026-09-30T06:13:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 4."
+  },
+  {
+   "id": "company_news:UBER:2609300610",
+   "agent": "company_news",
+   "subject": "UBER",
+   "at": "2026-09-30T06:10:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 4,
+     "kept": 4,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 4,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "2 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 4."
+  },
+  {
+   "id": "company_news:GOOGL:2609290614",
+   "agent": "company_news",
+   "subject": "GOOGL",
+   "at": "2026-09-29T06:14:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 5."
+  },
+  {
+   "id": "company_news:MA:2609290611",
+   "agent": "company_news",
+   "subject": "MA",
+   "at": "2026-09-29T06:11:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 5,
+     "kept": 5,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 5,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "3 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 5."
+  },
+  {
+   "id": "company_news:META:2609280615",
+   "agent": "company_news",
+   "subject": "META",
+   "at": "2026-09-28T06:15:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 2,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "0 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 4100,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0114,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.01176,
+   "sentence": "1 finding from 2 items kept of 6."
+  },
+  {
+   "id": "company_news:ASML:2609280612",
+   "agent": "company_news",
+   "subject": "ASML",
+   "at": "2026-09-28T06:12:00.000Z",
+   "status": "done",
+   "steps": [
+    {
+     "id": "gather",
+     "model": null,
+     "read": 6,
+     "kept": 6,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "7 days"
+    },
+    {
+     "id": "filter",
+     "model": null,
+     "read": 6,
+     "kept": 2,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": "4 dropped without a model"
+    },
+    {
+     "id": "sift",
+     "model": "claude-haiku-5-5",
+     "read": 2,
+     "kept": 1,
+     "tokensIn": 2800,
+     "tokensOut": 520,
+     "searches": 0,
+     "costUsd": 0.00036,
+     "note": "1 bore on nothing in the lens"
+    },
+    {
+     "id": "judge",
+     "model": "claude-sonnet-5-5",
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 2500,
+     "tokensOut": 800,
+     "searches": 0,
+     "costUsd": 0.0072,
+     "note": null
+    },
+    {
+     "id": "check",
+     "model": null,
+     "read": 1,
+     "kept": 1,
+     "tokensIn": 0,
+     "tokensOut": 0,
+     "searches": 0,
+     "costUsd": 0.0,
+     "note": null
+    }
+   ],
+   "findings": 1,
+   "costUsd": 0.00756,
+   "sentence": "1 finding from 1 item kept of 6."
+  }
+ ],
+ "plan": {
+  "day": "2026-11-04",
+  "at": "2026-11-04T06:00:00.000Z",
+  "note": "Results week: the companies that reported since Friday go first, then the alerts.",
+  "tasks": [
+   {
+    "agent": "company_news",
+    "subject": "UBER",
+    "why": "Results this week: read first.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "MA",
+    "why": "Results within the week; a Thesis Hunter find challenges a pillar.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "ASML",
+    "why": "A 6-K release read on Monday; an export notice in the alerts.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "AMZN",
+    "why": "On watch under 3.4; the largest weight in the book.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "GOOGL",
+    "why": "Results within the week.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "META",
+    "why": "Results within the week; on watch for margins.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "SHOP",
+    "why": "Results on Monday; on watch under 3.4.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "BIRK",
+    "why": "No class places it; a review is owed.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "SPGI",
+    "why": "Reports tomorrow.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "BKNG",
+    "why": "Read last a week ago.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "MELI",
+    "why": "Results on Sunday; on watch under 3.4.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "NVO",
+    "why": "An exit is owed; read for anything that changes it.",
+    "extra": false
+   },
+   {
+    "agent": "company_news",
+    "subject": "IBKR",
+    "why": "Read last four days ago.",
+    "extra": true
+   },
+   {
+    "agent": "thesis_hunter",
+    "subject": "stock:MA",
+    "why": "A challenge on Returns on capital is open; hunt again before the week's review.",
+    "extra": true
+   },
+   {
+    "agent": "thesis_hunter",
+    "subject": "market:rates-stay-higher",
+    "why": "The Fed decided yesterday.",
+    "extra": false
+   },
+   {
+    "agent": "agent_builder",
+    "subject": "Management watch",
+    "why": "Due every morning.",
+    "extra": false
+   }
+  ],
+  "dropped": [
+   {
+    "agent": "thesis_hunter",
+    "subject": "stock:NVDA",
+    "why": "Not a candidate: no thesis on file for it."
+   },
+   {
+    "agent": "company_news",
+    "subject": "UBER",
+    "why": "Past two runs outside the schedule today."
+   }
+  ],
+  "ran": true,
+  "failed": false,
+  "sentence": "16 tasks for 3 agents: 13 companies in order, 2 theses, 1 of your agents; 2 extra runs."
+ },
+ "lenses": {
+  "value": {
+   "day": "2026-11-04",
+   "at": "2026-11-04T06:50:00.000Z",
+   "readings": [
+    {
+     "finding": "UBER-1",
+     "symbol": "UBER",
+     "leans": "favours",
+     "reading": "More free cash flow against an unchanged price is more earnings power for each dollar paid."
+    },
+    {
+     "finding": "MA-1",
+     "symbol": "MA",
+     "leans": "neither",
+     "reading": "Steady volumes keep the business as it is valued; nothing here changes what it is worth."
+    },
+    {
+     "finding": "ASML-2",
+     "symbol": "ASML",
+     "leans": "against",
+     "reading": "A wider export rule is a risk to earnings power in one region, without a lower price to pay for it."
+    },
+    {
+     "finding": "BIRK-1",
+     "symbol": "BIRK",
+     "leans": "against",
+     "reading": "Returns under the tests leave little margin of safety at today's multiple."
+    },
+    {
+     "finding": "SPGI-1",
+     "symbol": "SPGI",
+     "leans": "favours",
+     "reading": "Busy ratings desks lift cash in a business with little capital to fund."
+    }
+   ],
+   "note": "Read on the findings' own words; no figure of the book is given.",
+   "dropped": 0,
+   "failed": false,
+   "sentence": "5 of 9 findings matter to a value investor; 2 favour, 2 cut against."
+  },
+  "growth": {
+   "day": "2026-11-04",
+   "at": "2026-11-04T06:51:00.000Z",
+   "readings": [
+    {
+     "finding": "AMZN-1",
+     "symbol": "AMZN",
+     "leans": "favours",
+     "reading": "New cloud capacity is room for the fastest-growing segment to keep growing."
+    },
+    {
+     "finding": "GOOGL-1",
+     "symbol": "GOOGL",
+     "leans": "favours",
+     "reading": "A wider cloud margin says the growth now earns as it scales."
+    },
+    {
+     "finding": "SHOP-1",
+     "symbol": "SHOP",
+     "leans": "favours",
+     "reading": "Merchant growth held while the take rate rose: the market still to win is being won."
+    },
+    {
+     "finding": "MA-2",
+     "symbol": "MA",
+     "leans": "favours",
+     "reading": "Agent payments would be a new flow on the same rails, early as it is."
+    },
+    {
+     "finding": "MELI-1",
+     "symbol": "MELI",
+     "leans": "neither",
+     "reading": "A faster credit book is growth, and it is growth that has to prove its losses."
+    },
+    {
+     "finding": "UBER-2",
+     "symbol": "UBER",
+     "leans": "against",
+     "reading": "A licence cap slows growth in one city; small, but in the wrong direction."
+    }
+   ],
+   "note": "",
+   "dropped": 1,
+   "failed": false,
+   "sentence": "6 of 9 findings matter to a growth investor; 4 favour, 1 cuts against. 1 reading dropped: it cited a finding not given."
+  },
+  "dividend": {
+   "day": "2026-11-04",
+   "at": "2026-11-04T06:52:00.000Z",
+   "readings": [
+    {
+     "finding": "UBER-1",
+     "symbol": "UBER",
+     "leans": "neither",
+     "reading": "More free cash flow, but it goes to buybacks; there is no dividend to cover."
+    },
+    {
+     "finding": "SPGI-1",
+     "symbol": "SPGI",
+     "leans": "favours",
+     "reading": "Steady ratings cash covers the dividend with room to keep raising it."
+    },
+    {
+     "finding": "MA-1",
+     "symbol": "MA",
+     "leans": "favours",
+     "reading": "Steady volumes keep the small dividend well covered."
+    }
+   ],
+   "note": "Most holdings pay little or nothing, so few findings bear on this lens.",
+   "dropped": 0,
+   "failed": false,
+   "sentence": "3 of 9 findings matter to a dividend investor; 2 favour."
+  }
+ },
+ "updated": "2026-11-04T06:55:00.000Z"
+}

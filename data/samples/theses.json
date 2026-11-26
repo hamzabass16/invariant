@@ -1,0 +1,386 @@
+{
+ "version": 1,
+ "bySymbol": {
+  "MA": {
+   "text": "A fictional thesis for the demo. The company runs a two-sided network that every participant pays to use, so revenue follows nominal spending and the margin widens as volume grows on a fixed cost base.\n\nThe second leg is services sold on top of the network: fraud, identity and data products priced like software, growing faster than the network itself and lifting the mix.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Network growth",
+     "text": "Revenue keeps compounding at a low double-digit rate.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 10
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Returns on capital",
+     "text": "Returns stay far above the cost of capital.",
+     "test": {
+      "field": "roic_pct",
+      "is": "gte",
+      "value": 30
+     }
+    },
+    {
+     "id": "p3",
+     "name": "Cash conversion",
+     "text": "Free cash flow matches net income.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 0.9
+     }
+    },
+    {
+     "id": "p4",
+     "name": "Agents pay through the network",
+     "text": "Machine-to-machine commerce raises transaction counts rather than routing around the rails.",
+     "test": null
+    }
+   ],
+   "pathway": null,
+   "watch": [
+    "Free cash flow yield against the level at which the position was built.",
+    "Buybacks and dividends against free cash flow, and the debt that funds any gap."
+   ],
+   "dcf": {
+    "basis": "cash_flow",
+    "currency": "USD",
+    "revenue": 30500,
+    "revenueLabel": "Revenue, trailing twelve months",
+    "marginNowPct": 46,
+    "sbcPct": 1.8,
+    "waccPct": 9,
+    "terminalGrowthPct": 3,
+    "cash": 9000,
+    "investments": 0,
+    "debt": 24600,
+    "balanceLabel": "latest quarter",
+    "shares": 883,
+    "price": 585,
+    "priceCurrency": "USD",
+    "fx": 1,
+    "cases": {
+     "bear": {
+      "growthPct": [
+       6,
+       6,
+       5,
+       5,
+       4,
+       4,
+       4,
+       3,
+       3
+      ],
+      "marginEndPct": 42
+     },
+     "base": {
+      "growthPct": [
+       12,
+       12,
+       11,
+       10,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "marginEndPct": 47
+     },
+     "bull": {
+      "growthPct": [
+       16,
+       15,
+       14,
+       13,
+       12,
+       10,
+       9,
+       8,
+       7
+      ],
+      "marginEndPct": 50
+     }
+    },
+    "asOf": "2026-10-09",
+    "note": "Fictional inputs for the demo."
+   },
+   "updatedAt": "2026-10-09T18:00:00.000Z",
+   "valuation": {
+    "stage": null,
+    "method": "forward_pe",
+    "currency": "USD",
+    "priceCurrency": "USD",
+    "fx": 1,
+    "price": 585,
+    "perShare": {
+     "revenue": 187.94,
+     "grossProfit": 112.77,
+     "eps": 17.26,
+     "fcf": 41.2
+    },
+    "perShareLabel": "Per share, TTM to 2026Q2",
+    "forward": {
+     "eps": 19.6,
+     "fcf": 46.5
+    },
+    "multiples": {
+     "ps": {
+      "bear": 2.5,
+      "base": 3.1,
+      "bull": 3.7
+     },
+     "pgp": {
+      "bear": 4.2,
+      "base": 5.2,
+      "bull": 6.2
+     },
+     "forward_pe": {
+      "bear": 24,
+      "base": 30,
+      "bull": 36
+     },
+     "forward_pfcf": {
+      "bear": 10,
+      "base": 12.6,
+      "bull": 15.1
+     },
+     "trailing_pe": {
+      "bear": 27,
+      "base": 33.9,
+      "bull": 40.7
+     },
+     "trailing_pfcf": {
+      "bear": 11.4,
+      "base": 14.2,
+      "bull": 17
+     }
+    },
+    "tam": null,
+    "asOf": "2026-10-09",
+    "note": "Fictional. Forward EPS at the trailing growth; multiples around today's."
+   },
+   "evidence": [
+    {
+     "id": "e261009a1b2",
+     "at": "2026-10-09",
+     "source": "Fictional Q3 2026 results call transcript",
+     "kind": "document",
+     "summary": "A fictional transcript for the demo. Switched volume grew at a low double-digit rate, value-added services grew faster than the network, and the company said agentic commerce rides the existing rails rather than routing around them.",
+     "changes": "The fourth pillar (agents pay through the network) now names transaction counts as its reading; nothing else moved.",
+     "via": "claude",
+     "call": {
+      "guidance": [{ "metric": "Net revenue growth", "period": "FY2026", "said": "At the high end of a low-teens range.", "before": "Low teens, at the Q2 call.", "change": "kept", "where": "call", "bearsOn": null, "reading": null, "why": null, "source": null }],
+      "qa": [{ "analyst": "A fictional analyst, Example Securities", "asked": "Do agents route payments around the card networks?", "answered": "No: agent payments run on the existing rails and tokens.", "bearsOn": null, "reading": null, "source": null }],
+      "remarks": ["Switched volume grew at a low double-digit rate."],
+      "beats": []
+     }
+    }
+   ],
+   "figures": [
+    {
+     "id": "f2610150",
+     "title": "Gross dollar volume growth by year",
+     "caption": "Fictional figures: growth slowing from the reopening years toward the high single digits the pillar asks for.",
+     "source": "Sample company filings, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-15",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "bar",
+      "labels": [
+       "2021",
+       "2022",
+       "2023",
+       "2024",
+       "2025"
+      ],
+      "series": [
+       {
+        "name": "Volume growth",
+        "values": [
+         19.0,
+         14.0,
+         11.5,
+         10.2,
+         9.4
+        ]
+       },
+       {
+        "name": "Cross-border growth",
+        "values": [
+         27.0,
+         31.0,
+         22.0,
+         17.0,
+         15.0
+        ]
+       }
+      ],
+      "unit": "%"
+     }
+    }
+   ],
+   "since": "2025-11-03"
+  },
+  "ASML": {
+   "text": "A fictional thesis for the demo. The company is the only supplier of its class of tool, so every leading-edge customer passes through it whoever wins the end market; each tool shipped adds years of service and upgrades that steady cash flow through the cycle.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Pricing power",
+     "text": "Gross margin holds above its past peak through the cycle.",
+     "test": {
+      "field": "gross_margin_pct",
+      "is": "gte",
+      "value": 50
+     }
+    },
+    {
+     "id": "p2",
+     "name": "Cash pillar",
+     "text": "Free cash flow matches or exceeds net income.",
+     "test": {
+      "field": "fcf_conversion",
+      "is": "gte",
+      "value": 1
+     }
+    }
+   ],
+   "pathway": "Over three to seven years the growing installed base should hold the gross margin above its past peak through the cycle and turn all of net income into free cash flow.",
+   "watch": [
+    "Export licences on servicing tools already sold."
+   ],
+   "dcf": null,
+   "updatedAt": "2026-10-10T07:00:00.000Z",
+   "valuation": null,
+   "since": "2026-02-02"
+  },
+  "AAPL": {
+   "text": "A fictional thesis for the demo. An installed base of devices that renews on a cycle and a services line growing faster than hardware, with the cash returned through buybacks.",
+   "pillars": [
+    {
+     "id": "p1",
+     "name": "Services growth",
+     "text": "Revenue keeps growing.",
+     "test": {
+      "field": "revenue_growth_pct",
+      "is": "gte",
+      "value": 5
+     }
+    }
+   ],
+   "pathway": null,
+   "watch": [],
+   "dcf": null,
+   "updatedAt": "2026-10-10T07:00:00.000Z",
+   "valuation": null,
+   "since": "2026-03-02"
+  }
+ },
+ "updated": "2026-10-10T07:00:00.000Z",
+ "markets": [
+  {
+   "id": "rates-stay-higher",
+   "title": "Rates stay higher for longer",
+   "text": "A fictional market thesis for the demo. Inflation settles above the old target, so the ten-year yield holds above 4% through the cycle and the curve stays flat or slightly positive.\n\nWhat that means for the book: long-duration growth stocks are priced for cuts that come slowly; cash-generative businesses with pricing power hold their multiples better.",
+   "pillars": [
+    {
+     "id": "m1",
+     "name": "Ten-year yield",
+     "text": "The ten-year yield stays at or above 4%.",
+     "test": {
+      "field": "US10Y",
+      "is": "gte",
+      "value": 4
+     }
+    },
+    {
+     "id": "m2",
+     "name": "Inflation",
+     "text": "Headline inflation stays at or above 2.5% a year.",
+     "test": {
+      "field": "CPIYOY",
+      "is": "gte",
+      "value": 2.5
+     }
+    },
+    {
+     "id": "m3",
+     "name": "The curve",
+     "text": "The ten-year less two-year spread stays positive.",
+     "test": {
+      "field": "US10Y2Y",
+      "is": "gte",
+      "value": 0
+     }
+    }
+   ],
+   "watch": [
+    "Term premium after each Treasury refunding.",
+    "The Fed's own projection of the long-run rate."
+   ],
+   "evidence": [],
+   "updatedAt": "2026-10-10T07:00:00.000Z",
+   "figures": [
+    {
+     "id": "f2610151",
+     "title": "Ten-year yield against the policy rate",
+     "caption": "Fictional figures: the long rate has held above 4% while the policy rate came down.",
+     "source": "Sample rates data, fictional",
+     "sourceUrl": null,
+     "at": "2026-10-15",
+     "via": "claude",
+     "image": null,
+     "chart": {
+      "type": "line",
+      "labels": [
+       "2026-04-30",
+       "2026-05-29",
+       "2026-06-30",
+       "2026-07-31",
+       "2026-08-31",
+       "2026-09-30"
+      ],
+      "series": [
+       {
+        "name": "Ten-year yield",
+        "values": [
+         4.31,
+         4.42,
+         4.38,
+         4.25,
+         4.18,
+         4.22
+        ]
+       },
+       {
+        "name": "Policy rate",
+        "values": [
+         4.33,
+         4.33,
+         4.08,
+         4.08,
+         3.83,
+         3.83
+        ]
+       }
+      ],
+      "unit": "%"
+     }
+    }
+   ],
+   "since": "2026-01-05",
+   "basket": [
+    "MA",
+    "AAPL"
+   ]
+  }
+ ]
+}

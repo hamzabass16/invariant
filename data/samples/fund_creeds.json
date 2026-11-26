@@ -1,0 +1,220 @@
+{
+  "example_quality": {
+    "id": "example_quality",
+    "summary": "A fictional manager for the demo. It says it owns a small number of businesses with high returns on capital and wide margins, bought at a fair price and held for many years.",
+    "styles": [
+      "quality",
+      "long_term",
+      "concentrated"
+    ],
+    "tests": [
+      {
+        "group": "roic",
+        "want": "higher",
+        "words": "Returns on capital above 15%, well above the cost of capital",
+        "field": "roic_pct",
+        "level": 15
+      },
+      {
+        "group": "gross_margin",
+        "want": "higher",
+        "words": "High gross margins as a sign of pricing power",
+        "field": "gross_margin_pct",
+        "level": null
+      },
+      {
+        "group": "leverage",
+        "want": "lower",
+        "words": "Net debt under 2 times EBITDA",
+        "field": "net_debt_to_ebitda",
+        "level": 2
+      },
+      {
+        "group": "pfcf",
+        "want": "lower",
+        "words": "A fair price on free cash flow",
+        "field": "pfcf_ratio",
+        "level": null
+      }
+    ],
+    "theses": [
+      {
+        "ticker": "MA",
+        "theme": null,
+        "title": "Payments keep moving to cards",
+        "words": "The letter says cash keeps giving way to card payments abroad, which the network earns on with little extra cost.",
+        "source": {
+          "title": "Example Quality Partners, letter to partners, third quarter",
+          "url": "https://example.com/quality/letters/q3",
+          "date": "2026-10-20"
+        }
+      },
+      {
+        "ticker": "ASML",
+        "theme": null,
+        "title": "The only maker of the newest lithography tools",
+        "words": "It holds that no rival can make the newest chipmaking tools within the decade.",
+        "source": {
+          "title": "Example Quality Partners, annual meeting",
+          "url": "https://example.com/quality/meeting",
+          "date": "2026-05-02"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Example Quality Partners, owner's manual",
+        "url": "https://example.com/quality/manual",
+        "date": null
+      },
+      {
+        "title": "Example Quality Partners, letter to partners, third quarter",
+        "url": "https://example.com/quality/letters/q3",
+        "date": "2026-10-20"
+      }
+    ],
+    "readAt": "2026-11-05T05:20:00.000Z",
+    "model": null,
+    "error": null,
+    "failedAt": null,
+    "note": "Fictional, for the demo; made by no model.",
+    "version": 2
+  },
+  "example_growth": {
+    "id": "example_growth",
+    "summary": "A fictional manager for the demo. It says it looks for companies whose revenue grows fast for years, and accepts high multiples when the growth is durable.",
+    "styles": [
+      "growth",
+      "concentrated"
+    ],
+    "tests": [
+      {
+        "group": "revenue_growth",
+        "want": "higher",
+        "words": "Revenue growth above 20% a year",
+        "field": "revenue_growth_pct",
+        "level": 20
+      },
+      {
+        "group": "gross_margin",
+        "want": "higher",
+        "words": "Software-like gross margins",
+        "field": "gross_margin_pct",
+        "level": null
+      },
+      {
+        "group": "ps",
+        "want": "higher",
+        "words": "Pays up for durable growth",
+        "field": "ps_ratio",
+        "level": null
+      }
+    ],
+    "theses": [
+      {
+        "ticker": null,
+        "theme": "ai",
+        "title": "AI spending is early",
+        "words": "The letter argues that spending on data centres for AI has years to run.",
+        "source": {
+          "title": "Example Growth Capital, quarterly letter",
+          "url": "https://example.com/growth/q3",
+          "date": "2026-10-15"
+        }
+      },
+      {
+        "ticker": "META",
+        "theme": null,
+        "title": "Advertising on AI",
+        "words": "It holds that better ad targeting from AI keeps the company's revenue growing.",
+        "source": {
+          "title": "Example Growth Capital, quarterly letter",
+          "url": "https://example.com/growth/q3",
+          "date": "2026-10-15"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Example Growth Capital, quarterly letter",
+        "url": "https://example.com/growth/q3",
+        "date": "2026-10-15"
+      }
+    ],
+    "readAt": "2026-11-05T05:20:00.000Z",
+    "model": null,
+    "error": null,
+    "failedAt": null,
+    "note": "Fictional, for the demo; made by no model.",
+    "version": 2
+  },
+  "example_value": {
+    "id": "example_value",
+    "summary": "A fictional manager for the demo. It says it buys solid companies when they are out of favour, at low multiples of earnings, and is paid dividends while it waits.",
+    "styles": [
+      "value",
+      "income",
+      "contrarian"
+    ],
+    "tests": [
+      {
+        "group": "pe",
+        "want": "lower",
+        "words": "A price under 15 times earnings",
+        "field": "pe_ratio",
+        "level": 15
+      },
+      {
+        "group": "dividend",
+        "want": "higher",
+        "words": "A dividend it can keep paying",
+        "field": "dividend_yield_pct",
+        "level": null
+      },
+      {
+        "group": "interest_cover",
+        "want": "higher",
+        "words": "Interest well covered",
+        "field": "interest_cover",
+        "level": null
+      }
+    ],
+    "theses": [
+      {
+        "ticker": null,
+        "theme": "rates",
+        "title": "Rates stay higher",
+        "words": "The letter expects interest rates to stay higher than in the last decade, which it says favours cheaper companies.",
+        "source": {
+          "title": "Example Value Trust, letter to shareholders",
+          "url": "https://example.com/value/letter",
+          "date": "2026-10-28"
+        }
+      },
+      {
+        "ticker": null,
+        "theme": "energy",
+        "title": "Oil supply is tight",
+        "words": "It holds that years of low investment leave oil supply short.",
+        "source": {
+          "title": "Example Value Trust, letter to shareholders",
+          "url": "https://example.com/value/letter",
+          "date": "2026-10-28"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Example Value Trust, letter to shareholders",
+        "url": "https://example.com/value/letter",
+        "date": "2026-10-28"
+      }
+    ],
+    "readAt": "2026-11-05T05:20:00.000Z",
+    "model": null,
+    "error": null,
+    "failedAt": null,
+    "note": "Fictional, for the demo; made by no model.",
+    "version": 2
+  }
+}

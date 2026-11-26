@@ -1,0 +1,301 @@
+{
+ "_note": "Fictional agents built in the Agent Builder, with fictional findings from invented sources; the demo builds and runs nothing.",
+ "version": 1,
+ "agents": [
+  {
+   "id": "a1",
+   "words": "Watch my holdings for any change in management or in the board, every morning.",
+   "spec": {
+    "name": "Management watch",
+    "question": "Did an officer or a director join, leave or change role?",
+    "subjects": "holdings",
+    "symbols": [],
+    "sources": [
+     "news",
+     "filings"
+    ],
+    "cadence": "daily"
+   },
+   "notes": [],
+   "status": "on",
+   "createdAt": "2026-10-22T20:00:00.000Z",
+   "test": {
+    "at": "2026-10-23T20:05:00.000Z",
+    "sentence": "3 findings from 13 items over the past week.",
+    "read": 13,
+    "findings": [
+     {
+      "id": "a1-t-AMZN-1",
+      "symbol": "AMZN",
+      "day": "2026-10-23",
+      "headline": "Retail chief to retire",
+      "lines": "A sample current report says the head of retail retires at the year's end, with an internal successor named.",
+      "bearsOn": "Management and the board",
+      "stance": "update",
+      "confidence": "high",
+      "sources": [
+       {
+        "title": "Sample current report: retirement of an officer",
+        "source": "SEC EDGAR",
+        "url": "https://example.com/filings/amzn-8k-officer",
+        "at": "2026-10-22",
+        "kind": "filing",
+        "tier": "filing"
+       }
+      ]
+     },
+     {
+      "id": "a1-t-GOOGL-1",
+      "symbol": "GOOGL",
+      "day": "2026-10-23",
+      "headline": "A director steps down",
+      "lines": "A sample current report says one independent director will not stand again at the next annual meeting.",
+      "bearsOn": "Management and the board",
+      "stance": "update",
+      "confidence": "medium",
+      "sources": [
+       {
+        "title": "Sample current report: director not standing again",
+        "source": "SEC EDGAR",
+        "url": "https://example.com/filings/googl-8k-director",
+        "at": "2026-10-21",
+        "kind": "filing",
+        "tier": "filing"
+       }
+      ]
+     },
+     {
+      "id": "a1-t-MA-1",
+      "symbol": "MA",
+      "day": "2026-10-23",
+      "headline": "No change at the top",
+      "lines": "The week's filings and headlines name no officer or board change.",
+      "bearsOn": null,
+      "stance": "backs",
+      "confidence": "low",
+      "sources": [
+       {
+        "title": "Sample filings list: the week's current reports",
+        "source": "SEC EDGAR",
+        "url": "https://example.com/filings/ma-list",
+        "at": "2026-10-23",
+        "kind": "filing",
+        "tier": "filing"
+       }
+      ]
+     }
+    ]
+   },
+   "lastRun": "2026-11-04T06:30:00.000Z",
+   "sentence": "2 new findings from 9 items this morning.",
+   "findings": [
+    {
+     "id": "a1-UBER-1",
+     "symbol": "UBER",
+     "day": "2026-11-04",
+     "headline": "A new finance chief named",
+     "lines": "A sample current report names a new chief financial officer from outside the company, starting next quarter. The outgoing one stays as an adviser to the year's end.",
+     "bearsOn": "Management and the board",
+     "stance": "update",
+     "confidence": "high",
+     "sources": [
+      {
+       "title": "Sample current report: officer change",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/uber-8k-officer",
+       "at": "2026-11-04",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "a1-SHOP-1",
+     "symbol": "SHOP",
+     "day": "2026-11-04",
+     "headline": "Two directors added to the board",
+     "lines": "A sample current report adds two independent directors, one with a payments background. The board grows from nine to eleven.",
+     "bearsOn": "Management and the board",
+     "stance": "update",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample current report: board appointments",
+       "source": "SEC EDGAR",
+       "url": "https://example.com/filings/shop-8k-board",
+       "at": "2026-11-03",
+       "kind": "filing",
+       "tier": "filing"
+      }
+     ]
+    },
+    {
+     "id": "a1-META-1",
+     "symbol": "META",
+     "day": "2026-11-02",
+     "headline": "Head of the hardware unit leaves",
+     "lines": "A sample report says the head of the hardware unit is leaving after six years; no successor is named yet.",
+     "bearsOn": "Management and the board",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample headline: hardware chief to leave",
+       "source": "Example Tech",
+       "url": "https://example.com/news/meta-hardware",
+       "at": "2026-11-02",
+       "kind": "news",
+       "tier": "reporting"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "words": "Once a week, tell me if a regulator moves on fees or pricing at MA, ASML, GOOGL or BKNG.",
+   "spec": {
+    "name": "Pricing and regulators",
+    "question": "Did a regulator or a court act on the company's fees, prices or contract terms?",
+    "subjects": "symbols",
+    "symbols": [
+     "MA",
+     "ASML",
+     "GOOGL",
+     "BKNG"
+    ],
+    "sources": [
+     "news",
+     "filings",
+     "newsletters"
+    ],
+    "cadence": "weekly"
+   },
+   "notes": [],
+   "status": "on",
+   "createdAt": "2026-10-15T18:30:00.000Z",
+   "test": {
+    "at": "2026-10-16T18:40:00.000Z",
+    "sentence": "1 finding from 8 items over the past week.",
+    "read": 8,
+    "findings": [
+     {
+      "id": "a2-BKNG-1",
+      "symbol": "BKNG",
+      "day": "2026-10-26",
+      "headline": "Price-parity clauses reviewed",
+      "lines": "A sample notice says a competition authority reviews hotel price-parity clauses. It names the sector, not one company.",
+      "bearsOn": "3.4 Quality Erosion: gross margin",
+      "stance": "update",
+      "confidence": "low",
+      "sources": [
+       {
+        "title": "Sample notice: review of price-parity clauses",
+        "source": "Example Competition Office",
+        "url": "https://example.com/notices/parity",
+        "at": "2026-10-26",
+        "kind": "news",
+        "tier": "regulator"
+       }
+      ]
+     }
+    ]
+   },
+   "lastRun": "2026-11-02T06:32:00.000Z",
+   "sentence": "1 new finding from 6 items this week.",
+   "findings": [
+    {
+     "id": "a2-MA-1",
+     "symbol": "MA",
+     "day": "2026-11-02",
+     "headline": "A consultation on card fee caps opens",
+     "lines": "A sample regulator notice opens a three-month consultation on capping cross-border card fees. No level is proposed yet.",
+     "bearsOn": "Returns on capital",
+     "stance": "challenges",
+     "confidence": "medium",
+     "sources": [
+      {
+       "title": "Sample notice: consultation on card fee caps",
+       "source": "Example Regulator",
+       "url": "https://example.com/notices/card-fee-caps",
+       "at": "2026-11-02",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    },
+    {
+     "id": "a2-BKNG-1",
+     "symbol": "BKNG",
+     "day": "2026-10-26",
+     "headline": "Price-parity clauses reviewed",
+     "lines": "A sample notice says a competition authority reviews hotel price-parity clauses. It names the sector, not one company.",
+     "bearsOn": "3.4 Quality Erosion: gross margin",
+     "stance": "update",
+     "confidence": "low",
+     "sources": [
+      {
+       "title": "Sample notice: review of price-parity clauses",
+       "source": "Example Competition Office",
+       "url": "https://example.com/notices/parity",
+       "at": "2026-10-26",
+       "kind": "news",
+       "tier": "regulator"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a3",
+   "words": "Every week, look for buybacks, dividends or debt raised at my holdings, and leave out price targets.",
+   "spec": {
+    "name": "Cash returns",
+    "question": "Did the company change its buyback, its dividend or its debt?",
+    "subjects": "holdings",
+    "symbols": [],
+    "sources": [
+     "filings",
+     "reports"
+    ],
+    "cadence": "weekly"
+   },
+   "notes": [
+    "Price targets left out: no agent forecasts a price."
+   ],
+   "status": "tested",
+   "createdAt": "2026-10-30T19:35:00.000Z",
+   "test": {
+    "at": "2026-10-30T19:40:00.000Z",
+    "sentence": "1 finding from 11 items over the past week. Read it, then turn it on.",
+    "read": 11,
+    "findings": [
+     {
+      "id": "a3-t-SPGI-1",
+      "symbol": "SPGI",
+      "day": "2026-10-30",
+      "headline": "Buyback authorisation raised",
+      "lines": "A sample current report raises the buyback authorisation and keeps the dividend. It backs the cash returned to holders.",
+      "bearsOn": "Returns on capital",
+      "stance": "backs",
+      "confidence": "high",
+      "sources": [
+       {
+        "title": "Sample current report: repurchase authorisation",
+        "source": "SEC EDGAR",
+        "url": "https://example.com/filings/spgi-8k-buyback",
+        "at": "2026-10-29",
+        "kind": "filing",
+        "tier": "filing"
+       }
+      ]
+     }
+    ]
+   },
+   "lastRun": null,
+   "sentence": "",
+   "findings": []
+  }
+ ],
+ "updated": "2026-11-04T06:32:00.000Z"
+}

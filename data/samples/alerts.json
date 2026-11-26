@@ -1,0 +1,220 @@
+{
+ "_note": "Fictional alerts the twice-daily check would have left (moves, five-year lows, your agents' findings) and some that fired and cleared; the demo moves them to today.",
+ "version": 1,
+ "items": [
+  {
+   "id": "agent:a1:a1-UBER-1@2026-11-04T06:31:00.000Z",
+   "key": "agent:a1:a1-UBER-1",
+   "firedAt": "2026-11-04T06:31:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "Your agent Management watch on UBER: A new finance chief named",
+   "detail": "A sample current report names a new chief financial officer from outside the company, starting next quarter. The outgoing one stays as an adviser to the year's end.",
+   "href": "/agents/agent_builder#a1",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "agent:a1:a1-SHOP-1@2026-11-04T06:31:00.000Z",
+   "key": "agent:a1:a1-SHOP-1",
+   "firedAt": "2026-11-04T06:31:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "Your agent Management watch on SHOP: Two directors added to the board",
+   "detail": "A sample current report adds two independent directors, one with a payments background. The board grows from nine to eleven.",
+   "href": "/agents/agent_builder#a1",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "valuation-low:SPGI:pe_ratio@2026-11-04T06:02:00.000Z",
+   "key": "valuation-low:SPGI:pe_ratio",
+   "firedAt": "2026-11-04T06:02:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "SPGI near its five-year low on P/E",
+   "detail": "Held. A fictional reading: the P/E stands within 5% of the bottom of its five-year range. The metric follows the method chosen in the Valuation calculator; a level, never a verdict.",
+   "href": "/theses/SPGI#valuation",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "move:SHOP:2026-11-03@2026-11-03T21:36:00.000Z",
+   "key": "move:SHOP:2026-11-03",
+   "firedAt": "2026-11-03T21:36:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "SHOP fell 8.7% on 3 Nov",
+   "detail": "Past your 2% alert, the largest move in the book that session. Why it moved is on At the Close.",
+   "href": "/after-close",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "move:IBKR:2026-11-03@2026-11-03T21:36:00.000Z",
+   "key": "move:IBKR:2026-11-03",
+   "firedAt": "2026-11-03T21:36:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "IBKR rose 3.5% on 3 Nov",
+   "detail": "Past your 2% alert. Why it moved is on At the Close.",
+   "href": "/after-close",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "move:META:2026-11-03@2026-11-03T21:36:00.000Z",
+   "key": "move:META:2026-11-03",
+   "firedAt": "2026-11-03T21:36:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "META rose 2.4% on 3 Nov",
+   "detail": "Past your 2% alert. Why it moved is on At the Close.",
+   "href": "/after-close",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "agent:a1:a1-META-1@2026-11-02T06:31:00.000Z",
+   "key": "agent:a1:a1-META-1",
+   "firedAt": "2026-11-02T06:31:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "Your agent Management watch on META: Head of the hardware unit leaves",
+   "detail": "A sample report says the head of the hardware unit is leaving after six years; no successor is named yet.",
+   "href": "/agents/agent_builder#a1",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "agent:a2:a2-MA-1@2026-11-02T06:31:00.000Z",
+   "key": "agent:a2:a2-MA-1",
+   "firedAt": "2026-11-02T06:31:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "Your agent Pricing and regulators on MA: A consultation on card fee caps opens",
+   "detail": "A sample regulator notice opens a three-month consultation on capping cross-border card fees. No level is proposed yet.",
+   "href": "/agents/agent_builder#a2",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "valuation-low:NVO:pe_ratio@2026-11-02T06:02:00.000Z",
+   "key": "valuation-low:NVO:pe_ratio",
+   "firedAt": "2026-11-02T06:02:00.000Z",
+   "clearedAt": null,
+   "tone": "info",
+   "title": "NVO near its five-year low on P/E",
+   "detail": "Held. A fictional reading: within 5% of the bottom of its five-year range. The sale decided in the Decision Log stands; the level does not change it.",
+   "href": "/theses/NVO#valuation",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "move:ASML:2026-10-30@2026-10-30T21:36:00.000Z",
+   "key": "move:ASML:2026-10-30",
+   "firedAt": "2026-10-30T21:36:00.000Z",
+   "clearedAt": "2026-11-01T21:36:00.000Z",
+   "tone": "info",
+   "title": "ASML fell 6.6% on 30 Oct",
+   "detail": "Past your 2% alert. Why it moved is on At the Close.",
+   "href": "/after-close",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "macro-report:2026-10-29:ecb:ea:ecb-rate-decision@2026-10-29T21:40:00.000Z",
+   "key": "macro-report:2026-10-29:ecb:ea:ecb-rate-decision",
+   "firedAt": "2026-10-29T21:40:00.000Z",
+   "clearedAt": "2026-11-01T21:40:00.000Z",
+   "tone": "info",
+   "title": "After the ECB rate decision: your book -0.5%, SPY -0.4%",
+   "detail": "A fictional report of how the session took it: the rate held as expected. The moves are the app's, from the closes.",
+   "href": "/calendar",
+   "figures": [
+    {
+     "label": "Your book",
+     "value": "-0.5%",
+     "tone": "down"
+    },
+    {
+     "label": "SPY",
+     "value": "-0.4%",
+     "tone": "down"
+    },
+    {
+     "label": "QQQ",
+     "value": "-1.4%",
+     "tone": "down"
+    }
+   ],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "move:GOOGL:2026-10-29@2026-10-29T21:36:00.000Z",
+   "key": "move:GOOGL:2026-10-29",
+   "firedAt": "2026-10-29T21:36:00.000Z",
+   "clearedAt": "2026-10-30T21:36:00.000Z",
+   "tone": "info",
+   "title": "GOOGL fell 12.6% on 29 Oct",
+   "detail": "Past your 2% alert, the session after its results. Why it moved is on At the Close.",
+   "href": "/after-close",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "earnings:GOOGL:2026-10-28@2026-10-28T06:00:00.000Z",
+   "key": "earnings:GOOGL:2026-10-28",
+   "firedAt": "2026-10-28T06:00:00.000Z",
+   "clearedAt": "2026-10-30T06:00:00.000Z",
+   "tone": "info",
+   "title": "GOOGL reports tomorrow, after the close in New York",
+   "detail": "Holding: ALPHABET INC-CL A. Results for the quarter to Sep 2026. The report follows once the results are filed.",
+   "href": "/earnings",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "insider:GOOGL:sample-form-4@2026-10-26T06:01:00.000Z",
+   "key": "insider:GOOGL:sample-form-4",
+   "firedAt": "2026-10-26T06:01:00.000Z",
+   "clearedAt": "2026-11-02T06:00:00.000Z",
+   "tone": "info",
+   "title": "GOOGL: a director bought shares",
+   "detail": "Director. A fictional Form 4: shares bought on the open market, not under a 10b5-1 plan.",
+   "href": "/company/GOOGL#insiders",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  },
+  {
+   "id": "watcher:wdemo3:VIX@2026-10-20T18:00:00.000Z",
+   "key": "watcher:wdemo3:VIX",
+   "firedAt": "2026-10-20T18:00:00.000Z",
+   "clearedAt": "2026-10-22T18:00:00.000Z",
+   "tone": "warn",
+   "title": "VIX: 25.80, your watcher holds",
+   "detail": "You asked: \"If the VIX goes above 25\". A fictional reading; it fell back under 25 two sessions later.",
+   "href": "/notifications",
+   "figures": [],
+   "emailedAt": null,
+   "dismissedAt": null
+  }
+ ],
+ "checkedAt": null,
+ "emailProblem": null,
+ "updated": "2026-11-04T18:00:00.000Z"
+}

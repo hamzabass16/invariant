@@ -1,0 +1,9 @@
+{
+  "offers": [
+    { "handle": "quality-at-a-price", "name": "Elif", "line": "I read a quality-growth thesis against its filings and say where the evidence is thin.", "focus": "Quality compounders, valuation by stage", "laterPriceUsd": 40, "open": true, "updatedAt": "2026-11-02T10:00:00.000Z" },
+    { "handle": "cash-machines", "name": "Noor", "line": "Dividend books: payout safety, sizing and when to sell a payer.", "focus": "Dividend growth", "laterPriceUsd": null, "open": true, "updatedAt": "2026-10-28T08:30:00.000Z" }
+  ],
+  "asks": [
+    { "id": "quality-at-a-price-20261103-a1b2c3", "mentor": "quality-at-a-price", "mentorName": "Elif", "member": "You", "note": "Is my thesis on COST leaning on the fee rise too much?", "status": "reviewed", "review": "The renewal pillar is well tested; the expansion pillar has no figure behind it. Give it one: warehouses opened abroad a year, from the 10-K, at a level you would sell below. Your weights sit inside your own caps, and the record's streak shows the rules are kept.", "askedAt": "2026-11-03T09:00:00.000Z", "answeredAt": "2026-11-04T18:20:00.000Z", "side": "member", "cardHref": null }
+  ]
+}

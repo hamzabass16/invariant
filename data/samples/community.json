@@ -1,0 +1,970 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "version": 1,
+      "handle": "quiet-compounder",
+      "name": "Ines",
+      "about": "A fictional profile for the demo. Ten businesses with pricing power, held for years, trimmed only at a cap.",
+      "methodology": "Compounders, with caps",
+      "stocks": [
+        {
+          "symbol": "MA",
+          "text": "A fictional thesis. A two-sided network that every participant pays to use; revenue follows nominal spending and the margin widens on a fixed cost base. What must stay true: volume growth above nominal GDP and no regulator capping the interchange it does not set.",
+          "pathway": null,
+          "pillars": [
+            {
+              "name": "Volume keeps growing",
+              "text": "Revenue grows at least 10% a year.",
+              "test": {
+                "field": "revenue_growth_pct",
+                "is": "gte",
+                "value": 10
+              }
+            },
+            {
+              "name": "The margin holds",
+              "text": "Operating margin at or above 55%.",
+              "test": {
+                "field": "operating_margin_pct",
+                "is": "gte",
+                "value": 55
+              }
+            }
+          ],
+          "watch": [
+            "Interchange rulings in the US and the EU",
+            "Account-to-account rails taking card volume"
+          ],
+          "updatedAt": "2026-10-09T08:00:00.000Z",
+          "receipt": {
+            "hash": "2c206941693805cbb7d9a7111598a80ef8f1d5359eb7bb6fe7ec9ddd2596405d",
+            "sealedAt": "2026-08-04T14:11:00.000Z"
+          }
+        },
+        {
+          "symbol": "ASML",
+          "text": "A fictional thesis. The only maker of the lithography tools every leading-edge fab needs; the installed base pays for service and upgrades through a cycle.",
+          "pathway": null,
+          "pillars": [
+            {
+              "name": "Gross margin through the cycle",
+              "text": "Gross margin at or above 50%.",
+              "test": {
+                "field": "gross_margin_pct",
+                "is": "gte",
+                "value": 50
+              }
+            }
+          ],
+          "watch": [
+            "Export rules on China",
+            "High-NA adoption at the three leading fabs"
+          ],
+          "updatedAt": "2026-10-09T08:00:00.000Z",
+          "receipt": {
+            "hash": "2fa98550cc688641e70c5c628bac0ec72fa341b07401d95a2badd33c243f1b4c",
+            "sealedAt": "2026-09-05T14:12:00.000Z"
+          }
+        }
+      ],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 12.4,
+          "classLabel": "Compounder"
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 11.1,
+          "classLabel": "Compounder"
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 9.8,
+          "classLabel": "Compounder"
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking",
+          "weightPct": 9.2,
+          "classLabel": "Compounder"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 8.7,
+          "classLabel": "Platform"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 8.1,
+          "classLabel": "Platform"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 7.6,
+          "classLabel": "Platform"
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 7,
+          "classLabel": "Compounder"
+        },
+        {
+          "symbol": "ADBE",
+          "name": "Adobe",
+          "weightPct": 5.3,
+          "classLabel": "Platform"
+        },
+        {
+          "symbol": "MELI",
+          "name": "MercadoLibre",
+          "weightPct": 4.9,
+          "classLabel": "Growth"
+        }
+      ],
+      "sharing": {
+        "theses": true,
+        "weights": true,
+        "record": true,
+        "judgement": true
+      },
+      "asOf": "2026-10-09",
+      "updatedAt": "2026-11-02T08:00:00.000Z",
+      "changed": {
+        "at": "2026-11-02T08:00:00.000Z",
+        "theses": [
+          "MA"
+        ],
+        "weights": true
+      },
+      "record": {
+        "since": "2024-03-01",
+        "through": "2026-11-03",
+        "twrPct": 41.2,
+        "spyPct": 44.8,
+        "rulesKeptPct": 92,
+        "rulesMeasured": 13,
+        "breaches": 0,
+        "cleanSince": "2026-06-22"
+      },
+      "family": "fundamentals",
+      "judgement": {
+        "asOf": "2026-11-03",
+        "trades": 34,
+        "reasonedPct": 94,
+        "rightPct": 61,
+        "plannedPct": 56,
+        "calibrationJudged": 9,
+        "calibrationPct": 67,
+        "clubCompetitions": 2,
+        "clubMedianAgainstSpyPts": 1.8
+      }
+    },
+    {
+      "version": 1,
+      "handle": "macro-first",
+      "name": "Theo",
+      "about": "A fictional profile for the demo. Rates and the cycle first, then the companies that fit the regime.",
+      "methodology": "Regime first",
+      "stocks": [],
+      "markets": [
+        {
+          "id": "rates-stay-higher",
+          "title": "Rates stay higher for longer",
+          "text": "A fictional market thesis. Fiscal deficits keep the term premium up and the ten-year above 4% while inflation holds above 2.5%; long duration and unprofitable growth stay expensive to hold.",
+          "pillars": [
+            {
+              "name": "Ten-year yield",
+              "text": "The ten-year yield stays at or above 4%.",
+              "test": {
+                "field": "US10Y",
+                "is": "gte",
+                "value": 4
+              }
+            },
+            {
+              "name": "Inflation above target",
+              "text": "CPI year on year at or above 2.5%.",
+              "test": {
+                "field": "CPIYOY",
+                "is": "gte",
+                "value": 2.5
+              }
+            }
+          ],
+          "watch": [
+            "Term premium after each refunding announcement",
+            "The Fed's dots against the market's path"
+          ],
+          "updatedAt": "2026-10-05T09:00:00.000Z",
+          "receipt": {
+            "hash": "6352312322cefe4834e1fd8e0c1583da8a2338ce0470b4f261d14f62c303500e",
+            "sealedAt": "2026-07-06T09:13:00.000Z"
+          }
+        },
+        {
+          "id": "the-dollar-stays-firm",
+          "title": "The dollar stays firm",
+          "text": "A fictional market thesis. With US rates above the rest of the G10 and growth holding up, the dollar index stays above 100 and foreign earners' reported growth is flattered less than it looks.",
+          "pillars": [
+            {
+              "name": "Dollar index",
+              "text": "The dollar index at or above 100.",
+              "test": {
+                "field": "DXY",
+                "is": "gte",
+                "value": 100
+              }
+            }
+          ],
+          "watch": [
+            "ECB and BoJ moves",
+            "The current account"
+          ],
+          "updatedAt": "2026-10-05T09:00:00.000Z",
+          "receipt": {
+            "hash": "a94251ac9ca329994400b38fc24a31cbf57672689c4af4e01bf02b282b25bd4c",
+            "sealedAt": "2026-08-07T09:14:00.000Z"
+          }
+        }
+      ],
+      "weights": [],
+      "sharing": {
+        "theses": true,
+        "weights": false,
+        "record": true
+      },
+      "asOf": null,
+      "updatedAt": "2026-10-06T18:10:00.000Z",
+      "record": {
+        "since": "2025-01-06",
+        "through": "2026-11-03",
+        "twrPct": 38.5,
+        "spyPct": 29.1,
+        "rulesKeptPct": 100,
+        "rulesMeasured": 9,
+        "breaches": 0,
+        "cleanSince": "2025-01-06"
+      },
+      "family": "macro"
+    },
+    {
+      "version": 1,
+      "handle": "two-funds-and-cash",
+      "name": "Mara",
+      "about": "A fictional profile for the demo. Two index funds, some cash, no stock picking.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "VTI",
+          "name": "Vanguard Total Stock Market",
+          "weightPct": 60,
+          "classLabel": null
+        },
+        {
+          "symbol": "VXUS",
+          "name": "Vanguard Total International",
+          "weightPct": 30,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true,
+        "record": true
+      },
+      "asOf": "2026-10-03",
+      "updatedAt": "2026-10-04T12:00:00.000Z",
+      "record": {
+        "since": "2025-09-02",
+        "through": "2026-11-03",
+        "twrPct": 6.3,
+        "spyPct": 17.4,
+        "rulesKeptPct": 71,
+        "rulesMeasured": 7,
+        "breaches": 2,
+        "cleanSince": null
+      }
+    },
+    {
+      "version": 1,
+      "handle": "steady-owner",
+      "name": "Jonas",
+      "about": "A fictional profile for the demo. Twelve large businesses, rebalanced once a year.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 11.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 9.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 8.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 8.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 7.5,
+          "classLabel": null
+        },
+        {
+          "symbol": "V",
+          "name": "Visa",
+          "weightPct": 6.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 6.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 5.4,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-09",
+      "updatedAt": "2026-10-10T07:30:00.000Z"
+    },
+    {
+      "version": 1,
+      "handle": "index-plus",
+      "name": "Lea",
+      "about": "A fictional profile for the demo. Most of it in one fund, the rest in a few companies held for a decade.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "VTI",
+          "name": "Vanguard Total Stock Market",
+          "weightPct": 55,
+          "classLabel": null
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 8,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 7.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 6.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 5,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-09",
+      "updatedAt": "2026-10-10T07:30:00.000Z"
+    },
+    {
+      "version": 1,
+      "handle": "margin-hunter",
+      "name": "Sami",
+      "about": "A fictional profile for the demo. Companies with high and rising margins, bought on a valuation from the filings.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 10.5,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 9.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 9.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 8.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA",
+          "weightPct": 8,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 7.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 6.6,
+          "classLabel": null
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 5.3,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-09",
+      "updatedAt": "2026-11-01T08:00:00.000Z",
+      "changed": {
+        "at": "2026-11-01T08:00:00.000Z",
+        "theses": [],
+        "weights": true
+      }
+    },
+    {
+      "version": 1,
+      "handle": "slow-and-sure",
+      "name": "Aya",
+      "about": "A fictional profile for the demo. A quality list, a cap per holding and patience.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 10,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 9.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 9,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 8.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 8.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking",
+          "weightPct": 6.7,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 6,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-09",
+      "updatedAt": "2026-10-10T07:30:00.000Z"
+    },
+    {
+      "version": 1,
+      "handle": "cash-machines",
+      "name": "Noor",
+      "about": "A fictional profile for the demo. Free cash flow first; nothing bought above twenty-five times it.",
+      "methodology": "Free cash flow yield",
+      "stocks": [
+        {
+          "symbol": "UBER",
+          "text": "A fictional thesis. The losses ended and the cash began; the market still prices the old company. What must stay true: free cash flow above 15% of revenue and robotaxis on the network, not around it.",
+          "pathway": null,
+          "pillars": [
+            {
+              "name": "Cash margin",
+              "text": "Free cash flow at 15% of revenue or more.",
+              "test": {
+                "field": "fcf_margin_pct",
+                "is": "gte",
+                "value": 15
+              }
+            }
+          ],
+          "watch": [
+            "Robotaxi partners by city"
+          ],
+          "updatedAt": "2026-10-28T08:00:00.000Z",
+          "receipt": {
+            "hash": "4075fb20f698d57226cba235303637c7766eff0cef6ced9cd49bcd36b1630c74",
+            "sealedAt": "2026-09-08T14:15:00.000Z"
+          }
+        }
+      ],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 10.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 9.6,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 9.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "V",
+          "name": "Visa",
+          "weightPct": 8.7,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 8.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 7.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 6.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 6.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "UBER",
+          "name": "Uber",
+          "weightPct": 5.2,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": true,
+        "weights": true,
+        "record": true,
+        "judgement": true
+      },
+      "asOf": "2026-10-30",
+      "updatedAt": "2026-10-30T08:00:00.000Z",
+      "changed": null,
+      "family": "fundamentals",
+      "record": {
+        "since": "2024-09-02",
+        "through": "2026-11-03",
+        "twrPct": 33.8,
+        "spyPct": 38.1,
+        "rulesKeptPct": 88,
+        "rulesMeasured": 11,
+        "breaches": 0,
+        "cleanSince": "2026-08-14"
+      },
+      "judgement": {
+        "asOf": "2026-11-03",
+        "trades": 21,
+        "reasonedPct": 81,
+        "rightPct": 52,
+        "plannedPct": 38,
+        "calibrationJudged": 6,
+        "calibrationPct": 50,
+        "clubCompetitions": 0,
+        "clubMedianAgainstSpyPts": null
+      }
+    },
+    {
+      "version": 1,
+      "handle": "long-runway",
+      "name": "Pablo",
+      "about": "A fictional profile for the demo. Founders still running the company, revenue growing above 20%, held five years at least.",
+      "methodology": "Founder-led growth",
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "MELI",
+          "name": "MercadoLibre",
+          "weightPct": 11.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "SHOP",
+          "name": "Shopify",
+          "weightPct": 10.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 10.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 9.7,
+          "classLabel": null
+        },
+        {
+          "symbol": "UBER",
+          "name": "Uber",
+          "weightPct": 8.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "NVDA",
+          "name": "Nvidia",
+          "weightPct": 8.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 6.3,
+          "classLabel": null
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking",
+          "weightPct": 5.5,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-30",
+      "updatedAt": "2026-10-30T08:00:00.000Z",
+      "changed": null,
+      "family": "fundamentals"
+    },
+    {
+      "version": 1,
+      "handle": "toll-roads",
+      "name": "Grete",
+      "about": "A fictional profile for the demo. Duopolies and networks that charge a little on everything, bought when the market forgets them.",
+      "methodology": "Toll businesses",
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "V",
+          "name": "Visa",
+          "weightPct": 12.5,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 12.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 10.3,
+          "classLabel": null
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 8.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 8.5,
+          "classLabel": null
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking",
+          "weightPct": 7.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 6.6,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 6,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 5.4,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true,
+        "record": true
+      },
+      "asOf": "2026-10-30",
+      "updatedAt": "2026-10-30T08:00:00.000Z",
+      "changed": null,
+      "family": "fundamentals",
+      "record": {
+        "since": "2025-02-03",
+        "through": "2026-11-03",
+        "twrPct": 27.4,
+        "spyPct": 24.9,
+        "rulesKeptPct": 100,
+        "rulesMeasured": 8,
+        "breaches": 0,
+        "cleanSince": "2025-11-20"
+      }
+    },
+    {
+      "version": 1,
+      "handle": "patient-capital",
+      "name": "Ravi",
+      "about": "A fictional profile for the demo. Twelve companies, a trade a quarter at most.",
+      "methodology": null,
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 11,
+          "classLabel": null
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 10.2,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 9.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "weightPct": 9,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 8.3,
+          "classLabel": null
+        },
+        {
+          "symbol": "UBER",
+          "name": "Uber",
+          "weightPct": 7,
+          "classLabel": null
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 5.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "V",
+          "name": "Visa",
+          "weightPct": 5.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "NVDA",
+          "name": "Nvidia",
+          "weightPct": 4.6,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true
+      },
+      "asOf": "2026-10-30",
+      "updatedAt": "2026-10-30T08:00:00.000Z",
+      "changed": null
+    },
+    {
+      "version": 1,
+      "handle": "quality-at-a-price",
+      "name": "Elif",
+      "about": "A fictional profile for the demo. Quality first, then a margin of safety on the owner's own valuation.",
+      "methodology": "Quality, then price",
+      "stocks": [],
+      "markets": [],
+      "weights": [
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "weightPct": 10.8,
+          "classLabel": null
+        },
+        {
+          "symbol": "MA",
+          "name": "Mastercard",
+          "weightPct": 9.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco",
+          "weightPct": 9.1,
+          "classLabel": null
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "weightPct": 8.6,
+          "classLabel": null
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking",
+          "weightPct": 7.9,
+          "classLabel": null
+        },
+        {
+          "symbol": "SPGI",
+          "name": "S&P Global",
+          "weightPct": 7.7,
+          "classLabel": null
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "weightPct": 6.4,
+          "classLabel": null
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "weightPct": 6,
+          "classLabel": null
+        },
+        {
+          "symbol": "UBER",
+          "name": "Uber",
+          "weightPct": 4.8,
+          "classLabel": null
+        }
+      ],
+      "sharing": {
+        "theses": false,
+        "weights": true,
+        "record": true
+      },
+      "asOf": "2026-10-30",
+      "updatedAt": "2026-10-30T08:00:00.000Z",
+      "changed": null,
+      "family": "fundamentals",
+      "record": {
+        "since": "2025-06-02",
+        "through": "2026-11-03",
+        "twrPct": 14.6,
+        "spyPct": 19.2,
+        "rulesKeptPct": 75,
+        "rulesMeasured": 12,
+        "breaches": 1,
+        "cleanSince": null
+      }
+    }
+  ]
+}

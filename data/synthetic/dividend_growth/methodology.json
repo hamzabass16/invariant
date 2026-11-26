@@ -1,0 +1,713 @@
+{
+  "name": "The Income Ledger",
+  "adopted": "2026-01-01",
+  "summary": "Around fifteen dividend payers at one broker, judged on the income they pay and its growth, never on price. Quality tests on payout and raises, a 12% cap per holding, cash kept between 3% and 10%.",
+  "source": {
+    "title": "The Income Ledger (fictional)",
+    "fileId": null
+  },
+  "origin": "document",
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Portfolio value",
+      "about": "Everything in the account at today's marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "income-ttm",
+      "label": "Dividends, 12 months",
+      "about": "Dividends received over the last twelve months (1.1).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "income-growth",
+      "label": "Income growth",
+      "about": "Dividends in the last twelve months against the twelve before (1.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "growth",
+        "now": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        },
+        "before": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "prior_ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "yield-on-cost",
+      "label": "Yield on cost",
+      "about": "Dividends over twelve months against what the payers cost (2.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "cost"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "yield-on-cost-by-holding",
+      "label": "Yield on cost by holding",
+      "about": "Twelve months of dividends against cost, per holding (2.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "cost"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "income-by-month",
+      "label": "Dividends by month",
+      "about": "Dividend income by month over the last two years (5.1).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "last_months",
+            "months": 24
+          }
+        }
+      },
+      "view": "bars",
+      "by": "month"
+    },
+    {
+      "id": "income-by-holding",
+      "label": "Income by holding",
+      "about": "Dividends over the last twelve months, per holding (5.1).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "dividend"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "projected-income",
+      "label": "Projected annual income",
+      "about": "Today's indicated yield times value, over the payers (5.1).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "dividend_yield_pct"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "yield-by-holding",
+      "label": "Dividend yield",
+      "about": "Indicated dividend yield, per holding (5.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "dividend_yield_pct"
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "payout-by-holding",
+      "label": "Payout ratio",
+      "about": "Dividends over earnings, per holding (2.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "payout_ratio_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "years-raised",
+      "label": "Years of raises",
+      "about": "Consecutive years the dividend was raised, per holding (2.1).",
+      "unit": "number",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "dividend_years_raised"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "dividend-growth-5y",
+      "label": "Dividend growth, 5 years",
+      "about": "Annualised dividend growth over five years, per holding (2.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "dividend_growth_5y_pct"
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "weight-by-holding",
+      "label": "Weight by holding",
+      "about": "Each holding's share of the portfolio (3.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "weight-by-sector",
+      "label": "Weight by sector",
+      "about": "Each sector's share of the portfolio (3.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "donut",
+      "by": "sector"
+    },
+    {
+      "id": "holdings-count",
+      "label": "Companies held",
+      "about": "Number of companies in the portfolio (3.3).",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash as a share of the portfolio (4.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "contributions-ttm",
+      "label": "Contributions, 12 months",
+      "about": "Money added over the last twelve months (6.2).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "deposit"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "growth-of-100",
+      "label": "Growth of 100",
+      "about": "What 100 at inception has become, by day (5.3).",
+      "unit": "number",
+      "expr": {
+        "op": "series",
+        "stat": "growth_of_100",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "line",
+      "by": "date"
+    },
+    {
+      "id": "return-3y",
+      "label": "Return, 3 years",
+      "about": "Change in the account's value over three years (5.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "return",
+        "of": "nav",
+        "period": "3y"
+      },
+      "view": "tile"
+    }
+  ],
+  "classes": [],
+  "rules": [
+    {
+      "id": "income-growth",
+      "section": "1.2",
+      "text": "Income grows at least 7% a year.",
+      "severity": "guideline",
+      "test": {
+        "figure": "income-growth",
+        "is": "gte",
+        "limit": 7
+      }
+    },
+    {
+      "id": "raises",
+      "section": "2.1",
+      "text": "Every company has raised its dividend for at least ten consecutive years.",
+      "severity": "guideline",
+      "test": {
+        "figure": "years-raised",
+        "is": "gte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "payout",
+      "section": "2.2",
+      "text": "Payout ratio at or below 60% of earnings.",
+      "severity": "guideline",
+      "test": {
+        "figure": "payout-by-holding",
+        "is": "lte",
+        "limit": 60
+      }
+    },
+    {
+      "id": "dividend-growth",
+      "section": "2.3",
+      "text": "Dividend growth over five years of at least 6% a year.",
+      "severity": "guideline",
+      "test": {
+        "figure": "dividend-growth-5y",
+        "is": "gte",
+        "limit": 6
+      }
+    },
+    {
+      "id": "position-cap",
+      "section": "3.1",
+      "text": "No holding above 12% of the portfolio.",
+      "severity": "breach",
+      "test": {
+        "figure": "weight-by-holding",
+        "is": "lte",
+        "limit": 12
+      }
+    },
+    {
+      "id": "sector-cap",
+      "section": "3.2",
+      "text": "No sector above 25% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "weight-by-sector",
+        "is": "lte",
+        "limit": 25
+      }
+    },
+    {
+      "id": "min-holdings",
+      "section": "3.3",
+      "text": "At least twelve companies at all times.",
+      "severity": "guideline",
+      "test": {
+        "figure": "holdings-count",
+        "is": "gte",
+        "limit": 12
+      }
+    },
+    {
+      "id": "cash-floor",
+      "section": "4.1",
+      "text": "Cash at least 3% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "gte",
+        "limit": 3
+      }
+    },
+    {
+      "id": "cash-cap",
+      "section": "4.1",
+      "text": "Cash at most 10% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "lte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "reinvest",
+      "section": "6.1",
+      "text": "Every dividend is reinvested within the month it arrives.",
+      "severity": "guideline",
+      "test": null
+    },
+    {
+      "id": "contribute",
+      "section": "6.2",
+      "text": "Add 2,000 dollars a month: 24,000 over twelve months.",
+      "severity": "guideline",
+      "test": {
+        "figure": "contributions-ttm",
+        "is": "gte",
+        "limit": 24000
+      }
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "income-ttm",
+      "income-growth",
+      "yield-on-cost",
+      "projected-income",
+      "net-worth",
+      "cash-share"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Income",
+        "figures": [
+          "income-by-month",
+          "income-by-holding",
+          "yield-on-cost-by-holding"
+        ],
+        "from": "5.1"
+      },
+      {
+        "kind": "figures",
+        "label": "Quality",
+        "figures": [
+          "yield-by-holding",
+          "payout-by-holding",
+          "years-raised",
+          "dividend-growth-5y"
+        ],
+        "from": "2"
+      },
+      {
+        "kind": "figures",
+        "label": "Diversification",
+        "figures": [
+          "weight-by-holding",
+          "weight-by-sector",
+          "holdings-count"
+        ],
+        "from": "3"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      },
+      {
+        "kind": "figures",
+        "label": "Habits",
+        "figures": [
+          "contributions-ttm"
+        ],
+        "from": "6"
+      },
+      {
+        "kind": "figures",
+        "label": "Context",
+        "figures": [
+          "growth-of-100",
+          "return-3y"
+        ],
+        "from": "5.3"
+      }
+    ],
+    "themes": []
+  }
+}

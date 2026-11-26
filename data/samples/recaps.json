@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "updated": "2026-11-03T22:40:00.000Z",
+  "recaps": [
+    {
+      "session": "2026-11-03",
+      "writtenAt": "2026-11-03T22:40:00.000Z",
+      "status": "written",
+      "sentence": null,
+      "reading": {
+        "summary": "A fictional recap, to show what your Claude writes after each close. In this sample session the Nasdaq led while small caps slipped, as the largest platforms rose and rate-sensitive groups gave ground.",
+        "points": [
+          {
+            "headline": "The Nasdaq led the other indices",
+            "line": "In the sample, its largest platforms rose more than the broad market, while the Dow kept pace with the S&P 500.",
+            "symbols": [],
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/indices"
+            }
+          },
+          {
+            "headline": "Utilities and telecoms led the losers",
+            "line": "Rate-sensitive groups were the weakest in the sample, as yields rose through the afternoon.",
+            "symbols": [],
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/sectors"
+            }
+          },
+          {
+            "headline": "Communication services held up",
+            "line": "The sample's largest platforms closed higher and kept the Nasdaq positive.",
+            "symbols": [],
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/platforms"
+            }
+          },
+          {
+            "headline": "Small caps fell",
+            "line": "IWM trailed the S&P 500 in the sample session.",
+            "symbols": [
+              "IWM"
+            ],
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/small-caps"
+            }
+          }
+        ],
+        "holdings": [
+          {
+            "symbol": "NVDA",
+            "name": "NVIDIA Corp",
+            "changePct": 1.82,
+            "why": "In the sample, chip makers moved after a fictional supplier updated its data-centre outlook, and NVIDIA moved with the group.",
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/chips"
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "name": "Apple Inc",
+            "changePct": 0.63,
+            "why": "In the sample, a fictional report on handset orders in Asia moved the shares from the open.",
+            "source": {
+              "title": "Sample source (fictional)",
+              "url": "https://example.com/sample-recap/handsets"
+            }
+          },
+          {
+            "symbol": "VOO",
+            "name": "Vanguard S&P 500 ETF",
+            "changePct": 0.21,
+            "why": "Held flat with the S&P 500, as gains in technology offset the defensive groups; no news was about the fund itself.",
+            "source": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# One line ending everywhere. Text is LF in the repository and LF in every
+# working copy, on macOS and on Windows alike, so a chair on either never sees
+# a file as modified for its line endings, and a check never fails on them
+# (check:manual once did). Editors on Windows read LF files without complaint.
+* text=auto eol=lf
+
+# What is not text.
+*.png binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
+*.xlsx binary

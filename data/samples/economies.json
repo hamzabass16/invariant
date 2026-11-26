@@ -1,0 +1,198 @@
+{
+ "year": "2026",
+ "readAt": "2026-10-09T21:00:00.000Z",
+ "source": "fictional sample: invented figures in the shape of the OECD, BIS and IMF's",
+ "annualSource": "the OECD Economic Outlook",
+ "rows": [
+  {
+   "code": "USA",
+   "name": "United States",
+   "policyRate": {
+    "value": 3.875,
+    "date": "2026-10-06"
+   },
+   "policyArea": "United States",
+   "currentAccount": -3.9,
+   "debt": 121,
+   "realGrowth": 1.8,
+   "nominalGrowth": 4.65,
+   "interest": 4.1,
+   "interestGrowth": 12.91,
+   "growthLessInterest": -8.26,
+   "money": {
+    "value": 4.09,
+    "date": "2026-08"
+   },
+   "moneyArea": "United States"
+  },
+  {
+   "code": "DEU",
+   "name": "Germany",
+   "policyRate": {
+    "value": 2,
+    "date": "2026-10-06"
+   },
+   "policyArea": "euro area",
+   "currentAccount": 5.6,
+   "debt": 64,
+   "realGrowth": 0.6,
+   "nominalGrowth": 2.71,
+   "interest": 1.1,
+   "interestGrowth": 12.98,
+   "growthLessInterest": -10.27,
+   "money": {
+    "value": 2.89,
+    "date": "2026-08"
+   },
+   "moneyArea": "euro area"
+  },
+  {
+   "code": "FRA",
+   "name": "France",
+   "policyRate": {
+    "value": 2,
+    "date": "2026-10-06"
+   },
+   "policyArea": "euro area",
+   "currentAccount": -0.4,
+   "debt": 114,
+   "realGrowth": 0.8,
+   "nominalGrowth": 2.11,
+   "interest": 2.1,
+   "interestGrowth": 12.86,
+   "growthLessInterest": -10.75,
+   "money": {
+    "value": 2.89,
+    "date": "2026-08"
+   },
+   "moneyArea": "euro area"
+  },
+  {
+   "code": "ITA",
+   "name": "Italy",
+   "policyRate": {
+    "value": 2,
+    "date": "2026-10-06"
+   },
+   "policyArea": "euro area",
+   "currentAccount": 1,
+   "debt": 136,
+   "realGrowth": 0.6,
+   "nominalGrowth": 2.21,
+   "interest": 4,
+   "interestGrowth": 4.83,
+   "growthLessInterest": -2.62,
+   "money": {
+    "value": 2.89,
+    "date": "2026-08"
+   },
+   "moneyArea": "euro area"
+  },
+  {
+   "code": "GBR",
+   "name": "United Kingdom",
+   "policyRate": {
+    "value": 3.75,
+    "date": "2026-10-06"
+   },
+   "policyArea": "United Kingdom",
+   "currentAccount": -2.9,
+   "debt": 103,
+   "realGrowth": 1.1,
+   "nominalGrowth": 4.23,
+   "interest": 2.8,
+   "interestGrowth": 8.09,
+   "growthLessInterest": -3.86,
+   "money": {
+    "value": 3.39,
+    "date": "2026-08"
+   },
+   "moneyArea": "United Kingdom"
+  },
+  {
+   "code": "JPN",
+   "name": "Japan",
+   "policyRate": {
+    "value": 0.75,
+    "date": "2026-10-06"
+   },
+   "policyArea": "Japan",
+   "currentAccount": 4.6,
+   "debt": 232,
+   "realGrowth": 0.7,
+   "nominalGrowth": 3.32,
+   "interest": 0.65,
+   "interestGrowth": 34.32,
+   "growthLessInterest": -31,
+   "money": {
+    "value": 1.2,
+    "date": "2026-08"
+   },
+   "moneyArea": "Japan"
+  },
+  {
+   "code": "CAN",
+   "name": "Canada",
+   "policyRate": {
+    "value": 2.25,
+    "date": "2026-10-06"
+   },
+   "policyArea": "Canada",
+   "currentAccount": -0.9,
+   "debt": 111,
+   "realGrowth": 1.2,
+   "nominalGrowth": 3.43,
+   "interest": 2.2,
+   "interestGrowth": 3.43,
+   "growthLessInterest": 0,
+   "money": {
+    "value": 5.18,
+    "date": "2026-08"
+   },
+   "moneyArea": "Canada"
+  },
+  {
+   "code": "AUS",
+   "name": "Australia",
+   "policyRate": {
+    "value": 3.35,
+    "date": "2026-09-24"
+   },
+   "policyArea": "Australia",
+   "currentAccount": -2.4,
+   "debt": 51,
+   "realGrowth": 1.9,
+   "nominalGrowth": 4.75,
+   "interest": 1.15,
+   "interestGrowth": 9.51,
+   "growthLessInterest": -4.76,
+   "money": {
+    "value": 6.07,
+    "date": "2026-08"
+   },
+   "moneyArea": "Australia"
+  },
+  {
+   "code": "CHE",
+   "name": "Switzerland",
+   "policyRate": {
+    "value": 0,
+    "date": "2026-10-06"
+   },
+   "policyArea": "Switzerland",
+   "currentAccount": 6.4,
+   "debt": 36,
+   "realGrowth": 1.2,
+   "nominalGrowth": 1.5,
+   "interest": 0.2,
+   "interestGrowth": 1.5,
+   "growthLessInterest": 0,
+   "money": {
+    "value": 0.8,
+    "date": "2026-08"
+   },
+   "moneyArea": "Switzerland"
+  }
+ ],
+ "problems": []
+}

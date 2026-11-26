@@ -1,0 +1,444 @@
+{
+ "version": 1,
+ "entries": [
+  {
+   "id": "d001",
+   "date": "2026-10-10",
+   "kind": "vote",
+   "symbol": null,
+   "title": "IC rulings under v3.2 (SN, W4, W5), no trade.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-10T12:00:00.000Z"
+  },
+  {
+   "id": "d002",
+   "date": "2026-10-10",
+   "kind": "methodology",
+   "symbol": null,
+   "title": "Methodology v3.2 adopted, no trade.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-10T12:00:00.000Z"
+  },
+  {
+   "id": "d003",
+   "date": "2026-10-10",
+   "kind": "vote",
+   "symbol": "SPGI",
+   "title": "SPGI, classification vote and planned sale withdrawn, no trade. Weight 4.59%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-10T12:00:00.000Z"
+  },
+  {
+   "id": "d004",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "ASML",
+   "title": "ASML, classification vote, no trade. Weight 8.9%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d005",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "MA",
+   "title": "MA, classification vote, no trade now. Weight 10.26%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d006",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "META",
+   "title": "META, classification vote on the 8 Oct pitch (Hold), no trade. Weight 14.3%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d007",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "UBER",
+   "title": "UBER, classification vote, no trade. Weight 12.5%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d008",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "GOOGL",
+   "title": "GOOGL, classification vote, no trade. Weight 9.6%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d009",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "BKNG",
+   "title": "BKNG, classification vote, no trade. Weight 5.3%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d010",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "SHOP",
+   "title": "SHOP, classification vote, no trade. Weight 8.8%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d011",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "BIRK",
+   "title": "BIRK, Probation Hold vote (v3.1), no trade yet. Weight 5.6%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d012",
+   "date": "2026-10-09",
+   "kind": "methodology",
+   "symbol": null,
+   "title": "Methodology amendment v3.1, no trade.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d013",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "MELI",
+   "title": "MELI, classification vote, no trade. Weight 3.7%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d014",
+   "date": "2026-10-09",
+   "kind": "vote",
+   "symbol": "AMZN",
+   "title": "AMZN, classification vote, no trade. Weight 14.5%.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d015",
+   "date": "2026-10-06",
+   "kind": "trade",
+   "symbol": "UBER",
+   "title": "UBER, buy 3.48 sh at $68.98, $240. No sale.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-09T12:00:00.000Z"
+  },
+  {
+   "id": "d016",
+   "date": "2026-10-01",
+   "kind": "trade",
+   "symbol": "SPGI",
+   "title": "Rotation: sold SPGI 4.11 sh at $389.26 ($1,600, realised -$419); bought UBER 20.18 sh at $67.87 ($1,370) 41 s later.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-01T12:00:00.000Z"
+  },
+  {
+   "id": "d017",
+   "date": "2026-10-01",
+   "kind": "trade",
+   "symbol": "UBER",
+   "title": "Rotation: sold SPGI 4.11 sh at $389.26 ($1,600, realised -$419); bought UBER 20.18 sh at $67.87 ($1,370) 41 s later.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-01T12:00:00.000Z"
+  },
+  {
+   "id": "d018",
+   "date": "2026-09-14",
+   "kind": "trade",
+   "symbol": "MA",
+   "title": "Rotation: sold MA 1.37 sh at $572.60 (realised +$23); bought BIRK 28.78 sh at $30.94 ($891).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-09-14T12:00:00.000Z"
+  },
+  {
+   "id": "d019",
+   "date": "2026-09-14",
+   "kind": "trade",
+   "symbol": "BIRK",
+   "title": "Rotation: sold MA 1.37 sh at $572.60 (realised +$23); bought BIRK 28.78 sh at $30.94 ($891).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-09-14T12:00:00.000Z"
+  },
+  {
+   "id": "d020",
+   "date": "2026-09-11",
+   "kind": "trade",
+   "symbol": "GOOGL",
+   "title": "Rotation: sold GOOGL 4.25 sh at $335.20 ($1,423, realised +$721); bought BIRK 43.96 sh at $31.15 to $31.30 ($1,370).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-09-11T12:00:00.000Z"
+  },
+  {
+   "id": "d021",
+   "date": "2026-09-11",
+   "kind": "trade",
+   "symbol": "BIRK",
+   "title": "Rotation: sold GOOGL 4.25 sh at $335.20 ($1,423, realised +$721); bought BIRK 43.96 sh at $31.15 to $31.30 ($1,370).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-09-11T12:00:00.000Z"
+  },
+  {
+   "id": "d022",
+   "date": "2026-07-29",
+   "kind": "trade",
+   "symbol": "IBKR",
+   "title": "Rotation: sold IBKR 3.01 sh at $89.07 to $89.89 ($271, realised +$67); bought NVO 5.37 sh at $50.99 to $51.04 ($274).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-07-29T12:00:00.000Z"
+  },
+  {
+   "id": "d023",
+   "date": "2026-07-29",
+   "kind": "trade",
+   "symbol": "NVO",
+   "title": "Rotation: sold IBKR 3.01 sh at $89.07 to $89.89 ($271, realised +$67); bought NVO 5.37 sh at $50.99 to $51.04 ($274).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-07-29T12:00:00.000Z"
+  },
+  {
+   "id": "d024",
+   "date": "2026-07-02",
+   "kind": "trade",
+   "symbol": "MBGL",
+   "title": "MBGL, sold 12.87 sh received in the Mobility spin-off, at $20.28 to $20.72 (realised -$44.58).",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-07-02T12:00:00.000Z"
+  },
+  {
+   "id": "d025",
+   "date": "2026-10-08",
+   "kind": "vote",
+   "symbol": "NVO",
+   "title": "NVO, sell by 7 Nov 2026 (no archetype; 3.4 review). Vote 1-0.",
+   "text": "From the owner's Decision Log.",
+   "filedAt": "2026-10-08T12:00:00.000Z",
+   "action": {
+    "on": "trigger:NVO:k1",
+    "outcome": "sell",
+    "targetPct": 0,
+    "by": "2026-11-07",
+    "votedClass": null,
+    "reading": null
+   }
+  },
+  {
+   "id": "s101",
+   "date": "2025-11-20",
+   "kind": "trade",
+   "symbol": "KO",
+   "title": "KO, sold 44.99 sh at $71.02 ($3,193, realised +$299).",
+   "text": "Dividend Growth Powerhouses are not held during the accumulation phase (B); the position was a leftover from before the methodology.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2025-11-20T18:00:00.000Z"
+  },
+  {
+   "id": "s102",
+   "date": "2025-12-05",
+   "kind": "trade",
+   "symbol": "SNOW",
+   "title": "SNOW, sold 8.78 sh at $232.29 ($2,039, realised +$656).",
+   "text": "Losses on operating income for every year on file: it meets no Compounding Machine threshold on profitability (A.2). Sold into strength after the results.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2025-12-05T18:00:00.000Z"
+  },
+  {
+   "id": "s103",
+   "date": "2025-12-05",
+   "kind": "trade",
+   "symbol": "TEM",
+   "title": "TEM, sold 27.69 sh at $75.50 ($2,091, realised +$845).",
+   "text": "Under 5% as Disruptive Growth but the C.2 thresholds were not met on valuation; taken after a 40% run.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2025-12-05T18:00:00.000Z"
+  },
+  {
+   "id": "s104",
+   "date": "2026-02-04",
+   "kind": "trade",
+   "symbol": "EFX",
+   "title": "EFX, sold 16.74 sh at $181.24 ($3,033, realised -$1,138).",
+   "text": "Two quarters of falling mortgage volumes and a margin under the 3.4 floor: a Quality Erosion review ended in a sale.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-04T18:00:00.000Z"
+  },
+  {
+   "id": "s105",
+   "date": "2026-02-04",
+   "kind": "trade",
+   "symbol": "NOW",
+   "title": "NOW, sold 17.41 sh at $110.64 ($1,925, realised -$1,115).",
+   "text": "Growth slowed under 20% for two quarters; the pathway's trigger was missed. Kept on the watchlist.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-04T18:00:00.000Z"
+  },
+  {
+   "id": "s106",
+   "date": "2026-02-04",
+   "kind": "trade",
+   "symbol": "NVO",
+   "title": "NVO, sold 29.46 sh at $47.26 ($1,391, realised -$954).",
+   "text": "Trimmed to the 5% Probation Hold cap after the second guidance cut (Section 2 summary).\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-04T18:00:00.000Z"
+  },
+  {
+   "id": "s107",
+   "date": "2026-02-11",
+   "kind": "trade",
+   "symbol": "ASML",
+   "title": "ASML, sold 0.38 sh at $1,434.49 ($549, realised +$271).",
+   "text": "Trimmed back under the cap after the January run.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-11T18:00:00.000Z"
+  },
+  {
+   "id": "s108",
+   "date": "2026-02-18",
+   "kind": "trade",
+   "symbol": "AVGO",
+   "title": "AVGO, sold 8.08 sh at $319.83 to $332.59 ($2,648, realised +$1,040).",
+   "text": "Rotation into ASML: one way to own the AI build at a lower multiple. Kept on the watchlist.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-18T18:00:00.000Z"
+  },
+  {
+   "id": "s109",
+   "date": "2026-02-23",
+   "kind": "trade",
+   "symbol": "JNJ",
+   "title": "JNJ, sold 1.37 sh at $245.67 ($336, realised +$136).",
+   "text": "A Dividend Growth Powerhouse, not held during the accumulation phase (B); sold over six weeks.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-02-23T18:00:00.000Z"
+  },
+  {
+   "id": "s110",
+   "date": "2026-03-05",
+   "kind": "trade",
+   "symbol": "AVGO",
+   "title": "AVGO, sold the last 4.29 sh at $324.40 ($1,392, realised +$107).",
+   "text": "The rest of the rotation into ASML.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-03-05T18:00:00.000Z"
+  },
+  {
+   "id": "s111",
+   "date": "2026-03-23",
+   "kind": "trade",
+   "symbol": "JNJ",
+   "title": "JNJ, sold 16.34 sh at $235.67 to $240.09 ($3,887, realised +$1,497).",
+   "text": "The rest of the B exit, in two lots.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-03-23T18:00:00.000Z"
+  },
+  {
+   "id": "s112",
+   "date": "2026-04-09",
+   "kind": "trade",
+   "symbol": "JNJ",
+   "title": "JNJ, sold the last 4.74 sh at $242.12 ($1,147, realised +$310).",
+   "text": "The B exit completed.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-04-09T18:00:00.000Z"
+  },
+  {
+   "id": "s113",
+   "date": "2026-05-18",
+   "kind": "trade",
+   "symbol": "GE",
+   "title": "GE, sold 15.41 sh at $283.70 ($4,370, realised +$266).",
+   "text": "Industrials outside the archetypes after the split; the proceeds went to the Compounding Machines under their caps.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-05-18T18:00:00.000Z"
+  },
+  {
+   "id": "s114",
+   "date": "2026-06-23",
+   "kind": "trade",
+   "symbol": "GOOGL",
+   "title": "GOOGL, sold 3.95 sh at $348.17 to $348.92 ($1,373, realised +$659).",
+   "text": "Trimmed to stay under the 10% Compounding Machine cap (3.1).\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-06-23T18:00:00.000Z"
+  },
+  {
+   "id": "s115",
+   "date": "2026-06-23",
+   "kind": "trade",
+   "symbol": "MA",
+   "title": "MA, sold 1.37 sh at $490.21 ($670, realised -$89).",
+   "text": "Trimmed toward the cap ahead of the interchange ruling.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-06-23T18:00:00.000Z"
+  },
+  {
+   "id": "s116",
+   "date": "2026-06-24",
+   "kind": "trade",
+   "symbol": "SPGI",
+   "title": "SPGI, sold 5.48 sh at $402.53 to $410.84 ($2,219, realised -$653).",
+   "text": "Trimmed for the cap and to fund the BIRK probation position.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-06-24T18:00:00.000Z"
+  },
+  {
+   "id": "s117",
+   "date": "2026-06-24",
+   "kind": "trade",
+   "symbol": "RMS",
+   "title": "RMS, sold 0.75 sh at $1,610 ($1,204, realised +$4).",
+   "text": "A foreign listing the statements could not price daily; sold to keep the book readable.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-06-24T18:00:00.000Z"
+  },
+  {
+   "id": "s118",
+   "date": "2026-07-07",
+   "kind": "trade",
+   "symbol": "ASML",
+   "title": "ASML, sold 0.01 sh at $1,737.48 ($23).",
+   "text": "A fraction left by a transfer; tidied.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-07-07T18:00:00.000Z"
+  },
+  {
+   "id": "s119",
+   "date": "2026-07-07",
+   "kind": "trade",
+   "symbol": "BKNG",
+   "title": "BKNG, sold 3.77 sh at $182.34 ($685, realised -$10).",
+   "text": "Trimmed after the split while the 3.4 review on its growth ran; the review closed with a hold.\n\nA sample reason, written for the demo; the trade itself is the snapshot's.",
+   "filedAt": "2026-07-07T18:00:00.000Z"
+  },
+  {
+   "id": "s120",
+   "date": "2026-11-02",
+   "kind": "vote",
+   "symbol": "MELI",
+   "title": "MELI, margin trigger met: hold. Vote 1-0.",
+   "text": "The operating margin fell more than 3 points on the year. It is free shipping and the credit book growing, as the pathway expects, not price: hold, no new money until the margin turns.\n\nA sample reason, written for the demo.",
+   "filedAt": "2026-11-02T18:00:00.000Z",
+   "action": {
+    "on": "trigger:MELI:t1",
+    "outcome": "hold",
+    "targetPct": null,
+    "by": null,
+    "votedClass": null,
+    "reading": null
+   }
+  },
+  {
+   "id": "s121",
+   "date": "2026-11-02",
+   "kind": "note",
+   "symbol": null,
+   "title": "Holding count checked: 13 stocks, inside 10-15 below $100k (3.5).",
+   "text": "Checked at the monthly review.\n\nA sample reason, written for the demo.",
+   "filedAt": "2026-11-02T18:00:00.000Z",
+   "action": {
+    "on": "manual:holding-count",
+    "outcome": "checked",
+    "targetPct": null,
+    "by": null,
+    "votedClass": null,
+    "reading": null
+   }
+  }
+ ],
+ "updated": "2026-11-03T18:00:00.000Z"
+}

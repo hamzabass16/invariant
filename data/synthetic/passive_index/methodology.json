@@ -1,0 +1,436 @@
+{
+  "name": "Three-fund plan",
+  "adopted": "2025-01-01",
+  "summary": "Three index funds in a 70/10/20 split with 5-point bands, 1,500 euro added every month, no single stocks and at most four sales a year. Returns are shown last and for perspective only.",
+  "source": {
+    "title": "Three-fund plan (fictional)",
+    "fileId": null
+  },
+  "origin": "document",
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Account value",
+      "about": "Everything in the account at today's marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-vwce",
+      "label": "World equity",
+      "about": "VWCE as a share of the account (1.1, target 70%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "symbol",
+              "is": "eq",
+              "value": "VWCE"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-iusn",
+      "label": "Small cap",
+      "about": "IUSN as a share of the account (1.1, target 10%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "symbol",
+              "is": "eq",
+              "value": "IUSN"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-aggh",
+      "label": "Bonds",
+      "about": "AGGH as a share of the account (1.1, target 20%).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "symbol",
+              "is": "eq",
+              "value": "AGGH"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash as a share of the account (1.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "cash"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "contributions-ttm",
+      "label": "Contributions, 12 months",
+      "about": "Money added over the last twelve months (2.1).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "deposit"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "fees-pct-ttm",
+      "label": "Fees, 12 months",
+      "about": "Broker fees over the last twelve months as a share of the account (3.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "fee"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          },
+          "abs": true
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "single-stocks",
+      "label": "Single stocks",
+      "about": "Positions in single companies (4.1).",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "equity"
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "sales-ttm",
+      "label": "Sales, 12 months",
+      "about": "Sales in the last twelve months (4.2).",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "sell"
+            }
+          ],
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "growth-of-100",
+      "label": "Growth of 100",
+      "about": "What 100 at the start has become, by day (4.3).",
+      "unit": "number",
+      "expr": {
+        "op": "series",
+        "stat": "growth_of_100",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "line",
+      "by": "date"
+    },
+    {
+      "id": "max-drawdown",
+      "label": "Worst drawdown",
+      "about": "The worst peak-to-trough fall since the start (4.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "max_drawdown",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "tile"
+    }
+  ],
+  "classes": [],
+  "rules": [
+    {
+      "id": "vwce-low",
+      "section": "1.2",
+      "text": "World equity at least 65% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-vwce",
+        "is": "gte",
+        "limit": 65
+      }
+    },
+    {
+      "id": "vwce-high",
+      "section": "1.2",
+      "text": "World equity at most 75% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-vwce",
+        "is": "lte",
+        "limit": 75
+      }
+    },
+    {
+      "id": "iusn-low",
+      "section": "1.2",
+      "text": "Small cap at least 5% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-iusn",
+        "is": "gte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "iusn-high",
+      "section": "1.2",
+      "text": "Small cap at most 15% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-iusn",
+        "is": "lte",
+        "limit": 15
+      }
+    },
+    {
+      "id": "aggh-low",
+      "section": "1.2",
+      "text": "Bonds at least 15% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-aggh",
+        "is": "gte",
+        "limit": 15
+      }
+    },
+    {
+      "id": "aggh-high",
+      "section": "1.2",
+      "text": "Bonds at most 25% of the account.",
+      "severity": "watch",
+      "test": {
+        "figure": "weight-aggh",
+        "is": "lte",
+        "limit": 25
+      }
+    },
+    {
+      "id": "cash-cap",
+      "section": "1.3",
+      "text": "Cash at most 5% of the account.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "lte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "contribute",
+      "section": "2.1",
+      "text": "Contributions over the last twelve months total 18,000 euro.",
+      "severity": "guideline",
+      "test": {
+        "figure": "contributions-ttm",
+        "is": "gte",
+        "limit": 18000
+      }
+    },
+    {
+      "id": "fees",
+      "section": "3.1",
+      "text": "Fees over the last twelve months under 0.1% of the account.",
+      "severity": "guideline",
+      "test": {
+        "figure": "fees-pct-ttm",
+        "is": "lt",
+        "limit": 0.1
+      }
+    },
+    {
+      "id": "no-single-stocks",
+      "section": "4.1",
+      "text": "No single company positions.",
+      "severity": "breach",
+      "test": {
+        "figure": "single-stocks",
+        "is": "lte",
+        "limit": 0
+      }
+    },
+    {
+      "id": "few-sales",
+      "section": "4.2",
+      "text": "At most four sales a year.",
+      "severity": "guideline",
+      "test": {
+        "figure": "sales-ttm",
+        "is": "lte",
+        "limit": 4
+      }
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "net-worth",
+      "weight-vwce",
+      "weight-iusn",
+      "weight-aggh",
+      "cash-share",
+      "contributions-ttm"
+    ],
+    "sections": [
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart",
+        "from": "5"
+      },
+      {
+        "kind": "figures",
+        "label": "Costs and behaviour",
+        "figures": [
+          "fees-pct-ttm",
+          "single-stocks",
+          "sales-ttm"
+        ],
+        "from": "3"
+      },
+      {
+        "kind": "figures",
+        "label": "Perspective",
+        "figures": [
+          "growth-of-100",
+          "max-drawdown"
+        ],
+        "from": "4.3"
+      }
+    ],
+    "themes": []
+  }
+}

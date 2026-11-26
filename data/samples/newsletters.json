@@ -1,0 +1,654 @@
+{
+ "version": 1,
+ "updated": "2026-10-09T22:10:00.000Z",
+ "digests": [
+  {
+   "id": "c10e7a9e5a00000b",
+   "sender": "Silicon Ledger",
+   "subject": "The capex question, again",
+   "receivedAt": "2026-10-09T22:10:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "tech",
+    "summary": "The letter argues the large platforms' capital spending is now the number the market watches each quarter, and that the cloud businesses are being asked to justify it.",
+    "points": [
+     {
+      "headline": "Capex guides are the quarter's number",
+      "line": "The letter expects each platform to raise its spending guide again and reads the market's patience as thinning.",
+      "symbols": [
+       "GOOGL",
+       "AMZN",
+       "META"
+      ],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "Cloud growth carries the story",
+      "line": "Backlog and cloud growth are the lines it says will decide whether the spending is forgiven.",
+      "symbols": [
+       "GOOGL",
+       "AMZN"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/letter-capex.svg",
+     "alt": "Platform capital spending, by quarter",
+     "section": "Capex keeps climbing"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a000001",
+   "sender": "Closing Tape Recap",
+   "subject": "Closing Tape daily recap: platforms lead, merchant software slides",
+   "receivedAt": "2026-10-09T22:05:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "A fictional recap, told in pictures: the large platforms carried a narrow up day, commerce software fell on an invented merchant survey, brokers bounced and travel bookings held.",
+    "points": [
+     {
+      "headline": "The session at a glance",
+      "line": "The sample's S&P 500 rose 0.3% and the Nasdaq-100 0.6%, while the equal-weight index and small caps fell; communication services led the sectors.",
+      "symbols": [],
+      "images": [
+       0,
+       1
+      ]
+     },
+     {
+      "headline": "Platforms carry the index",
+      "line": "Five names made two-thirds of the Nasdaq-100's gain in the recap's invented count.",
+      "symbols": [
+       "META",
+       "AMZN",
+       "GOOGL"
+      ],
+      "images": [
+       2
+      ]
+     },
+     {
+      "headline": "Merchant software slides",
+      "line": "An invented survey of small sellers read softer holiday order books; commerce software fell the most of any group.",
+      "symbols": [
+       "SHOP",
+       "MELI"
+      ],
+      "images": [
+       3
+      ]
+     },
+     {
+      "headline": "Brokers bounce",
+      "line": "A fictional tally of account openings steadied and the broker basket rose for the first time in four sessions.",
+      "symbols": [
+       "IBKR"
+      ],
+      "images": [
+       4
+      ]
+     },
+     {
+      "headline": "Travel bookings come in firm",
+      "line": "An invented booking index rose for a third month; travel and ride-hailing edged up.",
+      "symbols": [
+       "BKNG",
+       "UBER"
+      ],
+      "images": [
+       5
+      ]
+     },
+     {
+      "headline": "Payments hold",
+      "line": "Card networks eased with the market, the recap notes, with nothing company-specific in its pages.",
+      "symbols": [
+       "MA"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/recap-d1-indices.svg",
+     "alt": "The session at a glance",
+     "section": "How the market performed today"
+    },
+    {
+     "url": "/samples/recap-d1-sectors.svg",
+     "alt": "Where the money went",
+     "section": "How the market performed today"
+    },
+    {
+     "url": "/samples/recap-d1-story-platforms.svg",
+     "alt": "The large platforms carried the index again",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d1-story-merchants.svg",
+     "alt": "An invented merchant survey hits commerce software",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d1-story-brokers.svg",
+     "alt": "Retail brokers win back part of last week's fall",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d1-story-travel.svg",
+     "alt": "Holiday travel bookings come in firm",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d1-chart-yield.svg",
+     "alt": "The ten-year yield, last 20 sessions",
+     "section": "Rates and the dollar"
+    },
+    {
+     "url": "/samples/recap-d1-movers.svg",
+     "alt": "The sample's biggest movers",
+     "section": "The biggest news stories of the day"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a00000c",
+   "sender": "Harbour Rates Note",
+   "subject": "The curve after the print",
+   "receivedAt": "2026-10-09T20:40:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "macro",
+    "summary": "Long yields rose a little after the day's data while the front end eased; the note reads it as the market pricing one cut and a longer path after it.",
+    "points": [
+     {
+      "headline": "Front end eases, long end firms",
+      "line": "Two-year yields fell and the ten-year rose on the day, by the note's figures; it calls the steepening orderly.",
+      "symbols": [],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "One cut priced",
+      "line": "Futures price one cut by year end in the note's reading, and nothing more until spring.",
+      "symbols": []
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/letter-rates-curve.svg",
+     "alt": "Where yields closed",
+     "section": "Where yields closed"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a00000d",
+   "sender": "Harbour Rates Note",
+   "subject": "Long yields test the highs again",
+   "receivedAt": "2026-10-09T06:10:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "macro",
+    "summary": "Long yields are back near the year's high and the note argues they now set the ceiling for equity multiples. It expects the central bank to hold.",
+    "points": [
+     {
+      "headline": "Rates are the binding constraint",
+      "line": "With the 10-year near its high, the note sees little room for multiples to expand; earnings have to carry returns.",
+      "symbols": [
+       "VOO"
+      ]
+     },
+     {
+      "headline": "Cash yields still compete",
+      "line": "Money-market yields above dividend yields keep some buyers out of equities, in the note's reading.",
+      "symbols": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "c10e7a9e5a000002",
+   "sender": "Closing Tape Recap",
+   "subject": "Closing Tape daily recap: chips rotate out, consumer names lead",
+   "receivedAt": "2026-10-08T22:02:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "A fictional recap: a second day of rotation out of semiconductors pulled the Nasdaq-100 down 1.4% while footwear, travel and ride-hailing led the gainers.",
+    "points": [
+     {
+      "headline": "The session at a glance",
+      "line": "The sample's Nasdaq-100 fell 1.4% and the S&P 500 0.5%; the Dow and small caps rose.",
+      "symbols": [],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "Rotation out of chips",
+      "line": "The chip index fell 2.1% in the recap's invented figures, which it calls an orderly rotation.",
+      "symbols": [
+       "ASML"
+      ],
+      "images": [
+       1
+      ]
+     },
+     {
+      "headline": "Consumer names lead",
+      "line": "An invented spending outlook lifted apparel, travel and ride-hailing.",
+      "symbols": [
+       "BIRK",
+       "BKNG",
+       "UBER"
+      ],
+      "images": [
+       2
+      ]
+     },
+     {
+      "headline": "Latin American commerce rallies",
+      "line": "A softer dollar lifted regional commerce and fintech, the recap says.",
+      "symbols": [
+       "MELI"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/recap-d2-indices.svg",
+     "alt": "The session at a glance",
+     "section": "How the market performed today"
+    },
+    {
+     "url": "/samples/recap-d2-story-chips.svg",
+     "alt": "A second day of rotation out of chips",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d2-story-consumer.svg",
+     "alt": "Footwear and travel lead the gainers",
+     "section": "The biggest news stories of the day"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a00000e",
+   "sender": "Meridian Letters",
+   "subject": "Quality at a price",
+   "receivedAt": "2026-10-08T12:00:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "The letter screens for high returns on capital at a fair multiple and finds payments, ratings, chip tools and travel platforms on its list; it argues quality is cheaper than it was in the spring.",
+    "points": [
+     {
+      "headline": "Payments still compound",
+      "line": "The letter's invented screen puts the card networks at the top on returns on capital and cash margins.",
+      "symbols": [
+       "MA"
+      ],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "Ratings and data hold their margins",
+      "line": "It reads the ratings agencies' margins as steady through a slow issuance year.",
+      "symbols": [
+       "SPGI"
+      ]
+     },
+     {
+      "headline": "Chip tools at a premium",
+      "line": "Lithography carries the highest multiple on its list, which the letter says the order book has to earn.",
+      "symbols": [
+       "ASML"
+      ]
+     },
+     {
+      "headline": "Travel is the cheapest quality",
+      "line": "A travel platform screens at the lowest forward multiple of the four.",
+      "symbols": [
+       "BKNG"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/letter-quality.svg",
+     "alt": "Quality at a price",
+     "section": "The screen"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a00000f",
+   "sender": "Silicon Ledger",
+   "subject": "What the handset cycle says",
+   "receivedAt": "2026-10-08T07:30:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "tech",
+    "summary": "Handset upgrades are slowing and the letter argues services and search revenue now carry the large platforms' growth.",
+    "points": [
+     {
+      "headline": "Services carry the platforms",
+      "line": "The letter reads the quarter's services growth as the engine and handset units as the drag.",
+      "symbols": [
+       "AAPL"
+      ]
+     },
+     {
+      "headline": "Search ads hold their share",
+      "line": "It sees search advertising keeping its share as AI answers spread, by its own survey.",
+      "symbols": [
+       "GOOGL"
+      ]
+     },
+     {
+      "headline": "AI features sell slowly",
+      "line": "On-device AI has not yet moved upgrade rates in the surveys the letter cites.",
+      "symbols": [
+       "AAPL"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "c10e7a9e5a000003",
+   "sender": "Closing Tape Recap",
+   "subject": "Closing Tape daily recap: the month's worst day",
+   "receivedAt": "2026-10-07T22:08:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "A fictional recap of a broad sell-off: chip equipment, brokers and growth software fell together, and only health care and ratings names held up.",
+    "points": [
+     {
+      "headline": "The session at a glance",
+      "line": "The sample's Nasdaq-100 fell 3.5% and the S&P 500 1.8%, with four losers for every gainer.",
+      "symbols": [],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "Chip tools lead the fall",
+      "line": "An invented note argued next year's orders are already in the price; lithography names fell the most.",
+      "symbols": [
+       "ASML"
+      ],
+      "images": [
+       1
+      ]
+     },
+     {
+      "headline": "Brokers drop with options volumes",
+      "line": "The recap's invented weekly count of options contracts fell from its high, and brokers with it.",
+      "symbols": [
+       "IBKR"
+      ],
+      "images": [
+       2
+      ]
+     },
+     {
+      "headline": "Growth software sold",
+      "line": "Higher-multiple software fell with the index, merchant platforms among the weakest.",
+      "symbols": [
+       "SHOP"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/recap-d3-indices.svg",
+     "alt": "The session at a glance",
+     "section": "How the market performed today"
+    },
+    {
+     "url": "/samples/recap-d3-story-equipment.svg",
+     "alt": "Chip tools lead the month's worst day",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d3-chart-volumes.svg",
+     "alt": "Options volumes, by week",
+     "section": "The biggest news stories of the day"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a000010",
+   "sender": "Frontier Macro",
+   "subject": "Elections, the dollar and freight",
+   "receivedAt": "2026-10-07T05:45:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "geopolitics",
+    "summary": "Two elections this month could move the dollar; the letter expects volatility rather than a trend, and notes container freight rates rising again on longer routes.",
+    "points": [
+     {
+      "headline": "A firmer dollar trims overseas earnings",
+      "line": "The letter notes that a stronger dollar cuts what large exporters report from abroad.",
+      "symbols": [
+       "AAPL",
+       "VOO"
+      ]
+     },
+     {
+      "headline": "Freight rates rise again",
+      "line": "Its invented freight index is up almost 30% since January on the Asia to Europe route, a cost for retailers that import.",
+      "symbols": [
+       "AMZN",
+       "MELI"
+      ],
+      "images": [
+       0
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/letter-freight.svg",
+     "alt": "Container freight rates, indexed",
+     "section": "Freight"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a000004",
+   "sender": "Closing Tape Recap",
+   "subject": "Closing Tape daily recap: payments steady, defensives shelter",
+   "receivedAt": "2026-10-06T22:04:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "A fictional recap of a quiet session: an invented card-spending tracker held up, and health care and ratings names closed higher on a soft day.",
+    "points": [
+     {
+      "headline": "Card spending holds up",
+      "line": "An invented monthly tracker showed cross-border travel spending steady; card networks rose.",
+      "symbols": [
+       "MA"
+      ],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "Defensives are the shelter",
+      "line": "Health care and ratings names closed higher, the recap's one bright spot.",
+      "symbols": [
+       "NVO",
+       "SPGI"
+      ],
+      "images": [
+       1
+      ]
+     },
+     {
+      "headline": "Platforms mixed",
+      "line": "The large platforms ended mixed in a narrow range, the recap notes without a figure.",
+      "symbols": [
+       "GOOGL",
+       "META"
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/recap-d4-story-payments.svg",
+     "alt": "Card spending holds up in an invented tracker",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d4-story-health.svg",
+     "alt": "Defensives are the sample session's shelter",
+     "section": "The biggest news stories of the day"
+    }
+   ]
+  },
+  {
+   "id": "c10e7a9e5a000012",
+   "sender": "The Long View Letter",
+   "subject": "Index weights at a record",
+   "receivedAt": "2026-10-06T09:00:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "other",
+    "summary": "The largest ten companies now weigh more in the index than at any time the letter has records for.",
+    "points": [
+     {
+      "headline": "The index is a concentrated bet",
+      "line": "An index fund now carries most of its risk in a handful of names, the letter argues.",
+      "symbols": [
+       "VOO"
+      ]
+     },
+     {
+      "headline": "Owning the platforms twice",
+      "line": "A book that holds the platforms and the index holds them twice, it notes.",
+      "symbols": [
+       "GOOGL",
+       "AMZN",
+       "META"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "c10e7a9e5a000011",
+   "sender": "Harbour Rates Note",
+   "subject": "Inflation print preview",
+   "receivedAt": "2026-10-06T06:05:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "macro",
+    "summary": "A preview of the month's inflation print; the note expects services prices to stay firm.",
+    "points": [
+     {
+      "headline": "Services inflation stays firm",
+      "line": "Rents and insurance keep services inflation above the target in the note's forecast.",
+      "symbols": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "c10e7a9e5a000005",
+   "sender": "Closing Tape Recap",
+   "subject": "Closing Tape daily recap: a softer dollar lifts Latin America",
+   "receivedAt": "2026-10-05T22:06:00.000Z",
+   "status": "read",
+   "sentence": null,
+   "via": "filter",
+   "reading": {
+    "topic": "holdings",
+    "summary": "A fictional recap: the sample's dollar index fell 0.6%, regional commerce rallied and the rest of the market drifted.",
+    "points": [
+     {
+      "headline": "A softer dollar lifts regional commerce",
+      "line": "Latin American commerce and fintech names rallied as the dollar index fell, in the recap's invented figures.",
+      "symbols": [
+       "MELI"
+      ],
+      "images": [
+       0
+      ]
+     },
+     {
+      "headline": "The dollar's slide",
+      "line": "The recap's chart shows fifteen sessions of a falling dollar index.",
+      "symbols": [],
+      "images": [
+       1
+      ]
+     }
+    ],
+    "placed": true
+   },
+   "images": [
+    {
+     "url": "/samples/recap-d5-story-latam.svg",
+     "alt": "A softer dollar lifts regional commerce",
+     "section": "The biggest news stories of the day"
+    },
+    {
+     "url": "/samples/recap-d5-chart-dollar.svg",
+     "alt": "The dollar index, last 15 sessions",
+     "section": "Rates and the dollar"
+    }
+   ]
+  }
+ ]
+}

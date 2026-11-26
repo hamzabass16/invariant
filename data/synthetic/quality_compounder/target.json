@@ -1,0 +1,263 @@
+{
+  "name": "Owner's Manual: what Nadia's dashboard must show",
+  "floor": 75,
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Portfolio value"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash share (1.4)"
+    },
+    {
+      "id": "largest-holding",
+      "label": "Largest holding's share"
+    },
+    {
+      "id": "top-three",
+      "label": "Three largest together (1.3)",
+      "weight": 2
+    },
+    {
+      "id": "probation-count",
+      "label": "Holdings on probation"
+    },
+    {
+      "id": "day-change",
+      "label": "Day's change (5.2)"
+    },
+    {
+      "id": "day-change-pct",
+      "label": "Day's change as a share (5.2)"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Weight by archetype (1.1)",
+      "weight": 2
+    },
+    {
+      "id": "weight-compounders",
+      "label": "Weight per Compounder (1.2)",
+      "weight": 2
+    },
+    {
+      "id": "weight-transitional",
+      "label": "Weight per Transitional (1.2)",
+      "weight": 2
+    },
+    {
+      "id": "weight-growth",
+      "label": "Weight per Growth (1.2)"
+    },
+    {
+      "id": "weight-probation",
+      "label": "Weight per Probation holding (1.2)"
+    },
+    {
+      "id": "price-vs-own",
+      "label": "Price against own valuation per holding (3.3)",
+      "weight": 2
+    },
+    {
+      "id": "valuation-age",
+      "label": "Age of each own valuation (3.3)",
+      "note": "found missing by the loop on 12 Oct 2026 and closed: own_valuation_age_days added to the ontology"
+    },
+    {
+      "id": "revenue-growth",
+      "label": "Revenue growth per holding (2.1)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "fcf-margin",
+      "label": "FCF margin per Compounder (2.1)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "roic",
+      "label": "ROIC per Compounder (2.1)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "leverage",
+      "label": "Net debt to EBITDA per Compounder (2.1)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "gross-margin",
+      "label": "Gross margin per Transitional (2.2)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "fcf-per-share-growth",
+      "label": "FCF per share growth per holding (2.4)",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "probation-days",
+      "label": "Days on probation per holding (4.1)"
+    },
+    {
+      "id": "return-1y",
+      "label": "One-year return (5.1)"
+    },
+    {
+      "id": "return-1y-spy",
+      "label": "SPY one-year return (5.1)"
+    },
+    {
+      "id": "return-1y-qqq",
+      "label": "QQQ one-year return (5.1)"
+    },
+    {
+      "id": "growth-of-100",
+      "label": "Growth of 100 since inception (5.1)"
+    },
+    {
+      "id": "growth-of-100-spy",
+      "label": "Growth of 100 for SPY (5.1)"
+    },
+    {
+      "id": "max-drawdown",
+      "label": "Worst drawdown (5.1)"
+    },
+    {
+      "id": "beta-spy",
+      "label": "Beta to SPY (5.1)"
+    }
+  ],
+  "rules": [
+    {
+      "id": "cap-compounder",
+      "label": "Compounder at most 10% (1.2)",
+      "section": "1.2",
+      "weight": 2
+    },
+    {
+      "id": "cap-transitional",
+      "label": "Transitional at most 20% (1.2)",
+      "section": "1.2",
+      "weight": 2
+    },
+    {
+      "id": "cap-growth",
+      "label": "Growth at most 5% (1.2)",
+      "section": "1.2"
+    },
+    {
+      "id": "cap-probation",
+      "label": "Probation at most 5% (1.2)",
+      "section": "1.2"
+    },
+    {
+      "id": "top-three-cap",
+      "label": "Three largest at most 45% (1.3)",
+      "section": "1.3"
+    },
+    {
+      "id": "cash-floor",
+      "label": "Cash at least 5% (1.4)",
+      "section": "1.4"
+    },
+    {
+      "id": "compounder-growth",
+      "label": "Compounder revenue growth at least 10% (2.1)",
+      "section": "2.1",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "compounder-fcf",
+      "label": "Compounder FCF margin at least 20% (2.1)",
+      "section": "2.1",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "compounder-roic",
+      "label": "Compounder ROIC at least 20% (2.1)",
+      "section": "2.1",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "compounder-leverage",
+      "label": "Compounder net debt to EBITDA at most 2x (2.1)",
+      "section": "2.1",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "transitional-growth",
+      "label": "Transitional revenue growth at least 15% (2.2)",
+      "section": "2.2",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "transitional-margin",
+      "label": "Transitional gross margin at least 50% (2.2)",
+      "section": "2.2",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "growth-growth",
+      "label": "Growth revenue growth at least 25% (2.3)",
+      "section": "2.3",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "kill-fcf",
+      "label": "FCF per share must grow (2.4)",
+      "section": "2.4",
+      "note": "needs fundamentals"
+    },
+    {
+      "id": "buy-zone",
+      "label": "Tell me at or below 80% of own valuation (3.1)",
+      "section": "3.1",
+      "weight": 2
+    },
+    {
+      "id": "rich-zone",
+      "label": "Tell me above 120% of own valuation (3.2)",
+      "section": "3.2"
+    },
+    {
+      "id": "valuation-fresh",
+      "label": "Own valuation under a year old (3.3)",
+      "section": "3.3",
+      "note": "closed with own_valuation_age_days on 12 Oct 2026"
+    },
+    {
+      "id": "probation-clock",
+      "label": "Tell me at 300 days on probation (4.1)",
+      "section": "4.1",
+      "weight": 2
+    },
+    {
+      "id": "no-new-money",
+      "label": "No new money into probation (4.2)",
+      "section": "4.2",
+      "testable": false
+    }
+  ],
+  "classes": [
+    {
+      "id": "compounder",
+      "label": "Compounder"
+    },
+    {
+      "id": "transitional",
+      "label": "Transitional"
+    },
+    {
+      "id": "growth",
+      "label": "Growth"
+    },
+    {
+      "id": "probation",
+      "label": "Probation"
+    }
+  ],
+  "panels": [
+    "allocation",
+    "themes"
+  ]
+}

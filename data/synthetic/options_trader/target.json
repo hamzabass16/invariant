@@ -1,0 +1,39 @@
+{
+  "name": "Premium Playbook v2: what Mara's dashboard must show",
+  "floor": 75,
+  "figures": [
+    { "id": "net-worth", "label": "Account value" },
+    { "id": "premium-month", "label": "Premium collected, last month" },
+    { "id": "premium-yield-ttm", "label": "Premium yield, trailing twelve months (1.1)" },
+    { "id": "premium-by-month", "label": "Premium by month" },
+    { "id": "put-cash-to-cash", "label": "Cash needed if assigned against cash held (3.1)" },
+    { "id": "delta-share", "label": "Options delta value as a share of the account (3.2)" },
+    { "id": "expiring-21", "label": "Positions with 21 days or fewer to expiry (4.1)" },
+    { "id": "profit-captured", "label": "Profit captured per short position (4.2)" },
+    { "id": "iv-by-underlying", "label": "Implied volatility per underlying (2.2)", "weight": 2, "note": "needs a market data source; no input supplies implied volatility" },
+    { "id": "iv-rank-by-underlying", "label": "IV rank per underlying (2.2)", "weight": 2, "note": "needs a market data source; no input supplies IV rank" },
+    { "id": "expected-move", "label": "Expected move per short position (2.3)", "weight": 2, "note": "needs implied volatility" },
+    { "id": "day-change", "label": "Day's change in money" },
+    { "id": "day-change-pct", "label": "Day's change as a share of the account (5.3)" },
+    { "id": "return-1m", "label": "One-month return (5.4)" },
+    { "id": "below-high", "label": "Distance below the account's high (5.1)" },
+    { "id": "growth-of-100", "label": "Growth of 100 since inception (5.4)" },
+    { "id": "volatility-3m", "label": "Three-month volatility (5.4)" },
+    { "id": "beta-spy", "label": "Beta to SPY, one year (5.2)" }
+  ],
+  "rules": [
+    { "id": "iv-rank-entry", "label": "Sell only at IV rank 30 or more (2.1)", "section": "2.1", "weight": 2, "note": "needs IV rank" },
+    { "id": "inside-expected-move", "label": "Short strike inside the expected move (2.3)", "section": "2.3", "weight": 2, "note": "needs implied volatility" },
+    { "id": "assignment-cover", "label": "Assignment cash at most 1.5x cash (3.1)", "section": "3.1", "weight": 2 },
+    { "id": "delta-cap", "label": "Delta value at most 60% of the account (3.2)", "section": "3.2", "weight": 2 },
+    { "id": "premium-concentration", "label": "No underlying over 25% of a month's premium (3.3)", "section": "3.3", "testable": false },
+    { "id": "roll-21", "label": "Tell me at 21 days to expiry (4.1)", "section": "4.1", "weight": 2 },
+    { "id": "take-profit", "label": "Tell me at 50% profit captured (4.2)", "section": "4.2", "weight": 2 },
+    { "id": "covered-only", "label": "Calls only against shares held (4.3)", "section": "4.3", "testable": false },
+    { "id": "drawdown-8", "label": "Tell me at 8% below the high (5.1)", "section": "5.1" },
+    { "id": "beta-cap", "label": "Beta to SPY at most 1.2 (5.2)", "section": "5.2" },
+    { "id": "day-loss", "label": "Tell me at a 2% day loss (5.3)", "section": "5.3" }
+  ],
+  "classes": [],
+  "panels": ["options"]
+}

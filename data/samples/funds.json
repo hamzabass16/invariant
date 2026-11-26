@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "byId": {
+    "example_quality": {
+      "id": "example_quality",
+      "cik": 0,
+      "name": "Example Quality Partners (fictional)",
+      "manager": "A fictional manager, for the demo",
+      "checkedAt": "2026-10-20T05:00:00.000Z",
+      "latest": {
+        "accession": "0000000000-26-000001",
+        "period": "2026-06-30",
+        "filed": "2026-08-14",
+        "total": 8200000000.0,
+        "count": 22,
+        "positions": [
+          {
+            "name": "ALPHABET INC",
+            "cusip": "X02EXA000",
+            "value": 1758080000,
+            "shares": null,
+            "pct": 21.44,
+            "ticker": "GOOGL"
+          },
+          {
+            "name": "VISA INC",
+            "cusip": "X04EXA000",
+            "value": 1492400000,
+            "shares": null,
+            "pct": 18.2,
+            "ticker": "V"
+          },
+          {
+            "name": "MICROSOFT CORP",
+            "cusip": "X07EXA000",
+            "value": 1426800000,
+            "shares": null,
+            "pct": 17.4,
+            "ticker": "MSFT"
+          },
+          {
+            "name": "ADOBE INC",
+            "cusip": "X05EXA000",
+            "value": 1100440000,
+            "shares": null,
+            "pct": 13.42,
+            "ticker": "ADBE"
+          },
+          {
+            "name": "MASTERCARD INC",
+            "cusip": "X00EXA000",
+            "value": 1003680000,
+            "shares": null,
+            "pct": 12.24,
+            "ticker": "MA"
+          },
+          {
+            "name": "ASML HOLDING N V",
+            "cusip": "X01EXA000",
+            "value": 604340000,
+            "shares": null,
+            "pct": 7.37,
+            "ticker": "ASML"
+          },
+          {
+            "name": "BOOKING HOLDINGS INC",
+            "cusip": "X03EXA000",
+            "value": 423120000,
+            "shares": null,
+            "pct": 5.16,
+            "ticker": "BKNG"
+          },
+          {
+            "name": "SERVICENOW INC",
+            "cusip": "X06EXA000",
+            "value": 390320000,
+            "shares": null,
+            "pct": 4.76,
+            "ticker": "NOW"
+          }
+        ]
+      },
+      "previous": {
+        "accession": "0000000000-26-000000",
+        "period": "2026-03-31",
+        "pct": {
+          "X02EXA000": 18.44,
+          "X04EXA000": 15.2,
+          "X07EXA000": 17.4,
+          "X05EXA000": 13.42,
+          "X00EXA000": 9.24,
+          "X01EXA000": 6.37,
+          "X03EXA000": 2.16,
+          "ZSOLD0000": 2.4
+        }
+      },
+      "moves": {
+        "bought": [
+          {
+            "name": "SERVICENOW INC",
+            "ticker": "NOW",
+            "pct": 4.76,
+            "before": 0
+          }
+        ],
+        "added": [
+          {
+            "name": "ALPHABET INC",
+            "ticker": "GOOGL",
+            "pct": 21.44,
+            "before": 18.44
+          },
+          {
+            "name": "VISA INC",
+            "ticker": "V",
+            "pct": 18.2,
+            "before": 15.2
+          },
+          {
+            "name": "MASTERCARD INC",
+            "ticker": "MA",
+            "pct": 12.24,
+            "before": 9.24
+          },
+          {
+            "name": "ASML HOLDING N V",
+            "ticker": "ASML",
+            "pct": 7.37,
+            "before": 6.37
+          },
+          {
+            "name": "BOOKING HOLDINGS INC",
+            "ticker": "BKNG",
+            "pct": 5.16,
+            "before": 2.16
+          }
+        ],
+        "trimmed": [],
+        "sold": [
+          {
+            "name": "INTEL CORP",
+            "ticker": "INTC",
+            "pct": 0,
+            "before": 2.4
+          }
+        ]
+      },
+      "error": null
+    },
+    "example_growth": {
+      "id": "example_growth",
+      "cik": 0,
+      "name": "Example Growth Capital (fictional)",
+      "manager": "A fictional manager, for the demo",
+      "checkedAt": "2026-10-20T05:00:00.000Z",
+      "latest": {
+        "accession": "0000000000-26-000001",
+        "period": "2026-06-30",
+        "filed": "2026-08-13",
+        "total": 5100000000.0,
+        "count": 22,
+        "positions": [
+          {
+            "name": "NVIDIA CORPORATION",
+            "cusip": "X05EXA000",
+            "value": 1072020000,
+            "shares": null,
+            "pct": 21.02,
+            "ticker": "NVDA"
+          },
+          {
+            "name": "META PLATFORMS INC",
+            "cusip": "X01EXA000",
+            "value": 949620000,
+            "shares": null,
+            "pct": 18.62,
+            "ticker": "META"
+          },
+          {
+            "name": "UBER TECHNOLOGIES INC",
+            "cusip": "X04EXA000",
+            "value": 747660000,
+            "shares": null,
+            "pct": 14.66,
+            "ticker": "UBER"
+          },
+          {
+            "name": "BROADCOM INC",
+            "cusip": "X06EXA000",
+            "value": 697170000,
+            "shares": null,
+            "pct": 13.67,
+            "ticker": "AVGO"
+          },
+          {
+            "name": "AMAZON COM INC",
+            "cusip": "X00EXA000",
+            "value": 542640000,
+            "shares": null,
+            "pct": 10.64,
+            "ticker": "AMZN"
+          },
+          {
+            "name": "ARISTA NETWORKS INC",
+            "cusip": "X07EXA000",
+            "value": 514080000,
+            "shares": null,
+            "pct": 10.08,
+            "ticker": "ANET"
+          },
+          {
+            "name": "MERCADOLIBRE INC",
+            "cusip": "X03EXA000",
+            "value": 338640000,
+            "shares": null,
+            "pct": 6.64,
+            "ticker": "MELI"
+          },
+          {
+            "name": "SHOPIFY INC",
+            "cusip": "X02EXA000",
+            "value": 237660000,
+            "shares": null,
+            "pct": 4.66,
+            "ticker": "SHOP"
+          }
+        ]
+      },
+      "previous": {
+        "accession": "0000000000-26-000000",
+        "period": "2026-03-31",
+        "pct": {
+          "X05EXA000": 20.02,
+          "X01EXA000": 15.62,
+          "X04EXA000": 15.66,
+          "X06EXA000": 12.67,
+          "X00EXA000": 10.64,
+          "X07EXA000": 10.08,
+          "X03EXA000": 5.64,
+          "ZSOLD0000": 2.4
+        }
+      },
+      "moves": {
+        "bought": [
+          {
+            "name": "SHOPIFY INC",
+            "ticker": "SHOP",
+            "pct": 4.66,
+            "before": 0
+          }
+        ],
+        "added": [
+          {
+            "name": "NVIDIA CORPORATION",
+            "ticker": "NVDA",
+            "pct": 21.02,
+            "before": 20.02
+          },
+          {
+            "name": "META PLATFORMS INC",
+            "ticker": "META",
+            "pct": 18.62,
+            "before": 15.62
+          },
+          {
+            "name": "BROADCOM INC",
+            "ticker": "AVGO",
+            "pct": 13.67,
+            "before": 12.67
+          },
+          {
+            "name": "MERCADOLIBRE INC",
+            "ticker": "MELI",
+            "pct": 6.64,
+            "before": 5.64
+          }
+        ],
+        "trimmed": [
+          {
+            "name": "UBER TECHNOLOGIES INC",
+            "ticker": "UBER",
+            "pct": 14.66,
+            "before": 15.66
+          }
+        ],
+        "sold": [
+          {
+            "name": "PAYPAL HLDGS INC",
+            "ticker": "PYPL",
+            "pct": 0,
+            "before": 2.4
+          }
+        ]
+      },
+      "error": null
+    },
+    "example_value": {
+      "id": "example_value",
+      "cik": 0,
+      "name": "Example Value Trust (fictional)",
+      "manager": "A fictional manager, for the demo",
+      "checkedAt": "2026-10-20T05:00:00.000Z",
+      "latest": {
+        "accession": "0000000000-26-000001",
+        "period": "2026-06-30",
+        "filed": "2026-08-12",
+        "total": 3400000000.0,
+        "count": 22,
+        "positions": [
+          {
+            "name": "EXXON MOBIL CORP",
+            "cusip": "X02EXA000",
+            "value": 707880000,
+            "shares": null,
+            "pct": 20.82,
+            "ticker": "XOM"
+          },
+          {
+            "name": "LINDE PLC",
+            "cusip": "X05EXA000",
+            "value": 572560000,
+            "shares": null,
+            "pct": 16.84,
+            "ticker": "LIN"
+          },
+          {
+            "name": "PEPSICO INC",
+            "cusip": "X04EXA000",
+            "value": 529040000,
+            "shares": null,
+            "pct": 15.56,
+            "ticker": "PEP"
+          },
+          {
+            "name": "UNION PAC CORP",
+            "cusip": "X07EXA000",
+            "value": 503200000,
+            "shares": null,
+            "pct": 14.8,
+            "ticker": "UNP"
+          },
+          {
+            "name": "MERCK & CO INC",
+            "cusip": "X06EXA000",
+            "value": 369240000,
+            "shares": null,
+            "pct": 10.86,
+            "ticker": "MRK"
+          },
+          {
+            "name": "BERKSHIRE HATHAWAY INC DEL",
+            "cusip": "X01EXA000",
+            "value": 320280000,
+            "shares": null,
+            "pct": 9.42,
+            "ticker": "BRK-B"
+          },
+          {
+            "name": "HONEYWELL INTL INC",
+            "cusip": "X03EXA000",
+            "value": 222700000,
+            "shares": null,
+            "pct": 6.55,
+            "ticker": "HON"
+          },
+          {
+            "name": "JPMORGAN CHASE & CO",
+            "cusip": "X00EXA000",
+            "value": 174760000,
+            "shares": null,
+            "pct": 5.14,
+            "ticker": "JPM"
+          }
+        ]
+      },
+      "previous": {
+        "accession": "0000000000-26-000000",
+        "period": "2026-03-31",
+        "pct": {
+          "X02EXA000": 17.82,
+          "X05EXA000": 17.84,
+          "X04EXA000": 12.56,
+          "X07EXA000": 15.8,
+          "X06EXA000": 9.86,
+          "X01EXA000": 9.42,
+          "X03EXA000": 10.55,
+          "ZSOLD0000": 2.4
+        }
+      },
+      "moves": {
+        "bought": [
+          {
+            "name": "JPMORGAN CHASE & CO",
+            "ticker": "JPM",
+            "pct": 5.14,
+            "before": 0
+          }
+        ],
+        "added": [
+          {
+            "name": "EXXON MOBIL CORP",
+            "ticker": "XOM",
+            "pct": 20.82,
+            "before": 17.82
+          },
+          {
+            "name": "PEPSICO INC",
+            "ticker": "PEP",
+            "pct": 15.56,
+            "before": 12.56
+          },
+          {
+            "name": "MERCK & CO INC",
+            "ticker": "MRK",
+            "pct": 10.86,
+            "before": 9.86
+          }
+        ],
+        "trimmed": [
+          {
+            "name": "LINDE PLC",
+            "ticker": "LIN",
+            "pct": 16.84,
+            "before": 17.84
+          },
+          {
+            "name": "UNION PAC CORP",
+            "ticker": "UNP",
+            "pct": 14.8,
+            "before": 15.8
+          },
+          {
+            "name": "HONEYWELL INTL INC",
+            "ticker": "HON",
+            "pct": 6.55,
+            "before": 10.55
+          }
+        ],
+        "sold": [
+          {
+            "name": "PFIZER INC",
+            "ticker": "PFE",
+            "pct": 0,
+            "before": 2.4
+          }
+        ]
+      },
+      "error": null
+    }
+  },
+  "updated": "2026-10-20T05:00:00.000Z"
+}

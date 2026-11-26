@@ -1,0 +1,32 @@
+{
+  "name": "Three-fund plan: what Jonas's dashboard must show",
+  "floor": 85,
+  "figures": [
+    { "id": "net-worth", "label": "Account value" },
+    { "id": "weight-vwce", "label": "World equity share (1.1)", "weight": 2 },
+    { "id": "weight-iusn", "label": "Small cap share (1.1)", "weight": 2 },
+    { "id": "weight-aggh", "label": "Bond share (1.1)", "weight": 2 },
+    { "id": "cash-share", "label": "Cash share (1.3)" },
+    { "id": "contributions-ttm", "label": "Contributions, twelve months (2.1)", "weight": 2 },
+    { "id": "fees-pct-ttm", "label": "Fees as a share of the account, twelve months (3.1)" },
+    { "id": "single-stocks", "label": "Single company positions (4.1)" },
+    { "id": "sales-ttm", "label": "Sales in the last twelve months (4.2)" },
+    { "id": "growth-of-100", "label": "Growth of 100 since the start (4.3)" },
+    { "id": "max-drawdown", "label": "Worst drawdown since the start (4.3)" }
+  ],
+  "rules": [
+    { "id": "vwce-low", "label": "World equity at least 65% (1.2)", "section": "1.2" },
+    { "id": "vwce-high", "label": "World equity at most 75% (1.2)", "section": "1.2" },
+    { "id": "iusn-low", "label": "Small cap at least 5% (1.2)", "section": "1.2" },
+    { "id": "iusn-high", "label": "Small cap at most 15% (1.2)", "section": "1.2" },
+    { "id": "aggh-low", "label": "Bonds at least 15% (1.2)", "section": "1.2" },
+    { "id": "aggh-high", "label": "Bonds at most 25% (1.2)", "section": "1.2" },
+    { "id": "cash-cap", "label": "Cash at most 5% (1.3)", "section": "1.3" },
+    { "id": "contribute", "label": "18,000 euro contributed over twelve months (2.1)", "section": "2.1" },
+    { "id": "fees", "label": "Fees under 0.1% (3.1)", "section": "3.1" },
+    { "id": "no-single-stocks", "label": "No single stocks (4.1)", "section": "4.1", "weight": 2 },
+    { "id": "few-sales", "label": "At most four sales a year (4.2)", "section": "4.2" }
+  ],
+  "classes": [],
+  "panels": ["allocation"]
+}

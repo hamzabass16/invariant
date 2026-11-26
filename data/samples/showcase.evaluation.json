@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "since": "2025-10-10",
+  "sinceWhy": "The day the account's record begins; the classification approach was in use from then, before v3.4 wrote it down.",
+  "tests": [
+    {
+      "kind": "beats_benchmark",
+      "class": null,
+      "years": null,
+      "section": "D.6",
+      "claim": "The portfolio beats SPY total return over the holding period, with a positive information ratio."
+    },
+    {
+      "kind": "class_beats_benchmark",
+      "class": "compounding",
+      "years": null,
+      "section": "3.1",
+      "claim": "Compounding Machines, held for the long run, beat SPY from when each was bought."
+    },
+    {
+      "kind": "class_ahead_of_rest",
+      "class": "compounding",
+      "years": null,
+      "section": "3.1",
+      "claim": "Compounding Machines do better against SPY than the Transitional Holdings beside them."
+    },
+    {
+      "kind": "smaller_drawdown",
+      "class": null,
+      "years": null,
+      "section": "3.2",
+      "claim": "Diversifying across sectors keeps the worst fall shallower than the index's."
+    },
+    {
+      "kind": "earnings_track_price",
+      "class": null,
+      "years": 5,
+      "section": "3.4",
+      "claim": "Price follows earnings over five years, so quality that holds is rewarded and erosion shows up in the price."
+    }
+  ],
+  "advice": "A sample for the demo: tests drawn from the methodology's own words, as the AI suggests them and the owner confirms them; no model ran for it. Each verdict is the app's arithmetic on the book, the closes and the filings.",
+  "proposal": null,
+  "updated": "2026-11-02T10:00:00.000Z"
+}

@@ -1,0 +1,898 @@
+{
+  "clubs": [
+    {
+      "club": {
+        "id": "riverside-investment-club",
+        "name": "Riverside Investment Club",
+        "about": "A student investment club: workshops, guest speakers and term challenges",
+        "folderId": "1ExampleFolderIdForTheDemo00",
+        "createdAt": "2026-09-10T15:00:00.000Z"
+      },
+      "members": [
+        {
+          "name": "Jordan T.",
+          "role": "owner",
+          "joinedAt": "2026-09-10T15:00:00.000Z",
+          "email": "jordan.t@example.com",
+          "you": false
+        },
+        {
+          "name": "Dr. Elena V.",
+          "role": "adviser",
+          "joinedAt": "2026-09-02T10:00:00.000Z",
+          "email": "adviser@example.com",
+          "you": false
+        },
+        {
+          "name": "Demo visitor",
+          "role": "officer",
+          "joinedAt": "2026-09-12T18:00:00.000Z",
+          "email": "visitor@example.com",
+          "you": true
+        },
+        {
+          "name": "Priya N.",
+          "role": "officer",
+          "joinedAt": "2026-09-14T18:00:00.000Z",
+          "email": "priya.n@example.com",
+          "you": false
+        },
+        {
+          "name": "Marcus L.",
+          "role": "member",
+          "joinedAt": "2026-09-20T18:00:00.000Z",
+          "email": "marcus.l@example.com",
+          "you": false
+        },
+        {
+          "name": "Sofia R.",
+          "role": "member",
+          "joinedAt": "2026-09-22T18:00:00.000Z",
+          "email": "sofia.r@example.com",
+          "you": false
+        },
+        {
+          "name": "Daniel K.",
+          "role": "member",
+          "joinedAt": "2026-09-25T18:00:00.000Z",
+          "email": "daniel.k@example.com",
+          "you": false
+        },
+        {
+          "name": "Amara O.",
+          "role": "alumnus",
+          "joinedAt": "2024-09-20T18:00:00.000Z",
+          "email": "amara.o@example.com",
+          "you": false
+        }
+      ],
+      "competitions": [
+        {
+          "competition": {
+            "id": "riverside-investment-club-autumn-term-challenge-20261001",
+            "clubId": "riverside-investment-club",
+            "name": "Autumn term challenge",
+            "starts": "2026-10-01",
+            "ends": "2026-12-18",
+            "cash": 100000,
+            "maxWeightPct": 25,
+            "note": "At least four holdings by the end; every trade needs a reason",
+            "createdAt": "2026-09-28T12:00:00.000Z",
+            "course": {
+              "minHoldings": 5,
+              "reasons": true
+            },
+            "challengeId": null
+          },
+          "entries": [
+            {
+              "name": "Demo visitor",
+              "you": true,
+              "trades": [
+                {
+                  "day": "2026-10-01",
+                  "symbol": "MSFT",
+                  "side": "buy",
+                  "shares": 38,
+                  "price": 523.83,
+                  "reason": "Cloud margins widening; under the 25% cap"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "COST",
+                  "side": "buy",
+                  "shares": 16,
+                  "price": 893.51,
+                  "reason": "Membership renewals as a moat"
+                },
+                {
+                  "day": "2026-10-02",
+                  "symbol": "SPGI",
+                  "side": "buy",
+                  "shares": 38,
+                  "price": 386.27,
+                  "reason": "Ratings and indices compound"
+                },
+                {
+                  "day": "2026-10-08",
+                  "symbol": "NVDA",
+                  "side": "buy",
+                  "shares": 56,
+                  "price": 213.1,
+                  "reason": null
+                }
+              ],
+              "updatedAt": "2026-10-20T20:00:00.000Z"
+            },
+            {
+              "name": "Priya N.",
+              "you": false,
+              "trades": [
+                {
+                  "day": "2026-10-01",
+                  "symbol": "NVDA",
+                  "side": "buy",
+                  "shares": 119,
+                  "price": 201.29,
+                  "reason": "Data-centre demand ahead of supply"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "AVGO",
+                  "side": "buy",
+                  "shares": 57,
+                  "price": 385.58,
+                  "reason": "Custom accelerators plus software"
+                },
+                {
+                  "day": "2026-10-02",
+                  "symbol": "TSM",
+                  "side": "buy",
+                  "shares": 60,
+                  "price": 330.74,
+                  "reason": "Foundry of the whole cycle"
+                },
+                {
+                  "day": "2026-10-15",
+                  "symbol": "ASML",
+                  "side": "buy",
+                  "shares": 9,
+                  "price": 1657.4,
+                  "reason": "Lithography monopoly"
+                }
+              ],
+              "updatedAt": "2026-10-20T20:00:00.000Z"
+            },
+            {
+              "name": "Marcus L.",
+              "you": false,
+              "trades": [
+                {
+                  "day": "2026-10-01",
+                  "symbol": "KO",
+                  "side": "buy",
+                  "shares": 285,
+                  "price": 70.06,
+                  "reason": "Defensive income"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "PG",
+                  "side": "buy",
+                  "shares": 123,
+                  "price": 162.54,
+                  "reason": "Pricing power"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "JNJ",
+                  "side": "buy",
+                  "shares": 84,
+                  "price": 236.18,
+                  "reason": null
+                },
+                {
+                  "day": "2026-10-06",
+                  "symbol": "O",
+                  "side": "buy",
+                  "shares": 224,
+                  "price": 66.93,
+                  "reason": "Monthly dividend"
+                }
+              ],
+              "updatedAt": "2026-10-20T20:00:00.000Z"
+            },
+            {
+              "name": "Sofia R.",
+              "you": false,
+              "trades": [
+                {
+                  "day": "2026-10-01",
+                  "symbol": "META",
+                  "side": "buy",
+                  "shares": 30,
+                  "price": 725.93,
+                  "reason": "Ads plus AI efficiency"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "GOOGL",
+                  "side": "buy",
+                  "shares": 65,
+                  "price": 338.24,
+                  "reason": "Search holds, cloud grows"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "AMZN",
+                  "side": "buy",
+                  "shares": 88,
+                  "price": 248.23,
+                  "reason": "AWS re-accelerating"
+                },
+                {
+                  "day": "2026-10-20",
+                  "symbol": "META",
+                  "side": "sell",
+                  "shares": 10,
+                  "price": 694.25,
+                  "reason": "Took some off after the run"
+                }
+              ],
+              "updatedAt": "2026-10-20T20:00:00.000Z"
+            },
+            {
+              "name": "Daniel K.",
+              "you": false,
+              "trades": [
+                {
+                  "day": "2026-10-01",
+                  "symbol": "SPY",
+                  "side": "buy",
+                  "shares": 31,
+                  "price": 763.99,
+                  "reason": "The benchmark as a core"
+                },
+                {
+                  "day": "2026-10-01",
+                  "symbol": "QQQ",
+                  "side": "buy",
+                  "shares": 32,
+                  "price": 742.03,
+                  "reason": "Growth beside it"
+                },
+                {
+                  "day": "2026-10-02",
+                  "symbol": "MELI",
+                  "side": "buy",
+                  "shares": 7,
+                  "price": 1696.6,
+                  "reason": "Fintech in LatAm"
+                },
+                {
+                  "day": "2026-10-02",
+                  "symbol": "SHOP",
+                  "side": "buy",
+                  "shares": 79,
+                  "price": 151.39,
+                  "reason": "Merchants' operating system"
+                }
+              ],
+              "updatedAt": "2026-10-20T20:00:00.000Z"
+            }
+          ]
+        }
+      ],
+      "league": true,
+      "pitches": [
+        {
+          "id": "msft-azure-margins-20260512150000",
+          "symbol": "MSFT",
+          "title": "Azure's margins are the case",
+          "body": "Cloud revenue grows above 25% while the operating margin holds near 45%. The case rests on the AI capacity being sold before it is built; the risk is the capital spending running ahead of it.",
+          "author": "Marcus L.",
+          "createdAt": "2026-05-12T15:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 380,
+            "base": 470,
+            "bull": 560,
+            "price": null
+          },
+          "you": false
+        },
+        {
+          "id": "ma-toll-on-payments-20260618120000",
+          "symbol": "MA",
+          "title": "A toll on every card payment",
+          "body": "Cross-border volume recovers and value-added services grow faster than payments. The network effect is the moat; regulation of interchange is the risk to watch.",
+          "author": "Sofia R.",
+          "createdAt": "2026-06-18T12:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 480,
+            "base": 560,
+            "bull": 640,
+            "price": null
+          },
+          "you": false
+        },
+        {
+          "id": "costpitchmembership-flywheel-20261020140000",
+          "symbol": "COST",
+          "title": "Membership flywheel",
+          "body": "Renewal rates above 90% in the US and Canada make the fee income close to a bond coupon. The pitch: the warehouse count can grow by about 30 a year for a decade, and each new warehouse matures into the same fee base. Risk: the multiple already prices most of it.",
+          "author": "Priya N.",
+          "you": false,
+          "createdAt": "2026-10-20T14:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 780,
+            "base": 960,
+            "bull": 1150,
+            "price": null
+          }
+        },
+        {
+          "id": "tsm-advanced-nodes-20261027160000",
+          "symbol": "TSM",
+          "title": "Advanced nodes carry the margin",
+          "body": "Three and five nanometre wafers are now more than half of revenue. The pitch: pricing power holds while no other foundry ships at volume on the newest node. What would break it: a second source qualifying at a major customer.",
+          "author": "Demo visitor",
+          "you": true,
+          "createdAt": "2026-10-27T16:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 150,
+            "base": 210,
+            "bull": 260,
+            "price": null
+          }
+        },
+        {
+          "id": "ko-pricing-over-volume-20261103120000",
+          "symbol": "KO",
+          "title": "Pricing over volume",
+          "body": "Organic growth has come from price for eight quarters while unit cases are flat. The question for the committee: how long can price lead before volume falls?",
+          "author": "Marcus L.",
+          "you": false,
+          "createdAt": "2026-11-03T12:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 58,
+            "base": 68,
+            "bull": 76,
+            "price": null
+          }
+        },
+        {
+          "id": "tsm-geography-risk-20261104180000",
+          "symbol": "TSM",
+          "title": "The counter case: where the fabs are",
+          "body": "Most leading-edge capacity sits in one place. The new fabs abroad cost more to run, which the pitch above does not price.",
+          "author": "Sofia R.",
+          "you": false,
+          "createdAt": "2026-11-04T18:00:00.000Z",
+          "bountyId": null,
+          "valuation": {
+            "bear": 150,
+            "base": 210,
+            "bull": 260,
+            "price": null
+          }
+        },
+        {
+          "id": "nvo-glp1-price-20261106110000",
+          "symbol": "NVO",
+          "title": "The price cut is in the price",
+          "body": "The October list-price cut takes about 4% off next year's revenue at the company's own volume guidance, and the stock fell 18% on the day. Volume growth in the guidance is 22%; the case fails if the next quarter's prescriptions grow under 15%.",
+          "author": "Daniel K.",
+          "you": false,
+          "createdAt": "2026-11-06T11:00:00.000Z",
+          "bountyId": "nvo-bounty-glp1-20261101090000",
+          "valuation": {
+            "bear": 55,
+            "base": 80,
+            "bull": 110,
+            "price": null
+          }
+        },
+        {
+          "id": "nvo-not-yet-20261107150000",
+          "symbol": "NVO",
+          "title": "Not yet: volumes have to show it",
+          "body": "The price cut is known; the volume that pays for it is not. Two quarters of prescriptions above guidance would make the case, and until then the club should wait.",
+          "author": "Priya N.",
+          "you": false,
+          "createdAt": "2026-11-07T15:00:00.000Z",
+          "bountyId": "nvo-bounty-glp1-20261101090000",
+          "valuation": null
+        }
+      ],
+      "meetings": [
+        {
+          "meeting": {
+            "id": "riverside-investment-club-2026-11-12-180000",
+            "clubId": "riverside-investment-club",
+            "day": "2026-11-12",
+            "title": "Earnings night: TSM",
+            "items": [
+              {
+                "id": "i1",
+                "text": "TSM: what the results change for the case",
+                "symbol": "TSM",
+                "pitchId": "tsm-advanced-nodes-20261027160000"
+              },
+              {
+                "id": "i2",
+                "text": "TSM: hold, add or trim in the club book",
+                "symbol": "TSM",
+                "pitchId": "tsm-advanced-nodes-20261027160000"
+              }
+            ],
+            "minutes": null,
+            "createdAt": "2026-11-08T18:00:00.000Z",
+            "kind": "earnings",
+            "symbol": "TSM"
+          },
+          "tallies": {
+            "i1": {
+              "for": 3,
+              "against": 0,
+              "abstain": 1,
+              "mine": null
+            },
+            "i2": {
+              "for": 2,
+              "against": 2,
+              "abstain": 0,
+              "mine": null
+            }
+          },
+          "voters": 4
+        },
+        {
+          "meeting": {
+            "id": "riverside-investment-club-2026-11-06-170000",
+            "clubId": "riverside-investment-club",
+            "day": "2026-11-06",
+            "title": "November investment committee",
+            "items": [
+              {
+                "id": "i1",
+                "text": "TSM: add to the club's paper fund at 8%",
+                "symbol": "TSM",
+                "pitchId": "tsm-geography-risk-20261104180000"
+              },
+              {
+                "id": "i2",
+                "text": "KO: keep on the watchlist until volume turns",
+                "symbol": "KO",
+                "pitchId": "ko-pricing-over-volume-20261103120000"
+              },
+              {
+                "id": "i3",
+                "text": "Spring challenge: allow funds as well as stocks",
+                "symbol": null,
+                "pitchId": null
+              }
+            ],
+            "minutes": "TSM carried after the counter case was heard; the position starts at 8% with a review after the January results. KO stays on the watchlist. The spring challenge will allow funds, at most one in four holdings.",
+            "createdAt": "2026-11-02T17:00:00.000Z",
+            "kind": "committee",
+            "symbol": null
+          },
+          "tallies": {
+            "i1": {
+              "for": 4,
+              "against": 1,
+              "abstain": 1,
+              "mine": "for"
+            },
+            "i2": {
+              "for": 5,
+              "against": 0,
+              "abstain": 1,
+              "mine": "for"
+            },
+            "i3": {
+              "for": 3,
+              "against": 2,
+              "abstain": 0,
+              "mine": "against"
+            }
+          },
+          "voters": 6
+        },
+        {
+          "meeting": {
+            "id": "riverside-investment-club-2026-11-20-170000",
+            "clubId": "riverside-investment-club",
+            "day": "2026-11-20",
+            "title": "End of term committee",
+            "items": [
+              {
+                "id": "i1",
+                "text": "COST: start a position at 6%",
+                "symbol": "COST",
+                "pitchId": "costpitchmembership-flywheel-20261020140000"
+              },
+              {
+                "id": "i2",
+                "text": "Elect next term's officers",
+                "symbol": null,
+                "pitchId": null
+              }
+            ],
+            "minutes": null,
+            "createdAt": "2026-11-08T17:00:00.000Z",
+            "kind": "committee",
+            "symbol": null
+          },
+          "tallies": {
+            "i1": {
+              "for": 2,
+              "against": 0,
+              "abstain": 0,
+              "mine": null
+            },
+            "i2": {
+              "for": 0,
+              "against": 0,
+              "abstain": 0,
+              "mine": null
+            }
+          },
+          "voters": 2
+        }
+      ],
+      "bounties": [
+        {
+          "id": "nvo-bounty-glp1-20261101090000",
+          "clubId": "riverside-investment-club",
+          "symbol": "NVO",
+          "question": "Is the GLP-1 price cut already in the price?",
+          "closes": "2026-11-20",
+          "createdAt": "2026-11-01T09:00:00.000Z",
+          "winner": null,
+          "pitches": [
+            {
+              "id": "nvo-glp1-price-20261106110000",
+              "title": "The price cut is in the price",
+              "author": "Daniel K.",
+              "votes": 3
+            },
+            {
+              "id": "nvo-not-yet-20261107150000",
+              "title": "Not yet: volumes have to show it",
+              "author": "Priya N.",
+              "votes": 1
+            }
+          ],
+          "mine": "nvo-glp1-price-20261106110000"
+        }
+      ],
+      "reviews": {
+        "costpitchmembership-flywheel-20261020140000": {
+          "count": 4,
+          "average": 4.3,
+          "mine": 4
+        },
+        "tsm-advanced-nodes-20261027160000": {
+          "count": 3,
+          "average": 3.7,
+          "mine": null
+        },
+        "ko-pricing-over-volume-20261103120000": {
+          "count": 2,
+          "average": 2.5,
+          "mine": 3
+        },
+        "nvo-glp1-price-20261106110000": {
+          "count": 2,
+          "average": 4.0,
+          "mine": null
+        }
+      },
+      "watch": [
+        {
+          "symbol": "SPOT",
+          "below": 445,
+          "above": null,
+          "note": "The pitch's entry range",
+          "addedBy": "Sofia R.",
+          "createdAt": "2026-11-02T12:00:00.000Z"
+        },
+        {
+          "symbol": "COST",
+          "below": 880,
+          "above": 1100,
+          "note": "Membership fee rise priced in above 1,100",
+          "addedBy": "Priya N.",
+          "createdAt": "2026-10-21T09:00:00.000Z"
+        },
+        {
+          "symbol": "TSM",
+          "below": null,
+          "above": null,
+          "note": "Earnings night on 12 November",
+          "addedBy": "Demo visitor",
+          "createdAt": "2026-11-08T18:00:00.000Z"
+        }
+      ],
+      "alumni": [
+        {
+          "name": "Hannah W.",
+          "joined": 2023,
+          "left": 2025,
+          "role": "owner"
+        },
+        {
+          "name": "Tomas B.",
+          "joined": 2023,
+          "left": 2025,
+          "role": "officer"
+        },
+        {
+          "name": "Lena F.",
+          "joined": 2024,
+          "left": 2025,
+          "role": "member"
+        },
+        {
+          "name": "Omar S.",
+          "joined": 2022,
+          "left": 2024,
+          "role": "member"
+        }
+      ],
+      "challenges": [
+        {
+          "id": "riverside-investment-club-v-harbour-university-fund-20261015",
+          "fromClub": "riverside-investment-club",
+          "fromName": "Riverside Investment Club",
+          "toClub": "harbour-university-fund",
+          "toName": "Harbour University Fund",
+          "name": "Autumn derby",
+          "starts": "2026-10-15",
+          "ends": "2026-12-15",
+          "cash": 100000,
+          "maxWeightPct": 25,
+          "status": "accepted",
+          "createdAt": "2026-10-08T10:00:00.000Z",
+          "side": "from",
+          "mine": {
+            "asOf": "2026-11-06",
+            "entries": 5,
+            "medianReturnPct": 2.84,
+            "bestReturnPct": 5.9,
+            "spyPct": 2.1,
+            "medianAgainstSpyPts": 0.74,
+            "final": false
+          },
+          "theirs": {
+            "asOf": "2026-11-06",
+            "entries": 7,
+            "medianReturnPct": 2.38,
+            "bestReturnPct": 7.2,
+            "spyPct": 2.1,
+            "medianAgainstSpyPts": 0.28,
+            "final": false
+          },
+          "competitionId": null
+        },
+        {
+          "id": "northgate-students-v-riverside-investment-club-20261201",
+          "fromClub": "northgate-students",
+          "fromName": "Northgate Student Investors",
+          "toClub": "riverside-investment-club",
+          "toName": "Riverside Investment Club",
+          "name": "Winter break challenge",
+          "starts": "2026-12-01",
+          "ends": "2027-01-29",
+          "cash": 50000,
+          "maxWeightPct": 20,
+          "status": "pending",
+          "createdAt": "2026-11-07T16:00:00.000Z",
+          "side": "to",
+          "mine": null,
+          "theirs": null,
+          "competitionId": null
+        }
+      ],
+      "notes": {
+        "tsm-advanced-nodes-20261027160000": [
+          {
+            "name": "Amara O.",
+            "alumnus": true,
+            "score": 4,
+            "note": "The node lead is sourced to the company's own capacity plan; add what a delay at the Arizona fab would do to the margin."
+          }
+        ],
+        "costpitchmembership-flywheel-20261020140000": [
+          {
+            "name": "Dr. Elena V.",
+            "alumnus": false,
+            "score": 5,
+            "note": "Renewal rates and warehouse counts both cited from the 10-K."
+          }
+        ]
+      },
+      "treasury": {
+        "holder": "Priya N.",
+        "asOf": "2026-11-08",
+        "weights": [
+          {
+            "symbol": "COST",
+            "weightPct": 18.4
+          },
+          {
+            "symbol": "MSFT",
+            "weightPct": 16.9
+          },
+          {
+            "symbol": "TSM",
+            "weightPct": 14.2
+          },
+          {
+            "symbol": "MA",
+            "weightPct": 12.7
+          },
+          {
+            "symbol": "KO",
+            "weightPct": 9.8
+          },
+          {
+            "symbol": "SPY",
+            "weightPct": 21.5
+          }
+        ],
+        "trades": [
+          {
+            "day": "2026-11-09",
+            "symbol": "TSM",
+            "side": "buy"
+          },
+          {
+            "day": "2026-10-14",
+            "symbol": "KO",
+            "side": "buy"
+          },
+          {
+            "day": "2026-06-22",
+            "symbol": "MA",
+            "side": "buy"
+          },
+          {
+            "day": "2026-05-18",
+            "symbol": "MSFT",
+            "side": "buy"
+          }
+        ]
+      }
+    }
+  ],
+  "league": [
+    {
+      "clubId": "riverside-investment-club",
+      "club": "Riverside Investment Club",
+      "about": "A student investment club: workshops, guest speakers and term challenges",
+      "competition": "Autumn term challenge",
+      "starts": "2026-10-01",
+      "ends": "2026-12-18",
+      "summary": {
+        "asOf": "2026-11-06",
+        "entries": 5,
+        "medianReturnPct": 3.42,
+        "bestReturnPct": 6.81,
+        "spyPct": 2.95,
+        "medianAgainstSpyPts": 0.47,
+        "final": false
+      }
+    },
+    {
+      "clubId": "harbour-street-capital",
+      "club": "Harbour Street Capital",
+      "about": "A university student-managed fund",
+      "competition": "Michaelmas portfolio cup",
+      "starts": "2026-10-05",
+      "ends": "2026-12-11",
+      "summary": {
+        "asOf": "2026-11-06",
+        "entries": 14,
+        "medianReturnPct": 4.1,
+        "bestReturnPct": 9.3,
+        "spyPct": 2.6,
+        "medianAgainstSpyPts": 1.5,
+        "final": false
+      }
+    },
+    {
+      "clubId": "northfield-women-investors",
+      "club": "Northfield Women Investors",
+      "about": "Monthly meetings since 2019",
+      "competition": "Autumn dividends",
+      "starts": "2026-09-01",
+      "ends": "2026-10-30",
+      "summary": {
+        "asOf": "2026-10-30",
+        "entries": 9,
+        "medianReturnPct": 1.2,
+        "bestReturnPct": 3.8,
+        "spyPct": 0.9,
+        "medianAgainstSpyPts": 0.3,
+        "final": true
+      }
+    },
+    {
+      "clubId": "lakeside-value-society",
+      "club": "Lakeside Value Society",
+      "about": null,
+      "competition": "Deep value term",
+      "starts": "2026-09-15",
+      "ends": "2026-12-15",
+      "summary": {
+        "asOf": "2026-11-06",
+        "entries": 7,
+        "medianReturnPct": 0.4,
+        "bestReturnPct": 5.2,
+        "spyPct": 2.1,
+        "medianAgainstSpyPts": -1.7,
+        "final": false
+      }
+    },
+    {
+      "clubId": "tiny-two-person-club",
+      "club": "Two friends",
+      "about": null,
+      "competition": "Head to head",
+      "starts": "2026-10-01",
+      "ends": "2026-11-30",
+      "summary": {
+        "asOf": "2026-11-06",
+        "entries": 2,
+        "medianReturnPct": 8.0,
+        "bestReturnPct": 9.0,
+        "spyPct": 2.9,
+        "medianAgainstSpyPts": 5.1,
+        "final": false
+      }
+    }
+  ],
+  "records": [
+    {
+      "club": "Riverside Investment Club",
+      "competition": "Autumn term challenge",
+      "competitionId": "riverside-investment-club-autumn-term-challenge-20261001",
+      "starts": "2026-10-01",
+      "ends": "2026-12-18",
+      "result": {
+        "asOf": "2026-11-06",
+        "returnPct": 4.12,
+        "againstSpyPts": 1.17,
+        "rank": 2,
+        "of": 5,
+        "trades": 4,
+        "reasoned": 4
+      },
+      "current": true
+    },
+    {
+      "club": "Hillcrest Sixth Form Investors",
+      "competition": "Summer stock challenge",
+      "competitionId": "hillcrest-sixth-form-investors-summer-stock-challenge-20260601",
+      "starts": "2026-06-01",
+      "ends": "2026-07-17",
+      "result": {
+        "asOf": "2026-07-17",
+        "returnPct": 2.35,
+        "againstSpyPts": -0.4,
+        "rank": 3,
+        "of": 11,
+        "trades": 9,
+        "reasoned": 7
+      },
+      "current": false
+    }
+  ]
+}

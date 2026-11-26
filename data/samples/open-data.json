@@ -1,0 +1,120 @@
+{
+  "note": "Fictional: the demo's open data, made up for the showcase.",
+  "week": "2026-W45",
+  "donations": [
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 88,
+      "rulesMeasured": 6,
+      "breaches": 1,
+      "reasonedPct": null,
+      "holdings": "1-9"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 100,
+      "rulesMeasured": 5,
+      "breaches": 0,
+      "reasonedPct": null,
+      "holdings": "20-39"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 80,
+      "rulesMeasured": 4,
+      "breaches": 0,
+      "reasonedPct": 92,
+      "holdings": "10-19"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 71,
+      "rulesMeasured": 7,
+      "breaches": 0,
+      "reasonedPct": 92,
+      "holdings": "1-9"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 71,
+      "rulesMeasured": 7,
+      "breaches": 2,
+      "reasonedPct": null,
+      "holdings": "20-39"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 90,
+      "rulesMeasured": 4,
+      "breaches": 0,
+      "reasonedPct": null,
+      "holdings": "20-39"
+    },
+    {
+      "family": "fundamentals",
+      "rulesKeptPct": 75,
+      "rulesMeasured": 8,
+      "breaches": 1,
+      "reasonedPct": 55,
+      "holdings": "20-39"
+    },
+    {
+      "family": "macro",
+      "rulesKeptPct": 71,
+      "rulesMeasured": 13,
+      "breaches": 0,
+      "reasonedPct": 55,
+      "holdings": "1-9"
+    },
+    {
+      "family": "macro",
+      "rulesKeptPct": 80,
+      "rulesMeasured": 9,
+      "breaches": 0,
+      "reasonedPct": 40,
+      "holdings": "20-39"
+    },
+    {
+      "family": "macro",
+      "rulesKeptPct": 62,
+      "rulesMeasured": 13,
+      "breaches": 0,
+      "reasonedPct": 100,
+      "holdings": "20-39"
+    },
+    {
+      "family": "quant",
+      "rulesKeptPct": 100,
+      "rulesMeasured": 10,
+      "breaches": 0,
+      "reasonedPct": 100,
+      "holdings": "20-39"
+    },
+    {
+      "family": "quant",
+      "rulesKeptPct": 94,
+      "rulesMeasured": 9,
+      "breaches": 0,
+      "reasonedPct": 67,
+      "holdings": "1-9"
+    },
+    {
+      "family": "options",
+      "rulesKeptPct": 80,
+      "rulesMeasured": 5,
+      "breaches": 2,
+      "reasonedPct": 75,
+      "holdings": "20-39"
+    }
+  ],
+  "counts": {
+    "cardsShared": 184,
+    "recordsShared": 97,
+    "receipts": 1312,
+    "clubs": 23,
+    "competitions": 41,
+    "listings": 38,
+    "adoptions": 212,
+    "donors": 61
+  }
+}

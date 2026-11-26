@@ -1,0 +1,603 @@
+{
+  "name": "Premium Playbook v2",
+  "adopted": "2026-09-01",
+  "summary": "Sells 30 to 45 day puts and calls on large US names for about 2% of the account a month, cash-secured and covered. Manages by IV rank, days to expiry and profit captured, with hard caps on assignment cash and delta exposure.",
+  "source": {
+    "title": "Premium Playbook, v2 (fictional)",
+    "fileId": null
+  },
+  "origin": "document",
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Account value",
+      "about": "Everything in the account at today's marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "premium-month",
+      "label": "Premium, last month",
+      "about": "Premium received on contracts sold to open in the last month.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "field": "amount",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "option_open"
+            },
+            {
+              "field": "amount",
+              "is": "gt",
+              "value": 0
+            }
+          ],
+          "window": {
+            "kind": "last_months",
+            "months": 1
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "premium-yield-ttm",
+      "label": "Premium yield, 12 months",
+      "about": "Premium received over the last twelve months as a share of the account (1.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "transactions",
+          "field": "amount",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "option_open"
+            },
+            {
+              "field": "amount",
+              "is": "gt",
+              "value": 0
+            }
+          ],
+          "window": {
+            "kind": "ttm"
+          }
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "premium-by-month",
+      "label": "Premium by month",
+      "about": "Premium received, by month, over the last twelve months.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "field": "amount",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "option_open"
+            },
+            {
+              "field": "amount",
+              "is": "gt",
+              "value": 0
+            }
+          ],
+          "window": {
+            "kind": "last_months",
+            "months": 12
+          }
+        }
+      },
+      "view": "bars",
+      "by": "month"
+    },
+    {
+      "id": "put-cash-to-cash",
+      "label": "Assignment cash to cash",
+      "about": "Cash every short put would need if assigned, against cash held (3.1).",
+      "unit": "ratio",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "assignment_cash",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            },
+            {
+              "field": "quantity",
+              "is": "lt",
+              "value": 0
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "cash"
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "delta-share",
+      "label": "Delta value share",
+      "about": "Delta-adjusted value of every open option as a share of the account (3.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "option_delta_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "expiring-21",
+      "label": "Expiring within 21 days",
+      "about": "Open contracts with 21 days or fewer to expiry (4.1).",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            },
+            {
+              "field": "option_days_to_expiry",
+              "is": "lte",
+              "value": 21
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "profit-captured",
+      "label": "Profit captured",
+      "about": "Share of the opening premium captured on each short position (4.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "field": "gain_pct",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            },
+            {
+              "field": "quantity",
+              "is": "lt",
+              "value": 0
+            }
+          ]
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "iv-by-underlying",
+      "label": "Implied volatility",
+      "about": "Today's implied volatility of the contracts held, by underlying (2.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "field": "option_iv_pct",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            }
+          ]
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "iv-rank-by-underlying",
+      "label": "IV rank",
+      "about": "Where today's implied volatility sits in its one-year range, by underlying (2.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "field": "option_iv_rank",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            }
+          ]
+        }
+      },
+      "view": "bars",
+      "by": "symbol"
+    },
+    {
+      "id": "expected-move",
+      "label": "Expected move",
+      "about": "One standard deviation move of the underlying to expiry, per short position (2.3).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "option_expected_move",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "option"
+            },
+            {
+              "field": "quantity",
+              "is": "lt",
+              "value": 0
+            }
+          ]
+        }
+      },
+      "view": "table",
+      "by": "symbol"
+    },
+    {
+      "id": "day-change",
+      "label": "Day's change",
+      "about": "Change since the previous close across the account.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "day_change",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "day-change-pct",
+      "label": "Day's change, %",
+      "about": "The day's change as a share of the account (5.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "day_change",
+          "where": []
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "return-1m",
+      "label": "Return, 1 month",
+      "about": "Change in the account's value over the last month (5.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "return",
+        "of": "nav",
+        "period": "1m"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "below-high",
+      "label": "Below the high",
+      "about": "How far the account sits below its highest value since inception (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "high_water_gap",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "growth-of-100",
+      "label": "Growth of 100",
+      "about": "What 100 at inception has become, by day (5.4).",
+      "unit": "number",
+      "expr": {
+        "op": "series",
+        "stat": "growth_of_100",
+        "of": "nav",
+        "period": "inception"
+      },
+      "view": "line",
+      "by": "date"
+    },
+    {
+      "id": "volatility-3m",
+      "label": "Volatility, 3 months",
+      "about": "Annualised volatility of the account over the last three months (5.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "series",
+        "stat": "volatility",
+        "of": "nav",
+        "period": "3m"
+      },
+      "view": "tile"
+    },
+    {
+      "id": "beta-spy",
+      "label": "Beta to SPY",
+      "about": "Sensitivity of the account to SPY over the last year (5.2).",
+      "unit": "ratio",
+      "expr": {
+        "op": "series",
+        "stat": "beta",
+        "of": "nav",
+        "period": "1y",
+        "vs": "SPY"
+      },
+      "view": "tile"
+    }
+  ],
+  "classes": [],
+  "rules": [
+    {
+      "id": "iv-rank-entry",
+      "section": "2.1",
+      "text": "Only sell premium when the underlying's IV rank is at least 30.",
+      "severity": "watch",
+      "test": {
+        "figure": "iv-rank-by-underlying",
+        "is": "gte",
+        "limit": 30
+      }
+    },
+    {
+      "id": "inside-expected-move",
+      "section": "2.3",
+      "text": "Tell me when a short strike sits inside the expected move to expiry.",
+      "severity": "watch",
+      "test": {
+        "figure": "expected-move",
+        "is": "gte",
+        "limit": 0
+      }
+    },
+    {
+      "id": "assignment-cover",
+      "section": "3.1",
+      "text": "Cash needed if every short put were assigned may not exceed 1.5 times the cash held.",
+      "severity": "breach",
+      "test": {
+        "figure": "put-cash-to-cash",
+        "is": "lte",
+        "limit": 1.5
+      }
+    },
+    {
+      "id": "delta-cap",
+      "section": "3.2",
+      "text": "Delta-adjusted value of all open options may not exceed 60% of the account.",
+      "severity": "breach",
+      "test": {
+        "figure": "delta-share",
+        "is": "lte",
+        "limit": 60
+      }
+    },
+    {
+      "id": "premium-concentration",
+      "section": "3.3",
+      "text": "No more than 25% of a month's premium from one underlying.",
+      "severity": "guideline",
+      "test": null
+    },
+    {
+      "id": "roll-21",
+      "section": "4.1",
+      "text": "Roll or close every position at 21 days to expiry; tell me as soon as any has 21 days or fewer.",
+      "severity": "watch",
+      "test": {
+        "figure": "expiring-21",
+        "is": "lte",
+        "limit": 0
+      }
+    },
+    {
+      "id": "take-profit",
+      "section": "4.2",
+      "text": "Take profit at 50% of the premium collected; tell me when a short position has captured 50% or more.",
+      "severity": "watch",
+      "test": {
+        "figure": "profit-captured",
+        "is": "lt",
+        "limit": 50
+      }
+    },
+    {
+      "id": "covered-only",
+      "section": "4.3",
+      "text": "Calls are only sold against shares held.",
+      "severity": "guideline",
+      "test": null
+    },
+    {
+      "id": "drawdown-8",
+      "section": "5.1",
+      "text": "Tell me when the account is 8% or more below its high.",
+      "severity": "watch",
+      "test": {
+        "figure": "below-high",
+        "is": "gt",
+        "limit": -8
+      }
+    },
+    {
+      "id": "beta-cap",
+      "section": "5.2",
+      "text": "Beta to SPY over the last year at or under 1.2.",
+      "severity": "guideline",
+      "test": {
+        "figure": "beta-spy",
+        "is": "lte",
+        "limit": 1.2
+      }
+    },
+    {
+      "id": "day-loss",
+      "section": "5.3",
+      "text": "Tell me when the day's change is a loss of 2% or worse.",
+      "severity": "watch",
+      "test": {
+        "figure": "day-change-pct",
+        "is": "gt",
+        "limit": -2
+      }
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "net-worth",
+      "premium-month",
+      "premium-yield-ttm",
+      "put-cash-to-cash",
+      "delta-share",
+      "expiring-21"
+    ],
+    "sections": [
+      {
+        "kind": "panel",
+        "id": "options",
+        "view": "chart",
+        "from": "6"
+      },
+      {
+        "kind": "figures",
+        "label": "Implied volatility",
+        "figures": [
+          "iv-by-underlying",
+          "iv-rank-by-underlying",
+          "expected-move"
+        ],
+        "from": "2"
+      },
+      {
+        "kind": "figures",
+        "label": "Premium",
+        "figures": [
+          "premium-by-month",
+          "profit-captured"
+        ],
+        "from": "4"
+      },
+      {
+        "kind": "figures",
+        "label": "Risk",
+        "figures": [
+          "day-change",
+          "day-change-pct",
+          "return-1m",
+          "growth-of-100",
+          "volatility-3m",
+          "beta-spy",
+          "below-high"
+        ],
+        "from": "5"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      }
+    ],
+    "themes": []
+  }
+}

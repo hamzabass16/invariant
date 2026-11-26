@@ -1,0 +1,1318 @@
+@import "tailwindcss";
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Invariant: obsidian and platinum. Dark is near-black with platinum type;
+   light is its porcelain half; "system" follows the device. Palette and roles
+   are in DESIGN.md: change them there first.
+
+   Three ideas carry the look. One surface: no cards and no layers, sections
+   divided by a single hairline on the ground. No hue: platinum carries every
+   action and selection, so the status colours are the only colour on the
+   page. One signature: the rule band, fine engraved lines that run unbroken
+   while a rule holds and break where it does not.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --surface-2: #141416;
+  --surface-3: #1c1c1f;
+  --hairline: #1f1f23;
+  --hairline-strong: #2e2e33;
+  /* The 1px light edge on a raised card: the "glass" line. */
+  --edge: transparent;
+
+  --text: #ededee;
+  --text-secondary: #a1a1a8;
+  --text-tertiary: #8a8a92;
+
+  --accent: #e6e6e8;
+  --accent-pressed: #cfcfd2;
+  --accent-subtle: rgba(255, 255, 255, 0.07);
+  /* Accent as text and icon: a cool platinum, so a link or a selected label
+     reads apart from the warm-neutral body text. */
+  --accent-text: #cdd5df;
+  --accent-glow: transparent;
+
+  /* The title rule (named gilt from the earlier look): a hairline under a
+     large title and the brand. Never a status, never a series, never a button. */
+  --gilt: #2e2e33;
+  --gilt-soft: #1f1f23;
+
+  --ok: #5fa87f;
+  --warn: #d1a24a;
+  --danger: #e0705f;
+  --info: #7ea6d6;
+
+  --nav-blur: rgba(10, 10, 11, 0.92);
+  --shadow-card: none;
+  --shadow-float: 0 0 0 1px #2e2e33, 0 24px 48px -24px rgba(0, 0, 0, 0.7);
+
+  /* Chart series. Validated with the dataviz palette checker against the
+     surface in each mode: lightness band, chroma, colour-vision separation,
+     3:1 contrast. Identity never rides on colour alone: every chart carries a
+     legend, direct labels and a table view. Status colours are never series. */
+  --series-hcmp: #4a90e8;
+  --series-spy: #cf8d12;
+  --series-qqq: #9a8ff0;
+  --arch-cm: #22a877;
+  --arch-tr: #4a90e8;
+  --arch-dg: #cf8d12;
+  --arch-ph: #9a8ff0;
+  --arch-none: #6e7382;
+  /* The income flow (lib/income-flow.ts): profit and cost as a diverging pair around the grey revenue, validated against the surface; inks for its words. */
+  --flow-profit: #2f9e8f;
+  --flow-cost: #c26a5a;
+  --flow-revenue: #6e7382;
+  --flow-profit-ink: #7fd1c3;
+  --flow-cost-ink: #e09a8c;
+  /* A move, diverging: blue up, red down, a neutral grey at no move; the heat
+     map mixes each pole into the grey by the size of the move. A data scale,
+     never a status: the percentage is printed on the tile and in the table. */
+  --move-up: #2f6fc4;
+  --move-down: #c0473a;
+  --move-mid: #1e1e21;
+  --move-ink: #f4f4f5;
+
+  /* Motion. Short, decisive, eased out; nothing bounces. */
+  --dur-1: 160ms;
+  --dur-2: 320ms;
+  --dur-3: 560ms;
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* The shell: the top bar and tab bar, on the page's own ground. */
+
+  --shell: #0a0a0b;
+  --shell-2: #141416;
+  --shell-text: #ededee;
+  --shell-muted: #a1a1a8;
+  --on-accent: #0a0a0b;
+  --rule-ink: #d9d9dc;
+  /* Colour for data (Hamza, 11 Nov 2026: "keep the colorful elements"): the
+     hue a chart, a bar, a heat cell and a calendar category draw in, and the
+     border of everything that can be pressed. Never a status, never text. */
+  --viz: #2f8488;
+  --viz-text: #8fd0d3;
+  --viz-2: #c9a96a;
+  --viz-line: rgba(143, 208, 211, 0.42);
+  --cat-1: #6f9bd8;
+  --cat-2: #b48ce0;
+  --cat-3: #d9a54c;
+  --cat-4: #5fb39a;
+  --cat-5: #e07b9a;
+  --cat-6: #8fd0d3;
+
+  color-scheme: dark;
+}
+
+/* Light, derived: vellum paper, ink text, the same accent one step darker so it
+   reads on white, gilt one step deeper. Applied by the theme toggle, or by the
+   device when the theme is "system". */
+[data-theme="light"],
+:root[data-theme="light"] {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --surface-2: #efefec;
+  --surface-3: #e5e5e1;
+  --hairline: #e3e3df;
+  --hairline-strong: #cfcfca;
+  --edge: transparent;
+
+  --text: #0b0b0c;
+  --text-secondary: #55575d;
+  --text-tertiary: #666870;
+
+  --accent: #0b0b0c;
+  --accent-pressed: #2a2a2d;
+  --accent-subtle: rgba(11, 11, 12, 0.06);
+  --accent-text: #2f3742;
+  --accent-glow: transparent;
+
+  --gilt: #cfcfca;
+  --gilt-soft: #e3e3df;
+
+  --ok: #2f7a52;
+  --warn: #8f6413;
+  --danger: #b3372a;
+  --info: #2f5f8f;
+
+  --nav-blur: rgba(247, 247, 245, 0.92);
+  --shadow-card: none;
+  --shadow-float: 0 0 0 1px #cfcfca, 0 24px 48px -28px rgba(11, 11, 12, 0.25);
+
+  --series-hcmp: #2a78d6;
+  --series-spy: #e39a00;
+  --series-qqq: #6250d6;
+  --arch-cm: #1a9d6c;
+  --arch-tr: #2a78d6;
+  --arch-dg: #e39a00;
+  --arch-ph: #6250d6;
+  --arch-none: #8a8e98;
+  --flow-profit: #16907f;
+  --flow-cost: #b65644;
+  --flow-revenue: #8a8f9c;
+  --flow-profit-ink: #10695d;
+  --flow-cost-ink: #943f30;
+  --move-up: #2f74c8;
+  --move-down: #c4473a;
+  --move-mid: #e6e6e3;
+  --move-ink: #ffffff;
+
+  --shell: #f7f7f5;
+  --shell-2: #efefec;
+  --shell-text: #0b0b0c;
+  --shell-muted: #55575d;
+  --on-accent: #f7f7f5;
+  --rule-ink: #0b0b0c;
+  --viz: #2a7a7e;
+  --viz-text: #1f5d60;
+  --viz-2: #a8853f;
+  --viz-line: rgba(42, 122, 126, 0.45);
+  --cat-1: #2f62b0;
+  --cat-2: #7a4bb5;
+  --cat-3: #9a6a12;
+  --cat-4: #2b7a62;
+  --cat-5: #b2446a;
+  --cat-6: #1f6f73;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] {
+    --bg: #f7f7f5;
+    --surface: #ffffff;
+    --surface-2: #efefec;
+    --surface-3: #e5e5e1;
+    --hairline: #e3e3df;
+    --hairline-strong: #cfcfca;
+    --edge: transparent;
+
+    --text: #0b0b0c;
+    --text-secondary: #55575d;
+    --text-tertiary: #666870;
+
+    --accent: #0b0b0c;
+    --accent-pressed: #2a2a2d;
+    --accent-subtle: rgba(11, 11, 12, 0.06);
+    --accent-text: #2f3742;
+    --accent-glow: transparent;
+
+    --gilt: #cfcfca;
+    --gilt-soft: #e3e3df;
+
+    --ok: #2f7a52;
+    --warn: #8f6413;
+    --danger: #b3372a;
+    --info: #2f5f8f;
+
+    --nav-blur: rgba(247, 247, 245, 0.92);
+    --shadow-card: none;
+    --shadow-float: 0 0 0 1px #cfcfca, 0 24px 48px -28px rgba(11, 11, 12, 0.25);
+
+    --series-hcmp: #2a78d6;
+    --series-spy: #e39a00;
+    --series-qqq: #6250d6;
+    --arch-cm: #1a9d6c;
+    --arch-tr: #2a78d6;
+    --arch-dg: #e39a00;
+    --arch-ph: #6250d6;
+    --arch-none: #8a8e98;
+    --flow-profit: #16907f;
+    --flow-cost: #b65644;
+    --flow-revenue: #8a8f9c;
+    --flow-profit-ink: #10695d;
+    --flow-cost-ink: #943f30;
+    --move-up: #2f74c8;
+    --move-down: #c4473a;
+    --move-mid: #e6e6e3;
+    --move-ink: #ffffff;
+
+    --shell: #f7f7f5;
+    --shell-2: #efefec;
+    --shell-text: #0b0b0c;
+    --shell-muted: #55575d;
+    --on-accent: #f7f7f5;
+    --rule-ink: #0b0b0c;
+    --viz: #2a7a7e;
+    --viz-text: #1f5d60;
+    --viz-2: #a8853f;
+    --viz-line: rgba(42, 122, 126, 0.45);
+    --cat-1: #2f62b0;
+    --cat-2: #7a4bb5;
+    --cat-3: #9a6a12;
+    --cat-4: #2b7a62;
+    --cat-5: #b2446a;
+    --cat-6: #1f6f73;
+
+    color-scheme: light;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+  --color-gilt: var(--gilt);
+
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --color-accent: var(--accent);
+  --color-accent-pressed: var(--accent-pressed);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-text: var(--accent-text);
+
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+  --color-series-hcmp: var(--series-hcmp);
+  --color-series-spy: var(--series-spy);
+  --color-series-qqq: var(--series-qqq);
+  --color-arch-cm: var(--arch-cm);
+  --color-arch-tr: var(--arch-tr);
+  --color-arch-dg: var(--arch-dg);
+  --color-arch-ph: var(--arch-ph);
+  --color-arch-none: var(--arch-none);
+  --color-shell: var(--shell);
+  --color-shell-text: var(--shell-text);
+  --color-shell-muted: var(--shell-muted);
+  --color-on-accent: var(--on-accent);
+  --color-viz: var(--viz);
+  --color-viz-text: var(--viz-text);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-condensed: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  /* Newsreader: the engraved voice, for titles, the verdict figure and the small-caps labels. */
+  --font-display: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+
+  /* iOS type scale. Fixed rem, not fluid — product UI is read at a constant
+     viewing distance and clamp()-scaled headings only add noise. */
+  --text-large-title: 2.125rem; /* 34px */
+  --text-large-title--line-height: 2.5rem;
+  --text-title-1: 1.75rem;
+  --text-title-1--line-height: 2.125rem;
+  --text-title-2: 1.375rem;
+  --text-title-2--line-height: 1.75rem;
+  --text-title-3: 1.25rem;
+  --text-title-3--line-height: 1.5rem;
+  --text-body: 1.0625rem; /* 17px — iOS standard, deliberately larger than web */
+  --text-body--line-height: 1.375rem;
+  --text-subhead: 0.9375rem;
+  --text-subhead--line-height: 1.25rem;
+  --text-footnote: 0.8125rem;
+  --text-footnote--line-height: 1.125rem;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+
+  /* Desktop ceiling, so the app does not sprawl on a large monitor. */
+  --container-content: 87.5rem; /* 1400px */
+
+  /* A print is cut square: small, even corners on every surface and control. */
+  --radius-card: 0.5rem;
+  --radius-sheet: 0.75rem;
+  --radius-control: 0.375rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+  --radius-2xl: 0.5rem;
+  --radius-3xl: 0.75rem;
+
+  --shadow-card: var(--shadow-card);
+  --shadow-float: var(--shadow-float);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  /* Interactive rows are pressed, not hovered. Keyboard focus stays visible. */
+  :focus-visible {
+    outline: 2px solid var(--accent-text);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 28%, transparent);
+  }
+
+  html {
+    scrollbar-color: var(--hairline-strong) transparent;
+    caret-color: var(--accent-text);
+  }
+
+  /* Numeric data lines up in columns or it is not data. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* A ruled section: the stock, a shade lighter than the page, behind a 1px
+     hairline. Nothing floats; every grouped list, tile and chart sits on it. */
+  .card {
+    background: var(--surface);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* The title rule: a full-measure ink hairline under a large title, as on a
+     certificate's title block. */
+  .gilt-rule {
+    display: block;
+    width: 100%;
+    max-width: 22rem;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gilt), transparent);
+  }
+
+  /* Enter: rise and fade. Children of a .reveal-stack arrive in turn. */
+  .reveal {
+    animation: rise var(--dur-2) var(--ease-out-quint) both;
+  }
+  /* The loading frame: held back a moment, so a screen that answers at once never shows it. */
+  .loading-frame {
+    animation: fade-in var(--dur-2) var(--ease-out-quint) 240ms both;
+  }
+  .reveal-stack > * {
+    animation: rise var(--dur-2) var(--ease-out-quint) both;
+  }
+  .reveal-stack > *:nth-child(2) { animation-delay: 40ms; }
+  .reveal-stack > *:nth-child(3) { animation-delay: 80ms; }
+  .reveal-stack > *:nth-child(4) { animation-delay: 120ms; }
+  .reveal-stack > *:nth-child(5) { animation-delay: 160ms; }
+  .reveal-stack > *:nth-child(6) { animation-delay: 200ms; }
+  .reveal-stack > *:nth-child(7) { animation-delay: 240ms; }
+  .reveal-stack > *:nth-child(8) { animation-delay: 280ms; }
+  .reveal-stack > *:nth-child(n + 9) { animation-delay: 320ms; }
+
+  /* A figure's value: lands with a short rise, slightly larger, then settles. */
+  .figure-in {
+    animation: settle var(--dur-3) var(--ease-out-quint) both;
+  }
+
+  /* The label language: Newsreader in small capitals, tracked a little, the
+     way a certificate letters its headings. */
+  .section-header {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.06em;
+    line-height: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  /* The product's name as written: Invariant, never set in capitals. */
+  .brand-mark {
+    font-family: var(--font-display);
+    font-size: 1.1875rem;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    color: var(--shell-text);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* IBM Plex Mono: prices, weights, scores, dates. */
+  .data {
+    font-family: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  /* Grouped inset list: hairlines start at the content inset and run to the
+     card edge, the way iOS Settings draws them. */
+  .list-card > * + * {
+    position: relative;
+  }
+
+  .list-card > * + *::before {
+    content: "";
+    position: absolute;
+    inset-inline: 1rem 0;
+    top: 0;
+    height: 1px;
+    background: var(--hairline);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes settle {
+  0% {
+    transform: translateY(0.375rem) scale(1.02);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(1.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.97);
+    opacity: 0;
+  }
+}
+
+/* The live dot: a slow breath while prices refresh; still under reduced motion. */
+@keyframes live-breath {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.live-dot {
+  animation: live-breath 2.4s ease-in-out infinite;
+}
+
+/* Live: a green dot with a ring that spreads and fades, so a glance tells live from kept. */
+@keyframes live-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  80%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+.live-ping {
+  animation: live-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Market is live: the dot blinks; the pill itself is platinum (below). */
+@keyframes live-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.live-blink {
+  animation: live-blink 1.2s ease-in-out infinite;
+}
+
+.market-live {
+  background: color-mix(in oklab, var(--ok) 12%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--ok) 35%, transparent);
+}
+
+/* Done: the circle draws, the check strokes in, the label arrives. */
+@keyframes done-circle {
+  from {
+    stroke-dashoffset: 63;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes done-check {
+  from {
+    stroke-dashoffset: 16;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes done-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  55% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.done-mark {
+  animation: done-pop 420ms var(--ease-out-quint) both;
+}
+.done-mark circle {
+  stroke-dasharray: 63;
+  animation: done-circle 420ms var(--ease-out-quint) both;
+}
+.done-mark path {
+  stroke-dasharray: 16;
+  animation: done-check 260ms 260ms var(--ease-out-quint) both;
+}
+.done-label {
+  animation: rise var(--dur-2) 200ms var(--ease-out-quint) both;
+}
+/* Fades the mark once it has been seen. */
+.done-leave {
+  transition: opacity 400ms ease;
+  opacity: 0;
+}
+
+/* A card that has just been actioned glows once in the success colour. */
+@keyframes done-glow {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--ok) 45%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 10px color-mix(in oklab, var(--ok) 0%, transparent);
+  }
+}
+.done-glow {
+  animation: done-glow 900ms ease-out 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Mirrored Drive documents. Long-form prose, so the measure is capped and the
+   type scale is closer to reading than to interface.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.reference-body {
+  max-width: 72ch;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  /* SEC filing URLs are long unbroken tokens; without this they push the
+     page sideways at 375px. */
+  overflow-wrap: anywhere;
+}
+
+.reference-body h1,
+.reference-body h2,
+.reference-body h3 {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  scroll-margin-top: 5rem;
+}
+
+.reference-body h1 {
+  font-size: var(--text-title-1);
+  margin: 2.5rem 0 1rem;
+}
+
+.reference-body h2 {
+  font-size: var(--text-title-3);
+  margin: 2rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.reference-body h3 {
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.reference-body p,
+.reference-body ul,
+.reference-body ol {
+  margin: 0.75rem 0;
+}
+
+.reference-body ul,
+.reference-body ol {
+  padding-left: 1.25rem;
+}
+
+.reference-body ul { list-style: disc; }
+.reference-body ol { list-style: decimal; }
+.reference-body li { margin: 0.25rem 0; }
+
+.reference-body strong { font-weight: 600; }
+.reference-body em { font-style: italic; }
+
+.reference-body a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.reference-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface-2);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.reference-body pre {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-card);
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.reference-body pre code {
+  background: none;
+  padding: 0;
+}
+
+.reference-body blockquote {
+  border-left: 2px solid var(--hairline);
+  padding-left: 1rem;
+  color: var(--text-secondary);
+  margin: 1rem 0;
+}
+
+/* Wide tables scroll inside their own container; the page never does. */
+.reference-body > table,
+.reference-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: var(--text-subhead);
+}
+
+.reference-body th,
+.reference-body td {
+  border: 1px solid var(--hairline);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  min-width: 8rem;
+}
+
+.reference-body th {
+  background: var(--surface-2);
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: var(--text-footnote);
+}
+
+.reference-body hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 2rem 0;
+}
+
+.reference-body mark[data-find] {
+  background: var(--warn);
+  color: var(--bg);
+  border-radius: 2px;
+}
+
+.reference-body mark[data-find][data-active="1"] {
+  background: var(--accent-text);
+  outline: 2px solid var(--accent-text);
+  outline-offset: 1px;
+}
+
+/* The part of a screen the guided tour is about: an accent outline, kept clear of the content. */
+.tour-target {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+  border-radius: 14px;
+  scroll-margin-top: 24px;
+  transition: outline-color 200ms ease;
+}
+
+/* A card left alone on the last row sits centred under the others, never at
+   the left with an empty half beside it (Hamza, 19 Oct 2026). Each column is
+   split in two and every card spans two halves, so a lone card can start half
+   a column in, whatever the gap. pair-grid is two to a row from 1024px,
+   pair-grid-md from 768px, pair-grid-sm from 640px to 1023px, trio-grid
+   three to a row from 1024px (one left over sits in the middle, two left
+   over sit centred side by side; a grid of one row fills it instead). A card that spans the row keeps it, and the cards left over before it are centred the same way. Outside the layers, so they win over the
+   grid-cols utilities. */
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .pair-grid-sm { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pair-grid-sm > * { grid-column: span 2; }
+  .pair-grid-sm > :last-child:nth-child(odd) { grid-column: 2 / span 2; }
+  .pair-grid-sm > :nth-child(odd):not([class*="col-span-"]):has(+ [class*="col-span-"]) { grid-column: 2 / span 2; }
+  .pair-grid-sm > [class*="col-span-"]:nth-child(n) { grid-column: 1 / -1; }
+  .pair-grid-sm > :only-child:nth-child(n) { grid-column: 1 / -1; }
+}
+@media (min-width: 768px) {
+  .pair-grid-md { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pair-grid-md > * { grid-column: span 2; }
+  .pair-grid-md > :last-child:nth-child(odd) { grid-column: 2 / span 2; }
+  .pair-grid-md > :nth-child(odd):not([class*="col-span-"]):has(+ [class*="col-span-"]) { grid-column: 2 / span 2; }
+  .pair-grid-md > [class*="col-span-"]:nth-child(n) { grid-column: 1 / -1; }
+  .pair-grid-md > :only-child:nth-child(n) { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+  .pair-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pair-grid > * { grid-column: span 2; }
+  .pair-grid > :last-child:nth-child(odd) { grid-column: 2 / span 2; }
+  .pair-grid > :nth-child(odd):not([class*="col-span-"]):has(+ [class*="col-span-"]) { grid-column: 2 / span 2; }
+  .pair-grid > [class*="col-span-"]:nth-child(n) { grid-column: 1 / -1; }
+  .trio-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .trio-grid > * { grid-column: span 2; }
+  .trio-grid > :last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
+  .trio-grid > :nth-last-child(2):nth-child(3n + 1) { grid-column: 2 / span 2; }
+  .trio-grid > :nth-child(3n + 1):not([class*="col-span-"]):has(+ [class*="col-span-"]) { grid-column: 3 / span 2; }
+  .trio-grid > :nth-child(3n + 1):not([class*="col-span-"]):has(+ :not([class*="col-span-"]) + [class*="col-span-"]) { grid-column: 2 / span 2; }
+  .trio-grid > [class*="col-span-"]:nth-child(n) { grid-column: 1 / -1; }
+  /* A grid of one row fills it: one card spans it, two share it, so a card is never isolated in the middle with nothing above it (Hamza, 19 Oct 2026). */
+  .pair-grid > :only-child:nth-child(n),
+  .trio-grid > :only-child:nth-child(n) { grid-column: 1 / -1; }
+  .trio-grid > :nth-last-child(2):nth-child(1):not([class*="col-span-"]):has(+ :not([class*="col-span-"])) { grid-column: 1 / span 3; }
+  .trio-grid > :not([class*="col-span-"]) + :last-child:nth-child(2):not([class*="col-span-"]) { grid-column: 4 / span 3; }
+}
+
+/* Two columns that balance (Hamza, 23 Oct 2026: never a long card beside
+   empty space). A page's sections flow down the first column and on into the
+   second, each kept whole, so both end near the same height; .flow-col only
+   groups sections in the source and draws nothing. Inside a half column a
+   card grid keeps two to a row, never three narrow ones. */
+.flow-col { display: contents; }
+.flow-cols > *, .flow-cols > .flow-col > * { break-inside: avoid; }
+@media (min-width: 1024px) {
+  .flow-cols { column-count: 2; column-gap: 2rem; }
+  .flow-cols .trio-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .flow-cols .trio-grid > * { grid-column: span 2 !important; }
+  .flow-cols .trio-grid > :last-child:nth-child(odd):not(:only-child) { grid-column: 2 / span 2 !important; }
+  .flow-cols .trio-grid > :only-child, .flow-cols .trio-grid > [class*="col-span-"] { grid-column: 1 / -1 !important; }
+}
+
+/* Lists of things as card grids (Hamza, 19 Oct 2026). The rows keep the
+   grouped list's markup; here each becomes a card: the label on top, wrapping,
+   the detail under it, the figure large at the foot, the chevron gone. These
+   sit outside the layers so they win over the rows' utilities. */
+.grid-cards > * {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  min-height: 6.5rem;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+/* An empty child (an anchor, a placeholder) is never drawn as a blank card (27 Oct 2026). */
+.grid-cards > :empty {
+  display: none;
+}
+.grid-cards > a:hover,
+.grid-cards > button:hover {
+  background: var(--surface-2);
+}
+.grid-cards > .flex.items-center,
+.grid-cards > .flex.items-start {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+}
+.grid-cards > .flex > .min-w-0 {
+  flex: 1 1 auto;
+  width: 100%;
+}
+.grid-cards > .flex > .min-w-0 > :first-child {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  font-weight: 600;
+}
+.grid-cards > .flex > .data {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+.grid-cards > .flex > svg {
+  display: none;
+}
+.grid-cards > .flex > :first-child:not(.min-w-0) {
+  align-self: flex-start;
+}
+.grid-cards > .flex.items-start > a {
+  padding: 0;
+  flex: 1 1 auto;
+}
+.grid-cards > .flex.items-start > button,
+.grid-cards > .flex.items-start > form {
+  align-self: flex-end;
+  padding-top: 0;
+}
+
+/* The top menu (Hamza, 19 Oct 2026): on the page's own ground, one hairline
+   under it, so the shell and the page read as one surface. */
+.top-menu {
+  background: var(--shell);
+  color: var(--shell-text);
+  border-bottom: 1px solid var(--hairline);
+  position: sticky;
+}
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  border-radius: var(--radius-control);
+  font-size: var(--text-subhead, 0.9375rem);
+  line-height: 1.25rem;
+  color: var(--shell-muted);
+  white-space: nowrap;
+  transition: background-color var(--dur-1, 150ms), color var(--dur-1, 150ms);
+  position: relative;
+}
+.top-item:hover,
+.group:hover > .top-item,
+.group:focus-within > .top-item {
+  color: var(--shell-text);
+  background: var(--shell-2);
+}
+.top-item-current {
+  color: var(--shell-text);
+}
+.top-item-current::after {
+  content: "";
+  position: absolute;
+  left: 0.625rem;
+  right: 0.625rem;
+  bottom: -0.5625rem;
+  height: 2px;
+  background: var(--shell-text);
+}
+.top-menu :focus-visible {
+  outline-color: var(--shell-text);
+}
+/* Counts on the shell: ink on platinum. */
+.top-menu .bg-accent {
+  background: var(--shell-text);
+  color: var(--shell);
+}
+.top-menu-panel {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-float);
+}
+.top-menu-panel .bg-accent {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-control);
+  font-size: var(--text-subhead, 0.9375rem);
+  line-height: 1.25rem;
+  color: var(--text-secondary);
+  transition: background-color var(--dur-1, 150ms), color var(--dur-1, 150ms);
+}
+.menu-item:hover,
+.menu-item:focus-visible {
+  color: var(--text);
+  background: var(--surface-2);
+}
+.menu-item-current {
+  color: var(--accent-text);
+  background: var(--accent-subtle);
+}
+/* The person's initials at the top right (Hamza, 19 Oct 2026): a disc of the accent, ringed, opening the account menu. */
+.avatar-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  font-family: var(--font-condensed), system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--shell);
+  background: var(--shell-text);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--shell-text) 40%, transparent);
+  transition: box-shadow var(--dur-1, 150ms), transform var(--dur-1, 150ms);
+}
+.group:hover > .avatar-chip,
+.avatar-chip:focus-visible {
+  box-shadow: 0 0 0 2px var(--shell), 0 0 0 3px var(--shell-text);
+}
+.avatar-chip-lg {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.9375rem;
+}
+
+/* Stealth mode (components/app/stealth.tsx): the page waits for its amounts to be masked before it shows, two seconds at most. */
+@keyframes stealth-reveal {
+  to {
+    visibility: visible;
+  }
+}
+html[data-stealth="on"] body:not([data-stealth-ready]) {
+  visibility: hidden;
+  animation: stealth-reveal 0s 2s forwards;
+}
+
+/* The citation margin (Hamza, 4 Nov 2026): from 1024px a verdict card cites
+   its rule's section in a narrow column at its right, like a footnote on a
+   bank statement, in Plex Mono, tertiary, behind a hairline. Below
+   1024px the section stays inline in the card. */
+.cite-row {
+  display: block;
+}
+.cite-margin {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .cite-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 7.5rem;
+    column-gap: 1rem;
+    align-items: start;
+  }
+  .cite-margin {
+    display: block;
+    min-width: 0;
+    padding: 0.75rem 0 0.25rem 0.75rem;
+    border-left: 1px solid var(--gilt-soft);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+    color: var(--text-tertiary);
+    font-variant-numeric: tabular-nums;
+  }
+  .cite-inline {
+    display: none !important;
+  }
+}
+
+/* The search palette (⌘K; Hamza, 4 Nov 2026): a sheet over a dimmed page. */
+.palette-scrim {
+  background: color-mix(in srgb, var(--bg) 62%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.palette-panel {
+  background: var(--surface);
+  border-radius: var(--radius-sheet);
+  box-shadow: var(--shadow-float);
+}
+
+/* Type on an ink fill reads in paper, whatever the theme: the app writes
+   "bg-accent text-text" for a filled action, and on paper stock the text
+   token is ink. */
+.bg-accent.text-text,
+.bg-accent.text-white,
+.bg-danger.text-text,
+.bg-accent .text-text {
+  color: var(--on-accent);
+}
+
+.top-menu .gilt-rule {
+  background: linear-gradient(90deg, var(--shell-muted), transparent);
+  opacity: 0.7;
+}
+
+/* The rule band draws itself once, line by line, when the Dashboard opens;
+   never again on a tick. Reduced motion shows it drawn. */
+@keyframes band-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.rule-band path[pathLength] {
+  stroke-dasharray: 1;
+  animation: band-draw 480ms var(--ease-out-quint) both;
+}
+
+/* A badge or figure set inside a label keeps its own voice. */
+[data-fresh],
+.section-header .data,
+.section-header button {
+  font-family: var(--font-sans);
+  font-variant-caps: normal;
+  letter-spacing: normal;
+}
+.section-header .data {
+  font-family: var(--font-mono);
+}
+.top-menu .bg-accent.text-text {
+  background: var(--shell-text);
+  color: var(--shell);
+}
+
+/* One surface (Hamza, 11 Nov 2026: "no cards ... no layers", and no empty
+   whitespace). On a page a section sits on the ground with a single hairline
+   above it; a tile inside it is outlined, never filled; the rhythm is tight.
+   Only what floats over the page (a menu, a sheet, the tour) keeps a surface.
+   Unlayered, so it wins over the utilities each component writes. */
+main .card:not(.fixed):not(.absolute) {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border-top: 1px solid var(--hairline);
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+main [class*="bg-surface-2"]:not(button):not(a):not([role="tab"]):not(input):not(select):not(.absolute):not(.fixed):not([role="tooltip"]):not(.rounded-full),
+main [class*="bg-surface-3"]:not(button):not(a):not([role="tab"]):not(input):not(select):not(.absolute):not(.fixed):not([role="tooltip"]):not(.rounded-full),
+main ul.grid > li > a[class*="bg-surface-2"] {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+main .mb-6 { margin-bottom: 0.625rem; }
+main .mb-8 { margin-bottom: 0.75rem; }
+main .mb-10 { margin-bottom: 0.875rem; }
+main .gap-6 { gap: 0.75rem; }
+main .space-y-6 > * + * { margin-top: 0.625rem; }
+main .space-y-8 > * + * { margin-top: 0.75rem; }
+/* A verdict with its citation margin: the rule runs over both columns, so the
+   section's line never stops short at the margin. */
+main .cite-row:has(> div > .card) {
+  border-top: 1px solid var(--hairline);
+}
+main .cite-row > div > .card:not(.fixed):not(.absolute) {
+  border-top: 0;
+}
+
+/* A grid drawn as tiles on a hairline ground (gap-px over bg-hairline) becomes
+   one outlined block with ruled rows, so it stays a single surface. */
+main .gap-px.bg-hairline {
+  background: transparent;
+  gap: 0;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+main .gap-px.bg-hairline > * {
+  box-shadow: none !important;
+}
+main .gap-px.bg-hairline > * + * {
+  border-top: 1px solid var(--hairline);
+}
+
+/* A grid of cards (Notifications, the to-do, On watch) is a grid of items on
+   the ground (Hamza, 11 Nov 2026: no boxes around the text, no white lines):
+   no cell lines, room between the items, each its own height; an item that
+   opens something lights a soft wash under the pointer. */
+main .grid-cards {
+  gap: 1.5rem 2rem;
+  align-items: start;
+  box-shadow: none;
+}
+main .grid-cards > * {
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  min-height: 0;
+  height: auto;
+}
+main .grid-cards > a:hover,
+main .grid-cards > button:hover,
+main .grid-cards > .flex:has(> a:hover) {
+  background: color-mix(in oklab, var(--text) 4%, transparent);
+}
+main .grid-cards > .flex.items-center,
+main .grid-cards > .flex.items-start {
+  padding: 0.75rem 0.875rem;
+  margin: -0.75rem -0.875rem;
+}
+/* A notice's Dismiss is a small button at its foot, on the right (Hamza, 11 Nov 2026). */
+main .grid-cards > .flex.items-start > button,
+main .grid-cards > .flex.items-start > form {
+  align-self: flex-end;
+}
+/* The mark beside a notice sits in a soft disc of its own colour. */
+.notice-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--info) 16%, transparent);
+}
+.notice-mark:has(.text-warn) { background: color-mix(in oklab, var(--warn) 16%, transparent); }
+.notice-mark:has(.text-danger) { background: color-mix(in oklab, var(--danger) 16%, transparent); }
+.notice-mark:has(.text-ok) { background: color-mix(in oklab, var(--ok) 16%, transparent); }
+
+/* The selected segment of a switch takes the platinum fill, the same as a selected pill. */
+.bg-surface.text-text:is([aria-pressed="true"], [aria-selected="true"], [aria-current="page"], [aria-checked="true"]) {
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: none;
+}
+
+/* With no hue to tell a link from text, a text link is underlined. */
+main a.text-accent-text,
+main .text-accent-text > a,
+main button.text-accent-text {
+  text-decoration-line: underline;
+  text-decoration-color: var(--hairline-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+main a.text-accent-text:hover,
+main .text-accent-text > a:hover,
+main button.text-accent-text:hover {
+  text-decoration-color: currentColor;
+}
+
+/* A sticky column sits on the page's ground, not a raised slab. */
+main .sticky.bg-surface {
+  background: var(--bg);
+}
+
+/* Market is live: a platinum hairline pill; only the pulsing dot is green. */
+.market-live {
+  background: transparent;
+  box-shadow: none;
+  border-color: var(--hairline-strong) !important;
+}
+.market-live .text-ok {
+  color: var(--text);
+}
+
+/* The middle level of type: a group heading outside its sections is set in
+   Newsreader, title case, with the group's hairline above it, so the line
+   never falls between a heading and its own content. */
+main h2.section-header.px-1,
+main h2.section-header.px-4 {
+  font-variant-caps: normal;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  border-top: 1px solid var(--hairline);
+  padding-top: 1rem;
+  margin-top: 1.25rem;
+}
+main h2.section-header.px-1 + .card,
+main h2.section-header.px-4 + .card,
+main h2.section-header.px-1 + * > .card:first-child {
+  border-top: 0;
+}
+
+/* Everything that can be pressed carries the data colour on its border
+   (Hamza, 11 Nov 2026: "make the borders of every clickable card or button
+   colorized"): a secondary button, a pill, a clickable tile or grid cell, a
+   folded section's summary. A filled or selected control keeps its fill;
+   plain text links stay underlined. */
+main :is(a, button, summary, label):is([class^="bg-surface"], [class*=" bg-surface"], [class^="border-hairline"], [class*=" border-hairline"], [class*="rounded-full"][class*=" border "]):not(.bg-accent):not([aria-pressed="true"]):not([aria-selected="true"]):not([aria-current="page"]):not([disabled]),
+main ul.grid > li > a {
+  box-shadow: inset 0 0 0 1px var(--viz-line) !important;
+  border-color: var(--viz-line);
+}
+main :is(a, button, summary, label):is([class^="bg-surface"], [class*=" bg-surface"], [class^="border-hairline"], [class*=" border-hairline"], [class*="rounded-full"][class*=" border "]):not(.bg-accent):not([aria-pressed="true"]):not([aria-selected="true"]):not([aria-current="page"]):not([disabled]):hover,
+main ul.grid > li > a:hover {
+  box-shadow: inset 0 0 0 1px var(--viz-text) !important;
+  border-color: var(--viz-text);
+}
+
+/* Back: a small pill with the clickable border, above a page's title. */
+.back-button {
+  box-shadow: inset 0 0 0 1px var(--viz-line);
+}
+.back-button:hover {
+  box-shadow: inset 0 0 0 1px var(--viz-text);
+  background: color-mix(in oklab, var(--text) 4%, transparent);
+}
+
+/* A ruled grid (Hamza, 21 Nov 2026: "a bloomberg terminal grid layout like
+   that qualtrim portfolio page"): cells on the page's own ground, parted by
+   single hairlines, no card and no layer. Each cell rules its right and its
+   foot, so a short last row leaves the ground bare, never a grey block. */
+main .term-grid {
+  gap: 0;
+  border-top: 1px solid var(--hairline);
+  border-left: 1px solid var(--hairline);
+}
+main .term-grid > .term-cell {
+  min-width: 0;
+  border-right: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 0.875rem 1rem;
+}
+/* A chart drawn in a cell keeps the cell's rules, not its own. */
+main .term-grid > .term-cell > .card:not(.fixed):not(.absolute) {
+  border-top: 0;
+  padding: 0;
+}
+.term-label {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  line-height: 1rem;
+  color: var(--text-secondary);
+}

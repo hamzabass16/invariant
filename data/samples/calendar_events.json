@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "events": [
+    { "date": "2026-11-12", "kind": "summit", "area": "world", "name": "Harbour Accord trade summit (fictional sample)", "short": "Harbour", "time": "All day", "about": "A fictional summit for the demo: leaders meet on a trade truce that lapses at the year's end.", "source": "https://example.com/harbour-accord", "found": "2026-11-01" },
+    { "date": "2026-12-03", "kind": "deadline", "area": "euro", "name": "Sample tariff truce deadline (fictional)", "short": "Truce", "time": "Midnight CET", "about": "A fictional deadline for the demo: a tariff truce ends unless it is renewed.", "source": "https://example.com/tariff-truce", "found": "2026-11-01" },
+    { "date": "2027-01-21", "kind": "election", "area": "world", "name": "Sample general election (fictional)", "time": "All day", "about": "A fictional national election for the demo.", "source": "https://example.com/sample-election", "found": "2026-11-01" }
+  ],
+  "month": "2026-11",
+  "ranAt": "2026-11-01T06:05:00.000Z",
+  "sentence": "Found 3 dated events in the next three months the calendar did not hold.",
+  "updated": "2026-11-01T06:05:00.000Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "passive_index",
+  "name": "Passive three-fund investor",
+  "about": "Holds three index funds at a European broker in a fixed split, adds every month, and wants to be told only when the split drifts or he breaks his own rule against trading. Fictional.",
+  "setup": { "ownerName": "Jonas", "profile": "individual", "baseCurrency": "EUR", "inputs": ["other_broker"], "tradesOptions": false },
+  "seed": 9001,
+  "asOf": "2026-10-09",
+  "book": {
+    "accounts": [{ "name": "Broker", "source": "snaptrade", "cash": 3100, "cashCurrency": "EUR" }],
+    "equities": [
+      { "symbol": "VWCE", "name": "All-World equity ETF (fictional)", "account": "Broker", "assetClass": "etf", "quantity": 1180, "price": 128.4, "costPerUnit": 101.2, "dayChangePerUnit": -0.9, "currency": "EUR", "country": null, "themes": ["Index", "World equity"] },
+      { "symbol": "IUSN", "name": "World small cap ETF (fictional)", "account": "Broker", "assetClass": "etf", "quantity": 2900, "price": 7.1, "costPerUnit": 6.2, "dayChangePerUnit": -0.04, "currency": "EUR", "country": null, "themes": ["Index", "Small cap"] },
+      { "symbol": "AGGH", "name": "Global aggregate bond ETF, EUR hedged (fictional)", "account": "Broker", "assetClass": "etf", "quantity": 8400, "price": 4.92, "costPerUnit": 4.85, "dayChangePerUnit": 0.01, "currency": "EUR", "country": null, "themes": ["Index", "Bonds"] },
+      { "symbol": "NVDA", "name": "Nvidia (fictional)", "account": "Broker", "quantity": 12, "price": 121, "costPerUnit": 104, "dayChangePerUnit": 1.8, "currency": "EUR", "sector": "Technology", "themes": ["AI and semiconductors"] }
+    ],
+    "fx": { "USD": 0.86 },
+    "series": { "weeks": 208, "nav": { "start": 118000, "driftPct": 8, "volPct": 10 }, "benchmarks": {} },
+    "transactions": [
+      { "daysAgo": 9, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 39, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 70, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 100, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 131, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 161, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 192, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 222, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 253, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 283, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 314, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 344, "account": "Broker", "kind": "deposit", "symbol": "EUR", "amount": 1500, "currency": "EUR" },
+      { "daysAgo": 10, "account": "Broker", "kind": "buy", "symbol": "VWCE", "amount": -1490, "quantity": 11.6, "price": 128.4, "currency": "EUR" },
+      { "daysAgo": 40, "account": "Broker", "kind": "buy", "symbol": "VWCE", "amount": -1490, "quantity": 11.8, "price": 126.3, "currency": "EUR" },
+      { "daysAgo": 71, "account": "Broker", "kind": "buy", "symbol": "AGGH", "amount": -1490, "quantity": 304, "price": 4.9, "currency": "EUR" },
+      { "daysAgo": 45, "account": "Broker", "kind": "buy", "symbol": "NVDA", "amount": -1248, "quantity": 12, "price": 104, "currency": "EUR" },
+      { "daysAgo": 150, "account": "Broker", "kind": "sell", "symbol": "IUSN", "amount": 2100, "quantity": -300, "price": 7.0, "currency": "EUR" },
+      { "daysAgo": 10, "account": "Broker", "kind": "fee", "symbol": "EUR", "amount": -1.5, "currency": "EUR" },
+      { "daysAgo": 40, "account": "Broker", "kind": "fee", "symbol": "EUR", "amount": -1.5, "currency": "EUR" },
+      { "daysAgo": 71, "account": "Broker", "kind": "fee", "symbol": "EUR", "amount": -1.5, "currency": "EUR" },
+      { "daysAgo": 150, "account": "Broker", "kind": "fee", "symbol": "EUR", "amount": -4.9, "currency": "EUR" }
+    ]
+  }
+}

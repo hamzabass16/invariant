@@ -1,0 +1,730 @@
+{
+ "_note": "Fictional ratings and lessons for the demo; nothing is kept from the page.",
+ "version": 1,
+ "ratings": [
+  {
+   "id": "company_news:BKNG-w0-3",
+   "agent": "company_news",
+   "target": "BKNG-w0-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 7",
+   "at": "2026-11-04T19:13:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w0-0",
+   "agent": "company_news",
+   "target": "MA-w0-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 7",
+   "at": "2026-11-04T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:UBER-1",
+   "agent": "company_news",
+   "target": "UBER-1",
+   "subject": "UBER",
+   "title": "Results: free cash flow rose on the year",
+   "at": "2026-11-04T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:UBER-2",
+   "agent": "company_news",
+   "target": "UBER-2",
+   "subject": "UBER",
+   "title": "A city caps ride-hailing licences",
+   "at": "2026-11-04T19:10:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis"
+   ],
+   "note": "One city is not the thesis."
+  },
+  {
+   "id": "company_news:MA-1",
+   "agent": "company_news",
+   "target": "MA-1",
+   "subject": "MA",
+   "title": "Volumes held into the quarter's end",
+   "at": "2026-11-04T07:30:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w0-4",
+   "agent": "thesis_hunter",
+   "target": "META-w0-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 7",
+   "at": "2026-11-03T19:14:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w0-1",
+   "agent": "company_news",
+   "target": "ASML-w0-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 7",
+   "at": "2026-11-03T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w0-2",
+   "agent": "company_news",
+   "target": "AMZN-w0-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 7",
+   "at": "2026-11-02T19:12:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "priced_in:MA:network-growth",
+   "agent": "priced_in",
+   "target": "MA:network-growth",
+   "subject": "MA",
+   "title": "Network growth: priced",
+   "at": "2026-11-01T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "priced_in:MA:agents-pay-through-the-netw",
+   "agent": "priced_in",
+   "target": "MA:agents-pay-through-the-network",
+   "subject": "MA",
+   "title": "Agents pay through the network: not priced",
+   "at": "2026-11-01T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "priced_in:ASML:cash-pillar",
+   "agent": "priced_in",
+   "target": "ASML:cash-pillar",
+   "subject": "ASML",
+   "title": "Cash pillar: partly",
+   "at": "2026-10-30T19:10:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": "Say which downturn it means."
+  },
+  {
+   "id": "company_news:AMZN-e1",
+   "agent": "company_news",
+   "target": "AMZN-e1",
+   "subject": "AMZN",
+   "title": "Results: cloud growth picked up",
+   "at": "2026-10-29T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:META-e1",
+   "agent": "company_news",
+   "target": "META-e1",
+   "subject": "META",
+   "title": "Results: costs grew faster than revenue",
+   "at": "2026-10-29T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w1-3",
+   "agent": "company_news",
+   "target": "BKNG-w1-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 6",
+   "at": "2026-10-28T19:13:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w1-0",
+   "agent": "company_news",
+   "target": "MA-w1-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 6",
+   "at": "2026-10-28T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-e1",
+   "agent": "company_news",
+   "target": "MA-e1",
+   "subject": "MA",
+   "title": "Buyback pace kept up in the quarter",
+   "at": "2026-10-28T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w1-4",
+   "agent": "thesis_hunter",
+   "target": "META-w1-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 6",
+   "at": "2026-10-27T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w1-1",
+   "agent": "company_news",
+   "target": "ASML-w1-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 6",
+   "at": "2026-10-27T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-e1",
+   "agent": "company_news",
+   "target": "ASML-e1",
+   "subject": "ASML",
+   "title": "A chipmaker raised its spending plan",
+   "at": "2026-10-27T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:SPGI-e1",
+   "agent": "company_news",
+   "target": "SPGI-e1",
+   "subject": "SPGI",
+   "title": "Index licensing fees renegotiated",
+   "at": "2026-10-27T19:10:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w1-2",
+   "agent": "company_news",
+   "target": "AMZN-w1-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 6",
+   "at": "2026-10-26T19:12:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:BIRK-e1",
+   "agent": "company_news",
+   "target": "BIRK-e1",
+   "subject": "BIRK",
+   "title": "Wholesale orders slowed in a sample survey",
+   "at": "2026-10-26T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:IBKR-e1",
+   "agent": "company_news",
+   "target": "IBKR-e1",
+   "subject": "IBKR",
+   "title": "Client accounts grew again in the month",
+   "at": "2026-10-26T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MELI-e1",
+   "agent": "company_news",
+   "target": "MELI-e1",
+   "subject": "MELI",
+   "title": "Free shipping threshold lowered in its largest market",
+   "at": "2026-10-25T19:10:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:UBER-e1",
+   "agent": "company_news",
+   "target": "UBER-e1",
+   "subject": "UBER",
+   "title": "Autonomous rides added in two cities",
+   "at": "2026-10-24T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:GOOGL-e1",
+   "agent": "company_news",
+   "target": "GOOGL-e1",
+   "subject": "GOOGL",
+   "title": "A court sets the remedies hearing",
+   "at": "2026-10-23T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:SHOP-e1",
+   "agent": "company_news",
+   "target": "SHOP-e1",
+   "subject": "SHOP",
+   "title": "Payments product launched in a new market",
+   "at": "2026-10-22T19:10:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w2-3",
+   "agent": "company_news",
+   "target": "BKNG-w2-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 5",
+   "at": "2026-10-21T19:13:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w2-0",
+   "agent": "company_news",
+   "target": "MA-w2-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 5",
+   "at": "2026-10-21T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:META-e2",
+   "agent": "company_news",
+   "target": "META-e2",
+   "subject": "META",
+   "title": "Advertising prices rose in a sample survey",
+   "at": "2026-10-21T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w2-4",
+   "agent": "thesis_hunter",
+   "target": "META-w2-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 5",
+   "at": "2026-10-20T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "junk_source"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w2-1",
+   "agent": "company_news",
+   "target": "ASML-w2-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 5",
+   "at": "2026-10-20T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-e2",
+   "agent": "company_news",
+   "target": "MA-e2",
+   "subject": "MA",
+   "title": "A regulator's consultation on card fees",
+   "at": "2026-10-20T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w2-2",
+   "agent": "company_news",
+   "target": "AMZN-w2-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 5",
+   "at": "2026-10-19T19:12:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-e1",
+   "agent": "company_news",
+   "target": "BKNG-e1",
+   "subject": "BKNG",
+   "title": "A regulator names the platform a gatekeeper",
+   "at": "2026-10-19T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-e2",
+   "agent": "company_news",
+   "target": "AMZN-e2",
+   "subject": "AMZN",
+   "title": "Spending plans raised again",
+   "at": "2026-10-18T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:NVO-e1",
+   "agent": "company_news",
+   "target": "NVO-e1",
+   "subject": "NVO",
+   "title": "Prices cut in a sample tender",
+   "at": "2026-10-17T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w3-3",
+   "agent": "company_news",
+   "target": "BKNG-w3-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 4",
+   "at": "2026-10-14T19:13:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "old"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w3-0",
+   "agent": "company_news",
+   "target": "MA-w3-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 4",
+   "at": "2026-10-14T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w3-4",
+   "agent": "thesis_hunter",
+   "target": "META-w3-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 4",
+   "at": "2026-10-13T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis",
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w3-1",
+   "agent": "company_news",
+   "target": "ASML-w3-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 4",
+   "at": "2026-10-13T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w3-2",
+   "agent": "company_news",
+   "target": "AMZN-w3-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 4",
+   "at": "2026-10-12T19:12:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w4-3",
+   "agent": "company_news",
+   "target": "BKNG-w4-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 3",
+   "at": "2026-10-07T19:13:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "repeat"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w4-0",
+   "agent": "company_news",
+   "target": "MA-w4-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 3",
+   "at": "2026-10-07T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w4-4",
+   "agent": "thesis_hunter",
+   "target": "META-w4-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 3",
+   "at": "2026-10-06T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w4-1",
+   "agent": "company_news",
+   "target": "ASML-w4-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 3",
+   "at": "2026-10-06T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w4-2",
+   "agent": "company_news",
+   "target": "AMZN-w4-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 3",
+   "at": "2026-10-05T19:12:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w5-3",
+   "agent": "company_news",
+   "target": "BKNG-w5-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 2",
+   "at": "2026-09-30T19:13:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis",
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w5-0",
+   "agent": "company_news",
+   "target": "MA-w5-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 2",
+   "at": "2026-09-30T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w5-4",
+   "agent": "thesis_hunter",
+   "target": "META-w5-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 2",
+   "at": "2026-09-29T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "junk_source"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w5-1",
+   "agent": "company_news",
+   "target": "ASML-w5-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 2",
+   "at": "2026-09-29T19:11:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w5-2",
+   "agent": "company_news",
+   "target": "AMZN-w5-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 2",
+   "at": "2026-09-28T19:12:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "old"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:BKNG-w6-3",
+   "agent": "company_news",
+   "target": "BKNG-w6-3",
+   "subject": "BKNG",
+   "title": "Sample finding for BKNG, week 1",
+   "at": "2026-09-23T19:13:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "repeat"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:MA-w6-0",
+   "agent": "company_news",
+   "target": "MA-w6-0",
+   "subject": "MA",
+   "title": "Sample finding for MA, week 1",
+   "at": "2026-09-23T19:10:00.000Z",
+   "verdict": "useful",
+   "reasons": [],
+   "note": null
+  },
+  {
+   "id": "thesis_hunter:META-w6-4",
+   "agent": "thesis_hunter",
+   "target": "META-w6-4",
+   "subject": "META",
+   "title": "Sample finding for META, week 1",
+   "at": "2026-09-22T19:14:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "vague"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:ASML-w6-1",
+   "agent": "company_news",
+   "target": "ASML-w6-1",
+   "subject": "ASML",
+   "title": "Sample finding for ASML, week 1",
+   "at": "2026-09-22T19:11:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "junk_source"
+   ],
+   "note": null
+  },
+  {
+   "id": "company_news:AMZN-w6-2",
+   "agent": "company_news",
+   "target": "AMZN-w6-2",
+   "subject": "AMZN",
+   "title": "Sample finding for AMZN, week 1",
+   "at": "2026-09-21T19:12:00.000Z",
+   "verdict": "not_useful",
+   "reasons": [
+    "off_thesis"
+   ],
+   "note": null
+  }
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "agent": "company_news",
+   "text": "Leave out aggregators, listicles and price-target roundups; prefer filings and primary reporting.",
+   "from": [],
+   "by": "model",
+   "status": "approved",
+   "at": "2026-10-01T20:00:00.000Z",
+   "decidedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+   "id": "l2",
+   "agent": "company_news",
+   "text": "Keep only what bears on a named pillar, rule or kill signal; leave out general company news.",
+   "from": [],
+   "by": "model",
+   "status": "approved",
+   "at": "2026-10-15T20:00:00.000Z",
+   "decidedAt": "2026-10-16T08:00:00.000Z"
+  },
+  {
+   "id": "l3",
+   "agent": "thesis_hunter",
+   "text": "Name the figure, the date and the pillar in every find.",
+   "from": [],
+   "by": "you",
+   "status": "pending",
+   "at": "2026-11-02T20:00:00.000Z",
+   "decidedAt": null
+  },
+  {
+   "id": "l4",
+   "agent": "priced_in",
+   "text": "Name the downturn or the year a verdict is read against, not only the pillar.",
+   "from": [
+    "priced_in:ASML:cash-pillar"
+   ],
+   "by": "model",
+   "status": "approved",
+   "at": "2026-10-31T20:00:00.000Z",
+   "decidedAt": "2026-10-31T21:15:00.000Z"
+  },
+  {
+   "id": "l5",
+   "agent": "company_news",
+   "text": "A notice about one city or one client is an update at most; say why it matters to the whole book or leave it out.",
+   "from": [
+    "company_news:UBER-2"
+   ],
+   "by": "model",
+   "status": "pending",
+   "at": "2026-11-04T20:00:00.000Z",
+   "decidedAt": null
+  }
+ ],
+ "updated": "2026-11-04T20:00:00.000Z"
+}

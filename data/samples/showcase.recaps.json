@@ -1,0 +1,567 @@
+{
+ "version": 1,
+ "updated": "2026-11-03T21:52:00.000Z",
+ "recaps": [
+  {
+   "session": "2026-11-03",
+   "writtenAt": "2026-11-03T21:52:00.000Z",
+   "status": "written",
+   "sentence": null,
+   "reading": {
+    "summary": "In this sample session the S&P 500 edged up about 0.3% and the Nasdaq-100 about 0.6%, led by the large platforms, while software for small merchants sold off hard. The outlets and stories below are invented for the demo.",
+    "points": [
+     {
+      "headline": "Indices edge higher",
+      "line": "The sample's S&P 500 rose about 0.3% and the Nasdaq-100 about 0.6%; breadth was narrow, with fewer than half the index's members up on the day.",
+      "symbols": [
+       "SPY",
+       "QQQ"
+      ],
+      "source": {
+       "title": "Closing wrap: a narrow day up (sample)",
+       "url": "https://ledger-street.example.com/2026/11/03/closing-wrap"
+      }
+     },
+     {
+      "headline": "Platforms carry the Nasdaq",
+      "line": "Ledger Street Daily's invented desk credited the large ad and cloud platforms with most of the Nasdaq-100's gain, on what it called relief after last week's selling.",
+      "symbols": [
+       "META",
+       "AMZN"
+      ],
+      "source": {
+       "title": "Platforms carry the index (sample)",
+       "url": "https://ledger-street.example.com/2026/11/03/platforms"
+      }
+     },
+     {
+      "headline": "Merchant software de-rates",
+      "line": "An invented survey of small merchants in The Tape Desk read softer holiday order books, and the commerce-software names fell the most in the sample session.",
+      "symbols": [
+       "SHOP"
+      ],
+      "source": {
+       "title": "Merchant survey: the holiday book (sample)",
+       "url": "https://tape-desk.example.com/merchant-survey-november"
+      }
+     },
+     {
+      "headline": "Brokers bounce",
+      "line": "Retail brokers recovered part of Friday's fall; Harbourline Markets' fictional note pointed to steadier account openings in its own tally.",
+      "symbols": [
+       "IBKR"
+      ],
+      "source": {
+       "title": "Brokers bounce (sample)",
+       "url": "https://harbourline.example.com/notes/brokers-bounce"
+      }
+     },
+     {
+      "headline": "Rating agencies slip",
+      "line": "Data and ratings names gave back some of their October run, which the sample's desk read as profit-taking, not news.",
+      "symbols": [
+       "SPGI"
+      ],
+      "source": {
+       "title": "Ratings names slip (sample)",
+       "url": "https://northgate-wire.example.com/wire/ratings-slip"
+      }
+     },
+     {
+      "headline": "Yields little changed",
+      "line": "The sample's ten-year yield ended within two basis points of Monday's close, and the dollar was flat against a basket of currencies.",
+      "symbols": [],
+      "source": {
+       "title": "Rates at the close (sample)",
+       "url": "https://northgate-wire.example.com/wire/rates-close"
+      }
+     }
+    ],
+    "holdings": [
+     {
+      "symbol": "SHOP",
+      "why": "Shopify fell after The Tape Desk's invented merchant survey read softer holiday order books; the sample's desk called it the sharpest de-rating among software platforms on the day.",
+      "source": {
+       "title": "Merchant survey: the holiday book (sample)",
+       "url": "https://tape-desk.example.com/merchant-survey-november"
+      },
+      "name": "SHOPIFY INC - CLASS A",
+      "changePct": -8.7377
+     },
+     {
+      "symbol": "IBKR",
+      "why": "Interactive Brokers recovered part of Friday's fall as Harbourline Markets' fictional tally showed steadier account openings.",
+      "source": {
+       "title": "Brokers bounce (sample)",
+       "url": "https://harbourline.example.com/notes/brokers-bounce"
+      },
+      "name": "INTERACTIVE BROKERS GRO-CL A",
+      "changePct": 3.5146
+     },
+     {
+      "symbol": "META",
+      "why": "Meta rose with the other ad platforms, which Ledger Street Daily's invented desk credited with most of the Nasdaq-100's gain.",
+      "source": {
+       "title": "Platforms carry the index (sample)",
+       "url": "https://ledger-street.example.com/2026/11/03/platforms"
+      },
+      "name": "META PLATFORMS INC-CLASS A",
+      "changePct": 2.3569
+     },
+     {
+      "symbol": "AMZN",
+      "why": "Amazon rose with the large platforms in the sample session; the invented desk read it as relief after last week's selling.",
+      "source": {
+       "title": "Platforms carry the index (sample)",
+       "url": "https://ledger-street.example.com/2026/11/03/platforms"
+      },
+      "name": "AMAZON.COM INC",
+      "changePct": 2.06
+     },
+     {
+      "symbol": "SPGI",
+      "why": "S&P Global gave back some of its October run with the other ratings and data names; no page in the sample names a reason beyond profit-taking.",
+      "source": null,
+      "name": "S&P GLOBAL INC",
+      "changePct": -1.9235
+     },
+     {
+      "symbol": "ASML",
+      "why": "ASML rose with chip-equipment names after two down sessions; the sample carries no company news for it.",
+      "source": null,
+      "name": "ASML HOLDING NV-NY REG SHS",
+      "changePct": 1.7036
+     },
+     {
+      "symbol": "MA",
+      "why": "Mastercard eased after Monday's gain, in line with the payments group; no company news in the sample.",
+      "source": null,
+      "name": "MASTERCARD INC - A",
+      "changePct": -1.6593
+     },
+     {
+      "symbol": "BKNG",
+      "why": "Booking rose a little with travel names; no page in the sample explains the move.",
+      "source": null,
+      "name": "BOOKING HOLDINGS INC",
+      "changePct": 1.2488
+     },
+     {
+      "symbol": "MELI",
+      "why": "MercadoLibre slipped with the commerce names, far less than the merchant-software sell-off; no company news in the sample.",
+      "source": null,
+      "name": "MERCADOLIBRE INC",
+      "changePct": -0.8725
+     },
+     {
+      "symbol": "NVO",
+      "why": "Novo Nordisk edged lower with healthcare; no company news in the sample.",
+      "source": null,
+      "name": "NOVO-NORDISK A/S-SPONS ADR",
+      "changePct": -0.6428
+     },
+     {
+      "symbol": "GOOGL",
+      "why": "Alphabet ended a touch higher, lagging the other platforms; no company news in the sample.",
+      "source": null,
+      "name": "ALPHABET INC-CL A",
+      "changePct": 0.3728
+     },
+     {
+      "symbol": "UBER",
+      "why": "Uber was little changed; no page in the sample explains the move.",
+      "source": null,
+      "name": "UBER TECHNOLOGIES INC",
+      "changePct": -0.1649
+     },
+     {
+      "symbol": "BIRK",
+      "why": "Birkenstock was flat after Monday's jump; no company news in the sample.",
+      "source": null,
+      "name": "BIRKENSTOCK HOLDING PLC",
+      "changePct": -0.0281
+     }
+    ]
+   }
+  },
+  {
+   "session": "2026-11-02",
+   "writtenAt": "2026-11-02T21:47:00.000Z",
+   "status": "written",
+   "sentence": null,
+   "reading": {
+    "summary": "In this sample session the S&P 500 slipped about 0.5% and the Nasdaq-100 fell about 1.4% as chip stocks extended Friday's fall, while consumer, travel and payments names rose. The outlets and stories below are invented for the demo.",
+    "points": [
+     {
+      "headline": "Rotation out of chips",
+      "line": "The sample's semiconductor index fell for a second session and the Nasdaq-100 lagged the S&P 500 by almost a point, in a rotation The Tape Desk's invented desk called orderly.",
+      "symbols": [
+       "QQQ",
+       "ASML"
+      ],
+      "source": {
+       "title": "Rotation out of chips (sample)",
+       "url": "https://tape-desk.example.com/2026-11-02/rotation"
+      }
+     },
+     {
+      "headline": "Consumer names lead",
+      "line": "Footwear, travel and ride-hailing names led the S&P 500's gainers on what Ledger Street Daily's fictional desk read as a firmer holiday spending outlook.",
+      "symbols": [
+       "BIRK",
+       "BKNG",
+       "UBER"
+      ],
+      "source": {
+       "title": "Consumer names lead (sample)",
+       "url": "https://ledger-street.example.com/2026/11/02/consumer-leads"
+      }
+     },
+     {
+      "headline": "Payments firm",
+      "line": "Card networks rose on the invented Northgate Wire's monthly spending tracker, which it said showed cross-border travel holding up.",
+      "symbols": [
+       "MA"
+      ],
+      "source": {
+       "title": "Spending tracker, October (sample)",
+       "url": "https://northgate-wire.example.com/wire/spending-tracker-october"
+      }
+     },
+     {
+      "headline": "Latin American commerce rallies",
+      "line": "Regional commerce and fintech names rose as the sample's dollar index eased; Harbourline Markets' fictional note tied it to the currency, not to company news.",
+      "symbols": [
+       "MELI"
+      ],
+      "source": {
+       "title": "Latin American commerce (sample)",
+       "url": "https://harbourline.example.com/notes/latam-commerce"
+      }
+     },
+     {
+      "headline": "Brokers extend their fall",
+      "line": "Retail brokers fell again after Friday, the invented desk pointing to lighter trading volumes into the month's end.",
+      "symbols": [
+       "IBKR"
+      ],
+      "source": {
+       "title": "Brokers and volumes (sample)",
+       "url": "https://harbourline.example.com/notes/brokers-volumes"
+      }
+     },
+     {
+      "headline": "Defensives mixed",
+      "line": "Utilities and staples were mixed in the sample, and healthcare edged up.",
+      "symbols": [
+       "NVO"
+      ],
+      "source": {
+       "title": "Defensives at the close (sample)",
+       "url": "https://northgate-wire.example.com/wire/defensives"
+      }
+     }
+    ],
+    "holdings": [
+     {
+      "symbol": "BIRK",
+      "why": "Birkenstock jumped as footwear and apparel led the sample's consumer names on Ledger Street Daily's invented holiday spending outlook.",
+      "source": {
+       "title": "Consumer names lead (sample)",
+       "url": "https://ledger-street.example.com/2026/11/02/consumer-leads"
+      },
+      "name": "BIRKENSTOCK HOLDING PLC",
+      "changePct": 6.3117
+     },
+     {
+      "symbol": "BKNG",
+      "why": "Booking rose with travel names on the same invented consumer outlook.",
+      "source": {
+       "title": "Consumer names lead (sample)",
+       "url": "https://ledger-street.example.com/2026/11/02/consumer-leads"
+      },
+      "name": "BOOKING HOLDINGS INC",
+      "changePct": 3.794
+     },
+     {
+      "symbol": "MELI",
+      "why": "MercadoLibre rallied with regional commerce as the sample's dollar index eased; Harbourline Markets' fictional note tied it to the currency.",
+      "source": {
+       "title": "Latin American commerce (sample)",
+       "url": "https://harbourline.example.com/notes/latam-commerce"
+      },
+      "name": "MERCADOLIBRE INC",
+      "changePct": 3.2169
+     },
+     {
+      "symbol": "MA",
+      "why": "Mastercard rose after the invented Northgate Wire spending tracker showed cross-border travel holding up.",
+      "source": {
+       "title": "Spending tracker, October (sample)",
+       "url": "https://northgate-wire.example.com/wire/spending-tracker-october"
+      },
+      "name": "MASTERCARD INC - A",
+      "changePct": 3.1489
+     },
+     {
+      "symbol": "IBKR",
+      "why": "Interactive Brokers fell again with the retail brokers on lighter month-end volumes, in the sample's reading.",
+      "source": {
+       "title": "Brokers and volumes (sample)",
+       "url": "https://harbourline.example.com/notes/brokers-volumes"
+      },
+      "name": "INTERACTIVE BROKERS GRO-CL A",
+      "changePct": -2.6918
+     },
+     {
+      "symbol": "ASML",
+      "why": "ASML fell for a second session as the sample's rotation out of chips went on.",
+      "source": {
+       "title": "Rotation out of chips (sample)",
+       "url": "https://tape-desk.example.com/2026-11-02/rotation"
+      },
+      "name": "ASML HOLDING NV-NY REG SHS",
+      "changePct": -2.5391
+     },
+     {
+      "symbol": "UBER",
+      "why": "Uber rose with travel and ride-hailing on the invented consumer outlook.",
+      "source": {
+       "title": "Consumer names lead (sample)",
+       "url": "https://ledger-street.example.com/2026/11/02/consumer-leads"
+      },
+      "name": "UBER TECHNOLOGIES INC",
+      "changePct": 2.2375
+     },
+     {
+      "symbol": "AMZN",
+      "why": "Amazon rose against a weaker Nasdaq, with the consumer names; no company news in the sample.",
+      "source": null,
+      "name": "AMAZON.COM INC",
+      "changePct": 2.1968
+     },
+     {
+      "symbol": "SPGI",
+      "why": "S&P Global rose with the data and ratings names; no page in the sample explains the move.",
+      "source": null,
+      "name": "S&P GLOBAL INC",
+      "changePct": 1.8476
+     },
+     {
+      "symbol": "META",
+      "why": "Meta slipped with the Nasdaq-100; no company news in the sample.",
+      "source": null,
+      "name": "META PLATFORMS INC-CLASS A",
+      "changePct": -1.3431
+     },
+     {
+      "symbol": "NVO",
+      "why": "Novo Nordisk edged up with healthcare; no company news in the sample.",
+      "source": null,
+      "name": "NOVO-NORDISK A/S-SPONS ADR",
+      "changePct": 1.125
+     },
+     {
+      "symbol": "SHOP",
+      "why": "Shopify slipped a little with software; no company news in the sample.",
+      "source": null,
+      "name": "SHOPIFY INC - CLASS A",
+      "changePct": -0.8064
+     },
+     {
+      "symbol": "GOOGL",
+      "why": "Alphabet was little changed; no page in the sample explains the move.",
+      "source": null,
+      "name": "ALPHABET INC-CL A",
+      "changePct": -0.3037
+     }
+    ]
+   }
+  },
+  {
+   "session": "2026-10-30",
+   "writtenAt": "2026-10-30T21:58:00.000Z",
+   "status": "written",
+   "sentence": null,
+   "reading": {
+    "summary": "In this sample session the S&P 500 fell about 1.8% and the Nasdaq-100 about 3.5%, its worst day of the month, as chip equipment, brokers and growth software sold off together. The outlets and stories below are invented for the demo.",
+    "points": [
+     {
+      "headline": "Worst day of the month",
+      "line": "The sample's Nasdaq-100 fell about 3.5% and the S&P 500 about 1.8%; Northgate Wire's invented desk counted four losers for every gainer.",
+      "symbols": [
+       "SPY",
+       "QQQ"
+      ],
+      "source": {
+       "title": "The month's worst day (sample)",
+       "url": "https://northgate-wire.example.com/wire/worst-day-october"
+      }
+     },
+     {
+      "headline": "Chip equipment leads the fall",
+      "line": "Lithography and deposition names fell the most after an invented note in The Tape Desk argued that orders for next year were already in the price.",
+      "symbols": [
+       "ASML"
+      ],
+      "source": {
+       "title": "Chip equipment leads the fall (sample)",
+       "url": "https://tape-desk.example.com/2026-10-30/equipment"
+      }
+     },
+     {
+      "headline": "Brokers drop with volumes",
+      "line": "Retail brokers fell sharply as Harbourline Markets' fictional tally of options volumes dropped from its September high.",
+      "symbols": [
+       "IBKR"
+      ],
+      "source": {
+       "title": "Options volumes (sample)",
+       "url": "https://harbourline.example.com/notes/options-volumes"
+      }
+     },
+     {
+      "headline": "Growth software sold",
+      "line": "Higher-multiple software names fell with the Nasdaq, the merchant platforms among the weakest in the sample.",
+      "symbols": [
+       "SHOP"
+      ],
+      "source": {
+       "title": "Growth software sold (sample)",
+       "url": "https://ledger-street.example.com/2026/10/30/software"
+      }
+     },
+     {
+      "headline": "Defensives hold",
+      "line": "Healthcare and ratings names closed higher, which the invented desk called the session's only shelter.",
+      "symbols": [
+       "NVO",
+       "SPGI"
+      ],
+      "source": {
+       "title": "Defensives hold (sample)",
+       "url": "https://northgate-wire.example.com/wire/defensives-hold"
+      }
+     },
+     {
+      "headline": "Long yields up",
+      "line": "The sample's ten-year yield rose about six basis points into the weekend.",
+      "symbols": [],
+      "source": {
+       "title": "Rates on Friday (sample)",
+       "url": "https://northgate-wire.example.com/wire/rates-friday"
+      }
+     }
+    ],
+    "holdings": [
+     {
+      "symbol": "ASML",
+      "why": "ASML led the chip-equipment fall after The Tape Desk's invented note argued next year's orders were already in the price.",
+      "source": {
+       "title": "Chip equipment leads the fall (sample)",
+       "url": "https://tape-desk.example.com/2026-10-30/equipment"
+      },
+      "name": "ASML HOLDING NV-NY REG SHS",
+      "changePct": -6.5525
+     },
+     {
+      "symbol": "IBKR",
+      "why": "Interactive Brokers dropped as Harbourline Markets' fictional tally of options volumes fell from its September high.",
+      "source": {
+       "title": "Options volumes (sample)",
+       "url": "https://harbourline.example.com/notes/options-volumes"
+      },
+      "name": "INTERACTIVE BROKERS GRO-CL A",
+      "changePct": -5.9557
+     },
+     {
+      "symbol": "SHOP",
+      "why": "Shopify fell with higher-multiple software on the Nasdaq's worst day of the sample month.",
+      "source": {
+       "title": "Growth software sold (sample)",
+       "url": "https://ledger-street.example.com/2026/10/30/software"
+      },
+      "name": "SHOPIFY INC - CLASS A",
+      "changePct": -5.6325
+     },
+     {
+      "symbol": "NVO",
+      "why": "Novo Nordisk rose with healthcare, one of the sample session's few shelters.",
+      "source": {
+       "title": "Defensives hold (sample)",
+       "url": "https://northgate-wire.example.com/wire/defensives-hold"
+      },
+      "name": "NOVO-NORDISK A/S-SPONS ADR",
+      "changePct": 2.1972
+     },
+     {
+      "symbol": "MELI",
+      "why": "MercadoLibre fell with growth names; no company news in the sample.",
+      "source": null,
+      "name": "MERCADOLIBRE INC",
+      "changePct": -2.1444
+     },
+     {
+      "symbol": "BKNG",
+      "why": "Booking fell with the market; no page in the sample explains the move.",
+      "source": null,
+      "name": "BOOKING HOLDINGS INC",
+      "changePct": -1.529
+     },
+     {
+      "symbol": "META",
+      "why": "Meta fell with the Nasdaq-100, less than the index; no company news in the sample.",
+      "source": null,
+      "name": "META PLATFORMS INC-CLASS A",
+      "changePct": -1.526
+     },
+     {
+      "symbol": "AMZN",
+      "why": "Amazon fell with the Nasdaq-100, less than the index; no company news in the sample.",
+      "source": null,
+      "name": "AMAZON.COM INC",
+      "changePct": -1.4111
+     },
+     {
+      "symbol": "GOOGL",
+      "why": "Alphabet fell with the platforms; no company news in the sample.",
+      "source": null,
+      "name": "ALPHABET INC-CL A",
+      "changePct": -1.4023
+     },
+     {
+      "symbol": "SPGI",
+      "why": "S&P Global rose with the defensive names, against the market.",
+      "source": {
+       "title": "Defensives hold (sample)",
+       "url": "https://northgate-wire.example.com/wire/defensives-hold"
+      },
+      "name": "S&P GLOBAL INC",
+      "changePct": 1.2786
+     },
+     {
+      "symbol": "UBER",
+      "why": "Uber slipped, less than the market; no page in the sample explains the move.",
+      "source": null,
+      "name": "UBER TECHNOLOGIES INC",
+      "changePct": -0.7454
+     },
+     {
+      "symbol": "MA",
+      "why": "Mastercard edged up against the market; no company news in the sample.",
+      "source": null,
+      "name": "MASTERCARD INC - A",
+      "changePct": 0.3634
+     },
+     {
+      "symbol": "BIRK",
+      "why": "Birkenstock was flat; no page in the sample explains the move.",
+      "source": null,
+      "name": "BIRKENSTOCK HOLDING PLC",
+      "changePct": 0.1198
+     }
+    ]
+   }
+  }
+ ]
+}

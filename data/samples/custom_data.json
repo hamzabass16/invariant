@@ -1,0 +1,271 @@
+{
+ "version": 1,
+ "updated": "2026-10-09T06:05:00.000Z",
+ "defs": [
+  {
+   "id": "data-sample-freight-index",
+   "name": "Sample freight index",
+   "about": "A fictional container freight index, to show a number added from an API.",
+   "format": "number",
+   "unit": "pts",
+   "refresh": "daily",
+   "screen": "today",
+   "source": {
+    "kind": "api",
+    "url": "https://example.com/api/freight",
+    "answer": "json",
+    "rows": "data",
+    "x": "date",
+    "value": "index",
+    "keyIn": "none",
+    "keyName": ""
+   },
+   "added": "2026-10-01T08:00:00.000Z"
+  },
+  {
+   "id": "data-sample-metal-index",
+   "name": "Sample metal index",
+   "about": "A fictional monthly metals index, to show a series your Claude fetches.",
+   "format": "line",
+   "unit": "",
+   "refresh": "monthly",
+   "screen": "markets",
+   "source": {
+    "kind": "claude",
+    "ask": "A fictional metals index, monthly, the last two years."
+   },
+   "added": "2026-10-01T08:00:00.000Z"
+  },
+  {
+   "id": "data-sample-fund-sectors",
+   "name": "Sample fund by sector",
+   "about": "A fictional fund's sector weights, to show a pie from an API.",
+   "format": "pie",
+   "unit": "%",
+   "refresh": "monthly",
+   "screen": "holdings",
+   "source": {
+    "kind": "api",
+    "url": "https://example.com/api/fund/sectors",
+    "answer": "json",
+    "rows": "weights",
+    "x": "",
+    "value": "",
+    "keyIn": "header",
+    "keyName": "X-Api-Key"
+   },
+   "added": "2026-10-01T08:00:00.000Z"
+  },
+  {
+   "id": "data-sample-yearly-returns",
+   "name": "Sample yearly returns",
+   "about": "A fictional manager's calendar-year returns, to show bars from a CSV.",
+   "format": "bar",
+   "unit": "%",
+   "refresh": "monthly",
+   "screen": "performance",
+   "source": {
+    "kind": "api",
+    "url": "https://example.com/api/returns.csv",
+    "answer": "csv",
+    "rows": "",
+    "x": "year",
+    "value": "return",
+    "keyIn": "none",
+    "keyName": ""
+   },
+   "added": "2026-10-01T08:00:00.000Z"
+  }
+ ],
+ "readings": {
+  "data-sample-freight-index": {
+   "readAt": "2026-10-09T06:05:00.000Z",
+   "goodAt": "2026-10-09T06:05:00.000Z",
+   "points": [
+    {
+     "x": "2026-10-08",
+     "value": 1842
+    }
+   ],
+   "pages": [],
+   "note": null,
+   "problem": null
+  },
+  "data-sample-metal-index": {
+   "readAt": "2026-10-01T08:01:00.000Z",
+   "goodAt": "2026-10-01T08:01:00.000Z",
+   "points": [
+    {
+     "x": "2024-10-01",
+     "value": 98.9
+    },
+    {
+     "x": "2024-11-01",
+     "value": 96.3
+    },
+    {
+     "x": "2024-12-01",
+     "value": 98.1
+    },
+    {
+     "x": "2025-01-01",
+     "value": 94.8
+    },
+    {
+     "x": "2025-02-01",
+     "value": 95.6
+    },
+    {
+     "x": "2025-03-01",
+     "value": 94.9
+    },
+    {
+     "x": "2025-04-01",
+     "value": 91.6
+    },
+    {
+     "x": "2025-05-01",
+     "value": 92.1
+    },
+    {
+     "x": "2025-06-01",
+     "value": 88.7
+    },
+    {
+     "x": "2025-07-01",
+     "value": 88.6
+    },
+    {
+     "x": "2025-08-01",
+     "value": 85.6
+    },
+    {
+     "x": "2025-09-01",
+     "value": 82.9
+    },
+    {
+     "x": "2025-10-01",
+     "value": 82.8
+    },
+    {
+     "x": "2025-11-01",
+     "value": 85.6
+    },
+    {
+     "x": "2025-12-01",
+     "value": 83.1
+    },
+    {
+     "x": "2026-01-01",
+     "value": 81.4
+    },
+    {
+     "x": "2026-02-01",
+     "value": 82.7
+    },
+    {
+     "x": "2026-03-01",
+     "value": 86.4
+    },
+    {
+     "x": "2026-04-01",
+     "value": 87.4
+    },
+    {
+     "x": "2026-05-01",
+     "value": 87.0
+    },
+    {
+     "x": "2026-06-01",
+     "value": 91.2
+    },
+    {
+     "x": "2026-07-01",
+     "value": 87.9
+    },
+    {
+     "x": "2026-08-01",
+     "value": 91.2
+    },
+    {
+     "x": "2026-09-01",
+     "value": 89.9
+    }
+   ],
+   "pages": [
+    {
+     "title": "Sample source (fictional)",
+     "url": "https://example.com/sample-metal-index"
+    }
+   ],
+   "note": "A fictional series for the demo; your Claude names the real page each figure came from.",
+   "problem": null
+  },
+  "data-sample-fund-sectors": {
+   "readAt": "2026-10-01T08:00:30.000Z",
+   "goodAt": "2026-10-01T08:00:30.000Z",
+   "points": [
+    {
+     "x": "Technology",
+     "value": 31.5
+    },
+    {
+     "x": "Health care",
+     "value": 14.2
+    },
+    {
+     "x": "Financials",
+     "value": 12.8
+    },
+    {
+     "x": "Industrials",
+     "value": 10.1
+    },
+    {
+     "x": "Consumer",
+     "value": 9.6
+    },
+    {
+     "x": "Energy",
+     "value": 6.4
+    },
+    {
+     "x": "Other",
+     "value": 15.4
+    }
+   ],
+   "pages": [],
+   "note": null,
+   "problem": null
+  },
+  "data-sample-yearly-returns": {
+   "readAt": "2026-10-01T08:00:40.000Z",
+   "goodAt": "2026-10-01T08:00:40.000Z",
+   "points": [
+    {
+     "x": "2021",
+     "value": 18.2
+    },
+    {
+     "x": "2022",
+     "value": -12.4
+    },
+    {
+     "x": "2023",
+     "value": 21.7
+    },
+    {
+     "x": "2024",
+     "value": 15.3
+    },
+    {
+     "x": "2025",
+     "value": 6.9
+    }
+   ],
+   "pages": [],
+   "note": null,
+   "problem": null
+  }
+ }
+}

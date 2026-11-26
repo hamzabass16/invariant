@@ -1,0 +1,28 @@
+{
+  "id": "options_trader",
+  "name": "Short-term options seller",
+  "about": "Sells 30 to 45 day puts and calls on a handful of large US names for premium, keeps the shares as collateral, and manages by implied volatility, days to expiry and profit captured. Fictional.",
+  "setup": { "ownerName": "Mara", "profile": "individual", "baseCurrency": "USD", "inputs": ["ibkr"], "tradesOptions": true },
+  "seed": 20261009,
+  "asOf": "2026-10-09",
+  "book": {
+    "accounts": [{ "name": "IBKR", "source": "ibkr", "cash": 38000 }],
+    "equities": [
+      { "symbol": "SPY", "name": "S&P 500 ETF (fictional)", "account": "IBKR", "assetClass": "etf", "quantity": 100, "price": 570, "costPerUnit": 498, "dayChangePerUnit": -3.2, "sector": null, "themes": ["Index"], "dividendPerShare": 1.75, "dividendGrowthPct": 5 },
+      { "symbol": "AAPL", "name": "Apple (fictional)", "account": "IBKR", "quantity": 200, "price": 230, "costPerUnit": 182, "dayChangePerUnit": -1.4, "sector": "Technology", "themes": ["Consumer"], "dividendPerShare": 0.26, "dividendGrowthPct": 4 },
+      { "symbol": "NVDA", "name": "Nvidia (fictional)", "account": "IBKR", "quantity": 300, "price": 140, "costPerUnit": 96, "dayChangePerUnit": 2.1, "sector": "Technology", "themes": ["AI and semiconductors"], "dividendPerShare": 0.01 }
+    ],
+    "options": [
+      { "underlying": "AAPL", "right": "C", "strike": 245, "daysToExpiry": 42, "contracts": -2, "mark": 3.1, "openedAt": 4.5, "openedDaysAgo": 6, "account": "IBKR" },
+      { "underlying": "NVDA", "right": "C", "strike": 155, "daysToExpiry": 35, "contracts": -3, "mark": 2.4, "openedAt": 5.2, "openedDaysAgo": 12, "account": "IBKR" },
+      { "underlying": "TSLA", "right": "P", "strike": 215, "daysToExpiry": 14, "contracts": -2, "mark": 1.9, "openedAt": 6.8, "openedDaysAgo": 28, "account": "IBKR" },
+      { "underlying": "AMD", "right": "P", "strike": 150, "daysToExpiry": 21, "contracts": -3, "mark": 2.6, "openedAt": 4.1, "openedDaysAgo": 21, "account": "IBKR" },
+      { "underlying": "MSFT", "right": "P", "strike": 390, "daysToExpiry": 45, "contracts": -1, "mark": 6.2, "openedAt": 6.9, "openedDaysAgo": 2, "account": "IBKR" },
+      { "underlying": "SPY", "right": "P", "strike": 520, "daysToExpiry": 70, "contracts": 2, "mark": 7.8, "openedAt": 9.4, "openedDaysAgo": 20, "account": "IBKR" }
+    ],
+    "spots": { "TSLA": 250, "AMD": 165, "MSFT": 420 },
+    "premium": { "monthly": 2800, "months": 14, "account": "IBKR", "underlyings": ["AAPL", "NVDA", "TSLA", "AMD", "SPY", "MSFT"] },
+    "series": { "weeks": 104, "nav": { "start": 128000, "driftPct": 16, "volPct": 15 }, "benchmarks": { "SPY": { "start": 452, "driftPct": 12, "volPct": 14 } } },
+    "transactions": [{ "daysAgo": 400, "account": "IBKR", "kind": "deposit", "symbol": "USD", "amount": 25000 }]
+  }
+}

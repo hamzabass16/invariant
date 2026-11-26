@@ -1,0 +1,36 @@
+{
+  "id": "dividend_growth",
+  "name": "Dividend growth investor",
+  "about": "Holds about fifteen dividend payers at one broker and measures himself on the income they pay and how fast it grows, not on price. Fictional.",
+  "setup": { "ownerName": "Theo", "profile": "individual", "baseCurrency": "USD", "inputs": ["schwab"], "tradesOptions": false },
+  "seed": 4412,
+  "asOf": "2026-10-09",
+  "book": {
+    "accounts": [{ "name": "Schwab", "source": "snaptrade", "cash": 9800 }],
+    "equities": [
+      { "symbol": "JNJ", "name": "Johnson & Johnson (fictional)", "account": "Schwab", "quantity": 120, "price": 162, "costPerUnit": 148, "dayChangePerUnit": 0.4, "sector": "Health care", "themes": ["Defensive"], "dividendPerShare": 1.24, "dividendGrowthPct": 5.5 },
+      { "symbol": "PG", "name": "Procter & Gamble (fictional)", "account": "Schwab", "quantity": 110, "price": 158, "costPerUnit": 141, "dayChangePerUnit": -0.6, "sector": "Consumer staples", "themes": ["Defensive"], "dividendPerShare": 1.01, "dividendGrowthPct": 6 },
+      { "symbol": "KO", "name": "Coca-Cola (fictional)", "account": "Schwab", "quantity": 260, "price": 68, "costPerUnit": 59, "dayChangePerUnit": 0.2, "sector": "Consumer staples", "themes": ["Defensive"], "dividendPerShare": 0.485, "dividendGrowthPct": 5 },
+      { "symbol": "PEP", "name": "PepsiCo (fictional)", "account": "Schwab", "quantity": 90, "price": 171, "costPerUnit": 165, "dayChangePerUnit": -1.1, "sector": "Consumer staples", "themes": ["Defensive"], "dividendPerShare": 1.355, "dividendGrowthPct": 7 },
+      { "symbol": "MSFT", "name": "Microsoft (fictional)", "account": "Schwab", "quantity": 60, "price": 420, "costPerUnit": 290, "dayChangePerUnit": 3.5, "sector": "Technology", "themes": ["AI and semiconductors"], "dividendPerShare": 0.83, "dividendGrowthPct": 10 },
+      { "symbol": "ABBV", "name": "AbbVie (fictional)", "account": "Schwab", "quantity": 95, "price": 188, "costPerUnit": 142, "dayChangePerUnit": 1.2, "sector": "Health care", "themes": [], "dividendPerShare": 1.64, "dividendGrowthPct": 5 },
+      { "symbol": "TXN", "name": "Texas Instruments (fictional)", "account": "Schwab", "quantity": 70, "price": 196, "costPerUnit": 170, "dayChangePerUnit": 2.0, "sector": "Technology", "themes": ["AI and semiconductors"], "dividendPerShare": 1.36, "dividendGrowthPct": 8 },
+      { "symbol": "HD", "name": "Home Depot (fictional)", "account": "Schwab", "quantity": 40, "price": 380, "costPerUnit": 310, "dayChangePerUnit": -2.4, "sector": "Consumer discretionary", "themes": [], "dividendPerShare": 2.3, "dividendGrowthPct": 8 },
+      { "symbol": "ADP", "name": "Automatic Data Processing (fictional)", "account": "Schwab", "quantity": 55, "price": 292, "costPerUnit": 240, "dayChangePerUnit": 0.9, "sector": "Industrials", "themes": [], "dividendPerShare": 1.54, "dividendGrowthPct": 11 },
+      { "symbol": "NEE", "name": "NextEra Energy (fictional)", "account": "Schwab", "quantity": 180, "price": 76, "costPerUnit": 71, "dayChangePerUnit": -0.3, "sector": "Utilities", "themes": ["Energy transition"], "dividendPerShare": 0.5665, "dividendGrowthPct": 10 },
+      { "symbol": "VZ", "name": "Verizon (fictional)", "account": "Schwab", "quantity": 300, "price": 42, "costPerUnit": 46, "dayChangePerUnit": 0.1, "sector": "Communication", "themes": [], "dividendPerShare": 0.6775, "dividendGrowthPct": 2 },
+      { "symbol": "O", "name": "Realty Income (fictional)", "account": "Schwab", "quantity": 250, "price": 58, "costPerUnit": 55, "dayChangePerUnit": 0.2, "sector": "Real estate", "themes": [], "dividendPerShare": 0.79, "dividendGrowthPct": 3 },
+      { "symbol": "CVX", "name": "Chevron (fictional)", "account": "Schwab", "quantity": 80, "price": 156, "costPerUnit": 150, "dayChangePerUnit": 1.8, "sector": "Energy", "themes": [], "dividendPerShare": 1.71, "dividendGrowthPct": 6 },
+      { "symbol": "SCHD", "name": "US Dividend Equity ETF (fictional)", "account": "Schwab", "assetClass": "etf", "quantity": 400, "price": 29, "costPerUnit": 26, "dayChangePerUnit": 0.05, "sector": null, "themes": ["Index"], "dividendPerShare": 0.26, "dividendGrowthPct": 9 },
+      { "symbol": "LOW", "name": "Lowe's (fictional)", "account": "Schwab", "quantity": 45, "price": 248, "costPerUnit": 205, "dayChangePerUnit": -1.5, "sector": "Consumer discretionary", "themes": [], "dividendPerShare": 1.2, "dividendGrowthPct": 12 }
+    ],
+    "series": { "weeks": 156, "nav": { "start": 288000, "driftPct": 9, "volPct": 11 }, "benchmarks": { "SPY": { "start": 420, "driftPct": 12, "volPct": 14 } } },
+    "transactions": [
+      { "daysAgo": 20, "account": "Schwab", "kind": "deposit", "symbol": "USD", "amount": 2000 },
+      { "daysAgo": 50, "account": "Schwab", "kind": "deposit", "symbol": "USD", "amount": 2000 },
+      { "daysAgo": 80, "account": "Schwab", "kind": "deposit", "symbol": "USD", "amount": 2000 },
+      { "daysAgo": 110, "account": "Schwab", "kind": "buy", "symbol": "LOW", "amount": -4960, "quantity": 20, "price": 248 },
+      { "daysAgo": 200, "account": "Schwab", "kind": "sell", "symbol": "T", "amount": 6100, "quantity": -300, "price": 20.33 }
+    ]
+  }
+}

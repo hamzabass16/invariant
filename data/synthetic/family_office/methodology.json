@@ -1,0 +1,870 @@
+{
+  "name": "Family Investment Policy",
+  "adopted": "2026-01-10",
+  "summary": "A family's wealth across banks, private funds, property and a brokerage account, held inside allocation bands, with liquidity and concentration tested through the funds. The council is told when a valuation goes stale.",
+  "source": {
+    "title": "Family Investment Policy (fictional)",
+    "fileId": null
+  },
+  "origin": "document",
+  "figures": [
+    {
+      "id": "net-worth",
+      "label": "Net worth",
+      "about": "Everything at our share, real estate net of mortgages.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "public-equity-share",
+      "label": "Public equities",
+      "about": "Shares and ETFs as a share of net worth (1.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "public"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "private-share",
+      "label": "Private funds",
+      "about": "Private funds as a share of net worth (1.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "private"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "fixed-income-share",
+      "label": "Fixed income",
+      "about": "Bonds and term deposits as a share of net worth (1.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "fixed_income"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "real-estate-share",
+      "label": "Real estate",
+      "about": "Property at our share, net of mortgages, as a share of net worth (1.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "property"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash as a share of net worth (1.5).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "cash"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "liquid-share",
+      "label": "Liquid",
+      "about": "Share of net worth outside private funds and real estate (2.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "liquid",
+              "is": "eq",
+              "value": true
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "call-cover",
+      "label": "Calls covered",
+      "about": "Cash and deposits against what the funds can still call (2.2).",
+      "unit": "ratio",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "fund_unfunded"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "company-share",
+      "label": "Companies through funds",
+      "about": "Each company reached through a fund as a share of net worth (3.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "lookthrough",
+          "where": [],
+          "field": "lt_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "table",
+      "by": "holding"
+    },
+    {
+      "id": "manager-share",
+      "label": "Fund managers",
+      "about": "Each manager's funds as a share of net worth (3.2).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "private_fund"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "bars",
+      "by": "holding"
+    },
+    {
+      "id": "issuer-share",
+      "label": "Bond issuers",
+      "about": "Each bond issuer as a share of net worth (3.3).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "bond"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "table",
+      "by": "holding"
+    },
+    {
+      "id": "ai-share",
+      "label": "AI and semiconductors",
+      "about": "Direct holdings tagged AI as a share of net worth; the Themes panel adds what funds hold (3.4).",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "themes",
+              "is": "contains",
+              "value": "AI and semiconductors"
+            }
+          ],
+          "field": "owner_value"
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "where": [],
+          "field": "owner_value",
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "ltv-by-property",
+      "label": "Loan to value",
+      "about": "Mortgage over value, per property (5.1).",
+      "unit": "pct",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "real_estate"
+            }
+          ],
+          "field": "property_ltv_pct"
+        }
+      },
+      "view": "bars",
+      "by": "holding"
+    },
+    {
+      "id": "property-valuation-age",
+      "label": "Days since valued",
+      "about": "Days since each property's value was set (5.2).",
+      "unit": "days",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "real_estate"
+            }
+          ],
+          "field": "age_days"
+        }
+      },
+      "view": "table",
+      "by": "holding"
+    },
+    {
+      "id": "oldest-valuation",
+      "label": "Oldest valuation",
+      "about": "Days since the stalest figure behind net worth was set (6.1).",
+      "unit": "days",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "max",
+          "over": "holdings",
+          "where": [],
+          "field": "age_days"
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "distributions-ttm",
+      "label": "Distributions, 12 months",
+      "about": "Paid back by the funds over the last twelve months (6.2).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "distribution"
+            }
+          ],
+          "field": "amount",
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "calls-ttm",
+      "label": "Capital calls, 12 months",
+      "about": "Called by the funds over the last twelve months (6.2).",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "transactions",
+          "where": [
+            {
+              "field": "kind",
+              "is": "eq",
+              "value": "capital_call"
+            }
+          ],
+          "field": "amount",
+          "abs": true,
+          "window": {
+            "kind": "ttm"
+          }
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "dpi-by-fund",
+      "label": "DPI",
+      "about": "Distributions to paid-in, per fund, as reported (6.2).",
+      "unit": "ratio",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "private_fund"
+            }
+          ],
+          "field": "fund_dpi"
+        }
+      },
+      "view": "table",
+      "by": "holding"
+    },
+    {
+      "id": "tvpi-by-fund",
+      "label": "TVPI",
+      "about": "Total value to paid-in, per fund, as reported (6.2).",
+      "unit": "ratio",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "avg",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "eq",
+              "value": "private_fund"
+            }
+          ],
+          "field": "fund_tvpi"
+        }
+      },
+      "view": "table",
+      "by": "holding"
+    }
+  ],
+  "classes": [
+    {
+      "id": "public",
+      "label": "Public equities",
+      "criteria": [
+        {
+          "field": "asset_class",
+          "is": "in",
+          "value": [
+            "equity",
+            "etf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "private",
+      "label": "Private funds",
+      "criteria": [
+        {
+          "field": "asset_class",
+          "is": "eq",
+          "value": "private_fund"
+        }
+      ]
+    },
+    {
+      "id": "fixed_income",
+      "label": "Fixed income",
+      "criteria": [
+        {
+          "field": "asset_class",
+          "is": "in",
+          "value": [
+            "bond",
+            "deposit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "property",
+      "label": "Real estate",
+      "criteria": [
+        {
+          "field": "asset_class",
+          "is": "eq",
+          "value": "real_estate"
+        }
+      ]
+    },
+    {
+      "id": "cash",
+      "label": "Cash",
+      "criteria": [
+        {
+          "field": "asset_class",
+          "is": "eq",
+          "value": "cash"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "equity-low",
+      "section": "1.1",
+      "text": "Public equities at least 30% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "public-equity-share",
+        "is": "gte",
+        "limit": 30
+      }
+    },
+    {
+      "id": "equity-high",
+      "section": "1.1",
+      "text": "Public equities at most 45% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "public-equity-share",
+        "is": "lte",
+        "limit": 45
+      }
+    },
+    {
+      "id": "private-low",
+      "section": "1.2",
+      "text": "Private funds at least 20% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "private-share",
+        "is": "gte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "private-high",
+      "section": "1.2",
+      "text": "Private funds at most 35% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "private-share",
+        "is": "lte",
+        "limit": 35
+      }
+    },
+    {
+      "id": "fi-low",
+      "section": "1.3",
+      "text": "Fixed income at least 10% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "fixed-income-share",
+        "is": "gte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "fi-high",
+      "section": "1.3",
+      "text": "Fixed income at most 20% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "fixed-income-share",
+        "is": "lte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "re-cap",
+      "section": "1.4",
+      "text": "Real estate at most 20% of net worth, at our share, net of mortgages.",
+      "severity": "guideline",
+      "test": {
+        "figure": "real-estate-share",
+        "is": "lte",
+        "limit": 20
+      }
+    },
+    {
+      "id": "cash-floor",
+      "section": "1.5",
+      "text": "Cash at least 5% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "cash-share",
+        "is": "gte",
+        "limit": 5
+      }
+    },
+    {
+      "id": "liquidity",
+      "section": "2.1",
+      "text": "At least 40% of net worth liquid.",
+      "severity": "breach",
+      "test": {
+        "figure": "liquid-share",
+        "is": "gte",
+        "limit": 40
+      }
+    },
+    {
+      "id": "call-cover",
+      "section": "2.2",
+      "text": "Cash and deposits at least 1.2 times unfunded commitments.",
+      "severity": "breach",
+      "test": {
+        "figure": "call-cover",
+        "is": "gte",
+        "limit": 1.2
+      }
+    },
+    {
+      "id": "company-cap",
+      "section": "3.1",
+      "text": "No single company above 10% of net worth, through funds as well.",
+      "severity": "breach",
+      "test": {
+        "figure": "company-share",
+        "is": "lte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "manager-cap",
+      "section": "3.2",
+      "text": "No single fund manager above 15% of net worth.",
+      "severity": "guideline",
+      "test": {
+        "figure": "manager-share",
+        "is": "lte",
+        "limit": 15
+      }
+    },
+    {
+      "id": "issuer-cap",
+      "section": "3.3",
+      "text": "No single bond issuer above 7% of net worth; government bonds excepted.",
+      "severity": "guideline",
+      "test": {
+        "figure": "issuer-share",
+        "is": "lte",
+        "limit": 7
+      }
+    },
+    {
+      "id": "ai-cap",
+      "section": "3.4",
+      "text": "AI and semiconductors exposure under 25%.",
+      "severity": "guideline",
+      "test": {
+        "figure": "ai-share",
+        "is": "lt",
+        "limit": 25
+      }
+    },
+    {
+      "id": "ig-only",
+      "section": "4.1",
+      "text": "Investment grade only; ratings checked by hand at purchase.",
+      "severity": "guideline",
+      "test": null
+    },
+    {
+      "id": "ltv",
+      "section": "5.1",
+      "text": "Loan to value at most 50% on each property.",
+      "severity": "breach",
+      "test": {
+        "figure": "ltv-by-property",
+        "is": "lte",
+        "limit": 50
+      }
+    },
+    {
+      "id": "revalue",
+      "section": "5.2",
+      "text": "Tell us when a property valuation is over 365 days old.",
+      "severity": "watch",
+      "test": {
+        "figure": "property-valuation-age",
+        "is": "lte",
+        "limit": 365
+      }
+    },
+    {
+      "id": "stale",
+      "section": "6.1",
+      "text": "Tell the council when a figure behind net worth is older than 120 days.",
+      "severity": "watch",
+      "test": {
+        "figure": "oldest-valuation",
+        "is": "lte",
+        "limit": 120
+      }
+    },
+    {
+      "id": "council-vote",
+      "section": "7.1",
+      "text": "A new fund manager needs a vote of the council.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "net-worth",
+      "liquid-share",
+      "call-cover",
+      "cash-share",
+      "oldest-valuation",
+      "ai-share"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "Allocation bands",
+        "figures": [
+          "public-equity-share",
+          "private-share",
+          "fixed-income-share",
+          "real-estate-share",
+          "cash-share"
+        ],
+        "from": "1"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart",
+        "from": "1"
+      },
+      {
+        "kind": "figures",
+        "label": "Concentration",
+        "figures": [
+          "company-share",
+          "manager-share",
+          "issuer-share"
+        ],
+        "from": "3"
+      },
+      {
+        "kind": "panel",
+        "id": "themes",
+        "view": "chart",
+        "from": "3.4"
+      },
+      {
+        "kind": "panel",
+        "id": "overlap",
+        "view": "table",
+        "from": "6.3"
+      },
+      {
+        "kind": "panel",
+        "id": "funds",
+        "view": "chart",
+        "from": "6"
+      },
+      {
+        "kind": "figures",
+        "label": "Funds",
+        "figures": [
+          "distributions-ttm",
+          "calls-ttm",
+          "dpi-by-fund",
+          "tvpi-by-fund"
+        ],
+        "from": "6.2"
+      },
+      {
+        "kind": "panel",
+        "id": "income",
+        "view": "chart",
+        "from": "4.2"
+      },
+      {
+        "kind": "panel",
+        "id": "properties",
+        "view": "chart",
+        "from": "5"
+      },
+      {
+        "kind": "figures",
+        "label": "Real estate",
+        "figures": [
+          "ltv-by-property",
+          "property-valuation-age"
+        ],
+        "from": "5"
+      },
+      {
+        "kind": "panel",
+        "id": "freshness",
+        "view": "table",
+        "from": "6.1"
+      }
+    ],
+    "themes": [
+      "AI and semiconductors"
+    ]
+  }
+}

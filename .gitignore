@@ -1,0 +1,27 @@
+node_modules/
+.next/
+.env
+.env.local
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Database exports — timestamped, never committed.
+backups/
+
+# Claude Code: personal settings and worktrees stay local; .claude/settings.json and skills are shared.
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md
+
+# macOS: what Finder and the system leave in a folder. Never committed.
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Synthetic loop runs: drafts and judgements made on a local key, never committed.
+synthetic-runs/

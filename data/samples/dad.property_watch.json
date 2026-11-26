@@ -1,0 +1,27 @@
+{
+  "updated": "2026-10-11",
+  "properties": [
+    {
+      "holdingId": "re:ath",
+      "whatChanged": "Asking rents for similar two-bedroom flats within 1 km rose about 3% on last quarter. A metro extension tender nearby was awarded.",
+      "longTerm": { "medianRent": 1800, "low": 1450, "high": 2300, "count": 14, "radiusKm": 1, "trendPct": 3.1, "note": "Asking rents for 80 to 110 m2 listings, not signed leases.", "sources": [{ "title": "Sample listing search (fictional)", "url": "https://example.com/listings/athens-kolonaki" }] },
+      "shortStay": null,
+      "news": [
+        { "date": "2026-10-03", "title": "Metro line extension tender awarded (sample)", "distanceKm": 0.8, "direction": "up", "why": "Better transport usually supports rents and values once construction ends; disruption during works.", "material": true, "source": { "title": "Sample news item (fictional)", "url": "https://example.com/news/metro-tender" } },
+        { "date": "2026-09-22", "title": "City consults on short-stay licence cap in central districts (sample)", "distanceKm": null, "direction": "unclear", "why": "Fewer short-stay units can push some owners into long-term letting, adding supply; it also limits the option to switch this flat to short-stay.", "material": false, "source": { "title": "Sample news item (fictional)", "url": "https://example.com/news/str-cap" } }
+      ],
+      "suggestedValuation": null
+    },
+    {
+      "holdingId": "re:isl",
+      "whatChanged": "A 120-room resort next to the beach was approved about 600 m away. Valuation is over 18 months old.",
+      "longTerm": null,
+      "shortStay": { "adr": 410, "occupancyPct": 58, "note": "Market view for similar villas from public tourism statistics and a sample of public listing prices; not this villa's own figures.", "sources": [{ "title": "Sample tourism statistics (fictional)", "url": "https://example.com/stats/cyclades-2026" }] },
+      "news": [
+        { "date": "2026-10-06", "title": "120-room resort approved on the bay (sample)", "distanceKm": 0.6, "direction": "unclear", "why": "More visitors and amenities can lift nightly rates; more rooms nearby compete for the same guests, and construction lasts two seasons.", "material": true, "source": { "title": "Sample planning notice (fictional)", "url": "https://example.com/planning/resort" } },
+        { "date": "2026-09-15", "title": "Beach awarded Blue Flag again for 2027 (sample)", "distanceKm": 0.3, "direction": "up", "why": "Keeps the beach's draw for short-stay guests.", "material": false, "source": { "title": "Sample notice (fictional)", "url": "https://example.com/news/blue-flag" } }
+      ],
+      "suggestedValuation": { "value": 960000, "basis": "Asking prices for comparable villas, about 7% above the March 2025 appraisal; asking prices overstate deals." }
+    }
+  ]
+}

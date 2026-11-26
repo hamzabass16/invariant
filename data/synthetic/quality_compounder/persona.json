@@ -1,0 +1,29 @@
+{
+  "id": "quality_compounder",
+  "name": "Quality compounder investor",
+  "about": "Owns about ten businesses sorted into three archetypes, each with its own position cap, judged on fundamentals against written thresholds and bought only at a discount to the owner's own valuation. Fictional, and not the HCMP methodology.",
+  "setup": { "ownerName": "Nadia", "profile": "individual", "baseCurrency": "USD", "inputs": ["ibkr"], "tradesOptions": false },
+  "seed": 31337,
+  "asOf": "2026-10-09",
+  "book": {
+    "accounts": [{ "name": "IBKR", "source": "ibkr", "cash": 14200 }],
+    "equities": [
+      { "symbol": "MA", "name": "Mastercard (fictional)", "account": "IBKR", "quantity": 42, "price": 512, "costPerUnit": 380, "dayChangePerUnit": 3.2, "sector": "Financials", "themes": ["Compounder", "Payments"], "dividendPerShare": 0.76, "dividendGrowthPct": 15, "record": { "ownValuation": { "low": 420, "base": 480, "high": 560, "asOf": "2026-08-30", "basis": "Own DCF, 9% discount rate" }, "since": "2024-02-01", "note": "Compounder since the first review." } },
+      { "symbol": "ASML", "name": "ASML (fictional)", "account": "IBKR", "quantity": 24, "price": 802, "costPerUnit": 690, "dayChangePerUnit": -6.1, "sector": "Technology", "themes": ["Compounder", "AI and semiconductors"], "country": "NL", "dividendPerShare": 1.6, "dividendGrowthPct": 10, "record": { "ownValuation": { "low": 650, "base": 760, "high": 880, "asOf": "2026-07-31", "basis": "Own DCF" }, "since": "2024-02-01", "note": null } },
+      { "symbol": "SPGI", "name": "S&P Global (fictional)", "account": "IBKR", "quantity": 36, "price": 541, "costPerUnit": 470, "dayChangePerUnit": 1.1, "sector": "Financials", "themes": ["Compounder", "Data"], "dividendPerShare": 0.96, "dividendGrowthPct": 8, "record": { "ownValuation": { "low": 440, "base": 500, "high": 590, "asOf": "2026-09-15", "basis": "Own DCF" }, "since": "2025-06-01", "note": null } },
+      { "symbol": "COST", "name": "Costco (fictional)", "account": "IBKR", "quantity": 16, "price": 915, "costPerUnit": 720, "dayChangePerUnit": 4.4, "sector": "Consumer staples", "themes": ["Compounder", "Retail"], "dividendPerShare": 1.3, "dividendGrowthPct": 13, "record": { "ownValuation": { "low": 600, "base": 700, "high": 790, "asOf": "2026-06-30", "basis": "Own DCF" }, "since": "2023-11-01", "note": null } },
+      { "symbol": "AMZN", "name": "Amazon (fictional)", "account": "IBKR", "quantity": 160, "price": 221, "costPerUnit": 150, "dayChangePerUnit": 1.9, "sector": "Consumer discretionary", "themes": ["Transitional", "AI and semiconductors", "Cloud"], "record": { "ownValuation": { "low": 190, "base": 240, "high": 300, "asOf": "2026-08-10", "basis": "Own DCF" }, "since": "2025-01-15", "note": null } },
+      { "symbol": "UBER", "name": "Uber (fictional)", "account": "IBKR", "quantity": 300, "price": 96, "costPerUnit": 62, "dayChangePerUnit": -0.8, "sector": "Industrials", "themes": ["Transitional", "Platforms"], "record": { "ownValuation": { "low": 80, "base": 105, "high": 130, "asOf": "2026-08-10", "basis": "Own DCF" }, "since": "2025-04-01", "note": null } },
+      { "symbol": "SHOP", "name": "Shopify (fictional)", "account": "IBKR", "quantity": 110, "price": 171, "costPerUnit": 88, "dayChangePerUnit": 2.6, "sector": "Technology", "themes": ["Transitional", "Commerce"], "country": "CA", "record": { "ownValuation": { "low": 95, "base": 120, "high": 150, "asOf": "2026-09-01", "basis": "Own DCF" }, "since": "2024-09-01", "note": null } },
+      { "symbol": "MELI", "name": "MercadoLibre (fictional)", "account": "IBKR", "quantity": 7, "price": 2380, "costPerUnit": 1650, "dayChangePerUnit": 18.5, "sector": "Consumer discretionary", "themes": ["Growth", "Commerce", "Payments"], "country": "AR", "record": { "ownValuation": { "low": 2000, "base": 2500, "high": 3100, "asOf": "2026-08-20", "basis": "Own DCF" }, "since": "2025-10-01", "note": null } },
+      { "symbol": "BIRK", "name": "Birkenstock (fictional)", "account": "IBKR", "quantity": 240, "price": 47, "costPerUnit": 52, "dayChangePerUnit": -0.3, "sector": "Consumer discretionary", "themes": ["Probation", "Consumer"], "country": "DE", "record": { "ownValuation": { "low": 48, "base": 62, "high": 75, "asOf": "2026-10-01", "basis": "Own DCF, 30% discount accepted" }, "since": "2026-10-01", "note": "On probation: one threshold short at the Q3 review." } },
+      { "symbol": "NVO", "name": "Novo Nordisk (fictional)", "account": "IBKR", "quantity": 120, "price": 58, "costPerUnit": 112, "dayChangePerUnit": 0.4, "sector": "Health care", "themes": ["Probation", "Health"], "country": "DK", "record": { "ownValuation": null, "since": "2026-07-01", "note": "Kill signal tripped; sale decided." } }
+    ],
+    "series": { "weeks": 130, "nav": { "start": 142000, "driftPct": 14, "volPct": 17 }, "benchmarks": { "SPY": { "start": 440, "driftPct": 12, "volPct": 14 }, "QQQ": { "start": 380, "driftPct": 16, "volPct": 19 } } },
+    "transactions": [
+      { "daysAgo": 70, "account": "IBKR", "kind": "sell", "symbol": "MBGL", "amount": 107, "quantity": -3, "price": 35.7 },
+      { "daysAgo": 120, "account": "IBKR", "kind": "buy", "symbol": "SPGI", "amount": -8460, "quantity": 18, "price": 470 },
+      { "daysAgo": 365, "account": "IBKR", "kind": "deposit", "symbol": "USD", "amount": 20000 }
+    ]
+  }
+}

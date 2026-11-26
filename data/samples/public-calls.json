@@ -1,0 +1,49 @@
+{
+  "calls": [
+    {
+      "id": "cost-b53f328dd5cc",
+      "subject": "COST",
+      "name": "Ines",
+      "handle": "quiet-compounder",
+      "text": "The membership fee is the business: renewals above 90% and a fee raised every five or six years carry the margin, while the goods are sold near cost.\n\nThe price assumes the warehouse count keeps growing abroad; the case holds while renewal rates do.",
+      "pathway": "Membership income growing faster than sales for the next three years.",
+      "pillars": [
+        {
+          "name": "Renewals",
+          "text": "Renewal rate above 90% in North America."
+        },
+        {
+          "name": "Expansion",
+          "text": "New warehouses abroad each year."
+        }
+      ],
+      "watch": [
+        "Renewal rate under 89% in a quarter",
+        "A fee rise that slows sign-ups"
+      ],
+      "hash": "b53f328dd5cc4027631fe27ebaede0969b7195460535f2ed5cbcbb4eef2f591c",
+      "sealedAt": "2026-08-14T09:12:00.000Z",
+      "publishedAt": "2026-08-14T09:15:00.000Z"
+    },
+    {
+      "id": "rates-stay-higher-for-longer-e6f7f2dab4b8",
+      "subject": "market: Rates stay higher for longer",
+      "name": "Theo",
+      "handle": "macro-first",
+      "text": "Core services inflation is sticky near 4% and the labour market has not loosened enough for the cuts the futures price. Long duration lags until wage growth falls under 3.5%.",
+      "pathway": null,
+      "pillars": [
+        {
+          "name": "Services inflation",
+          "text": "Core services above 3.5% a year."
+        }
+      ],
+      "watch": [
+        "Two monthly prints of wage growth under 3.5%"
+      ],
+      "hash": "e6f7f2dab4b8e13d47419a364c480b53ae50e82c97d38b1296babaac5479eb41",
+      "sealedAt": "2026-09-02T17:40:00.000Z",
+      "publishedAt": "2026-09-03T08:00:00.000Z"
+    }
+  ]
+}

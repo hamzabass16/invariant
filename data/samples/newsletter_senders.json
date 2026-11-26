@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "senders": [
+    { "address": "note@harbour-rates.example", "name": "Harbour Rates Note", "cadence": "every weekday", "from": "claude", "status": "proposed", "at": "2026-10-12T07:10:00.000Z" },
+    { "address": "digest@silicon-ledger.example", "name": "Silicon Ledger", "cadence": "3 in 30 days", "from": "claude", "status": "proposed", "at": "2026-10-12T07:10:00.000Z" },
+    { "address": "letters@meridian-capital.example", "name": "Meridian Letters", "cadence": "weekly", "from": "you", "status": "kept", "at": "2026-10-05T09:00:00.000Z" }
+  ],
+  "proposedAt": "2026-10-12T07:10:00.000Z",
+  "updated": "2026-10-12T07:10:00.000Z"
+}

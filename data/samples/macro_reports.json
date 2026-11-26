@@ -1,0 +1,934 @@
+{
+ "version": 1,
+ "reports": [
+  {
+   "key": "2026-11-03:election:us:us-midterm-elections",
+   "date": "2026-11-03",
+   "kind": "election",
+   "area": "us",
+   "name": "US midterm elections",
+   "about": "The US general election: every House seat, a third of the Senate and most governors. Control of Congress decides what spending and tax law can pass.",
+   "source": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/",
+   "session": "2026-11-04",
+   "builtAt": "2026-11-04T04:10:00Z",
+   "updatedAt": "2026-11-04T04:10:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": "US election",
+    "decided": "A sample reading: the count goes on in a handful of House seats and two Senate races; neither chamber is called yet.",
+    "expected": "The polls had both chambers close.",
+    "surprise": null,
+    "markets": null,
+    "points": [],
+    "final": false
+   },
+   "stage": "outcome",
+   "outcomeNote": "Not final: the count goes on. Read again every 2 hours until it is final.",
+   "tries": 3,
+   "triedAt": "2026-11-04T13:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-11-04T04:10:00Z",
+     "decided": "A sample reading: polls have closed; the networks have called most House races, and control of both chambers is not yet called.",
+     "final": false,
+     "news": null
+    },
+    {
+     "at": "2026-11-04T08:10:00Z",
+     "decided": "A sample reading: more House races called overnight; the count goes on in the closest seats, and neither chamber is called.",
+     "final": false,
+     "news": true
+    },
+    {
+     "at": "2026-11-04T13:40:00Z",
+     "decided": "A sample reading: the count goes on in a handful of House seats and two Senate races; neither chamber is called yet.",
+     "final": false,
+     "news": true
+    }
+   ],
+   "markets": [],
+   "book": null,
+   "bookNote": null,
+   "history": {
+    "outcome": "US election",
+    "from": "2020-11-03",
+    "book": {
+     "n": 3,
+     "mean": -0.00257184821099896,
+     "lo": -0.03848337339075362,
+     "hi": 0.03333967696875569,
+     "min": -0.0192548248332162,
+     "max": 0.006263926786200921,
+     "down": 0.3333333333333333
+    },
+    "spy": {
+     "n": 3,
+     "mean": -0.005581651389731508,
+     "lo": -0.019920478450020363,
+     "hi": 0.008757175670557345,
+     "min": -0.012232725066976702,
+     "max": -0.0018817035689645545,
+     "down": 1
+    },
+    "expected": null
+   },
+   "reach": [
+    "40% of your book is revenue your holdings report in the United States (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, NVO, SHOP, SPGI, META, UBER).",
+    "5.2% more is in lines naming a wider region that includes it (Americas), which the filings do not split.",
+    "100% of the book is held in USD (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, ...).",
+    "Your methodology has no figure on the indicators it moves."
+   ]
+  },
+  {
+   "key": "2026-11-03:jolts:us:job-openings-jolts",
+   "date": "2026-11-03",
+   "kind": "jolts",
+   "area": "us",
+   "name": "Job openings (JOLTS)",
+   "about": "The BLS's job openings and labor turnover for two months before: openings, hires and quits.",
+   "source": "https://www.bls.gov/schedule/news_release/jolts.htm",
+   "session": "2026-11-03",
+   "builtAt": "2026-11-03T21:40:00Z",
+   "updatedAt": "2026-11-03T21:40:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": null,
+    "decided": "A sample reading: job openings fell to 7.1 million in September, from 7.4 million.",
+    "expected": "About 7.3 million openings were expected.",
+    "surprise": "Openings fell most in professional services; quits held steady.",
+    "markets": "The reporting had money moving out of rate-sensitive groups such as homebuilders and utilities as yields rose after the release, and into banks.",
+    "points": [],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-11-03T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-11-03T21:40:00Z",
+     "decided": "A sample reading: job openings fell to 7.1 million in September, from 7.4 million.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": 0.29916234543279074
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": 0.615190356634221
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": -0.41116470309163766
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": -0.8550805108273107
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": -0.14378145219265948
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": 0.6221039986270771
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": 2.175335296041858
+    }
+   ],
+   "book": {
+    "movePct": -0.20032540976163368,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "SHOP",
+      "weightPct": 7.906576793568205,
+      "movePct": -8.737677634105756,
+      "contributionPct": -0.6908511921150051
+     },
+     {
+      "symbol": "META",
+      "weightPct": 13.250221567734913,
+      "movePct": 2.3568968074761276,
+      "contributionPct": 0.3122940491134575
+     },
+     {
+      "symbol": "AMZN",
+      "weightPct": 14.859507968902138,
+      "movePct": 2.0600089565606883,
+      "contributionPct": 0.30610719506023326
+     },
+     {
+      "symbol": "MA",
+      "weightPct": 12.059860216382749,
+      "movePct": -1.6593222914450756,
+      "contributionPct": -0.20011194888755524
+     },
+     {
+      "symbol": "ASML",
+      "weightPct": 8.264815646600969,
+      "movePct": 1.703689142258047,
+      "contributionPct": 0.1408067667987849
+     },
+     {
+      "symbol": "SPGI",
+      "weightPct": 5.617062373578273,
+      "movePct": -1.9235221078771847,
+      "contributionPct": -0.10804543656902901
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": null,
+   "reach": [
+    "40% of your book is revenue your holdings report in the United States (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, NVO, SHOP, SPGI, META, UBER).",
+    "5.2% more is in lines naming a wider region that includes it (Americas), which the filings do not split.",
+    "100% of the book is held in USD (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, ...).",
+    "Your methodology has no figure on the indicators it moves."
+   ]
+  },
+  {
+   "key": "2026-10-30:boj:japan:bank-of-japan-rate-decision",
+   "date": "2026-10-30",
+   "kind": "boj",
+   "area": "japan",
+   "name": "Bank of Japan rate decision",
+   "about": "The Bank of Japan's decision on its policy rate, announced when the two-day meeting ends; no fixed time. With the Outlook Report.",
+   "source": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+   "session": "2026-10-30",
+   "builtAt": "2026-10-30T21:40:00Z",
+   "updatedAt": "2026-10-30T21:40:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": "Hold",
+    "decided": "A sample reading: the Bank of Japan kept its policy rate unchanged; two members proposed a rise.",
+    "expected": "Most economists expected no change.",
+    "surprise": "Two dissents in favour of a rise, one more than the last meeting.",
+    "markets": "The yen firmed after the decision; the reporting named Japanese exporters as sold and the banks as bought on the prospect of higher rates.",
+    "points": [],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-10-30T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-10-30T21:40:00Z",
+     "decided": "A sample reading: the Bank of Japan kept its policy rate unchanged; two members proposed a rise.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": -1.7729021524383937
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": -3.4738725640953927
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": -3.6522131209137942
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": -0.824420677361859
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": 0.03607503607503393
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": 1.0914467104404801
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": -3.1332813717848906
+    },
+    {
+     "symbol": "EWJ",
+     "label": "Japanese shares",
+     "movePct": -1.736192029829875
+    }
+   ],
+   "book": {
+    "movePct": -1.6051776662972583,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "ASML",
+      "weightPct": 8.264815646600969,
+      "movePct": -6.55248552843587,
+      "contributionPct": -0.541550849195432
+     },
+     {
+      "symbol": "SHOP",
+      "weightPct": 7.906576793568205,
+      "movePct": -5.6324525136317245,
+      "contributionPct": -0.44533418335155506
+     },
+     {
+      "symbol": "AMZN",
+      "weightPct": 14.859507968902138,
+      "movePct": -1.4110504942778657,
+      "contributionPct": -0.20967516064245248
+     },
+     {
+      "symbol": "META",
+      "weightPct": 13.250221567734913,
+      "movePct": -1.5259719464548738,
+      "contributionPct": -0.20219466396674793
+     },
+     {
+      "symbol": "GOOGL",
+      "weightPct": 8.154465117400754,
+      "movePct": -1.402297230639149,
+      "contributionPct": -0.1143498385147462
+     },
+     {
+      "symbol": "UBER",
+      "weightPct": 12.414236706689536,
+      "movePct": -0.7453605111043426,
+      "contributionPct": -0.09253081816668403
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": null,
+   "reach": [
+    "1.0% of your book is revenue your holdings report in Japan (AMZN, ASML).",
+    "7.8% more is in lines naming a wider region that includes it (Asia Pacific, Asia, Rest of Asia), which the filings do not split.",
+    "Your methodology reads what it moves in US dollar index, with no rule on it."
+   ]
+  },
+  {
+   "key": "2026-10-29:ecb:euro:ecb-rate-decision",
+   "date": "2026-10-29",
+   "kind": "ecb",
+   "area": "euro",
+   "name": "ECB rate decision",
+   "about": "The European Central Bank's decision on the euro area's rates; the president's press conference follows at 14:45.",
+   "source": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+   "session": "2026-10-29",
+   "builtAt": "2026-10-29T21:40:00Z",
+   "updatedAt": "2026-10-29T21:40:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": "Hold",
+    "decided": "A sample reading: the ECB left its deposit rate unchanged, as it was expected to.",
+    "expected": "No change was expected.",
+    "surprise": "The president said the next projections would decide the path, which the press read as keeping December open.",
+    "markets": "The euro eased; the reporting had European banks sold on a lower rate path and exporters bought on the weaker currency.",
+    "points": [],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-10-29T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-10-29T21:40:00Z",
+     "decided": "A sample reading: the ECB left its deposit rate unchanged, as it was expected to.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": -0.3819709702062579
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": -1.415360868786264
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": 0.5744085858967463
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": 0.1338688085676054
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": -0.07209805335255393
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": -0.2515723270440251
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": -2.3592085235920823
+    },
+    {
+     "symbol": "FEZ",
+     "label": "Euro Stoxx 50",
+     "movePct": -0.8687100475331944
+    }
+   ],
+   "book": {
+    "movePct": -0.19991774124915015,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "GOOGL",
+      "weightPct": 8.154465117400754,
+      "movePct": -12.641201637477295,
+      "contributionPct": -1.030822377948379
+     },
+     {
+      "symbol": "AMZN",
+      "weightPct": 14.859507968902138,
+      "movePct": -4.2458758837392025,
+      "contributionPct": -0.630916265293921
+     },
+     {
+      "symbol": "MA",
+      "weightPct": 12.059860216382749,
+      "movePct": 4.1601808916780225,
+      "contributionPct": 0.5017120002850349
+     },
+     {
+      "symbol": "BIRK",
+      "weightPct": 6.314567400302054,
+      "movePct": 5.698005698005693,
+      "contributionPct": 0.359804410273621
+     },
+     {
+      "symbol": "META",
+      "weightPct": 13.250221567734913,
+      "movePct": 1.9641136998155062,
+      "contributionPct": 0.26024941706779037
+     },
+     {
+      "symbol": "SPGI",
+      "weightPct": 5.617062373578273,
+      "movePct": 2.521532058843179,
+      "contributionPct": 0.14163602851499374
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": {
+    "outcome": "Hold",
+    "from": "2019-03-07",
+    "book": {
+     "n": 37,
+     "mean": -0.002315529369961091,
+     "lo": -0.006938733053193084,
+     "hi": 0.0023076743132709027,
+     "min": -0.03043323158737369,
+     "max": 0.03397183213335682,
+     "down": 0.6756756756756757
+    },
+    "spy": {
+     "n": 37,
+     "mean": -0.0013941697130506192,
+     "lo": -0.00542788283207693,
+     "hi": 0.0026395434059756917,
+     "min": -0.023566878980891715,
+     "max": 0.023771390036247286,
+     "down": 0.6216216216216216
+    },
+    "expected": null
+   },
+   "reach": [
+    "1.6% of your book is revenue your holdings report in the euro area (AMZN, BIRK, ASML).",
+    "13% more is in lines naming a wider region that includes it (Europe, Middle East and Africa, Europe, Europe and Canada), which the filings do not split.",
+    "Your methodology reads what it moves in US dollar index, with no rule on it."
+   ]
+  },
+  {
+   "key": "2026-10-28:fomc:us:fed-rate-decision",
+   "date": "2026-10-28",
+   "kind": "fomc",
+   "area": "us",
+   "name": "Fed rate decision",
+   "about": "The Federal Open Market Committee's decision on the federal funds rate, with the statement; the chair's press conference follows at 14:30.",
+   "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "session": "2026-10-28",
+   "builtAt": "2026-10-28T21:40:00Z",
+   "updatedAt": "2026-10-28T21:40:00Z",
+   "priced": {
+    "Cut": 0.78,
+    "Hold": 0.21,
+    "Hike": 0.01
+   },
+   "pricedBy": "Kalshi",
+   "outcome": {
+    "label": "Cut",
+    "decided": "A sample reading: the committee lowered the federal funds range by 25 basis points, to 3.50% to 3.75%, with one dissent in favour of holding.",
+    "expected": "A cut of 25 basis points was expected, and the markets priced it at about four in five.",
+    "surprise": "The statement dropped its line on further adjustments, which the press read as a pause from here.",
+    "markets": "The reporting had money moving out of the banks and into housing and small companies as long yields fell after the press conference; the dollar slipped.",
+    "points": [
+     {
+      "line": "Sample point: the statement's wording on the path of rates changed.",
+      "source": {
+       "title": "Sample source (fictional)",
+       "url": "https://example.com/sample-event/fomc-october"
+      }
+     }
+    ],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-10-28T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-10-28T21:40:00Z",
+     "decided": "A sample reading: the committee lowered the federal funds range by 25 basis points, to 3.50% to 3.75%, with one dissent in favour of holding.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": 0.3443078762050744
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": 0.6045060658578905
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": -0.18482893893101426
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": -0.587778640346015
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": -0.07204610951009327
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": 0.11290112466890712
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": 2.640212466802061
+    }
+   ],
+   "book": {
+    "movePct": -0.04060617339850524,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "META",
+      "weightPct": 13.250221567734913,
+      "movePct": -1.24155500733647,
+      "contributionPct": -0.16450878935738975
+     },
+     {
+      "symbol": "ASML",
+      "weightPct": 8.264815646600969,
+      "movePct": 1.6629982880900007,
+      "contributionPct": 0.13744374271676865
+     },
+     {
+      "symbol": "BIRK",
+      "weightPct": 6.314567400302054,
+      "movePct": -2.076875387476751,
+      "contributionPct": -0.13114569616250388
+     },
+     {
+      "symbol": "SHOP",
+      "weightPct": 7.906576793568205,
+      "movePct": 1.4534708401181984,
+      "contributionPct": 0.11491978814606632
+     },
+     {
+      "symbol": "GOOGL",
+      "weightPct": 8.154465117400754,
+      "movePct": 1.3444382057520743,
+      "contributionPct": 0.10963174451306147
+     },
+     {
+      "symbol": "UBER",
+      "weightPct": 12.414236706689536,
+      "movePct": -0.7753116448768749,
+      "contributionPct": -0.09624902280954341
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": {
+    "outcome": "Cut",
+    "from": "2019-01-30",
+    "book": {
+     "n": 11,
+     "mean": -0.009659532744441403,
+     "lo": -0.023537964658494746,
+     "hi": 0.0042188991696119425,
+     "min": -0.04747662543720979,
+     "max": 0.02598734664765227,
+     "down": 0.7272727272727273
+    },
+    "spy": {
+     "n": 11,
+     "mean": -0.009256174160019741,
+     "lo": -0.02134687582591667,
+     "hi": 0.0028345275058771872,
+     "min": -0.04780620023716742,
+     "max": 0.01579584804598877,
+     "down": 0.7272727272727273
+    },
+    "expected": {
+     "book": -0.008649199439458518,
+     "spy": -0.007949225747423006
+    }
+   },
+   "reach": [
+    "40% of your book is revenue your holdings report in the United States (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, NVO, SHOP, SPGI, META, UBER).",
+    "5.2% more is in lines naming a wider region that includes it (Americas), which the filings do not split.",
+    "100% of the book is held in USD (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, ...).",
+    "Your methodology tests what it moves: 0, Long-term credit cycle: yield curve structure and inversion dynamics.."
+   ]
+  },
+  {
+   "key": "2026-10-27:election:israel:israeli-knesset-election",
+   "date": "2026-10-27",
+   "kind": "election",
+   "area": "israel",
+   "name": "Israeli Knesset election",
+   "about": "Israel elects its 120-seat Knesset, after the Knesset dissolved itself in July; the coalition that forms decides the government, its budget and its security policy.",
+   "source": "https://www.gov.il/en/pages/knesset-elections-2026",
+   "session": "2026-10-28",
+   "builtAt": "2026-10-28T21:40:00Z",
+   "updatedAt": "2026-10-28T21:40:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": null,
+    "decided": "A sample reading: the two largest lists finished level on seats and coalition talks began; no party holds a majority alone.",
+    "expected": "The polls had the race close, with neither bloc near a majority.",
+    "surprise": "Turnout was higher than at the last three elections.",
+    "markets": "The shekel firmed slightly; the reporting named Israeli banks and builders as bought on hopes of a stable coalition, with defence names little changed.",
+    "points": [
+     {
+      "line": "Sample point: the coalition talks are expected to take weeks.",
+      "source": {
+       "title": "Sample source (fictional)",
+       "url": "https://example.com/sample-event/israel-election"
+      }
+     }
+    ],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-10-28T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-10-28T21:40:00Z",
+     "decided": "A sample reading: the two largest lists finished level on seats and coalition talks began; no party holds a majority alone.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": 0.3443078762050744
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": 0.6045060658578905
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": -0.18482893893101426
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": -0.587778640346015
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": -0.07204610951009327
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": 0.11290112466890712
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": 2.640212466802061
+    },
+    {
+     "symbol": "EIS",
+     "label": "Israeli shares",
+     "movePct": 0.5902929602098705
+    }
+   ],
+   "book": {
+    "movePct": -0.04060617339850524,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "META",
+      "weightPct": 13.250221567734913,
+      "movePct": -1.24155500733647,
+      "contributionPct": -0.16450878935738975
+     },
+     {
+      "symbol": "ASML",
+      "weightPct": 8.264815646600969,
+      "movePct": 1.6629982880900007,
+      "contributionPct": 0.13744374271676865
+     },
+     {
+      "symbol": "BIRK",
+      "weightPct": 6.314567400302054,
+      "movePct": -2.076875387476751,
+      "contributionPct": -0.13114569616250388
+     },
+     {
+      "symbol": "SHOP",
+      "weightPct": 7.906576793568205,
+      "movePct": 1.4534708401181984,
+      "contributionPct": 0.11491978814606632
+     },
+     {
+      "symbol": "GOOGL",
+      "weightPct": 8.154465117400754,
+      "movePct": 1.3444382057520743,
+      "contributionPct": 0.10963174451306147
+     },
+     {
+      "symbol": "UBER",
+      "weightPct": 12.414236706689536,
+      "movePct": -0.7753116448768749,
+      "contributionPct": -0.09624902280954341
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": null,
+   "reach": [
+    "Your holdings report no revenue line naming Israel.",
+    "8.1% more is in lines naming a wider region that includes it (Europe, Middle East and Africa, Rest of Europe and Middle East), which the filings do not split.",
+    "Your methodology has no figure on the indicators it moves."
+   ]
+  },
+  {
+   "key": "2026-10-15:cpi:us:consumer-prices-cpi-september",
+   "date": "2026-10-15",
+   "kind": "cpi",
+   "area": "us",
+   "name": "Consumer prices (CPI), September",
+   "about": "The BLS's consumer price index for the month before: inflation as households meet it.",
+   "source": "https://www.bls.gov/schedule/news_release/cpi.htm",
+   "session": "2026-10-15",
+   "builtAt": "2026-10-15T21:40:00Z",
+   "updatedAt": "2026-10-15T21:40:00Z",
+   "priced": null,
+   "pricedBy": null,
+   "outcome": {
+    "label": "Inflation higher",
+    "decided": "A sample reading: consumer prices rose 3.9% on a year in September, from 3.7% in August; the core rate rose to 3.4%.",
+    "expected": "Economists surveyed expected 3.8%.",
+    "surprise": "Energy and car insurance carried most of the rise; shelter rose least in a year.",
+    "markets": "Two-year yields rose on the release; the reporting had money leaving homebuilders and utilities, the groups most tied to rates, and going to energy and the banks.",
+    "points": [
+     {
+      "line": "Sample point: the core rate rose for a second month.",
+      "source": {
+       "title": "Sample source (fictional)",
+       "url": "https://example.com/sample-event/cpi-september"
+      }
+     }
+    ],
+    "final": true
+   },
+   "stage": "reaction",
+   "outcomeNote": null,
+   "tries": 1,
+   "triedAt": "2026-10-15T21:40:00Z",
+   "outcomeAt": null,
+   "readings": [
+    {
+     "at": "2026-10-15T21:40:00Z",
+     "decided": "A sample reading: consumer prices rose 3.9% on a year in September, from 3.7% in August; the core rate rose to 3.4%.",
+     "final": true,
+     "news": true
+    }
+   ],
+   "markets": [
+    {
+     "symbol": "SPY",
+     "label": "S&P 500",
+     "movePct": 0.28456340956339865
+    },
+    {
+     "symbol": "QQQ",
+     "label": "Nasdaq-100",
+     "movePct": -0.13032443926195292
+    },
+    {
+     "symbol": "IWM",
+     "label": "US small caps",
+     "movePct": 0.09460365012416982
+    },
+    {
+     "symbol": "TLT",
+     "label": "Long Treasuries",
+     "movePct": -0.5258447079883655
+    },
+    {
+     "symbol": "UUP",
+     "label": "US dollar",
+     "movePct": -0.36616623947270943
+    },
+    {
+     "symbol": "GLD",
+     "label": "Gold",
+     "movePct": -0.05106382978723456
+    },
+    {
+     "symbol": "USO",
+     "label": "Oil",
+     "movePct": 1.1016822986452235
+    }
+   ],
+   "book": {
+    "movePct": 1.8353827718249358,
+    "covered": 1,
+    "movers": [
+     {
+      "symbol": "BIRK",
+      "weightPct": 6.314567400302054,
+      "movePct": 5.807783018867929,
+      "contributionPct": 0.36673637318971275
+     },
+     {
+      "symbol": "UBER",
+      "weightPct": 12.414236706689536,
+      "movePct": 2.857555202770956,
+      "contributionPct": 0.3547436668963086
+     },
+     {
+      "symbol": "MA",
+      "weightPct": 12.059860216382749,
+      "movePct": 2.1682912273721877,
+      "contributionPct": 0.26149289110517565
+     },
+     {
+      "symbol": "SHOP",
+      "weightPct": 7.906576793568205,
+      "movePct": 3.2695652173913015,
+      "contributionPct": 0.2585106847288385
+     },
+     {
+      "symbol": "SPGI",
+      "weightPct": 5.617062373578273,
+      "movePct": 3.9748390728638894,
+      "contributionPct": 0.223269189972125
+     },
+     {
+      "symbol": "BKNG",
+      "weightPct": 5.473062186677599,
+      "movePct": 3.186457555389599,
+      "contributionPct": 0.17439680355855958
+     }
+    ]
+   },
+   "bookNote": null,
+   "history": {
+    "outcome": "Inflation higher",
+    "from": "2019-02-13",
+    "book": {
+     "n": 43,
+     "mean": -0.0033477195346810697,
+     "lo": -0.00812098473494732,
+     "hi": 0.0014255456655851806,
+     "min": -0.04571492703834708,
+     "max": 0.02155886578081589,
+     "down": 0.5581395348837209
+    },
+    "spy": {
+     "n": 43,
+     "mean": -0.0016693848359721339,
+     "lo": -0.005180921752906047,
+     "hi": 0.0018421520809617795,
+     "min": -0.03224029147782814,
+     "max": 0.019812583668005423,
+     "down": 0.5813953488372093
+    },
+    "expected": null
+   },
+   "reach": [
+    "40% of your book is revenue your holdings report in the United States (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, NVO, SHOP, SPGI, META, UBER).",
+    "5.2% more is in lines naming a wider region that includes it (Americas), which the filings do not split.",
+    "100% of the book is held in USD (AMZN, ASML, BIRK, BKNG, GOOGL, IBKR, ...).",
+    "Your methodology reads what it moves in US 10-year yield, 10-year yield change, 1 month, with no rule on it."
+   ]
+  }
+ ],
+ "priced": {},
+ "updated": "2026-11-04T14:30:00.000Z"
+}

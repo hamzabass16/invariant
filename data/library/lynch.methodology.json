@@ -1,0 +1,391 @@
+{
+  "name": "Growth at a reasonable price, after Peter Lynch",
+  "source": {
+    "title": "Growth at a reasonable price, after Peter Lynch's One Up on Wall Street",
+    "fileId": null
+  },
+  "origin": "library",
+  "summary": "Know what you own: sort each company into a kind (fast grower, stalwart), pay a price in line with its growth, keep debt low and watch for insiders buying.",
+  "figures": [
+    {
+      "id": "nav",
+      "label": "Portfolio value",
+      "about": "Everything in the portfolio at the latest marks.",
+      "unit": "money",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": []
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "positions",
+      "label": "Stocks held",
+      "about": "The stocks and funds held.",
+      "unit": "count",
+      "expr": {
+        "op": "measure",
+        "of": {
+          "measure": "count",
+          "over": "holdings",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "cash-share",
+      "label": "Cash",
+      "about": "Cash and deposits as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "cash",
+                "deposit"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "view": "tile"
+    },
+    {
+      "id": "weight-by-holding",
+      "label": "Portfolio by holding",
+      "about": "Each holding's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-class",
+      "label": "Portfolio by class",
+      "about": "Each class's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "class",
+      "view": "donut"
+    },
+    {
+      "id": "weight-by-sector",
+      "label": "Portfolio by sector",
+      "about": "Each sector's share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "asset_class",
+              "is": "in",
+              "value": [
+                "equity",
+                "etf"
+              ]
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "sector",
+      "view": "bars"
+    },
+    {
+      "id": "weight-fast",
+      "label": "Weight, Fast grower",
+      "about": "Each Fast grower holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "fast"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "table"
+    },
+    {
+      "id": "weight-stalwart",
+      "label": "Weight, Stalwart",
+      "about": "Each Stalwart holding as a share of the portfolio.",
+      "unit": "pct",
+      "expr": {
+        "op": "ratio",
+        "num": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [
+            {
+              "field": "class",
+              "is": "eq",
+              "value": "stalwart"
+            }
+          ]
+        },
+        "den": {
+          "measure": "sum",
+          "over": "holdings",
+          "field": "owner_value",
+          "where": [],
+          "whole": true
+        }
+      },
+      "by": "symbol",
+      "view": "table"
+    }
+  ],
+  "classes": [
+    {
+      "id": "fast",
+      "label": "Fast grower",
+      "about": "Earnings growing 20% a year or more, a P/E no higher than about 25 and little debt.",
+      "required": [
+        {
+          "field": "eps_growth_pct",
+          "is": "gte",
+          "value": 20
+        }
+      ],
+      "criteria": [
+        {
+          "field": "pe_ratio",
+          "is": "lte",
+          "value": 25
+        },
+        {
+          "field": "net_debt_to_ebitda",
+          "is": "lte",
+          "value": 2
+        },
+        {
+          "field": "revenue_growth_pct",
+          "is": "gte",
+          "value": 15
+        }
+      ],
+      "minimum": 2
+    },
+    {
+      "id": "stalwart",
+      "label": "Stalwart",
+      "about": "Earnings growing 10% to 20% a year at a P/E no higher than about 20.",
+      "required": [
+        {
+          "field": "eps_growth_pct",
+          "is": "gte",
+          "value": 10
+        }
+      ],
+      "criteria": [
+        {
+          "field": "pe_ratio",
+          "is": "lte",
+          "value": 20
+        },
+        {
+          "field": "net_debt_to_ebitda",
+          "is": "lte",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "pl-fast-cap",
+      "section": "Ch. 7",
+      "text": "No fast grower above 10% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "weight-fast",
+        "is": "lte",
+        "limit": 10
+      }
+    },
+    {
+      "id": "pl-stalwart-cap",
+      "section": "Ch. 7",
+      "text": "No stalwart above 8% of the portfolio.",
+      "severity": "guideline",
+      "test": {
+        "figure": "weight-stalwart",
+        "is": "lte",
+        "limit": 8
+      }
+    },
+    {
+      "id": "pl-max",
+      "section": "Ch. 18",
+      "text": "Own no more stocks than you can follow, about fifteen.",
+      "severity": "guideline",
+      "test": {
+        "figure": "positions",
+        "is": "lte",
+        "limit": 15
+      }
+    },
+    {
+      "id": "pl-story",
+      "section": "Ch. 10",
+      "text": "Write the two-minute story for every holding: why it will grow and what would end it.",
+      "severity": "guideline",
+      "test": null
+    }
+  ],
+  "dashboard": {
+    "headline": [
+      "nav",
+      "positions",
+      "cash-share"
+    ],
+    "sections": [
+      {
+        "kind": "figures",
+        "label": "By kind",
+        "figures": [
+          "weight-by-class",
+          "weight-fast",
+          "weight-stalwart"
+        ],
+        "from": "Ch. 7"
+      },
+      {
+        "kind": "figures",
+        "label": "Holdings",
+        "figures": [
+          "weight-by-holding",
+          "weight-by-sector"
+        ],
+        "from": "Ch. 18"
+      },
+      {
+        "kind": "panel",
+        "id": "allocation",
+        "view": "chart"
+      }
+    ],
+    "themes": []
+  },
+  "gaps": [
+    {
+      "section": "Ch. 13",
+      "asks": "A P/E no higher than the growth rate (a PEG of one or less).",
+      "missing": "a PEG field per holding; the P/E and the EPS growth are read apart."
+    },
+    {
+      "section": "Ch. 13",
+      "asks": "Inventories growing no faster than sales.",
+      "missing": "inventory growth as a field."
+    },
+    {
+      "section": "Ch. 7",
+      "asks": "The other kinds: slow growers, cyclicals, turnarounds and asset plays.",
+      "missing": "tests for a cycle, a turnaround and hidden assets on the fields the filings give."
+    }
+  ]
+}

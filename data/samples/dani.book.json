@@ -1,0 +1,1540 @@
+{
+ "asOf": "2026-10-09",
+ "fx": {
+  "base": "USD",
+  "asOf": "2026-10-09",
+  "rates": {},
+  "source": "fictional sample"
+ },
+ "lookThrough": [],
+ "holdings": [
+  {
+   "id": "ib:AAPL",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "equity",
+   "symbol": "AAPL",
+   "name": "Apple (sample)",
+   "quantity": 300,
+   "price": 230.0,
+   "value": 69000,
+   "costBasis": 54000,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": "Technology",
+   "themes": [
+    "AI and semiconductors",
+    "Consumer"
+   ],
+   "dayChange": -414.0,
+   "record": {
+    "ownValuation": {
+     "low": 170,
+     "base": 205,
+     "high": 250,
+     "asOf": "2026-09-30",
+     "basis": "Own DCF, 9% discount rate"
+    },
+    "since": "2025-03-01",
+    "note": "Core holding since the March 2025 review."
+   }
+  },
+  {
+   "id": "ib:AAPLC",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "option",
+   "symbol": "AAPL 261120C00245000",
+   "name": "AAPL 20 Nov 2026 245 C",
+   "quantity": -2,
+   "price": 3.1,
+   "value": -620,
+   "costBasis": -900,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "AAPL",
+    "right": "C",
+    "strike": 245,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "ib:MSFTP",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "option",
+   "symbol": "MSFT 261016P00415000",
+   "name": "MSFT 16 Oct 2026 415 P",
+   "quantity": -1,
+   "price": 4.2,
+   "value": -420,
+   "costBasis": -610,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "MSFT",
+    "right": "P",
+    "strike": 415,
+    "expiry": "2026-10-16",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "ib:NVDA1",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "option",
+   "symbol": "NVDA 261218C00140000",
+   "name": "NVDA 18 Dec 2026 140 C",
+   "quantity": 5,
+   "price": 9.8,
+   "value": 4900,
+   "costBasis": 3800,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "NVDA",
+    "right": "C",
+    "strike": 140,
+    "expiry": "2026-12-18",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "ib:NVDA2",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "option",
+   "symbol": "NVDA 261218C00160000",
+   "name": "NVDA 18 Dec 2026 160 C",
+   "quantity": -5,
+   "price": 3.2,
+   "value": -1600,
+   "costBasis": -1250,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "NVDA",
+    "right": "C",
+    "strike": 160,
+    "expiry": "2026-12-18",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "ib:SPYP",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "option",
+   "symbol": "SPY 261231P00540000",
+   "name": "SPY 31 Dec 2026 540 P",
+   "quantity": 2,
+   "price": 7.5,
+   "value": 1500,
+   "costBasis": 1900,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "SPY",
+    "right": "P",
+    "strike": 540,
+    "expiry": "2026-12-31",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "ib:CASH",
+   "account": "IBKR",
+   "source": "ibkr",
+   "assetClass": "cash",
+   "symbol": "USD",
+   "name": "Cash",
+   "quantity": 1,
+   "price": 1,
+   "value": 62000,
+   "costBasis": null,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [
+    "Cash"
+   ]
+  },
+  {
+   "id": "sch:AAPL",
+   "account": "Schwab",
+   "source": "snaptrade",
+   "assetClass": "equity",
+   "symbol": "AAPL",
+   "name": "Apple (sample)",
+   "quantity": 50,
+   "price": 230.0,
+   "value": 11500,
+   "costBasis": 9800,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": "Technology",
+   "themes": [
+    "AI and semiconductors",
+    "Consumer"
+   ]
+  },
+  {
+   "id": "sch:TSLAC",
+   "account": "Schwab",
+   "source": "snaptrade",
+   "assetClass": "option",
+   "symbol": "TSLA 261120C00300000",
+   "name": "TSLA 20 Nov 2026 300 C",
+   "quantity": -1,
+   "price": 6.4,
+   "value": -640,
+   "costBasis": -850,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "TSLA",
+    "right": "C",
+    "strike": 300,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "sch:TSLAP",
+   "account": "Schwab",
+   "source": "snaptrade",
+   "assetClass": "option",
+   "symbol": "TSLA 261120P00200000",
+   "name": "TSLA 20 Nov 2026 200 P",
+   "quantity": -1,
+   "price": 3.9,
+   "value": -390,
+   "costBasis": -700,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [],
+   "option": {
+    "underlying": "TSLA",
+    "right": "P",
+    "strike": 200,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  },
+  {
+   "id": "sch:VOO",
+   "account": "Schwab",
+   "source": "snaptrade",
+   "assetClass": "etf",
+   "symbol": "VOO",
+   "name": "Vanguard S&P 500 ETF (sample)",
+   "quantity": 40,
+   "price": 525.0,
+   "value": 21000,
+   "costBasis": 18500,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [
+    "Broad market"
+   ]
+  },
+  {
+   "id": "sch:CASH",
+   "account": "Schwab",
+   "source": "snaptrade",
+   "assetClass": "cash",
+   "symbol": "USD",
+   "name": "Cash",
+   "quantity": 1,
+   "price": 1,
+   "value": 30000,
+   "costBasis": null,
+   "currency": "USD",
+   "asOf": "2026-10-09",
+   "valuation": "broker",
+   "country": "US",
+   "sector": null,
+   "themes": [
+    "Cash"
+   ]
+  }
+ ],
+ "transactions": [
+  {
+   "date": "2024-11-14",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 75,
+   "currency": "USD"
+  },
+  {
+   "date": "2024-11-14",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 12.5,
+   "currency": "USD"
+  },
+  {
+   "date": "2024-12-27",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 68,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-02-13",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 75,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-02-13",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 12.5,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-03-27",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 70,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-05-15",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 78,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-05-15",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-06-27",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 72,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-08-14",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 78,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-08-14",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-09-26",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 74,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-11-13",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 78,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-11-13",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13,
+   "currency": "USD"
+  },
+  {
+   "date": "2025-12-29",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 74,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-02-12",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 78,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-02-12",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-03-27",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 76,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-05-14",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 81,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-05-14",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13.5,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-06-26",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 78,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-08-13",
+   "account": "IBKR",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 81,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-08-13",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "AAPL",
+   "quantity": 0,
+   "price": null,
+   "amount": 13.5,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-08-14",
+   "account": "IBKR",
+   "kind": "option_open",
+   "symbol": "MSFT 260918P00410000",
+   "quantity": -1,
+   "price": 5.5,
+   "amount": 548.95,
+   "currency": "USD",
+   "option": {
+    "underlying": "MSFT",
+    "right": "P",
+    "strike": 410,
+    "expiry": "2026-09-18",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-09-02",
+   "account": "IBKR",
+   "kind": "option_open",
+   "symbol": "AAPL 260926C00235000",
+   "quantity": -2,
+   "price": 2.8,
+   "amount": 558.7,
+   "currency": "USD",
+   "option": {
+    "underlying": "AAPL",
+    "right": "C",
+    "strike": 235,
+    "expiry": "2026-09-26",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "account": "IBKR",
+   "kind": "expiry",
+   "symbol": "MSFT 260918P00410000",
+   "quantity": 1,
+   "price": null,
+   "amount": 0,
+   "currency": "USD",
+   "option": {
+    "underlying": "MSFT",
+    "right": "P",
+    "strike": 410,
+    "expiry": "2026-09-18",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-09-19",
+   "account": "IBKR",
+   "kind": "option_open",
+   "symbol": "MSFT 261016P00415000",
+   "quantity": -1,
+   "price": 6.1,
+   "amount": 608.95,
+   "currency": "USD",
+   "option": {
+    "underlying": "MSFT",
+    "right": "P",
+    "strike": 415,
+    "expiry": "2026-10-16",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-09-24",
+   "account": "IBKR",
+   "kind": "option_close",
+   "symbol": "AAPL 260926C00235000",
+   "quantity": 2,
+   "price": 4.1,
+   "amount": -821.3,
+   "currency": "USD",
+   "option": {
+    "underlying": "AAPL",
+    "right": "C",
+    "strike": 235,
+    "expiry": "2026-09-26",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-09-25",
+   "account": "Schwab",
+   "kind": "dividend",
+   "symbol": "VOO",
+   "quantity": 0,
+   "price": null,
+   "amount": 80,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-09-29",
+   "account": "IBKR",
+   "kind": "option_open",
+   "symbol": "AAPL 261120C00245000",
+   "quantity": -2,
+   "price": 4.5,
+   "amount": 898.7,
+   "currency": "USD",
+   "option": {
+    "underlying": "AAPL",
+    "right": "C",
+    "strike": 245,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "account": "Schwab",
+   "kind": "option_open",
+   "symbol": "TSLA 261120C00300000",
+   "quantity": -1,
+   "price": 8.5,
+   "amount": 849.3,
+   "currency": "USD",
+   "option": {
+    "underlying": "TSLA",
+    "right": "C",
+    "strike": 300,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "account": "Schwab",
+   "kind": "option_open",
+   "symbol": "TSLA 261120P00200000",
+   "quantity": -1,
+   "price": 7.0,
+   "amount": 699.3,
+   "currency": "USD",
+   "option": {
+    "underlying": "TSLA",
+    "right": "P",
+    "strike": 200,
+    "expiry": "2026-11-20",
+    "multiplier": 100
+   }
+  }
+ ],
+ "market": {
+  "asOf": "2026-10-09",
+  "rate": 0.04,
+  "spots": {
+   "AAPL": 230,
+   "MSFT": 420,
+   "NVDA": 140,
+   "SPY": 570,
+   "TSLA": 250
+  },
+  "source": "fictional sample"
+ },
+ "series": {
+  "nav": [
+   {
+    "date": "2024-10-11",
+    "value": 118559.8
+   },
+   {
+    "date": "2024-10-18",
+    "value": 118878.05
+   },
+   {
+    "date": "2024-10-25",
+    "value": 118110.18
+   },
+   {
+    "date": "2024-11-01",
+    "value": 115329.86
+   },
+   {
+    "date": "2024-11-08",
+    "value": 119620.08
+   },
+   {
+    "date": "2024-11-15",
+    "value": 123584.97
+   },
+   {
+    "date": "2024-11-22",
+    "value": 125523.76
+   },
+   {
+    "date": "2024-11-29",
+    "value": 121776.3
+   },
+   {
+    "date": "2024-12-06",
+    "value": 124498.22
+   },
+   {
+    "date": "2024-12-13",
+    "value": 116816.41
+   },
+   {
+    "date": "2024-12-20",
+    "value": 113831.96
+   },
+   {
+    "date": "2024-12-27",
+    "value": 115037.52
+   },
+   {
+    "date": "2025-01-03",
+    "value": 116077.29
+   },
+   {
+    "date": "2025-01-10",
+    "value": 117929.43
+   },
+   {
+    "date": "2025-01-17",
+    "value": 118710.22
+   },
+   {
+    "date": "2025-01-24",
+    "value": 122513.2
+   },
+   {
+    "date": "2025-01-31",
+    "value": 119842.07
+   },
+   {
+    "date": "2025-02-07",
+    "value": 119000.51
+   },
+   {
+    "date": "2025-02-14",
+    "value": 121691.72
+   },
+   {
+    "date": "2025-02-21",
+    "value": 119268.33
+   },
+   {
+    "date": "2025-02-28",
+    "value": 119783.06
+   },
+   {
+    "date": "2025-03-07",
+    "value": 118001.95
+   },
+   {
+    "date": "2025-03-14",
+    "value": 117578.62
+   },
+   {
+    "date": "2025-03-21",
+    "value": 119946.1
+   },
+   {
+    "date": "2025-03-28",
+    "value": 113585.04
+   },
+   {
+    "date": "2025-04-04",
+    "value": 112521.13
+   },
+   {
+    "date": "2025-04-11",
+    "value": 114252.23
+   },
+   {
+    "date": "2025-04-18",
+    "value": 111401.99
+   },
+   {
+    "date": "2025-04-25",
+    "value": 114961.6
+   },
+   {
+    "date": "2025-05-02",
+    "value": 120135.16
+   },
+   {
+    "date": "2025-05-09",
+    "value": 119019.24
+   },
+   {
+    "date": "2025-05-16",
+    "value": 120430.85
+   },
+   {
+    "date": "2025-05-23",
+    "value": 117570.9
+   },
+   {
+    "date": "2025-05-30",
+    "value": 114239.95
+   },
+   {
+    "date": "2025-06-06",
+    "value": 115648.33
+   },
+   {
+    "date": "2025-06-13",
+    "value": 111967.46
+   },
+   {
+    "date": "2025-06-20",
+    "value": 117304.84
+   },
+   {
+    "date": "2025-06-27",
+    "value": 108340.72
+   },
+   {
+    "date": "2025-07-04",
+    "value": 108736.94
+   },
+   {
+    "date": "2025-07-11",
+    "value": 107194.4
+   },
+   {
+    "date": "2025-07-18",
+    "value": 110810.44
+   },
+   {
+    "date": "2025-07-25",
+    "value": 112450.71
+   },
+   {
+    "date": "2025-08-01",
+    "value": 118306.3
+   },
+   {
+    "date": "2025-08-08",
+    "value": 121057.84
+   },
+   {
+    "date": "2025-08-15",
+    "value": 118370.92
+   },
+   {
+    "date": "2025-08-22",
+    "value": 122441.48
+   },
+   {
+    "date": "2025-08-29",
+    "value": 115618.44
+   },
+   {
+    "date": "2025-09-05",
+    "value": 116007.53
+   },
+   {
+    "date": "2025-09-12",
+    "value": 117242.98
+   },
+   {
+    "date": "2025-09-19",
+    "value": 115886.53
+   },
+   {
+    "date": "2025-09-26",
+    "value": 117711.67
+   },
+   {
+    "date": "2025-10-03",
+    "value": 120000.51
+   },
+   {
+    "date": "2025-10-10",
+    "value": 122409.9
+   },
+   {
+    "date": "2025-10-17",
+    "value": 120086.93
+   },
+   {
+    "date": "2025-10-24",
+    "value": 123762.23
+   },
+   {
+    "date": "2025-10-31",
+    "value": 122730.73
+   },
+   {
+    "date": "2025-11-07",
+    "value": 127144.74
+   },
+   {
+    "date": "2025-11-14",
+    "value": 122784.08
+   },
+   {
+    "date": "2025-11-21",
+    "value": 122262.19
+   },
+   {
+    "date": "2025-11-28",
+    "value": 125612.27
+   },
+   {
+    "date": "2025-12-05",
+    "value": 128219.4
+   },
+   {
+    "date": "2025-12-12",
+    "value": 126977.63
+   },
+   {
+    "date": "2025-12-19",
+    "value": 132419.12
+   },
+   {
+    "date": "2025-12-26",
+    "value": 134257.64
+   },
+   {
+    "date": "2026-01-02",
+    "value": 136146.37
+   },
+   {
+    "date": "2026-01-09",
+    "value": 136411.59
+   },
+   {
+    "date": "2026-01-16",
+    "value": 138880.77
+   },
+   {
+    "date": "2026-01-23",
+    "value": 143026.94
+   },
+   {
+    "date": "2026-01-30",
+    "value": 151519.26
+   },
+   {
+    "date": "2026-02-06",
+    "value": 149642.24
+   },
+   {
+    "date": "2026-02-13",
+    "value": 151728.95
+   },
+   {
+    "date": "2026-02-20",
+    "value": 151589.25
+   },
+   {
+    "date": "2026-02-27",
+    "value": 154650.39
+   },
+   {
+    "date": "2026-03-06",
+    "value": 151078.77
+   },
+   {
+    "date": "2026-03-13",
+    "value": 153559.42
+   },
+   {
+    "date": "2026-03-20",
+    "value": 153536.66
+   },
+   {
+    "date": "2026-03-27",
+    "value": 154192.38
+   },
+   {
+    "date": "2026-04-03",
+    "value": 165085.0
+   },
+   {
+    "date": "2026-04-10",
+    "value": 163037.39
+   },
+   {
+    "date": "2026-04-17",
+    "value": 162480.06
+   },
+   {
+    "date": "2026-04-24",
+    "value": 150525.91
+   },
+   {
+    "date": "2026-05-01",
+    "value": 152844.03
+   },
+   {
+    "date": "2026-05-08",
+    "value": 154816.92
+   },
+   {
+    "date": "2026-05-15",
+    "value": 161528.72
+   },
+   {
+    "date": "2026-05-22",
+    "value": 154215.15
+   },
+   {
+    "date": "2026-05-29",
+    "value": 154495.01
+   },
+   {
+    "date": "2026-06-05",
+    "value": 154401.16
+   },
+   {
+    "date": "2026-06-12",
+    "value": 156583.64
+   },
+   {
+    "date": "2026-06-19",
+    "value": 157062.2
+   },
+   {
+    "date": "2026-06-26",
+    "value": 160534.54
+   },
+   {
+    "date": "2026-07-03",
+    "value": 160793.15
+   },
+   {
+    "date": "2026-07-10",
+    "value": 164912.95
+   },
+   {
+    "date": "2026-07-17",
+    "value": 168095.53
+   },
+   {
+    "date": "2026-07-24",
+    "value": 172623.09
+   },
+   {
+    "date": "2026-07-31",
+    "value": 183121.4
+   },
+   {
+    "date": "2026-08-07",
+    "value": 187478.09
+   },
+   {
+    "date": "2026-08-14",
+    "value": 190309.31
+   },
+   {
+    "date": "2026-08-21",
+    "value": 193476.35
+   },
+   {
+    "date": "2026-08-28",
+    "value": 182907.77
+   },
+   {
+    "date": "2026-09-04",
+    "value": 184303.48
+   },
+   {
+    "date": "2026-09-11",
+    "value": 176722.23
+   },
+   {
+    "date": "2026-09-18",
+    "value": 184689.68
+   },
+   {
+    "date": "2026-09-25",
+    "value": 190276.01
+   },
+   {
+    "date": "2026-10-02",
+    "value": 188286.19
+   },
+   {
+    "date": "2026-10-09",
+    "value": 196230.0
+   }
+  ],
+  "benchmarks": {
+   "SPY": [
+    {
+     "date": "2024-10-11",
+     "value": 570.0
+    },
+    {
+     "date": "2024-10-18",
+     "value": 568.53
+    },
+    {
+     "date": "2024-10-25",
+     "value": 567.43
+    },
+    {
+     "date": "2024-11-01",
+     "value": 557.93
+    },
+    {
+     "date": "2024-11-08",
+     "value": 572.52
+    },
+    {
+     "date": "2024-11-15",
+     "value": 586.59
+    },
+    {
+     "date": "2024-11-22",
+     "value": 593.1
+    },
+    {
+     "date": "2024-11-29",
+     "value": 574.01
+    },
+    {
+     "date": "2024-12-06",
+     "value": 581.72
+    },
+    {
+     "date": "2024-12-13",
+     "value": 562.69
+    },
+    {
+     "date": "2024-12-20",
+     "value": 553.75
+    },
+    {
+     "date": "2024-12-27",
+     "value": 558.85
+    },
+    {
+     "date": "2025-01-03",
+     "value": 566.53
+    },
+    {
+     "date": "2025-01-10",
+     "value": 571.79
+    },
+    {
+     "date": "2025-01-17",
+     "value": 565.45
+    },
+    {
+     "date": "2025-01-24",
+     "value": 573.64
+    },
+    {
+     "date": "2025-01-31",
+     "value": 567.78
+    },
+    {
+     "date": "2025-02-07",
+     "value": 565.27
+    },
+    {
+     "date": "2025-02-14",
+     "value": 574.35
+    },
+    {
+     "date": "2025-02-21",
+     "value": 570.56
+    },
+    {
+     "date": "2025-02-28",
+     "value": 565.92
+    },
+    {
+     "date": "2025-03-07",
+     "value": 557.91
+    },
+    {
+     "date": "2025-03-14",
+     "value": 564.47
+    },
+    {
+     "date": "2025-03-21",
+     "value": 566.62
+    },
+    {
+     "date": "2025-03-28",
+     "value": 544.24
+    },
+    {
+     "date": "2025-04-04",
+     "value": 544.55
+    },
+    {
+     "date": "2025-04-11",
+     "value": 551.76
+    },
+    {
+     "date": "2025-04-18",
+     "value": 536.34
+    },
+    {
+     "date": "2025-04-25",
+     "value": 545.38
+    },
+    {
+     "date": "2025-05-02",
+     "value": 563.4
+    },
+    {
+     "date": "2025-05-09",
+     "value": 566.39
+    },
+    {
+     "date": "2025-05-16",
+     "value": 575.3
+    },
+    {
+     "date": "2025-05-23",
+     "value": 571.44
+    },
+    {
+     "date": "2025-05-30",
+     "value": 561.43
+    },
+    {
+     "date": "2025-06-06",
+     "value": 578.19
+    },
+    {
+     "date": "2025-06-13",
+     "value": 562.11
+    },
+    {
+     "date": "2025-06-20",
+     "value": 580.73
+    },
+    {
+     "date": "2025-06-27",
+     "value": 559.18
+    },
+    {
+     "date": "2025-07-04",
+     "value": 564.94
+    },
+    {
+     "date": "2025-07-11",
+     "value": 553.24
+    },
+    {
+     "date": "2025-07-18",
+     "value": 567.59
+    },
+    {
+     "date": "2025-07-25",
+     "value": 572.11
+    },
+    {
+     "date": "2025-08-01",
+     "value": 592.86
+    },
+    {
+     "date": "2025-08-08",
+     "value": 600.98
+    },
+    {
+     "date": "2025-08-15",
+     "value": 582.87
+    },
+    {
+     "date": "2025-08-22",
+     "value": 596.19
+    },
+    {
+     "date": "2025-08-29",
+     "value": 573.15
+    },
+    {
+     "date": "2025-09-05",
+     "value": 584.89
+    },
+    {
+     "date": "2025-09-12",
+     "value": 584.27
+    },
+    {
+     "date": "2025-09-19",
+     "value": 569.82
+    },
+    {
+     "date": "2025-09-26",
+     "value": 578.02
+    },
+    {
+     "date": "2025-10-03",
+     "value": 583.58
+    },
+    {
+     "date": "2025-10-10",
+     "value": 586.69
+    },
+    {
+     "date": "2025-10-17",
+     "value": 580.18
+    },
+    {
+     "date": "2025-10-24",
+     "value": 594.5
+    },
+    {
+     "date": "2025-10-31",
+     "value": 585.17
+    },
+    {
+     "date": "2025-11-07",
+     "value": 604.82
+    },
+    {
+     "date": "2025-11-14",
+     "value": 588.98
+    },
+    {
+     "date": "2025-11-21",
+     "value": 588.79
+    },
+    {
+     "date": "2025-11-28",
+     "value": 607.81
+    },
+    {
+     "date": "2025-12-05",
+     "value": 625.6
+    },
+    {
+     "date": "2025-12-12",
+     "value": 617.01
+    },
+    {
+     "date": "2025-12-19",
+     "value": 633.36
+    },
+    {
+     "date": "2025-12-26",
+     "value": 639.73
+    },
+    {
+     "date": "2026-01-02",
+     "value": 643.57
+    },
+    {
+     "date": "2026-01-09",
+     "value": 642.99
+    },
+    {
+     "date": "2026-01-16",
+     "value": 652.52
+    },
+    {
+     "date": "2026-01-23",
+     "value": 664.82
+    },
+    {
+     "date": "2026-01-30",
+     "value": 694.75
+    },
+    {
+     "date": "2026-02-06",
+     "value": 690.46
+    },
+    {
+     "date": "2026-02-13",
+     "value": 692.2
+    },
+    {
+     "date": "2026-02-20",
+     "value": 689.25
+    },
+    {
+     "date": "2026-02-27",
+     "value": 717.77
+    },
+    {
+     "date": "2026-03-06",
+     "value": 702.84
+    },
+    {
+     "date": "2026-03-13",
+     "value": 710.68
+    },
+    {
+     "date": "2026-03-20",
+     "value": 706.24
+    },
+    {
+     "date": "2026-03-27",
+     "value": 712.4
+    },
+    {
+     "date": "2026-04-03",
+     "value": 750.75
+    },
+    {
+     "date": "2026-04-10",
+     "value": 744.12
+    },
+    {
+     "date": "2026-04-17",
+     "value": 742.67
+    },
+    {
+     "date": "2026-04-24",
+     "value": 702.21
+    },
+    {
+     "date": "2026-05-01",
+     "value": 719.04
+    },
+    {
+     "date": "2026-05-08",
+     "value": 720.05
+    },
+    {
+     "date": "2026-05-15",
+     "value": 735.01
+    },
+    {
+     "date": "2026-05-22",
+     "value": 710.81
+    },
+    {
+     "date": "2026-05-29",
+     "value": 707.71
+    },
+    {
+     "date": "2026-06-05",
+     "value": 725.92
+    },
+    {
+     "date": "2026-06-12",
+     "value": 744.55
+    },
+    {
+     "date": "2026-06-19",
+     "value": 757.31
+    },
+    {
+     "date": "2026-06-26",
+     "value": 762.23
+    },
+    {
+     "date": "2026-07-03",
+     "value": 761.97
+    },
+    {
+     "date": "2026-07-10",
+     "value": 776.86
+    },
+    {
+     "date": "2026-07-17",
+     "value": 777.59
+    },
+    {
+     "date": "2026-07-24",
+     "value": 796.89
+    },
+    {
+     "date": "2026-07-31",
+     "value": 845.07
+    },
+    {
+     "date": "2026-08-07",
+     "value": 863.66
+    },
+    {
+     "date": "2026-08-14",
+     "value": 868.48
+    },
+    {
+     "date": "2026-08-21",
+     "value": 874.97
+    },
+    {
+     "date": "2026-08-28",
+     "value": 849.35
+    },
+    {
+     "date": "2026-09-04",
+     "value": 862.7
+    },
+    {
+     "date": "2026-09-11",
+     "value": 846.52
+    },
+    {
+     "date": "2026-09-18",
+     "value": 871.4
+    },
+    {
+     "date": "2026-09-25",
+     "value": 900.79
+    },
+    {
+     "date": "2026-10-02",
+     "value": 903.34
+    },
+    {
+     "date": "2026-10-09",
+     "value": 920.4
+    }
+   ]
+  },
+  "source": "Fictional weekly series for the sample; a real book's comes from the broker's equity summary."
+ }
+}
