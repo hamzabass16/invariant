@@ -1,5 +1,9 @@
 # Changelog
 
+## 27 Nov 2026 (the allocation's count)
+
+- The number of holdings in the middle of the Dashboard's allocation ring is drawn in the page's text colour, so it reads in dark and light alike. Before, it was drawn almost black and could not be read on the dark page.
+
 ## 26 Nov 2026 (open source)
 
 - Invariant is open source under the MIT licence. The front page says so in place of the plans and prices, with a link to the code when the deployment sets one.

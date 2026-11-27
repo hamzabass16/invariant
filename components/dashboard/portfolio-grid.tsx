@@ -62,7 +62,7 @@ function Ring({ slices, centre }: { slices: AllocationSlice[]; centre: { value: 
   return (
     <svg viewBox="0 0 120 120" className="size-32 shrink-0" role="img" aria-label="Allocation by holding">
       {arcs.map(({ s, d }) => (d ? <path key={s.key} d={d} fill={s.color} /> : <circle key={s.key} cx={60} cy={60} r={(R + r) / 2} fill="none" stroke={s.color} strokeWidth={R - r} />))}
-      <text x={60} y={58} textAnchor="middle" fontSize={15} fontWeight={600} style={{ fill: "var(--text-primary)", fontFamily: "var(--font-mono)" }}>
+      <text x={60} y={58} textAnchor="middle" fontSize={15} fontWeight={600} style={{ fill: "var(--text)", fontFamily: "var(--font-mono)" }}>
         {centre.value}
       </text>
       <text x={60} y={74} textAnchor="middle" fontSize={9} style={{ fill: "var(--text-secondary)" }}>
